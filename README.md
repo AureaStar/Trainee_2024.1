@@ -1,6 +1,6 @@
 # **Trainee 2024.1**
 
-# **A Torre do Sábio**
+# **Torre do Sábio**
 
 ## **Projeto Trainee, Code Jr, Grupo 000, 2024.1**
 
@@ -28,7 +28,7 @@
 
 * [Trello](https://trello.com/invite/b/5i5KLAsP/ATTI031ccedd9fd4528799697b9c77c9f9dc102BA2A4/a-torre-do-sabio)
 
-* [Drive com ID Visual]()
+* [Drive com ID Visual](https://drive.google.com/drive/folders/1avGvBDYy-SX-y2-fzo39W3TXTpR93LcX?usp=sharing)
 
 
 
@@ -37,6 +37,7 @@
 * Blog / Sistema de treinamento e capacitação dos Trainees da [CodeJR](https://codejr.com.br/), na gestão 2024.1;
 * Possuirá Front-End em HTML, CSS, JavaScript, Bootstrap e Back-End em PHP (puro), com Banco de Dados MySQL;
 
+* Propósito: * Aproximar as pessoas dos jogos de tabuleiro, contando sua história e trazendo curiosidades sobre esses elementos que fizeram parte da vida de todas as pessoas.
 
 
 
