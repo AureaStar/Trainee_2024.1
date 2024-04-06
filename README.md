@@ -1,6 +1,6 @@
 # **Trainee 2024.1**
 
-# **Nome do seu blog**
+# **A Torre do Sábio**
 
 ## **Projeto Trainee, Code Jr, Grupo 000, 2024.1**
 
@@ -13,20 +13,20 @@
 
 #### Desenvolvedores:
 
-* Trainee 1
-* Trainee 2
-* Trainee 3
-* Trainee 4
-* Trainee 5
+* Thamires
+* Esthefany
+* Cristian
+* Caio Reis
+* Artur Castro
 
 
 #### Scrum Master:
 
-* [Nome do Scrum](coloque o link do github, se quiser).
+* Áurea Prado
 
 #### Links Úteis:
 
-* [Trello]()
+* [Trello](https://trello.com/invite/b/5i5KLAsP/ATTI031ccedd9fd4528799697b9c77c9f9dc102BA2A4/a-torre-do-sabio)
 
 * [Drive com ID Visual]()
 
@@ -68,7 +68,7 @@ git config --global user.email email@codejr.com.br
 
 * Crie sua branch usando como o padrão o nome da feature que você está a desenvolver: `git checkout -b nome_da_feature`
 
-* Após criada a branch você será redirecionado automaticamente a ela, neste espaço que você desenvolverá sua parte do projteto
+* Após criada a branch você será redirecionado automaticamente a ela, neste espaço que você desenvolverá sua parte do projeto
 
 
 
