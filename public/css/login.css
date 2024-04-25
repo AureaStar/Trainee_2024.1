@@ -21,6 +21,11 @@ body {
     border-radius: 0 0 80px 80px;
 }
 
+.AbaLogin h1 {
+    color: #E6A549;
+    margin: 50px;
+}
+
 .AbaLogin {
     display: flex;
     justify-content: center;
@@ -28,6 +33,7 @@ body {
     padding: 30px 50px;
     margin: 118px 468px;
     background-color: rgba(0, 0, 0, 0.40);
+    border-radius: 30px;
 }
 
 .EmailSenha {
