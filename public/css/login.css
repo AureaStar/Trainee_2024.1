@@ -1,12 +1,21 @@
 body {
     display: flex;
+    padding: 0;
     background-color: #291807;
 }
 
 .ImagemFundo {
     background-image: url('../assets/Fundo\ Rustico.png');
     background-repeat: no-repeat;
-    width: 1440px;
-    height: 1000px;
+    width: auto;
+    height: auto;
+}
+
+.ImagemJogos {
+    background-image: url(../assets/Fundo\ dos\ Jogos.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: auto;
+    height: 250px;
 }
 
