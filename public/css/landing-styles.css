@@ -118,6 +118,7 @@
 /*PUBLICAÇÕES*/
 
 .publi-img{
+    margin-top: 24px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -128,12 +129,46 @@
     }
 
 .post-space{
+    text-align: center;
+    color: white;
     width: 1280px;
     height: fit-content;
+    justify-content: center;
 }
 
+.post-space h1{
+    padding-top: 108px;
+    padding-bottom: 32px;
+    font-family: "Almendra", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 80px;
+}
+
+.post-space h2{
+    text-align: left;
+    padding-top: 48%;
+    padding-left: 4%;
+    color:#439741;
+    font-family: "Almendra", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+}
+
+.post-space h3{
+    text-align: left;
+    padding-top: 28%;
+    padding-left: 4%;
+    color:#439741;
+    font-family: "Almendra", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+}
+
+
 .post-grid{
-    background-color: blue;
     display: grid;
     width: fit-content;
     height: fit-content;
@@ -142,7 +177,6 @@
 }
 
 .post-grande{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 37.9%, rgba(255, 255, 255, 0.28) 100%), lightgray 50% / cover no-repeat;
     box-shadow: 8px 8px 16px 0px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     width:500px;
@@ -152,11 +186,39 @@
     grid-column-start: 1;
 }
 
+.post-grande p{
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    font-weight: 700;
+    font-size: 36px;
+}
+
 .post{
     box-shadow: 8px 8px 16px 0px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     width: 340px;
     height: 240px;
+}
+
+.post p{
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    font-weight: 700;
+    font-size: 24px;
 }
 
 #post1{
@@ -177,4 +239,21 @@
 #post4{
     grid-row-start: 2;
     grid-column-start: 3;
+}
+
+.btn-post{
+    padding-top: 40px;
+}
+
+#ler-mais{
+    filter:drop-shadow(black 4px 4px 4px);
+    background-color: #439741;
+    color: white;
+    border-radius: 28px;
+    width: 330px;
+    height: 80px;
+    font-family: "Jomhuria", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
 }
