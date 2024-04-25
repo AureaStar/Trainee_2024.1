@@ -3,3 +3,8 @@ body {
     background-color: #291807;
 }
 
+.ImagemFundo {
+    background-image: url(../assets/Fundo\ Rustico.png);
+    background: repeat;
+}
+
