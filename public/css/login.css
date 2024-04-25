@@ -23,7 +23,9 @@ body {
 
 .AbaLogin h1 {
     color: #E6A549;
-    margin: 50px;
+    margin: 0px
+    padding: 50px ;
+    justify-self: center;
 }
 
 .AbaLogin {
@@ -39,6 +41,11 @@ body {
 .EmailSenha {
     display: flex;
     flex-direction: column;
-    padding: 30px 50px;
+    justify-self: center;
+    padding: 10px 20px;
+    width: 350px;
+    height: 140px;
+    gap: 15px;
+    margin: 0px;
 }
 
