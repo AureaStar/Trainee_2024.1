@@ -4,7 +4,9 @@ body {
 }
 
 .ImagemFundo {
-    background-image: url(../assets/Fundo\ Rustico.png);
-    background: repeat;
+    background-image: url('../assets/Fundo\ Rustico.png');
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 1000px;
 }
 
