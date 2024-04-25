@@ -14,9 +14,25 @@ body {
 }
 
 .ImagemJogos {
-    background-image: url(../assets/Fundo\ dos\ Jogos.png);
+    background-image: url('../assets/Jogos.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 250px;
+    border-radius: 0 0 80px 80px;
+}
+
+.AbaLogin {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 50px;
+    margin: 476px;
+    background-color: rgba(0, 0, 0, 0.40);
+}
+
+.EmailSenha {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px;
 }
 
