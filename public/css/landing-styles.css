@@ -23,7 +23,8 @@
 
 .img-torre{
     width: 800px;
-    height: 200px;
+    height: 192px;
+    align-self: flex-start;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url(../assets/torre-logo.png);
@@ -31,10 +32,9 @@
 }
 
 .hero-section{
-    padding-right: 68px;
-    padding-bottom: 120px;
+    padding-bottom: 80px;
     display: flex;
-    width: 800px;
+    width: 864px;
     height: fit-content;
     flex-direction: column;
     align-items: center;
@@ -42,8 +42,7 @@
 
 
 .transparent{
-    margin-top: -32px;
-    margin-right: -60px;
+    margin-top: 0px;
     border-radius: 20px;
     background: rgba(217, 217, 217, 0.08);
     justify-content: center;
@@ -55,26 +54,29 @@
 }
 
 .transparent h1{
+    padding-top: 16px;
+    padding-bottom: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
     color: #E6A549;
     text-align: center;
-    font-size: 40px;
+    font-size: 44px;
     font-weight: 800;
 }
 
 .transparent p{
-    padding: 20px 68px 80px 68px;
+    padding: 8px 32px 80px 32px;
     color: white;
     text-align: justify;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 700;
 }
 
 .hero-buttons{
     width: 552px;
-    padding-left: 64px;
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content:space-evenly;
     padding-top: 48px;
 }
 
