@@ -15,13 +15,24 @@ body {
     height: 1080px;
 }
 
+.ImagemJogos h1 {
+    font-size: 80px;
+    color: #E6A549;
+    margin: 0;
+}
+
 .ImagemJogos {
     background-image: url('../assets/Jogos.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 25%;
     border-radius: 0 0 80px 80px;
+    box-shadow: 10px 30px 30px rgba(0, 0, 0, 0.637);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .AbaLogin h1 {
     color: #E6A549;
@@ -35,11 +46,13 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 50px 50px;
-    margin: 118px 468px;
+    padding: 2% ;
+    margin: 10% 34%;
     background-color: rgba(0, 0, 0, 0.40);
     border-radius: 30px;
     gap: 50px;
+    box-shadow: 30px 30px 50px 10px rgba(0, 0, 0, 0.637);
+
 }
 
 .EmailSenha {
