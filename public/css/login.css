@@ -1,14 +1,14 @@
 body {
-    display: flex;
-    padding: 0;
+    padding: 0px;
     margin: 0px;
     background-color: #291807;
+    background-size: contain;
 }
 
 .ImagemFundo {
     background-image: url('../assets/Fundo\ Rustico.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 1440px;
     height: 1080px;
 }
@@ -36,6 +36,7 @@ body {
     margin: 118px 468px;
     background-color: rgba(0, 0, 0, 0.40);
     border-radius: 30px;
+    gap: 50px;
 }
 
 .EmailSenha {
@@ -49,3 +50,15 @@ body {
     margin: 0px;
 }
 
+.Botão {
+    display: flex;
+    justify-content: center;
+}
+
+.Botão button {
+    background-color: #429741;
+    border-radius: 15px;
+    padding: 20px;
+    width: 150px;
+    height: 60px;
+}
