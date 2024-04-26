@@ -1,3 +1,4 @@
+
 body {
     padding: 0px;
     margin: 0px;
@@ -9,7 +10,8 @@ body {
     background-image: url('../assets/Fundo\ Rustico.png');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1440px;
+    display: flax;
+    width: 100%;
     height: 1080px;
 }
 
@@ -17,7 +19,7 @@ body {
     background-image: url('../assets/Jogos.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 250px;
+    height: 25%;
     border-radius: 0 0 80px 80px;
 }
 
@@ -25,6 +27,7 @@ body {
     color: #E6A549;
     margin: 0px;
     justify-self: center;
+    font-size: 40px;
 }
 
 .AbaLogin {
@@ -32,7 +35,7 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 30px 50px;
+    padding: 50px 50px;
     margin: 118px 468px;
     background-color: rgba(0, 0, 0, 0.40);
     border-radius: 30px;
@@ -51,6 +54,14 @@ body {
 .EmailSenha input {
     width: 350px;
     height: 60px;
+    border-radius: 10px;
+    background-color: #e6a549c4;
+}
+
+.EmailSenha input::placeholder {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
 }
 
 .Botão {
@@ -60,8 +71,12 @@ body {
 
 .Botão button {
     background-color: #429741;
+    font-size: 25px;
+    color: white;
     border-radius: 15px;
-    padding: 20px;
+    padding-top: 2px;
     width: 150px;
     height: 60px;
+    justify-content: center;
+    align-items: center;
 }
