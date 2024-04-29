@@ -6,21 +6,28 @@
 
 /* Background */
 body{
-    background-image: linear-gradient(to top, #291807, #8F5218);
+    background-image: url(/public/assets/Couro.png), linear-gradient(to top, #291807, #8F5218);
 }
 
+
+/* Main */
+
+.main{
+    align-items: center;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
 /* Título e imagem */
 body h1{
     color: white;
     border-radius: 20px;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
     background-color: #412307;
-    width: 400px;
+    width: 40%;
     height: 64px;
 }
-
 .imagem{
     background-color: white;
     margin-left: auto;
@@ -31,7 +38,16 @@ body h1{
 }
 
 /* Box */
+.box{
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 626px;
+    height: 500px;
+    border-radius: 20px;
+}
 .box-image{
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
@@ -43,17 +59,19 @@ body h1{
 .autoria{
     display: flex;
     flex-direction: row;
+    margin-left: 10%;
     color: white;
 }
-.autoria-image{
+.foto-perfil{
     background-color: white;
     width: 30px;
     height: 30px;
     border-radius: 100px;
 }
 .box-text{
+    opacity: 100%;
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
     color: white;
 }
-
-
-
