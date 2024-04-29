@@ -6,12 +6,11 @@
 
 /* Background */
 body{
-    background-image: url(/public/assets/Couro.png), linear-gradient(to top, #291807, #8F5218);
+    background-image: url(/public/assets/background.png);
+    background-size: cover;
 }
 
-
 /* Main */
-
 .main{
     align-items: center;
     margin-top: 2%;
@@ -19,6 +18,7 @@ body{
     flex-direction: column;
     height: 100vh;
 }
+
 /* Título e imagem */
 body h1{
     color: white;
