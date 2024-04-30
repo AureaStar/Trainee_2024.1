@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #291807;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    background-image: url(../assets/Fundo\ Rustico.png);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1 {
+    color: white;
+    font-size: 50px;
+}
+.criar {
+    background-color: rgba(0, 0, 0, 0.505);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5%;
+    padding: 4%;
+}
+
+.namebox {
+    color: white;
+    font-size: 30px;
+}
+
+.box {
+    width: 300px;
+    height: 30px;
+}
