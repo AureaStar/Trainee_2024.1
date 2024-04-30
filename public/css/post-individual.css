@@ -24,6 +24,7 @@ body{
 /* Título e imagem */
 body h1{
     font-family: Cormorant Upright, serif;
+    font-size: 44px;
     color: white;
     border-radius: 20px;
     text-align: center;
