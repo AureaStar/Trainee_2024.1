@@ -141,10 +141,13 @@
 }
 
 .post-space{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     color: white;
     width: 70%;
     justify-content: center;
+    align-items: center;
 }
 
 .post-space h1{
@@ -267,6 +270,7 @@
 
 .btn-post{
     padding-top: 4%;
+    width: 100%;
 }
 
 #ler-mais{
@@ -287,6 +291,7 @@
     border: 2.5px solid #429741;
 }
 
+
 /*RESPONSIVIDADE MOBILE*/
 @media (max-width:1200px){
     .post-space{
@@ -295,6 +300,93 @@
 }
 
 @media (max-width:1000px){
+    .post-grid{
+        display: none;
+    }
+
+    .carousel{
+        width: 70%;
+        height: 56%;
+        position: relative;
+        border: solid 8px #502F11;
+        justify-content: center;
+    }
+
+    .c-item{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 25px 50px;
+        opacity: 0;
+        background-color: #502F11;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .arrow{
+        border: solid #FFF4F0;
+        border-width: 0 6px 6px 0;
+        display: inline-block;
+        padding: 15px;
+    }
+
+    .prev{
+        top: 50%;
+        left: 30px;
+        position: absolute;
+        transform: translateY(-50%) rotate(135deg);
+    }
+
+    .next{
+        top: 50%;
+        right: 30px;
+        position: absolute;
+        transform: translateY(-50%) rotate(-45deg);
+    }
+
+    [id^="item"]{
+        display: none;
+    }
+
+    .item-1{
+        z-index:2;
+        opacity: 1;
+        background: url("../assets/PostPrincipal.jpg");
+        background-size: cover;
+    }
+
+    .item-2{
+        background: url("../assets/Post1.jpg");
+        background-size: cover;
+    }
+
+    .item-3{
+        background: url("../assets/Post2.jpg");
+        background-size: cover;
+    }
+
+    .item-4{
+        background: url("../assets/Post3.jpg");
+        background-size: cover;
+    }
+
+    .item-5{
+        background: url("../assets/Post4.png");
+        background-size: cover;
+    }
+
+    *:target~.item-1{
+        opacity: 1;
+    }
+
+    #item-2:target~.item-2,
+    #item-3:target~.item-3,
+    #item-4:target~.item-4,
+    #item-5:target~.item-5{
+        z-index: 3;
+        opacity: 1;
+    }
     
 
     #ler-mais{
