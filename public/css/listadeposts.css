@@ -93,6 +93,8 @@ body{
     width: 80%;
     margin-left: 10%;
     margin-bottom: 30px;
+    flex-wrap: wrap;
+    
 
 }
 .card{
@@ -176,4 +178,32 @@ body{
     margin-left: 1%;
     padding: 7px;
     background-color: rgba(82, 51, 29, 0.8);
+}
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .filter {
+        display: none;
+    }
+    .search_main {
+        width: 100%;
+        justify-content: center;
+    }
+    .search {
+        margin-left: 0;
+        height: 12px;
+        width: 70%;
+    }
+    .header_main {
+        height: 400px;
+    }
+    .header_main h1 {
+        margin-top: 40%;
+    }
+    .pagination_row {
+        display: none;
+    }
+    
 }
