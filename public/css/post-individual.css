@@ -57,6 +57,9 @@ body h1{
     align-items: center;
     gap: 2%;
 }
+.autoria p{
+    font-family: Inika, serif;
+}
 .foto-perfil{
     background-color: white;
     width: 30px;
