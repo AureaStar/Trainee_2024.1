@@ -87,11 +87,11 @@
 }
 
 .btn-hero{
-    padding-top: 1%;
     color: white;
     justify-content: center;
     text-align: center;
     border-radius: 28px;
+    padding-top: 0.8%;
     width: 252px;
     height: 72px;
     font-family: "Jomhuria", serif;
@@ -269,7 +269,7 @@
 }
 
 .btn-post{
-    padding-top: 4%;
+    padding-top: 3%;
     width: 100%;
 }
 
@@ -291,6 +291,13 @@
     border: 2.5px solid #429741;
 }
 
+.c-item h2{
+    display: none;  
+}
+
+.c-item p{
+    display: none;
+}
 
 /*RESPONSIVIDADE MOBILE*/
 @media (max-width:1200px){
@@ -300,6 +307,9 @@
 }
 
 @media (max-width:1000px){
+    
+/*CARROSSEL*/
+
     .post-grid{
         display: none;
     }
@@ -309,19 +319,53 @@
         height: 56%;
         position: relative;
         border: solid 8px #502F11;
+        border-radius: 30px;
         justify-content: center;
     }
 
+    .testeC{
+        background: rgba(0, 0, 0, 0.40);
+        gap: 4%;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
     .c-item{
+        display: flex;
         position: absolute;
+        border-radius: 20px;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        padding: 25px 50px;
+        padding-top: 1%;
         opacity: 0;
         background-color: #502F11;
         transition: all 0.5s ease-in-out;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .c-item h2{
+        display: block;
+        text-align: left;
+        font-size: 36px;
+    }
+
+    .c-item p{
+        display: block;
+        text-align: left;
+        text-justify: inter-word;
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-bottom: 2%;
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings:
+        "wdth" 100;
+        font-weight: 700;
+        font-size: 34px;
     }
 
     .arrow{
@@ -332,15 +376,18 @@
     }
 
     .prev{
+        filter:drop-shadow(black 2px 2px 2px);
         top: 50%;
-        left: 30px;
+        left: 4%;
         position: absolute;
         transform: translateY(-50%) rotate(135deg);
+
     }
 
     .next{
+        filter:drop-shadow(black 4px 4px 4px);
         top: 50%;
-        right: 30px;
+        right: 4%;
         position: absolute;
         transform: translateY(-50%) rotate(-45deg);
     }
@@ -352,27 +399,26 @@
     .item-1{
         z-index:2;
         opacity: 1;
-        background: url("../assets/PostPrincipal.jpg");
-        background-size: cover;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 37.9%, rgba(255, 255, 255, 0.28) 100%), url(../../../public/assets/PostPrincipal.jpg) lightgray 50% / cover no-repeat;
     }
 
     .item-2{
-        background: url("../assets/Post1.jpg");
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 37.9%, rgba(255, 255, 255, 0.28) 100%), url(../../../public/assets/Post1.jpg) lightgray 50% / cover no-repeat;
         background-size: cover;
     }
 
     .item-3{
-        background: url("../assets/Post2.jpg");
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 37.9%, rgba(255, 255, 255, 0.28) 100%), url(../../../public/assets/Post2.jpg) lightgray 50% / cover no-repeat;
         background-size: cover;
     }
 
     .item-4{
-        background: url("../assets/Post3.jpg");
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 37.9%, rgba(255, 255, 255, 0.28) 100%), url(../../../public/assets/Post3.jpg) lightgray 50% / cover no-repeat;
         background-size: cover;
     }
 
     .item-5{
-        background: url("../assets/Post4.png");
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 37.9%, rgba(255, 255, 255, 0.28) 100%), url(../../../public/assets/Post4.png) lightgray 50% / cover no-repeat;
         background-size: cover;
     }
 
@@ -387,7 +433,12 @@
         z-index: 3;
         opacity: 1;
     }
+
+/*=============================================*/
     
+    .post-space h1{
+        font-size: 84px;
+    }
 
     #ler-mais{
         font-size: 56px;
@@ -428,16 +479,46 @@
     #publi{
         font-size: 56px;
     }
+
+    .c-item h2{
+        font-size: 30px;
+    }
+
+    .c-item p{
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 720px){
+    .carousel{
+        width: 80%;
+        height: 50%;
+    }
+
     .img-torre{
         width: 90%;
         height: 140px;
     }
+
+    .c-item h2{
+        font-size: 28px;
+    }
+
+    .c-item p{
+        font-size: 28px;
+    }
 }
 
 @media (max-width: 630px){
+    .post-space h1{
+        font-size: 80px;
+    }
+
+    #ler-mais{
+        width: 40%;
+        font-size: 56px;
+    }
+
     .img-torre{
         width: 90%;
         height: 120px;
@@ -445,6 +526,15 @@
 }
 
 @media (max-width: 560px){
+    .post-space h1{
+        font-size: 72px;
+    }
+
+    .carousel{
+        width: 80%;
+        height: 45%;
+    }
+
     .hero-buttons{
         width: 100%;
         gap: 8%;
@@ -474,13 +564,29 @@
         width: 45%;
     }
 
-    .post-space h1{
-        padding-bottom: 24px;
-        font-size: 40px;
+    .btn-post{
+        padding-top: 12%;
     }
+
+    .c-item h2{
+        font-size: 24px;
+    }
+
+    .c-item p{
+        font-size: 24px;
+    }
+
 }
 
 @media (max-width: 469px){
+    .post-space h1{
+        font-size: 68px;
+    }
+
+    .carousel{
+        width: 80%;
+        height: 40%;
+    }
 
     .img-torre{
         height: 100px;
@@ -497,9 +603,30 @@
     #publi{
         font-size: 48px;
     }
+
+    #ler-mais{
+        width: 60%;
+    }
+
+    .c-item h2{
+        font-size: 20px;
+    }
+
+    .c-item p{
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 390px){
+    .post-space h1{
+        font-size: 60px;
+    }
+
+    .carousel{
+        width: 80%;
+        height: 36%;
+    }
+
     .img-torre{
         height: 84px;
     }
