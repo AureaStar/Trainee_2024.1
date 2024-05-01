@@ -86,6 +86,7 @@ body {
     border-radius: 10px;
     padding-top: 10px;
     background-color: #e6a549;
+    border:none;
     transition: background 0.2s;
 }
 
@@ -130,6 +131,7 @@ body {
     padding-bottom: 40px;
     width: 140px;
     height: 40px;
+    border: none;
     transition: background 0.2s;
 }
 
