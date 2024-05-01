@@ -72,6 +72,13 @@ body {
 
 }
 
+.icone {
+    color: white;
+    padding: 0%;
+    margin: 0%;
+    padding-left: 2%;
+}
+
 .EmailSenha {
     display: flex;
     flex-direction: column;
@@ -82,11 +89,13 @@ body {
 
 .fundoEmailSenha {
     width: 90%;
-    height: 45px;
+    height: 50px;
     border-radius: 10px;
     background-color: #e6a549;
     border:none;
     outline: none;
+    display: flex;
+    align-items: center;
     transition: background 0.2s;
 }
 
@@ -96,7 +105,6 @@ body {
     height: 100%;
     border-radius: 10px;
     padding: 0%;
-    padding-top: 1%;
     background-color: #e6a549;
     border:none;
     outline: none;
@@ -108,7 +116,7 @@ body {
     border: 2.5px solid #E6A549;
 }
 .EmailSenha input:hover {
-    background-color: #e6a54996;
+    background-color: #e6a54900;
     border: none;
     outline: none;
 }
@@ -116,7 +124,7 @@ body {
 .EmailSenha input::placeholder {
     color: white;
     font-size: 44px;
-    padding: 15%;
+    padding: 2%;
     font-family: Jomhuria;
 }
 
