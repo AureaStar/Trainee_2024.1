@@ -9,6 +9,15 @@ body {
     align-items: center;
 }
 
+.Logo {
+    width: 130px;
+    height: 120px;
+    align-self: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../assets/Logo.png);
+}
+
 .ImagemFundo {
     background-image: url('../assets/Fundo\ Rustico.png');
     background-repeat: no-repeat;
@@ -130,6 +139,15 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+    .Logo {
+        width: 80px;
+        height: 85px;
+        align-self: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../assets/Logo.png);
+    }
+    
     .ImagemFundo {
         background-size: cover;
         display: flex;
@@ -205,6 +223,15 @@ body {
 }
 
 @media only screen and (min-width: 601px) and (max-width: 980px) {
+    .Logo {
+        width: 90px;
+        height: 100px;
+        align-self: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../assets/Logo.png);
+    }
+    
     .ImagemFundo {
         background-size: cover;
         display: flex;
