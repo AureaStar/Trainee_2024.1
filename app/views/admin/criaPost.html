@@ -4,37 +4,38 @@
 <button class="CriarPost">Criar Post</button>
 
 <!-- The Modal -->
-<div class="cordefundo">
-        <div id="myModal" class="modal">
 
-            <!-- Modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span class="close">&times;</span>
-                    <h2 class="titulo">Criar Post</h2>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <label for="name" class="namebox">Usuário:</label><br>
-                        <input type="text" class="box" placeholder="Coloque seu nome" name="name"><br>
+<div id="myModal" class="modal">
 
-                        <label for="title" class="namebox">Título:</label><br>
-                        <input type="text" class="box" placeholder="Insira o título" name="title"><br>
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2 class="titulo">Criar Post</h2>
+        </div>
+        <div class="modal-body">
+            <form>
+                <label for="name" class="namebox">Usuário:</label><br>
+                <input type="text" class="box" placeholder="Coloque seu nome" name="name"><br>
 
-                        <label for="text" class="namebox">Conteúdo:</label><br>
-                        <input type="text" class="box" placeholder="Escreva o conteúdo" name="text"><br>
+                <label for="title" class="namebox">Título:</label><br>
+                <input type="text" class="box" placeholder="Insira o título" name="title"><br>
 
-                        <label for="imagem" class="namebox">Imagem:</label><br>
-                        <input type="image" class="box" placeholder="Adicione a foto" name="imagem"><br>
+                <label for="text" class="namebox">Conteúdo:</label><br>
+                <input type="text" class="box" placeholder="Escreva o conteúdo" name="text"><br>
 
-                        <label for="data" class="namebox">Data de criação do post:</label><br>
-                        <input type="date" class="box" placeholder="XX/XX/XXXX" name="data"><br>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button class="fechar">Criar</button>
-                </div>
-            </div>
+                <label for="imagem" class="namebox">Imagem:</label><br>
+                <input type="image" class="box" placeholder="Adicione a foto" name="imagem"><br>
 
+                <label for="data" class="namebox">Data de criação do post:</label><br>
+                <input type="date" class="box" placeholder="XX/XX/XXXX" name="data"><br>
+
+                <button type="submit" class="fechar">Criar</button>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="cancelar">Cancelar</button>
         </div>
     </div>
+
+</div>

@@ -22,11 +22,9 @@
 }
 
 .modal {
-    background-image: url(../assets/Fundo\ Rustico.png);
-    background-position: 0%;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
+    background-color: rgb(72, 38, 9);
+    height: 70%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,8 +92,8 @@
 
 .fechar {
     background-color: green;
-    height: 35%;
-    width: 10%;
+    height: 10%;
+    width: 25%;
     border-radius: 5px;
     color: white;
     font-size: 15px;
