@@ -30,6 +30,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    padding: 5%;
 }
 
 .modal-content {
@@ -55,7 +56,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    width: 100%;
+    height: 100%;
 }
 
 .modal-body input::placeholder {
@@ -68,16 +71,16 @@
 
 .modal-footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 5%;
     width: 100%;
     height: 100%;
 }
 
 .titulo {
     color: white;
+    margin: 0;
 }
 
 .namebox {
@@ -96,7 +99,18 @@
 
 .fechar {
     background-color: green;
-    height: 10%;
+    height: 20%;
+    width: 25%;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+
+.cancelar {
+    background-color: red;
+    height: 20%;
     width: 25%;
     border-radius: 5px;
     color: white;
