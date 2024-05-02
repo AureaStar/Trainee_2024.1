@@ -11,8 +11,8 @@
 
 .cordefundo {
     background-color: rgb(44, 26, 10);
-    height: 50%;
-    width: 30%;
+    height: 70%;
+    width: 50%;
     border-radius: 20px;
     box-shadow: 10px 10px 50px 10px;
     display: flex;
@@ -34,6 +34,16 @@
     border-radius: 20px;
 }
 
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+}
+
 .modal-header {
     padding: 0px;
     margin: 0px;
@@ -41,6 +51,27 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-body input::placeholder {
+    color: white;
+}
+
+.modal-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    width: 100%;
+    height: 100%;
 }
 
 .titulo {
@@ -57,6 +88,17 @@
     border: none;
     outline: none;
     border-radius: 5px;
-    height: 10%;
+    height: 14%;
     width: 100%;
+}
+
+.fechar {
+    background-color: green;
+    height: 35%;
+    width: 10%;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    border: none;
+    outline: none;
 }
