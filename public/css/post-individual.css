@@ -134,3 +134,32 @@ body h1{
         text-align: justify;
     }
 }
+
+@media (min-width: 769px) { /* Telas pequenas e laptopos */
+    
+    .main{
+        margin-top: 2%;
+    }
+    body h1{
+        font-size: 44px;
+        margin-bottom: 2%;
+    }
+    .imagem{
+        height: 350px;
+        margin-bottom: 2%;
+    }
+    .box{
+        margin-bottom: 2%;
+    }
+    .foto-perfil{
+        width: 30px;
+        height: 30px;
+    }
+    .autoria p{
+        font-size: 18px;
+    }
+    .box-text{
+        font-size: 18px;
+        text-align: justify;
+    }
+}
