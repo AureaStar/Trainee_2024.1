@@ -165,3 +165,32 @@ body h1{
         text-align: justify;
     }
 }
+
+@media (min-width: 1025px) { /* Desktop */
+    
+    .main{
+        margin-top: 2%;
+    }
+    body h1{
+        font-size: 48px;
+        margin-bottom: 2%;
+    }
+    .imagem{
+        height: 450px;
+        margin-bottom: 2%;
+    }
+    .box{
+        margin-bottom: 2%;
+    }
+    .foto-perfil{
+        width: 30px;
+        height: 30px;
+    }
+    .autoria p{
+        font-size: 20px;
+    }
+    .box-text{
+        font-size: 20px;
+        text-align: justify;
+    }
+}
