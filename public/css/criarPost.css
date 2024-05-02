@@ -62,6 +62,10 @@
     color: white;
 }
 
+.modal-body textarea::placeholder {
+    color: white;
+}
+
 .modal-footer {
     display: flex;
     flex-direction: column;
