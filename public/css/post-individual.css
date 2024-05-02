@@ -81,8 +81,10 @@ body h1{
 /* Responsividade */
 @media (max-width: 480px) { /* Celular */
     
-    body h1{
+    .main{
         margin-top: 2%;
+    }
+    body h1{
         font-size: 24px;
         margin-bottom: 2%;
     }
@@ -107,11 +109,14 @@ body h1{
 }
 
 @media (min-width: 481px) { /* IPad e Tablet */
+    
+    .main{
+        margin-top: 2%;
+    }
     body{
         margin-bottom: 15%;
     }
     body h1{
-        margin-top: 2%;
         font-size: 44px;
         margin-bottom: 2%;
     }
