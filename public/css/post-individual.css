@@ -69,9 +69,39 @@ body h1{
     border-radius: 100px;
 }
 .box-text{
+    line-height: 25px;
+    text-indent: 1em;
     font-family: Inika, serif;
     text-align: justify;
     padding-left: 10%;
     padding-right: 10%;
     color: white;
+}
+
+/* Responsividade */
+@media (max-width: 480px) { /* Celular */
+    
+    body h1{
+        margin-top: 2%;
+        font-size: 24px;
+        margin-bottom: 2%;
+    }
+    .imagem{
+        height: 150px;
+        margin-bottom: 2%;
+    }
+    .box{
+        margin-bottom: 4%;
+    }
+    .foto-perfil{
+        width: 20px;
+        height: 20px;
+    }
+    .autoria p{
+        font-size: 12px;
+    }
+    .box-text{
+        font-size: 12px;
+        text-align: justify;
+    }
 }
