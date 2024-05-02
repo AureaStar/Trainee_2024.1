@@ -1,27 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CriarUsuario</title>
-    <!-- <link rel="stylesheet" href="../../../public/css/criarUsuario.css"> -->
-</head>
-<body>
-    <div class="container">
-        <h1>Novo Usuário</h1>
-        <div class="criar">
+<!-- Open The Modal -->
+<button id="CriarUsuario">Criar Usuario</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Criar Usuário</h2>
+        </div>
+        <div class="modal-body">
             <form>
-                <label for="name" class="namebox">Nome:</label><br>
-                <input type="text" class="box" placeholder="Coloque seu nome" name="name"><br>
+            <label for="firstname" class="namebox">Nome:</label><br>
+            <input type="text" class="box" placeholder="Coloque seu nome" name="firstname" required><br>
 
-                <label for="Email" class="namebox">Email:</label><br>
-                <input type="email" class="box" placeholder="Insira seu email" name="Email"><br>
+            <label for="lastname" class="namebox">Sobrenome:</label><br>
+            <input type="text" class="box" placeholder="Coloque seu sobrenome" name="lastname" required><br>
 
-                <label for="senha" class="namebox">Senha:</label><br>
-                <input type="password" class="box" placeholder="Crie uma senha" name="senha"><br>
-            
-            </form>
+            <label for="emal" class="namebox">Email:</label><br>
+            <input type="email" class="box" placeholder="Coloque seu email" name="email" required><br>
+
+            <label for="senha" class="namebox">Senha:</label><br>
+            <input type="password" class="box" placeholder="Crie uma senha" name="senha" required><br>
+
+            <label for="senha-repeat" class="namebox">Confirme sua senha:</label><br>
+            <input type="password" class="box" placeholder="Repita sua senha" name="senha-repeat" required><br>
+        </form>
+        </div>
+        <div class="modal-footer">
+            <button>Salvar</button>
         </div>
     </div>
-</body>
-</html>
+
+</div>
