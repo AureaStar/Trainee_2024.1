@@ -7,6 +7,7 @@
 /* Background */
 body{
     background-image: url(/public/assets/background.png);
+    background-attachment: fixed;
     background-size: cover;
 }
 
@@ -80,7 +81,7 @@ body h1{
 
 /* Responsividade */
 @media (max-width: 480px) { /* Celular */
-    
+
     .main{
         margin-top: 2%;
     }
