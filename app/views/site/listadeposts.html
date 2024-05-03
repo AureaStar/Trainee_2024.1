@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br"><!--mudar para portugues-->
+<html lang="pt-br">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -8,81 +8,80 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" type="text/css" href="../../../public/css/listadeposts.css" />
-    <title>Lista de posts</title><!--adicionar titulo-->
+    <title>Lista de posts</title>
 </head>
 <body>
     <header>
         <div class="header_main">
             <h1> Nossos artigos </h1>
             <div class="search_main">
-                <div class="search">
-                    <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
-                    <input type="text" placeholder="Pesquisa">
-                </div> 
-                <div class="filter">
-
-                    <span>
-                        Categorias
-                    </span> 
-                        
-                
-                    <i class="fa-solid fa-list" style="color: #ffffff;"></i>
-                </div> 
-
-                </div>
+                <form action="/app/views/site/listadeposts.html" class="search" id="formSearch">
+                    <i onclick="submitform('formSearch')" class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                    <input class="input-list" type="text"  placeholder="Pesquisa" name="search">  
+                </form>
+                <form action="/app/views/site/listadeposts.html" id="formCat" class="filter-form">
+                    <select name="categorias" class="filter">                    
+                        <option value="">Categorias</option>                   
+                        <option value="1">Categoria 1</option>                   
+                        <option value="2">Categoria 2</option> 
+                        <option value="3">Categoria 3</option>
+                    </select>
+                    <i onclick="submitform('formCat')" class="fa-solid fa-filter" style="color: #ffffff;"></i>
+                </form>
             </div>
         </div>
-   
     </header>
     <main>
         <div class="main_content">
             <div class="row">
                 <div class="card" style="background-image: url(../../../public/assets/card.jpg);">
                     <h4>
-                        30/07/2027
+                        Noticias e Lançamentos 
                     </h4>
                     <h5>
-                        O negócio de dado e tabuleiro é uma função horrivel
+                        Médicos não querem que você conheça esse jogo
                     </h5>
                 </div>
                 <div class="card" style="background-image: url(../../../public/assets/card.jpg);">
                     <h4>
-                        30/07/2027
+                        História dos jogos de tabuleiro 
                     </h4>
                     <h5>
-                        O negócio de dado e tabuleiro é uma função horrivel
+                        Médicos não querem que você conheça esse jogo
                     </h5>
-                </div><div class="card" style="background-image: url(../../../public/assets/card.jpg);">
+                </div>
+                <div class="card" style="background-image: url(../../../public/assets/card.jpg);">
                     <h4>
-                        30/07/2027
+                        Guia para iniciantes 
                     </h4>
                     <h5>
-                        O negócio de dado e tabuleiro é uma função horrivel
+                        Médicos não querem que você conheça esse jogo
                     </h5>
                 </div>
             </div>
             <div class="row">
                 <div class="card" style="background-image: url(../../../public/assets/card.jpg);">
                     <h4>
-                        30/07/2027
+                       Curiosidades e fatos interresantes 
                     </h4>
                     <h5>
-                        O negócio de dado e tabuleiro é uma função horrivel
+                        Médicos não querem que você conheça esse jogo
                     </h5>
                 </div>
                 <div class="card" style="background-image: url(../../../public/assets/card.jpg);">
                     <h4>
-                        30/07/2027
+                        Dicas de estratégias 
                     </h4>
                     <h5>
-                        O negócio de dado e tabuleiro é uma função horrivel
+                        Médicos não querem que você conheça esse jogo
                     </h5>
-                </div><div class="card" style="background-image: url(../../../public/assets/card.jpg);">
+                </div>
+                <div class="card" style="background-image: url(../../../public/assets/card.jpg);">
                     <h4>
-                        30/07/2027
+                        Novos jogos 
                     </h4>
                     <h5>
-                        O negócio de dado e tabuleiro é uma função horrivel
+                        Médicos não querem que você conheça esse jogo
                     </h5>
                 </div>
             </div>
@@ -100,8 +99,6 @@
             </div>
         </div>
     </main>
-        
-    
 </body>
 <script src="https://kit.fontawesome.com/c49cc74a49.js" crossorigin="anonymous"></script>
 </html>
