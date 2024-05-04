@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background: url("/public/assets/4\ 1.png") no-repeat;
+    background-size: cover;
+    height: 92vh;
+    font-family: "Open Sans";
+    color: #FFF4F0;
+    
+}
+.titleboxPostList{
+    display:flex;
+    gap: 48px;
+    background: rgba(65, 35, 7, 0.80);
+    width:800px;
+    height:100px;
+    justify-content:center;
+    align-items:center;
+    border-radius:10px;
+    filter:drop-shadow(rgba(0, 0, 0, 0.50) 10px 10px 8px);
+}
+main{
+    margin-top:48px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap:48px;
+}
+
+.tablePostList{
+    background: rgba(65, 35, 7, 0.80);
+    border-radius: 10px;
+    filter:drop-shadow(rgba(0, 0, 0, 0.50) 10px 10px 8px);
+}
+button{
+    color: #FFF4F0;
+    text-decoration:none;
+    background: black;
+    color: inherit;
+    border-radius:10px;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    font-size: 25px;
+    width:120px;
+}
+
+.criarPostList{
+    background:rgb(48, 65, 24);
+    font-size:23px;
+    border-color: transparent;
+}
+.viewPostList{
+    background:rgb(9, 74, 95);
+    font-size:23px;
+    border-color: transparent;
+}
+.editPostList{
+    background:rgb(81, 7, 83);
+    font-size:23px;
+    border-color: transparent;
+}
+.delPostList{
+    background:rgb(131, 20, 20);
+    font-size:23px;
+    border-color: transparent;
+}
+
+.theadPostList th{
+    gap: ;
+}
+.thPostList {
+    padding: 8px 65px; /* Adjust the value as needed */
+}
+.tdPostList {
+    padding: 8px 65px; /* Adjust the value as needed */
+}
+
+
+
+
