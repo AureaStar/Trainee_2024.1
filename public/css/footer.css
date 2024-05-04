@@ -22,12 +22,28 @@ footer{
 .footertext{
     color: #FFF4F0;
     text-decoration:none;
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
 #logoCode{
     width: 185px;
     height: 41.733px;
 }
-
+#fotBoxInverter{
+    display:flex;
+    align-items: center;
+    gap: 48px;
+}
+#boxValContacts{
+    display:flex;
+    align-items: center;
+    gap: 48px;
+}
 .fotValor ul{
     list-style: none;
     display: flex;
@@ -45,6 +61,7 @@ footer{
 .footValList{
     text-decoration:none;
     list-style: none;
+
 }
 
 .fotContacts{
@@ -53,7 +70,7 @@ footer{
     padding: 0px;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     gap: 8px; 
 }
 .fotContactsText{
@@ -66,7 +83,17 @@ footer{
     align-items: center;
     gap:12px;
 }
-
+.footerSocialButtons{
+    color: #FFF4F0;
+    text-decoration:none;
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
 #fotIconBox{
     display:flex;
     gap: 8px; 
@@ -77,4 +104,72 @@ footer{
     width:32px;
     height:32px;
     color:#FFF4F0;;
+}
+
+
+@media (max-width: 1020px){
+    footer{
+        font-family: "Open Sans";
+        color: #FFF4F0;
+        height: 226px;
+        background: linear-gradient(90deg, #412307 0%, #A75A12 100%);
+    }
+    .footer-Container{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        gap:16px;
+        
+    }
+    .fotValor ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+        height: 127px;
+        padding: 2px;
+        gap: 8px; 
+        
+    }
+    
+    .footValList{
+        text-decoration:none;
+        list-style: none;
+    }
+    #boxValContacts{
+        display:flex;
+        flex-direction:row-reverse;
+        align-items: center;
+        gap:16px
+    }
+    #fotBoxInverter{
+        flex-direction:column-reverse;
+        gap:0px;
+    }
+    .fotContacts{
+        height: 112px;
+        padding: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 8px; 
+    }
+    #fotSocialsTitle{
+        display:none;
+    }
+    
+    
+    #fotIconBox{
+        display:flex;
+        gap: 16px; 
+        flex-direction:row;
+    }
+    
+    .footericons{
+        width:32px;
+        height:32px;
+        color:#FFF4F0;
+    }
 }
