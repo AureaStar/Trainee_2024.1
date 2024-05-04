@@ -11,6 +11,11 @@
     outline: none;
 }
 
+.CriarPost:hover {
+    background-color: rgba(0, 128, 0, 0.51);
+    border: green;
+}
+
 .modal {
     background-color: rgb(72, 38, 9);
     height: 70%;
@@ -46,6 +51,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    box-shadow: rgb(143, 86, 6) 0px 0px 80px 1px;
 }
 
 .modal-body {
@@ -128,7 +134,7 @@
 }
 
 .box {
-    color: rgba(255, 255, 255, 0.499);
+    color: rgb(255, 255, 255);
     font-size: 15px;
     font-family: Jomhuria;
     font-size: 28px;
