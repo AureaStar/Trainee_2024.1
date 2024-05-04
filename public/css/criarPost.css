@@ -3,8 +3,10 @@
     height: 5%;
     width: 9%;
     border-radius: 5px;
+    padding-top: 3px;
     color: white;
-    font-size: 15px;
+    font-family: Jomhuria;
+    font-size: 28px;
     border: none;
     outline: none;
 }
@@ -18,7 +20,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    padding: 3%;
+    padding: 2%;
     box-shadow: 10px 10px 50px 10px;
 
 }
@@ -53,14 +55,7 @@
     align-items: start;
     width: 100%;
     height: 100%;
-}
-
-.modal-body input::placeholder {
-    color: white;
-}
-
-.modal-body textarea::placeholder {
-    color: white;
+    margin: 0%;
 }
 
 .modal-footer {
@@ -70,7 +65,7 @@
     align-items: center;
     width: 100%;
     height: 12%;
-    margin-top: 3%;
+    margin-top: 2%;
 }
 
 .imagemlogo {
@@ -95,7 +90,7 @@
     font-family: Jomhuria;
 }
 
-.box {
+.fundoFormulario {
     background-color: rgb(180, 125, 17);
     border: none;
     outline: none;
@@ -104,15 +99,58 @@
     width: 100%;
 }
 
+.fundoFormulario input::placeholder {
+    color: rgba(255, 255, 255, 0.499);
+    font-family: Jomhuria;
+    font-size: 28px;
+}
+
+.fundoFormulario textarea::placeholder {
+    color: rgba(255, 255, 255, 0.499);
+    font-family: Jomhuria;
+    font-size: 28px;
+}
+
+.fundoFormulario input {
+    background-color: rgb(180, 125, 17);
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.fundoFormulario textarea {
+    background-color: rgb(180, 125, 17);
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.box {
+    color: rgba(255, 255, 255, 0.499);
+    font-size: 15px;
+    font-family: Jomhuria;
+    font-size: 28px;
+}
+
 .fechar {
     background-color: green;
     height: 100%;
     width: 20%;
     border-radius: 5px;
+    padding-top: 3px;
     color: white;
-    font-size: 15px;
+    font-family: Jomhuria;
+    font-size: 28px;
     border: none;
     outline: none;
+    transition: background 0.2s;
+}
+
+.fechar:hover {
+    background-color: rgba(0, 128, 0, 0.51);
+    border: green;
 }
 
 .cancelar {
@@ -120,10 +158,18 @@
     height: 100%;
     width: 20%;
     border-radius: 5px;
+    padding-top: 3px;
     color: white;
-    font-size: 15px;
+    font-family: Jomhuria;
+    font-size: 28px;
     border: none;
     outline: none;
+    transition: background 0.2s;
+}
+
+.cancelar:hover {
+    background-color: rgba(255, 0, 0, 0.581);
+    border: red;
 }
 
 
