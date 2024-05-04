@@ -105,6 +105,10 @@
     width: 100%;
 }
 
+.fundoFormulario:hover {
+    background-color: rgba(180, 126, 17, 0.689);
+}
+
 .fundoFormulario input::placeholder {
     color: rgba(255, 255, 255, 0.499);
     font-family: Jomhuria;
@@ -125,12 +129,20 @@
     border-radius: 5px;
 }
 
+.fundoFormulario input:hover {
+    background-color: rgba(180, 126, 17, 0);
+}
+
 .fundoFormulario textarea {
     background-color: rgb(180, 125, 17);
     border: none;
     outline: none;
     width: 100%;
     border-radius: 5px;
+}
+
+.fundoFormulario:hover {
+    background-color: rgba(180, 126, 17, 0);
 }
 
 .box {
