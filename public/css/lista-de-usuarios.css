@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    background: url("/public/assets/fundocourolistaUser.png") no-repeat;
+    background-size: cover;
+    height: 92vh;
+    font-family: "Open Sans";
+    color: #FFF4F0;
+}
+.titleboxUserList{
+    filter:drop-shadow(rgba(0, 0, 0, 0.50) 10px 10px 8px);
+    display:flex;
+    gap: 48px;
+    background: rgba(65, 35, 7, 0.80);
+    width:93%;
+    height:100px;
+    justify-content:center;
+    align-items:center;
+    border-radius:10px;
+}
+main{
+    margin-top:48px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap:48px;
+}
+
+.tableUserList{
+    background: rgba(65, 35, 7, 0.80);
+    border-radius: 10px;
+    filter:drop-shadow(rgba(0, 0, 0, 0.50) 10px 10px 8px);
+}
+
+.thUserList {
+    padding: 8px 65px; /* Adjust the value as needed */
+}
+
+.tdUserList {
+    padding: 8px 65px; /* Adjust the value as needed */
+}
+
+button{
+    color: #FFF4F0;
+    text-decoration:none;
+    background: black;
+	color: inherit;
+	border-radius:10px;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+    font-size: 25px;
+    width:120px;
+}
+
+.criarUserList{
+    background:rgb(48, 65, 24);
+    font-size:23px;
+    border-color: transparent;
+}
+.viewUserList{
+    background:rgb(9, 74, 95);
+    font-size:23px;
+    border-color: transparent;
+}
+.editUserList{
+    background:rgb(81, 7, 83);
+    font-size:23px;
+    border-color: transparent;
+}
+.delUserList{
+    background:rgb(131, 20, 20);
+    font-size:23px;
+    border-color: transparent;
+}
