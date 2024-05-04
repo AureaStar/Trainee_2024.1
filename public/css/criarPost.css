@@ -110,20 +110,20 @@
 }
 
 .fundoFormulario input::placeholder {
-    color: rgba(255, 255, 255, 0.499);
+    color: rgb(255, 255, 255);
     font-family: Jomhuria;
     font-size: 28px;
 }
 
 .fundoFormulario textarea::placeholder {
-    color: rgba(255, 255, 255, 0.499);
+    color: rgb(255, 255, 255);
     font-family: Jomhuria;
     font-size: 28px;
 }
 
 .fundoFormulario input {
     background-color: rgb(180, 125, 17);
-    border: none;
+    border: 3px solid rgb(180, 125, 17);
     outline: none;
     width: 100%;
     border-radius: 5px;
@@ -133,25 +133,40 @@
 
 .fundoFormulario input:hover {
     background-color: rgba(180, 126, 17, 0);
+    border: 3px solid rgb(180, 125, 17);
 }
 
 .fundoFormulario textarea {
     background-color: rgb(180, 125, 17);
-    border: none;
+    border: 3px solid rgb(180, 125, 17);
     outline: none;
     width: 100%;
     border-radius: 5px;
+    padding-left: 2%;
 }
 
 .fundoFormulario textarea:hover {
     background-color: rgba(180, 126, 17, 0);
+    border: 3px solid rgb(180, 125, 17);
 }
+
+textarea {
+    max-height: 100%;
+    max-width: 100%;
+  }
 
 .box {
     color: rgb(255, 255, 255);
     font-size: 15px;
     font-family: Jomhuria;
     font-size: 28px;
+}
+
+.imagemInput::-webkit-file-upload-button {
+    display: none;
+}
+.imagemInput::before {
+    content: 'Adicione a foto: ';
 }
 
 .fechar {
@@ -163,14 +178,14 @@
     color: white;
     font-family: Jomhuria;
     font-size: 28px;
-    border: none;
+    border: 3px solid green;
     outline: none;
     transition: background 0.2s;
 }
 
 .fechar:hover {
     background-color: rgba(0, 128, 0, 0.51);
-    border: green;
+    border: 3px solid green;
 }
 
 .cancelar {
@@ -182,14 +197,14 @@
     color: white;
     font-family: Jomhuria;
     font-size: 28px;
-    border: none;
+    border: 3px solid red;
     outline: none;
     transition: background 0.2s;
 }
 
 .cancelar:hover {
     background-color: rgba(255, 0, 0, 0.581);
-    border: red;
+    border: 3px solid red;
 }
 
 
