@@ -141,7 +141,7 @@
     border-radius: 5px;
 }
 
-.fundoFormulario:hover {
+.fundoFormulario textarea:hover {
     background-color: rgba(180, 126, 17, 0);
 }
 
