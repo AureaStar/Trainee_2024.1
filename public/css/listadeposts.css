@@ -66,7 +66,6 @@ body{
 }
 .search input{
     background-color: transparent;
-    border: 0;
     margin-left: 5%;
     height: 100%;
     width: 100%;
@@ -74,6 +73,7 @@ body{
     font: weight bold;
     border-radius: 5px;
     border: none;
+    outline: none;
     padding: 5px;
 }
 .search i {
@@ -85,7 +85,7 @@ body{
 .search input::placeholder {
     color: #fff;
 }
-.filter form {
+.filter-form {
     padding: 0;
     width: 30%;
     background-color: #52331D;
@@ -96,12 +96,12 @@ body{
     align-items: center;
     border-radius:  5px;
     margin-left: 5%;
-    border-radius: 1px solid white;
+    border: 1px solid white;
     
 }
-.filter-form i {
+.funil i {
     cursor: pointer;
-    margin: 0 5%;
+    margin: 0 20px;
 }
 .filter{
     width: 100%;
@@ -230,11 +230,15 @@ body{
         width: 100%;
         margin-top: 20px;
     }
-    .filter {
-        display: none;
-    }
+    
     .search_main {
         width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10%;
+    }
+    .filter-form{
+        width: 50%;
         justify-content: center;
     }
     .search {
@@ -251,5 +255,13 @@ body{
     .pagination_row {
         display: none;
     }
-    
+    .funil{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .funil i {
+        display: flex;
+        align-items: center;
+    }
 }
