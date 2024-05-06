@@ -13,12 +13,54 @@ body{
 
 /* Sidebar */
 .sidebar{
-    width: 15%;
-    height: 800px;
-    box-shadow: 4px 4px rgb(0, 0, 0, 0.6);
+    width: 3%;
+    height: 100%;
     background-color: #412307;
-    display: flex;
-    justify-content: center;
+    padding: 40px 0 40px 1%;
+    box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.8);
+    overflow: hidden;
+    transition: 0.02s;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
-
-
+.sidebar:hover{
+    width: 20%;
+}
+.sidebar-close{
+    width: 100%;
+    padding-left: 4%;
+    margin-bottom: 15%;
+}
+.sidebar-close i{
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+}
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+ul .items-menu{
+    transition: 0.2s;
+}
+ul .items-menu:hover{
+    background-color: #429741a2;
+    border: 2.5px solid #429741;
+}
+ul .items-menu a{
+    line-height: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 8%;
+    display: flex;
+    padding: 15px 5%;
+}
+ul .items-menu a .link-txt{
+    display: flex;
+    margin-left: 40px;
+}
+ul .items-menu a .icon{
+    font-size: 20px;
+}
