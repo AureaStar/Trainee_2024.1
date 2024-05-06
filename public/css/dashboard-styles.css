@@ -4,6 +4,15 @@
     font-size: 0px;
 }
 
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+#btn-logout-mobile{
+    display: none;
+}
+
 .d-background{
     display: flex;
     width: 100vw;
@@ -14,23 +23,38 @@
     align-items: center;
 }
 
+
 .d-title{
-    background-image: url(../assets/site-bg.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/dash-bg.png);
     width: 100%;
     height: 25%;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
     box-shadow: 8px 8px 16px 0px rgba(0, 0, 0, 0.60);
-    text-align: center;
-    align-content: center;
 }
 
-.d-title h1{
+h1{
+    display: flex;
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    height: fit-content;
+    background-color: #412307;
     font-family: "Almendra", serif;
     font-weight: 700;
     font-style: normal;
     color: white;
     font-size: 88px;
+}
+
+h1 img{
+    padding: 1%;
+    width: 100px;
+    height: 112px;
 }
 
 .d-buttons{
@@ -50,19 +74,29 @@
     align-content: center;
     justify-content: center;
     align-items: center;
-    gap: 2%;
+    gap: 3%;
 }
 
 .d-central-buttons button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 25%;
-    height: 80%;
+    height: 100%;
     border-radius: 30px;
+    padding-top: 2%;
+    gap: 8%;
+    cursor: pointer;     
+    outline: inherit;
+    border: none;
+    transition: background 0.2s;
+    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.6);
+    color: white;
     font-family: "Jomhuria", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 80px;
-    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.6);
-    color: white;
 }
 
 #btn-publi{
@@ -70,19 +104,29 @@
 }
 
 #btn-publi:hover{
-    background-color: #429741a2;
-    border: 2.5px solid #429741;
+    background-color: #387537;
+    border: 2.5px solid #439741;
+}
+
+#btn-publi img{
+    width: 102px;
+    height: 100px;
 }
 
 #btn-user{
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgb(116, 116, 116);
     border-color: white;
     border-width: 2px;
 }
 
+#btn-user img{
+    width: 120px;
+    height: 100px;
+}
+
 #btn-user:hover{
-    background-color: rgba(108, 112, 108, 0.6);
-    border: 2.5px solid #c7c7c7;
+    background-color: rgb(56, 57, 56);
+    border: 2.5px solid rgb(116, 116, 116);
 }   
 
 .d-logout{
@@ -93,20 +137,257 @@
     align-items: center;
 }
 
-.d-logout button{
-    width: 36%;
+#btn-logout{
+    display: flex;
+    flex-direction: row;
+    text-wrap: nowrap;
+    align-items: center;
+    gap: 4%;
+    padding-right: 4%;
+    padding-top: 0.5%;
+    width: fit-content;
     height: 64%;
-    background-color: rgb(237, 44, 44,0.9);
-    color: white;
+    background-color: rgb(219, 42, 42);
     box-shadow: 8px 8px 12px 0px rgba(0, 0, 0, 0.5);
     border-radius: 30px;
+    color: white;
+    cursor: pointer;     
+    outline: inherit;
+    border: none;
+    transition: background 0.2s;
     font-family: "Jomhuria", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 80px;
+    font-size: 72px;
+}
+
+#btn-logout img{
+    display: flex;
+    padding-bottom: 3%;
+    padding-left: 4%;
+    width: 52px;
+    height: 48px;
+    align-self: center;
+    justify-self: flex-start;
 }
 
 #btn-logout:hover{
-    background-color: rgb(158, 19, 19,0.6);
-    border: 2.5px solid #f81f1f;
+    background-color: rgb(158, 19, 19);
+    border: 2.5px solid rgb(219, 42, 42);
+}
+
+
+
+/*Responsividade*/
+@media (max-width: 1400px){
+
+    .d-central-buttons button{
+        width: 32%;
+    }
+
+    #btn-logout{
+        padding-right: 5%;
+    }
+
+}
+
+@media (max-width: 1150px){
+
+    .d-central-buttons button{
+        width: 40%;
+        font-size: 80px;
+    }
+
+    #btn-logout{
+        padding-right: 6%;
+    }
+
+}
+
+@media (max-width: 950px){
+    h1{
+        width: 90%;
+        font-size: 80px;
+    }
+
+    h1 img{
+        width: 88px;
+        height: 100px;
+    }
+    
+    .d-central-buttons button{
+        width: 44%;
+        font-size: 72px;
+    }
+
+    #btn-publi img{
+        width: 85px;
+        height: 84px;
+    }
+
+    #btn-user img{
+        width: 96px;
+        height: 80px;
+    }
+
+}
+
+
+@media (max-width: 700px){
+    h1{
+        font-size: 72px;        
+    }
+
+    h1 img{
+        width: 76px;
+        height: 88px;
+    }
+    .d-buttons{
+        gap: 4%;
+    }
+
+    .d-central-buttons{
+        gap: 6%;
+    }
+
+    .d-central-buttons button{
+        width: 48%;
+    }
+
+    #btn-logout{
+        padding-right: 10%;
+        height: 60%;
+        font-size: 64px;
+    }
+
+    #btn-logout img{
+        width: 40px;
+        height: 40px;
+    }
+
+}
+
+@media (max-width: 620px){
+    .d-title{
+        height: 20%;
+    }
+
+    h1{
+        font-size: 64px;
+    }
+
+    h1 img{
+        width: 62px;
+        height: 72px;
+    }
+
+    .d-central-buttons button{
+        height: 80%;
+        font-size: 60px;
+    }
+
+    #btn-publi img{
+        width: 68px;
+        height: 68px;
+    }
+
+    #btn-user img{
+        width: 80px;
+        height: 68px;
+    }
+}
+
+@media (max-width: 520px){
+    .view-mobile{
+        display: block;
+    }
+
+    .d-title{
+        height: 24%;
+    }
+
+    h1{
+        font-size: 52px;
+        height: 60%;
+    }
+
+    h1 img{
+        padding: 2%;
+        width: 52px;
+        height: 60px;
+    }
+
+    .d-buttons{
+        gap: 0%;
+    }
+
+    .d-central-buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .d-central-buttons button{
+        display: flex;
+        flex-direction: row;
+        text-wrap: nowrap;
+        align-items: center;
+        gap: 4%;
+        padding-right: 4%;
+        padding-top: 0.5%;
+        width: 80%;
+        height: 40%;
+        box-shadow: 8px 8px 12px 0px rgba(0, 0, 0, 0.5);
+        border-radius: 30px;
+        color: white;
+        cursor: pointer;     
+        outline: inherit;
+        border: none;
+        transition: background 0.2s;
+        font-family: "Jomhuria", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 64px;
+    }
+
+    #btn-logout{
+        width: 80%;
+        height: 100%;
+    }
+
+    #btn-publi img{
+        display: flex;
+        padding-bottom: 3%;
+        padding-left: 4%;
+        align-self: center;
+        justify-self: flex-start;
+        width: 40px;
+        height: 40px;
+    }
+
+    #btn-user img{
+        display: flex;
+        padding-bottom: 3%;
+        padding-left: 4%;
+        align-self: center;
+        justify-self: flex-start;
+        width: 40px;
+        height: 36px;
+    }
+}
+
+@media (max-width: 440px){
+    h1{
+        font-size: 44px;
+    }
+
+    h1 img{
+        width: 36px;
+        height: 44px;
+    }
+}
+
+@media (max-width: 372px){
+    h1{
+        font-size: 42px;
+    }
 }
