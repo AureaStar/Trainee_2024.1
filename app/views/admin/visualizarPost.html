@@ -24,27 +24,27 @@
 
             <label for="title" class="namebox">Título:</label>
             <div class="fundoFormulario">
-                <input type="text" class="box" placeholder="Insira o título" name="title">
+                <input type="text" class="box" id="titulo" name="title" readonly>
             </div>
 
             <label for="text" class="namebox">Conteúdo:</label>
             <div class="fundoFormulario">
-                <textarea type="text" class="box" placeholder="Escreva o conteúdo" name="text"></textarea>
+                <textarea type="text" class="box" id="conteudo" name="text" readonly></textarea>
             </div>
 
             <label for="imagem" class="namebox">Imagem:</label>
             <div class="fundoFormulario">
-                <input type="file" class="box imagemInput" name="imagem">
+                <input type="file" class="box imagemInput" id="imagem" name="imagem" readonly>
             </div>
 
             <label for="data" class="namebox">Data de criação do post:</label>
             <div class="fundoFormulario">
-                <input type="date" class="box" placeholder="XX/XX/XXXX" name="data">
+                <input type="date" class="box" id="data"" name="data" readonly>
             </div>
 
             <div class="modal-footer">
-                <button type="submit" class="fechar">Criar</button>
-                <button class="cancelar">Cancelar</button>
+                <button type="submit" class="fechar">Editar</button>
+                <button class="cancelar">Excluir</button>
 
             </div>
         </form>
