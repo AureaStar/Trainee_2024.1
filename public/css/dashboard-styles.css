@@ -321,7 +321,12 @@ h1 img{
         gap: 0%;
     }
 
+    .d-logout{
+        display: none;
+    }
+
     .d-central-buttons{
+        height: 100%;
         flex-direction: column;
         align-items: center;
     }
@@ -331,11 +336,13 @@ h1 img{
         flex-direction: row;
         text-wrap: nowrap;
         align-items: center;
-        gap: 4%;
+        justify-content: flex-start;
+        gap: 8%;
+        padding-left: 4%;
         padding-right: 4%;
         padding-top: 0.5%;
         width: 80%;
-        height: 40%;
+        height: 20%;
         box-shadow: 8px 8px 12px 0px rgba(0, 0, 0, 0.5);
         border-radius: 30px;
         color: white;
@@ -350,16 +357,29 @@ h1 img{
     }
 
     #btn-logout{
-        width: 80%;
-        height: 100%;
+        display: none;
+    }
+
+    #btn-logout-mobile{
+        display: flex;
+        background-color: rgb(219, 42, 42);
+    }
+
+    #btn-logout-mobile:hover{
+        background-color: rgb(158, 19, 19);
+        border: 2.5px solid rgb(219, 42, 42);
+    }
+
+    #btn-logout-mobile img{
+        display: flex;
+        padding-bottom: 3%;
+        width: 40px;
+        height: 40px;
     }
 
     #btn-publi img{
         display: flex;
         padding-bottom: 3%;
-        padding-left: 4%;
-        align-self: center;
-        justify-self: flex-start;
         width: 40px;
         height: 40px;
     }
@@ -367,9 +387,6 @@ h1 img{
     #btn-user img{
         display: flex;
         padding-bottom: 3%;
-        padding-left: 4%;
-        align-self: center;
-        justify-self: flex-start;
         width: 40px;
         height: 36px;
     }
@@ -384,10 +401,19 @@ h1 img{
         width: 36px;
         height: 44px;
     }
+
+    .d-central-buttons button{
+        font-size: 54px;
+    }
 }
 
 @media (max-width: 372px){
     h1{
         font-size: 42px;
+    }
+
+    .d-central-buttons button{
+        gap: 6%;
+        font-size: 52px;
     }
 }
