@@ -85,8 +85,8 @@
     color: white;
     margin: 0;
     font-size: 38px;
-    font-family: Almendra;
-    font-weight: bold;
+    font-family: "Almendra", serif;
+    font-weight: 700;
 }
 
 .namebox {
@@ -152,7 +152,7 @@
 textarea {
     max-height: 100%;
     max-width: 100%;
-  }
+}
 
 .box {
     color: rgb(255, 255, 255);
