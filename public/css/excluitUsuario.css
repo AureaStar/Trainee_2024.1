@@ -1,0 +1,121 @@
+.ExcluirPost {
+    background-color:#226c20;
+    height: 5%;
+    width: 9%;
+    border-radius: 5px;
+    padding-top: 3px;
+    color: white;
+    font-family: Jomhuria;
+    font-size: 28px;
+    border: none;
+    outline: none;
+}
+
+.ExcluirPost:hover {
+    background-color: rgba(0, 128, 0, 0.51);
+    border:#226c20;
+}
+
+.modal {
+    background-color: #412307;
+    position: absolute;
+    height: 10%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 2%;
+    box-shadow: 10px 10px 50px 10px;
+}
+
+.titulo {
+    color: white;
+    margin: 0;
+    font-size: 20px;
+    font-family: Almendra;
+    font-weight: bold;
+}
+
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+}
+
+.modal-header {
+    background-color: #3c2007;
+    width: 100%;
+    height: 50%;
+    padding: 1%;
+    margin: 0px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgb(143, 86, 6) 0px 0px 80px 1px;
+}
+
+.imagemlogo {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
+
+.modal-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 35%;
+}
+
+
+.sim {
+    background-color: #226c20;
+    height: 100%;
+    width: 20%;
+    border-radius: 5px;
+    padding-bottom: 25px;
+    color: white;
+    font-family: Jomhuria;
+    font-size: 28px;
+    border: 3px solid #226c20;
+    outline: none;
+    transition: background 0.2s;
+}
+
+.sim:hover {
+    background-color: rgba(0, 128, 0, 0.51);
+    border: 3px solid #226c20;
+}
+
+.não {
+    background-color: red;
+    height: 100%;
+    width: 20%;
+    border-radius: 5px;
+    padding-bottom: 25px;
+    color: white;
+    font-family: Jomhuria;
+    font-size: 28px;
+    border: 3px solid red;
+    outline: none;
+    transition: background 0.2s;
+}
+
+.não:hover {
+    background-color: rgba(255, 0, 0, 0.581);
+    border: 3px solid red;
+}
