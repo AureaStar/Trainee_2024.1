@@ -1,36 +1,53 @@
+<link rel="stylesheet" href="../../../public/css/criarUsuario.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jomhuria">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sail">
+<link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700" rel="stylesheet"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
 <!-- Open The Modal -->
-<button id="CriarUsuario">Criar Usuario</button>
+<button class="CriarPost">Criar Usuário</button>
 
 <!-- The Modal -->
+
 <div id="myModal" class="modal">
 
     <!-- Modal content -->
     <div class="modal-content">
         <div class="modal-header">
-            <span class="close">&times;</span>
-            <h2>Criar Usuário</h2>
+            <img class="imagemlogo" src="../../../public/assets/Logo.png" alt="">
+            <h2 class="titulo">Criar Usuário</h2>
+            <img class="imagemlogo" src="../../../public/assets/Logo.png" alt="">
+
         </div>
-        <div class="modal-body">
-            <form>
-            <label for="firstname" class="namebox">Nome:</label><br>
-            <input type="text" class="box" placeholder="Coloque seu nome" name="firstname" required><br>
+        <form class="modal-body">
 
-            <label for="lastname" class="namebox">Sobrenome:</label><br>
-            <input type="text" class="box" placeholder="Coloque seu sobrenome" name="lastname" required><br>
+            <label for="name" class="namebox">Nome:</label>
+            <div class="fundoFormulario">
+                <input type="text" class="box" placeholder="Insira o seu nome" name="name" required>
+            </div>
 
-            <label for="emal" class="namebox">Email:</label><br>
-            <input type="email" class="box" placeholder="Coloque seu email" name="email" required><br>
+            <label for="email" class="namebox">Email:</label>
+            <div class="fundoFormulario">
+                <textarea type="email" class="box" placeholder="Insira seue email" name="email" required></textarea>
+            </div>
 
-            <label for="senha" class="namebox">Senha:</label><br>
-            <input type="password" class="box" placeholder="Crie uma senha" name="senha" required><br>
+            <label for="senha" class="namebox">Senha:</label>
+            <div class="fundoFormulario">
+                <input type="password" class="box" placeholder="Insira sua senha" name="senha" required>
+            </div>
 
-            <label for="senha-repeat" class="namebox">Confirme sua senha:</label><br>
-            <input type="password" class="box" placeholder="Repita sua senha" name="senha-repeat" required><br>
+            <label for="senha-repeat" class="namebox">Confirme sua senha:</label>
+            <div class="fundoFormulario">
+                <input type="password" class="box" placeholder="Repita sua senha" name="senha-repeat" required>
+            </div>
+
+            <div class="modal-footer">
+                <button type="submit" class="fechar">Criar</button>
+                <button class="cancelar">Cancelar</button>
+
+            </div>
         </form>
-        </div>
-        <div class="modal-footer">
-            <button>Salvar</button>
-        </div>
     </div>
 
 </div>
