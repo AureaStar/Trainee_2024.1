@@ -16,7 +16,7 @@
     border: #439741;
 }
 
-.modal {
+.modalM {
     position: absolute;
     background-color: #412307;
     height: 70%;
@@ -145,7 +145,7 @@
     padding-top: 3px;
     color: white;
     font-family: Jomhuria;
-    font-size: 28px;
+    font-size: 32px;
     border: 3px solid #226c20;
     outline: none;
     transition: background 0.2s;
@@ -164,7 +164,7 @@
     padding-top: 3px;
     color: white;
     font-family: Jomhuria;
-    font-size: 28px;
+    font-size: 32px;
     border: 3px solid red;
     outline: none;
     transition: background 0.2s;
