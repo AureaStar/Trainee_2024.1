@@ -1,5 +1,5 @@
 .CriarPost {
-    background-color: green;
+    background-color: #439741;
     height: 5%;
     width: 9%;
     border-radius: 5px;
@@ -13,11 +13,12 @@
 
 .CriarPost:hover {
     background-color: rgba(0, 128, 0, 0.51);
-    border: green;
+    border: #439741;
 }
 
 .modal {
-    background-color: rgb(72, 38, 9);
+    position: absolute;
+    background-color: #412307;
     height: 70%;
     width: 50%;
     display: flex;
@@ -40,7 +41,7 @@
 }
 
 .modal-header {
-    background-color: rgb(46, 24, 4);
+    background-color: #3c2007;
     width: 100%;
     height: 10%;
     padding: 1%;
@@ -96,7 +97,7 @@
 }
 
 .fundoFormulario {
-    background-color: rgb(180, 125, 17);
+    background-color: #E6A549;
     border: none;
     outline: none;
     border-radius: 5px;
@@ -105,7 +106,7 @@
 }
 
 .fundoFormulario:hover {
-    background-color: rgba(180, 126, 17, 0.689);
+    background-color: hsla(35, 76%, 59%, 0.8);
 }
 
 .fundoFormulario input::placeholder {
@@ -121,8 +122,8 @@
 }
 
 .fundoFormulario input {
-    background-color: rgb(180, 125, 17);
-    border: 3px solid rgb(180, 125, 17);
+    background-color: #e29c3a;
+    border: 3px solid #e29c3a;
     outline: none;
     width: 100%;
     border-radius: 5px;
@@ -132,12 +133,12 @@
 
 .fundoFormulario input:hover {
     background-color: rgba(180, 126, 17, 0);
-    border: 3px solid rgb(180, 125, 17);
+    border: 3px solid #e29c3a;
 }
 
 .fundoFormulario textarea {
-    background-color: rgb(180, 125, 17);
-    border: 3px solid rgb(180, 125, 17);
+    background-color: #e29c3a;
+    border: 3px solid #e29c3a;
     outline: none;
     width: 100%;
     border-radius: 5px;
@@ -146,7 +147,7 @@
 
 .fundoFormulario textarea:hover {
     background-color: rgba(180, 126, 17, 0);
-    border: 3px solid rgb(180, 125, 17);
+    border: 3px solid #e29c3a;
 }
 
 textarea {
@@ -169,7 +170,7 @@ textarea {
 }
 
 .fechar {
-    background-color: green;
+    background-color: #226c20;
     height: 100%;
     width: 20%;
     border-radius: 5px;
@@ -177,18 +178,18 @@ textarea {
     color: white;
     font-family: Jomhuria;
     font-size: 28px;
-    border: 3px solid green;
+    border: 3px solid #226c20;
     outline: none;
     transition: background 0.2s;
 }
 
 .fechar:hover {
-    background-color: rgba(0, 128, 0, 0.51);
-    border: 3px solid green;
+    background-color: rgba(16, 123, 16, 0.51);
+    border: 3px solid #226c20;
 }
 
 .cancelar {
-    background-color: red;
+    background-color:red;
     height: 100%;
     width: 20%;
     border-radius: 5px;
