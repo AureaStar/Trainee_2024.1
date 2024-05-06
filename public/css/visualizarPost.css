@@ -16,10 +16,10 @@
     border: #439741;
 }
 
-.modal {
+.modalV {
     position: absolute;
     background-color: #412307;
-    height: 70%;
+    height: 50%;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -37,7 +37,6 @@
     align-items: center;
     height: 100%;
     width: 100%;
-    gap: 20px;
 }
 
 .modal-header {
