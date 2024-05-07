@@ -13,9 +13,12 @@ body{
 
 /* Sidebar */
 .sidebar{
+    background-color: #412307;
+    background-image: url(/public/assets/fundo-sidebar.jpg);
+    background-attachment: fixed;
+    background-size: contain;
     width: 3%;
     height: 100%;
-    background-color: #412307;
     padding: 40px 0 40px 1%;
     box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.8);
     overflow: hidden;
