@@ -19,7 +19,7 @@
 .modalV {
     position: absolute;
     background-color: #412307;
-    height: 50%;
+    height: 70%;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -37,6 +37,7 @@
     align-items: center;
     height: 100%;
     width: 100%;
+    gap: 10px;
 }
 
 .modal-header {
@@ -61,6 +62,16 @@
     width: 100%;
     height: 100%;
     margin: 0%;
+}
+
+.modal-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 12%;
+    margin-top: 2%;
 }
 
 .imagemlogo {
@@ -90,7 +101,15 @@
     border: none;
     outline: none;
     border-radius: 5px;
-    height: 14%;
+    height: 10%;
+    width: 100%;
+}
+.fundoFormularioCont {
+    background-color: #E6A549;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    height: 24%;
     width: 100%;
 }
 
@@ -104,7 +123,7 @@
     font-size: 28px;
 }
 
-.fundoFormulario textarea::placeholder {
+.fundoFormularioCont textarea::placeholder {
     color: rgb(255, 255, 255);
     font-family: Jomhuria;
     font-size: 28px;
@@ -125,16 +144,18 @@
     border: 3px solid #e29c3a;
 }
 
-.fundoFormulario textarea {
+.fundoFormularioCont textarea {
     background-color: #e29c3a;
     border: 3px solid #e29c3a;
     outline: none;
     width: 100%;
+    height: 100%;
     border-radius: 5px;
     padding-left: 2%;
+    padding-top: 3%;
 }
 
-.fundoFormulario textarea:hover {
+.fundoFormularioCont textarea:hover {
     background-color: rgba(180, 126, 17, 0);
     border: 3px solid #e29c3a;
 }
@@ -154,6 +175,46 @@ textarea {
 .imagemInput::-webkit-file-upload-button {
     display: none;
 }
+.imagemInput::before {
+    content: 'Adicione a foto: ';
+}
 
+.fechar {
+    background-color: #226c20;
+    height: 100%;
+    width: 20%;
+    border-radius: 5px;
+    padding-top: 3px;
+    color: white;
+    font-family: Jomhuria;
+    font-size: 32px;
+    border: 3px solid #226c20;
+    outline: none;
+    transition: background 0.2s;
+}
+
+.fechar:hover {
+    background-color: rgba(16, 123, 16, 0.51);
+    border: 3px solid #226c20;
+}
+
+.cancelar {
+    background-color:red;
+    height: 100%;
+    width: 20%;
+    border-radius: 5px;
+    padding-top: 3px;
+    color: white;
+    font-family: Jomhuria;
+    font-size: 32px;
+    border: 3px solid red;
+    outline: none;
+    transition: background 0.2s;
+}
+
+.cancelar:hover {
+    background-color: rgba(255, 0, 0, 0.581);
+    border: 3px solid red;
+}
 
 
