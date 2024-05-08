@@ -7,7 +7,7 @@
 body{
     background: url("/public/assets/fundocourolistaUser.png") no-repeat;
     background-size: cover;
-    height: 92vh;
+    height: 100vh;
     font-family: "Jomhuria";
     color: #FFF4F0;
 }
@@ -21,7 +21,7 @@ body{
 .titleboxUserList{
     filter:drop-shadow(rgba(0, 0, 0, 0.50) 10px 10px 8px);
     display:flex;
-    gap: 48px;
+    gap: 70px;
     background: rgba(65, 35, 7, 0.80);
     width:70%;
     height:100px;
@@ -29,10 +29,15 @@ body{
     justify-content:center;
     align-items:center;
     border-radius:10px;
-    font-size: 30px; 
+    font-size: 30px;
 }
 .titleUserList{
     padding-top:1%;
+    font-weight: normal;
+}
+.torrezinhatabela{
+    height:78px;
+    width:94,44px;
 }
 main{
     display:flex;
@@ -42,22 +47,27 @@ main{
     gap:48px;
 }
 
-.tableUserList{
+#tableUserList{
     background: rgba(65, 35, 7, 0.80);
     border-radius: 10px;
     filter:drop-shadow(rgba(0, 0, 0, 0.50) 10px 10px 8px);
+    table-layout:fixed;
 }
-
+#tableUserList td{
+    word-wrap:break-word;
+}
 .thUserList {
-    padding: 8px 65px;
+    padding: 8px 25px;
     color:#E6A549;
     font-size: 40px; 
 }
 
 .tdUserList {
-    padding: 8px 65px;
+    padding: 8px 25px;
     font-size: 16px;
     font-family:Open Sans;
+    justify-content:center;
+    align-content: center;
 }
 
 button{
@@ -69,30 +79,172 @@ button{
 	padding: 0;
 	font: inherit;
 	cursor: pointer;
-    font-size: 25px;
-    width:120px;
+    font-size:18px;
+    width:130px;
 }
 
 .criarUserList{
     display:flex;
     justify-content:center;
+    align-items:center;
+    padding-top:1%;
     background:rgba(67, 151, 65, 0.65);
-    font-size:44px;
-    height:50px;
+    font-size:50px;
     border-color: transparent;
+    color: white;
+    border-radius: 10px;
+    width: 140px;
+    height: 40px;
+    transition: background 0.2s;
+}
+
+
+.criarUserList:hover {
+    background-color: #429741a2;
+    border: 2.5px solid #429741;
 }
 .viewUserList{
     background:rgba(67, 151, 65, 0.65);
-    font-size:18px;
     border-color: transparent;
+    border-radius: 10px;
+    transition: background 0.2s;
+}
+
+
+.viewUserList:hover {
+    background-color: #429741a2;
+    border: 2.5px solid #429741;
 }
 .editUserList{
     background:rgba(67, 151, 65, 0.65);
-    font-size:18px;
     border-color: transparent;
+    transition: background 0.2s;
+}
+
+
+.editUserList:hover {
+    background-color: #429741a2;
+    border: 2.5px solid #429741;
 }
 .delUserList{
     background:rgb(131, 20, 20);
-    font-size:18px;
     border-color: transparent;
+    transition: background 0.2s;
+}
+
+
+.delUserList:hover {
+    background-color:rgb(131, 20, 20);
+    border: 2.5px solid rgb(182, 21, 21);
+}
+
+@media only screen and (max-width: 344px){
+    .titleboxUserList{
+        width:98%;
+        height:70px;
+        gap:16px;
+    }
+    #titlebackUserList{
+        height:13vh;
+    }
+    .torrezinhatabela{
+        height:32px;
+        width:38,74px;
+    }
+    .titleUserList{
+        font-size:32px;
+    }
+    
+    .criarUserList{
+        width: 50px;
+        height: 30px;
+        font-size:26px;
+    }
+    .thUserList {
+        padding: 4px 20px;
+        color:#E6A549;
+        font-size: 10px; 
+    }
+    
+    .tdUserList {
+        padding: 8px 20px;
+        font-size: 8px;
+        font-family:Open Sans;
+        justify-content:center;
+        align-content: center;
+    }
+}
+
+@media only screen and (min-width: 345px) and (max-width: 375px) {
+    .titleboxUserList{
+        width:98%;
+        height:70px;
+        gap:16px;
+    }
+    #titlebackUserList{
+        height:13vh;
+    }
+    .torrezinhatabela{
+        height:32px;
+        width:38,74px;
+    }
+    .titleUserList{
+        font-size:32px;
+    }
+    
+    .criarUserList{
+        width: 50px;
+        height: 30px;
+        font-size:26px;
+    }
+    .thUserList {
+        padding: 4px 0px;
+        color:#E6A549;
+        font-size: 20px; 
+    }
+    
+    .tdUserList {
+        padding: 8px 10px;
+        font-size: 12px;
+        font-family:Open Sans;
+        justify-content:center;
+        align-content: center;
+    }
+    button{
+        height:20px;
+        width:60px;
+        font-size:12px;
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+    .titleUserList{
+        font-size:1.5em;
+    }
+    #titlebackUserList{
+        height:80px;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) { /* Tablet */
+    .titleUserList{
+        font-size:1.5em;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 1024px) { /* Laptop */
+    .titleUserList{
+        font-size:1.5em;
+    }
+    main{
+        gap:48px;
+    }
+    #titlebackUserList{
+        height:130px;
+    }
+}
+@media only screen and (min-width: 1025px) and (max-width:1061px){
+    .titleUserList{
+        font-size:1.7em;
+    }
 }
