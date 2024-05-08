@@ -20,7 +20,7 @@
     <nav class="sidebar">
 
         <div class="sidebar-close">
-            <i class="bi bi-list"></i>
+            <i class="bi bi-list" id="expand"></i>
         </div>
         
         <ul>
@@ -45,11 +45,19 @@
             <li class="items-menu">
                 <a href="#">
                     <span class="icon"><i class="bi bi-door-closed"></i></span>
-                    <span class="link-txt">Logout</span>
+                    <span class="link-txt" onclick="openModal('logout')">Logout</span>
                 </a>
             </li>
         </ul>
     </nav>
+    
+    <div class="modal-logout" id="logout">
+        <p>Deseja realmente sair?</p>
+        <div>
+            <button>Confirmar</button>
+            <button onclick="closeModal('logout')">Cancelar</button>
+        </div>
+    </div>
 </body>
     <script src="/public/js/sidebar.js"></script>
 </html>
