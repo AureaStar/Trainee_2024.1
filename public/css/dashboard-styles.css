@@ -302,6 +302,9 @@ h1 img{
 
     .d-central-buttons button{
         height: 80%;
+    }
+
+    .central-pub{
         font-size: 60px;
     }
 
