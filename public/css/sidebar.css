@@ -71,3 +71,17 @@ ul .items-menu a .link-txt{
 ul .items-menu a .icon{
     font-size: 20px;
 }
+
+/* Modal */
+
+.modal-logout{
+    padding: 12px;
+    background-color: white;
+    width: 15%;
+    height: fit-content;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+}
