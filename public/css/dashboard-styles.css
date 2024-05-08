@@ -115,7 +115,7 @@ h1 img{
     padding-top: 1%;
     align-items: center;
     justify-content: center;
-    font-size: 64px;
+    font-size: 80px;
 }
 
 #btn-publi{
@@ -214,7 +214,6 @@ h1 img{
 
     .d-central-buttons button{
         width: 40%;
-        font-size: 80px;
     }
 
     #btn-logout{
@@ -236,6 +235,9 @@ h1 img{
     
     .d-central-buttons button{
         width: 44%;
+    }
+
+    .central-pub{
         font-size: 72px;
     }
 
