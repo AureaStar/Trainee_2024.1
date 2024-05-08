@@ -12,6 +12,8 @@ body{
 }
 
 /* Sidebar */
+
+/* Estrutura */
 .sidebar{
     background-color: #412307;
     background-image: url(/public/assets/fundo-sidebar.jpg);
@@ -30,6 +32,8 @@ body{
 .sidebar:hover{
     width: 20%;
 }
+
+/* Itens */
 .sidebar-close{
     width: 100%;
     padding-left: 4%;
