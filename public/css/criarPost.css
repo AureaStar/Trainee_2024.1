@@ -178,6 +178,10 @@ textarea {
     content: 'Adicione a foto: ';
 }
 
+.imagemInput {
+    align-content: center;
+}
+
 .fechar {
     background-color: #226c20;
     height: 100%;
