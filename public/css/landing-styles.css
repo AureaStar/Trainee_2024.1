@@ -323,7 +323,6 @@
         flex-direction: row;
         width: 100%;
         height: 56%;
-        cursor: pointer;
         border-radius: 30px;
         white-space: nowrap;
         align-items: center;
@@ -357,7 +356,6 @@
         width: 72%;
         height: 100%;
         /*border: 8px solid brown;*/
-        cursor: pointer;
         white-space: nowrap;
         overflow: hidden;
     }
