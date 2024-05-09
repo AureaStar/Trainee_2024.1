@@ -290,7 +290,7 @@ textarea {
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
     .modalC {
-        height: 60%;
+        height: 65%;
         width: 70%;
         border-radius: 15px;
         padding: 5%;
@@ -301,7 +301,7 @@ textarea {
     }
 
     .modal-body {
-        gap: 10px;
+        gap: 5px;
     }
 
 
