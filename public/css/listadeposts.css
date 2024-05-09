@@ -1,5 +1,5 @@
 * {
-    
+
     margin: 0;
     padding: 0;
 }
@@ -36,13 +36,14 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5%;
     margin: 0 10%;
+
 }
 
 .header_main h1{
     color: white;
     margin-top: 10%;
     font-family: "Jomhuria", serif;
-    font-size: 80px;
+    font-size: 5rem;
     font-weight: 400;
 }
 
@@ -61,13 +62,13 @@ body{
     flex-direction: row;
     align-items: center;
     background-color:#52331D;
-    height: 20px;
+    height: 2rem;
     color: white;
     font-weight: bold;
     border-radius: 5px ;
-    margin-left: 10%;
     border: 1px solid white;
     padding: 10px;
+    font-size: 2rem;
 }
 .search:hover{
     background-color: #5f381d;
@@ -83,6 +84,7 @@ body{
     border: none;
     outline: none;
     padding: 5px;
+    font-size: 1.5rem;
 }
 .search i {
     cursor: pointer;
@@ -94,7 +96,7 @@ body{
     color: #fff;
 }
 .filter-form {
-    padding: 0;
+    padding: 10px;
     width: 20%;
     background-color: #52331D;
     display: flex;
@@ -105,6 +107,9 @@ body{
     border-radius:  5px;
     margin-left: 5%;
     border: 1px solid white;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 2.0rem;
 }
 .filter-form:hover{
     background-color: #5f381d;
@@ -122,23 +127,34 @@ body{
     flex-direction: row;
     align-items: center;
     background-color:#52331D;
-    padding: 10px;
+    padding: 5px;
     color: white;
     border: none;
     border-radius: 5px;
+    font-size: 1.35rem;
     
+}
+.funil{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 .filter i{
     margin-left: 10%;
 
 }
-.main_content{
-    display: flex;    
+
+.main_content {
+    display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 20px;
-
+    padding: 20px 0; /* Adicione mais preenchimento para garantir espaço ao redor dos cards */
+    margin-bottom: 20px;
+    margin-left: 0;
 }
+
 .card{
     width: 100%;
     height: 15rem;
@@ -148,8 +164,9 @@ body{
     justify-content: end;
     padding: 5px;
     border-radius: 20px ;
+    margin-left: 0;
     cursor: pointer;
-    transition: 0,3 Ss ease-in-out;
+    transition:0.3s ease-in-out;
     box-shadow: inset 0 -5px 1px rgba(0, 0, 0, 0.5),
                 inset 0 -10px 1px rgba(0, 0, 0, 0.45),
                 inset 0 -15px 1px rgba(0, 0, 0, 0.40),
@@ -198,22 +215,26 @@ body{
     color: #A7D49B;
     font-family: "Cormorant Upright", serif;
     margin-left: 4%;
-    font-size: 20px;
+    font-size: 2rem;
+
+
 
 }
 .card h5{
     color: white;
     font-family: "Open Sans", sans-serif;
     margin-left: 4%;
-    margin-bottom: 3%;
-    font-size: 21px;
+    font-size: 1.5rem;
 }
-.pagination_row{
+.pagination_row {
     display: flex;
     flex-direction: row;
     width: 100%;
     align-items: center;
     justify-content: center;
+    z-index: 10000;
+    margin-top: 7.5rem;
+    font-size: 1.5rem;
 }
 .pagination_row span {
     margin-left: 1%;
@@ -227,29 +248,74 @@ body{
     padding: 7px;
     background-color: rgba(82, 51, 29, 0.8);
 }
-@media only screen and (max-width: 850px){
-    .content{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 2% 5%;
+@media only screen and (max-width: 1280px) {
+    .card{
+        width: 100%;
+        min-height: 340px;
+    }
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 10%;
+    }
+
+    .header_main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .search_main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search{
+        margin-left: 0;
+        margin-bottom: 1rem;
+        width: 35%;
+    }
+
+    .filter-form{
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 10%;
     }
     .card{
         width: 100%;
     }
     .search{
-        width: 30%;
+        width: 40%;
     }
     .filter-form{
-        width: 30%;
+        width: 40%;
+    }
+    .pagination_row{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 7.5rem;
     }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     .content{
         grid-template-columns: 1fr;
-        grid-gap: 1%;
+        grid-gap: 1% 0%;
+        padding-bottom: 10px;
+        width: 100%;
+        margin: 0 0 100px 0;
     }
     .card {
-        width: 100%;
-        margin-top: 20px;
+        width: 80%;
+        margin-left: 9%;
     }
     
     .search_main {
@@ -259,19 +325,18 @@ body{
         gap: 10%;
     }
     .filter-form{
-        width: 40%;
+        width: 80%;
         justify-content: center;
     }
     .search {
         margin-left: 0;
-        height: 12px;
-        width: 50%;
+        width: 80%;
     }
     .header_main {
         height: 400px;
     }
     .header_main h1 {
-        margin-top: 40%;
+        margin-top: 25%;
     }
     .pagination_row {
         display: none;
@@ -286,4 +351,78 @@ body{
         align-items: center;
         margin: 0 10px;
     }
+}
+@media(max-width: 320px){ 
+    .content{
+        grid-template-columns: 1fr;
+        grid-gap: 1%;
+        
+    }
+    .card {
+        width: 90%;
+        margin-top: 20px;
+        margin: 0;
+        margin-left: 3%;
+    }
+    
+    .search_main {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10%;
+    }
+
+    .search {
+        padding: 5% 0;
+        width: 90%;
+        margin: 0 0 0 2.5%;
+
+    }
+    .header_main {
+        height: 400px;
+    }
+    .header_main h1 {
+        margin-top: 25%;
+        font-size: 3rem;
+    }
+    .pagination_row {
+        display: none;
+    }
+    .funil{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .funil i {
+        display: flex;
+        align-items: center;
+        margin: 0 10px;
+    }
+    .header_main h1{
+        font-size: 64px;
+    }
+    .card h4{
+        color: #A7D49B;
+        font-family: "Cormorant Upright", serif;
+        margin-left: 4%;
+        font-size: 20px;
+    
+    }
+    .card h5{
+        color: white;
+        font-family: "Open Sans", sans-serif;
+        margin-left: 4%;
+        margin-bottom: 3%;
+        font-size: 16px;
+    }
+    .filter-form {
+        padding: 5% 0;
+        width: 90%;
+        margin: 0 0 0 2.5%;
+    }
+    .card{
+        height: 10rem;
+        
+    }
+    
 }
