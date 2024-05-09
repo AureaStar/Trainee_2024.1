@@ -175,4 +175,133 @@
     border: 3px solid red;
 }
 
+@media only screen and (max-width: 600px) {
+    .modalM {
+        height: 65%;
+        width: 70%;
+        border-radius: 15px;
+        padding: 3%;
+    }
 
+    .modal-content {
+        gap: 5px;
+    }
+
+    .modal-body {
+        gap: 5px;
+    }
+
+    .titulo {
+        font-size: 28px;
+    }
+
+    .modal-footer {
+        padding-top: 5%;
+        height: 8%;
+        margin-top: 1%;
+    }
+
+    .fundoFormulario {
+        height: 8%;
+    }
+
+    .fundoFormularioCont {
+        height: 20%;
+    }
+
+    .fundoFormulario input::placeholder {
+        font-size: 22px;
+    }
+    
+    .fundoFormularioCont textarea::placeholder {
+        font-size: 22px;
+    }
+
+    .box {
+        font-size: 22px;
+    }
+
+    .namebox {
+        font-size: 30px;
+    }
+    
+    .imagemInput::-webkit-file-upload-button {
+        display: none;
+    }
+
+    .imagemInput::before {
+        content: 'Adicione a foto: ';
+    }
+
+    .fechar {
+        height: 100%;
+        width: 30%;
+        padding-top: 0px;
+        font-size: 28px;
+    }
+
+    .cancelar {
+        height: 100%;
+        width: 30%;
+        padding-top: 0px;
+        font-size: 28px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .modalM {
+        height: 65%;
+        width: 70%;
+        border-radius: 15px;
+        padding: 5%;
+    }
+
+    .modal-content {
+        gap: 5px;
+    }
+
+    .modal-body {
+        gap: 5px;
+    }
+
+
+    .titulo {
+        font-size: 38px;
+    }
+
+    .modal-footer {
+        padding-top: 2%;
+        height: 8%;
+        margin-top: 1%;
+    }
+
+    .fundoFormulario {
+        height: 10%;
+    }
+
+    .fundoFormulario input::placeholder {
+        font-size: 30px;
+    }
+    
+    .box {
+        font-size: 30px;
+    }
+
+    .namebox {
+        font-size: 34px;
+    }
+
+    .fechar {
+        height: 100%;
+        width: 30%;
+        padding-top: 0px;
+        font-size: 28px;
+    }
+
+    .cancelar {
+        height: 100%;
+        width: 30%;
+        padding-top: 0px;
+        font-size: 28px;
+    }
+}
