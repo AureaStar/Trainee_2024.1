@@ -270,10 +270,10 @@ textarea {
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
     .modalV {
-        height: 60%;
+        height: 65%;
         width: 70%;
         border-radius: 15px;
-        padding: 4%;
+        padding: 3%;
     }
 
     .modal-content {
@@ -281,7 +281,7 @@ textarea {
     }
 
     .modal-body {
-        gap: 10px;
+        gap: 5px;
     }
 
     .titulo {

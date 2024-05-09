@@ -123,7 +123,7 @@
 @media only screen and (max-width: 600px) {
     .modalD {
         height: 10%;
-        width: 65%;
+        width: 72%;
         border-radius: 15px;
         padding: 3%;
     }
@@ -133,27 +133,24 @@
     }
 
     .titulo {
-        color: white;
         margin: 0;
         font-size: 11px;
+    }
+
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .modalD {
+        height: 10%;
+        width: 65%;
+        border-radius: 15px;
+        padding: 3%;
+    }
+
+    .titulo {
+        font-size: 18px;
         font-family: Almendra;
         font-weight: bold;
     }
-
-    .modal-body {
-        height: 25%;
-    }
-
-    .sim {
-        height: 100%;
-        width: 20%;
-        font-size: 20px;
-    }
-    
-    .não {
-        height: 100%;
-        width: 20%;
-        font-size: 20px;
-    }
-
 }
