@@ -20,7 +20,7 @@ body{
     background: url("/public/assets/fundo-titulo-tabela.png") repeat;
 }
 .titleboxUserList{
-    filter:drop-shadow(rgba(0, 0, 0, 0.50) 10px 10px 8px);
+    filter:drop-shadow(rgba(0, 0, 0, 0.70) 10px 10px 8px);
     display:flex;
     gap: 70px;
     background: rgba(65, 35, 7, 0.80);
@@ -56,11 +56,11 @@ div#tabcontainerUserList{
     align-items: center;
     width:55em;
     overflow-x:auto;
+    filter:drop-shadow(rgba(0, 0, 0, 0.80) 10px 10px 8px);
 }
 #tableUserList{
     background: rgba(65, 35, 7, 0.80);
     border-radius: 10px;
-    filter:drop-shadow(rgba(0, 0, 0, 0.50) 10px 10px 8px);
     border-collapse: collapse;
 }
 #tableUserList tr:hover{
