@@ -56,8 +56,8 @@ header {
     background: rgba(67, 151, 65, 0.65);
     display: flex;
     border: none;
-    width: 200px;
-    height: 48px;
+    width: 180px;
+    height: 44px;
     padding-top: 0.6%;
     justify-content: center;
     align-items: center;
@@ -78,7 +78,7 @@ header {
 #navhamMenu {
     background: linear-gradient(90deg, #412307 0%, #a75a12 100%);
     width: 100%;
-    height: 60px;
+    height: 64px;
     display: none;
     flex-direction: row;
     justify-content: center;
@@ -106,6 +106,8 @@ header {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    height:46px;
+    width:80px;
     border-radius: 10px;
     text-decoration: none;
     font-size: 54px;
@@ -113,8 +115,7 @@ header {
     color: #fff4f0;
     padding-top: 1.1%;
 }
-
-@media screen and (max-width:26.875em){
+@media screen and (max-width:320px){
     #navInicio,
     #navPubli,
     #navlogbut,
@@ -138,9 +139,55 @@ header {
         height: 33px;
         font-size:36px;
     }
+    #navhamMenu {
+        display:flex;
+        gap:12px;
+        font-size:42px;
+    }
+    #navhamlogbutton {
+        font-size: 34px;
+        height: 32px;
+        width: 54px;
+    }
+}
+@media screen and (min-width:321px) and (max-width:430px){
+    #navInicio,
+    #navPubli,
+    #navlogbut,
+    #navLogText {
+        display: none;
+    }
+    #logonavbarimg {
+        width: 220px;
+        height: 35.20px;
+    }
+    .navbar-Container {
+        gap:8px;
+        margin-left:8px;
+    }
+    .navlisticon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff4f0;
+        width: 33px;
+        height: 33px;
+        font-size:36px;
+    }
+    #navhamMenu {
+        display:flex;
+        gap:2px;
+        font-size:48px;
+    }
+    #navhamlogbutton {
+        font-size: 42px;
+        height: 34px;
+        width: 68px;
+        padding-top:0.6%;
+    }
 }
 
-@media screen and (min-width:26.876em) and (max-width:37.5em){
+@media screen and (min-width:431px) and (max-width:600px){
     #navInicio,
     #navPubli,
     #navlogbut,
@@ -160,9 +207,18 @@ header {
         height: 33px;
         font-size:42px;
     }
+    #navhamMenu {
+        display:flex;
+        gap:48px;
+    }
+    #navhamlogbutton {
+        height: 42px;
+        width: 82px;
+        padding-top:0.8%;
+    }
 }
 
-@media screen and (min-width:37.6em) and (max-width:52em){
+@media screen and (min-width:601px) and (max-width:832px){
     #navInicio,
     #navPubli,
     #navlogbut,
@@ -177,14 +233,24 @@ header {
         width: 33px;
         height: 33px;
         font-size:52px;
+        margin-right:16px;
     }
     #navhamButton i{
        width:1em;
        height:1em; 
     }
+    #navhamMenu {
+        display:flex;
+        gap:84px;
+    }
+    #navhamlogbutton {
+        height: 44px;
+        width: 82px;
+        padding-top:0.5%;
+    }
 }
 
-@media screen and (min-width:52.1em) and (max-width:61.25em){
+@media screen and (min-width:833px) and (max-width:980px){
     #logonavbarimg {
         width: 300px;
         height: 48px;
