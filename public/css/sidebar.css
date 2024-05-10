@@ -35,14 +35,7 @@ body{
 
 /* Itens */
 .sidebar-close{
-    width: 100%;
-    padding-left: 4%;
-    margin-bottom: 15%;
-}
-.sidebar-close i{
-    cursor: pointer;
-    font-size: 20px;
-    color: white;
+    display: none;
 }
 ul{
     height: 100%;
@@ -54,6 +47,7 @@ ul .items-menu{
 ul .items-menu:hover{
     background-color: #429741a2;
     border: 0px solid #429741;
+    border-radius: 15px;
 }
 ul .items-menu a{
     line-height: 20px;
