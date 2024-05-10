@@ -90,6 +90,7 @@ ul .items-menu a .icon{
     position: absolute;
     top: 45%;
     left: 50%;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 3px;
 }
 .modal-logout p{
     margin-top: 20%;
@@ -109,4 +110,18 @@ ul .items-menu a .icon{
 .btn-open:hover{
     background-color: #429741a2;
     border: 2.5px solid #429741;
+}
+.btn-close{
+    background-color: rgb(219, 42, 42);
+    font-size: 18px;
+    border-radius: 10px;
+    color: white;
+    padding: 4px;
+    box-shadow: none;
+    transition: 0.02s;
+    border: none;
+}
+.btn-close:hover{
+    background-color: rgb(124, 5, 5);
+    border: 2.5px solid rgb(219, 42, 42);
 }
