@@ -5,11 +5,12 @@
 }
 
 body{
-    background: url("/public/assets/fundocourolistaUser.png") no-repeat;
-    background-size: cover;
-    height: 100vh;
+    background: url("/public/assets/fundocourolistaUser.png") repeat;
+    background-size: auto;
+    height: 100%;
     font-family: "Jomhuria";
     color: #FFF4F0;
+    margin-bottom: 16px;
 }
 #titlebackUserList{
     display:flex;
@@ -55,7 +56,6 @@ div#tabcontainerUserList{
     align-items: center;
     width:55em;
     overflow-x:auto;
-    padding-bottom:16px;
 }
 #tableUserList{
     background: rgba(65, 35, 7, 0.80);
