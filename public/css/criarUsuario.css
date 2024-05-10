@@ -176,7 +176,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .modalM {
+    .modalC {
         height: 65%;
         width: 70%;
         border-radius: 15px;
@@ -202,18 +202,10 @@
     }
 
     .fundoFormulario {
-        height: 8%;
-    }
-
-    .fundoFormularioCont {
-        height: 20%;
+        height: 10%;
     }
 
     .fundoFormulario input::placeholder {
-        font-size: 22px;
-    }
-    
-    .fundoFormularioCont textarea::placeholder {
         font-size: 22px;
     }
 
@@ -223,14 +215,6 @@
 
     .namebox {
         font-size: 30px;
-    }
-    
-    .imagemInput::-webkit-file-upload-button {
-        display: none;
-    }
-
-    .imagemInput::before {
-        content: 'Adicione a foto: ';
     }
 
     .fechar {
@@ -249,7 +233,7 @@
 }
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
-    .modalM {
+    .modalC {
         height: 65%;
         width: 70%;
         border-radius: 15px;

@@ -136,4 +136,83 @@
     font-size: 28px;
 }
 
+@media only screen and (max-width: 600px) {
+    .modalV {
+        height: 45%;
+        width: 70%;
+        border-radius: 15px;
+        padding: 3%;
+    }
+
+    .modal-content {
+        gap: 5px;
+    }
+
+    .modal-body {
+        gap: 5px;
+    }
+
+    .titulo {
+        font-size: 24px;
+    }
+
+    .fundoFormulario {
+        height: 13%;
+    }
+
+    .fundoFormulario input::placeholder {
+        font-size: 22px;
+    }
+
+    .box {
+        font-size: 22px;
+    }
+
+    .namebox {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .titulo {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .modalV {
+        height: 50%;
+        width: 70%;
+        border-radius: 15px;
+        padding: 3%;
+    }
+
+    .modal-content {
+        gap: 5px;
+    }
+
+    .modal-body {
+        gap: 5px;
+    }
+
+    .titulo {
+        font-size: 38px;
+    }
+
+    .fundoFormulario {
+        height: 15%;
+    }
+
+    .fundoFormulario input::placeholder {
+        font-size: 30px;
+    }
+    
+    .box {
+        font-size: 30px;
+    }
+
+    .namebox {
+        font-size: 34px;
+    }
+}
 
