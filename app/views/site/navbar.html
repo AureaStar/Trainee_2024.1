@@ -1,6 +1,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 		<link rel="stylesheet" href="/public/css/navbar.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Almendra">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jomhuria">
@@ -9,21 +10,15 @@
     <body>
 
         <header>
-            <div class="row">
-                <div class="col-md-12">
-                    <nav class="navbar-Container">
-                        <a  class="logoNavbar" rel="logo da Torre do Sábio" href="#navLogText"><img id = "logonavbarimg" src="/public/assets/logo-linda-sem-linha.png"></a><!--falta href-->
-                        <ul class = "nav-lnk-container">
-                            <li id="navInicio" class="navlist"><a  class="navtext" href="Inicio">Início</a></li><!--falta href-->
-                            <li id="navPubli" class="navlist"><a  class="navtext" href="Publicacoes">Publicações</a></li>
-                            <li class="navhamLi"><button id="navhamButton"><svg class = "navlisticon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                              </svg></button></li>
-                        </ul>
-                        <div #id="navlogbut"><button id="navLogText">Login</button></div><!--falta href--><!--falta href-->
-                    </nav>
-                </div>
-            </div>
+            <nav class="navbar-Container">
+                <a  class="logoNavbar" rel="logo da Torre do Sábio" href="#navLogText"><img id = "logonavbarimg" src="/public/assets/logo-linda-sem-linha.png"></a><!--falta href-->
+                <ul class = "nav-lnk-container">
+                    <li id="navInicio" class="navlist"><a  class="navtext" href="Inicio">Início</a></li><!--falta href-->
+                    <li id="navPubli" class="navlist"><a  class="navtext" href="Publicacoes">Publicações</a></li>
+                    <li class="navhamLi"><button id="navhamButton"><i class="navlisticon bi bi-list"></i></button></li>
+                </ul>
+                <button id="navLogText">Login</button><!--falta href--><!--falta href-->
+            </nav>
             <div id="navhamMenu">
                 <a  class="navtext" href="Inicio">Início</a>
                 <a  class="navtext" href="Publicacoes">Publicações</a>

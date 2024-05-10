@@ -1,125 +1,91 @@
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-
-
-
-
-header{
+header {
     font-family: "Jomhuria";
     background: linear-gradient(90deg, #412307 0%, #A75A12 100%);
-    height: 64px;
+    height: 1em;
     width: 100%;
-    filter:drop-shadow(rgba(0, 0, 0, 0.40) 0px 10px 8px);
+    filter: drop-shadow(rgba(0, 0, 0, 0.40) 0px 10px 8px);
     font-size: 64px;
 }
 
-.navbar-Container{
+.navbar-Container {
     display: flex;
     height: 64px;
-    margin: 0px;
-    margin-left: 24px;
-    margin-right: 24px;
+    margin: 0 24px;
     align-items: center;
     justify-content: left;
-    gap: 0px 0px;
 }
-#logonavbarimg{
+
+#logonavbarimg {
     width: 400px;
     height: 64px;
 }
-.logoNavbar{
-    display:flex;
-    
+
+.logoNavbar {
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.nav-lnk-container{
+.nav-lnk-container {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: right;
     align-items: center;
-    gap: 0px 64px;
-    padding-top:0.7%;
-    
+    gap: 64px;
+    padding-top: 0.7%;
 }
 
-.navlist{
-    list-style: none;
+.navlist {
     margin: 0;
     padding: 0;
 }
 
-.navtext{
-    color: #E6A549;
+.navtext {
+    color: #e6a549;
     text-decoration: none;
-
 }
 
-#navlogbut{
-    justify-items:center;
-    align-items: center;
-}
-#navLogText{
-    background:  rgba(67, 151, 65, 0.65);
-    justify-items:center;
-    align-items: center;
+#navLogText {
+    background: rgba(67, 151, 65, 0.65);
     display: flex;
     border: none;
-    width: 100px;
-    height: 56px;
+    width: 200px;
+    height: 48px;
+    padding-top: 0.6%;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 0px;
     border-radius: 10px;
-    text-decoration:none;
+    text-decoration: none;
     font-size: 54px;
-    font-family:Jomhuria;
-    color:#FFF4F0;
-    padding-top:6%;
-    height:53px;
+    font-family: Jomhuria;
+    color: #fff4f0;
     cursor: pointer;
-	outline: inherit;
-}
-.navlisticon{
-    display:none;
-}
-#navhamMenu{
-    background: linear-gradient(90deg, #412307 0%, #A75A12 100%);
-    width:100%;
-    height: 60px;
-    display:none;
-    flex-direction:row;
-    justify-content:center;
-    gap:64px;
-    font-size: 54px;
+    outline: inherit;
 }
 
-#navhamlogbutton{
-    background:  rgba(67, 151, 65, 0.65);
-    justify-items:center;
-    align-items: center;
-    display: flex;
-    border: none;
-    width: 116px;
-    height: 34px;
+.navlisticon {
+    display: none;
+}
+
+#navhamMenu {
+    background: linear-gradient(90deg, #412307 0%, #a75a12 100%);
+    width: 100%;
+    height: 60px;
+    display: none;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    border-radius: 10px;
-    text-decoration:none;
+    gap: 64px;
     font-size: 54px;
-    font-family:Jomhuria;
-    color:#FFF4F0;
-    padding-top:1.1%;
-    height:53px;
 }
-
 #navhamButton{
     text-decoration:none;
     background: none;
@@ -129,184 +95,101 @@ header{
     font: inherit;
     cursor: pointer;
     outline: inherit;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
-@media (max-width: 590px){
-    .navbar-Container{
-        display: flex;
-        height: 64px;
-        margin: 0px;
-        margin-left: 0px;
-        margin-right: 2px;
-        align-items: center;
-        justify-content: left;
-        gap: 0px 0px;
+#navhamlogbutton {
+    background: rgba(67, 151, 65, 0.65);
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 54px;
+    font-family: Jomhuria;
+    color: #fff4f0;
+    padding-top: 1.1%;
+}
+
+@media screen and (max-width:26.875em){
+    #navInicio,
+    #navPubli,
+    #navlogbut,
+    #navLogText {
+        display: none;
     }
-    .navhamLi{
-        display:flex;
+    #logonavbarimg {
+        width: 220px;
+        height: 35.20px;
     }
-    #logonavbarimg{
-        width: 240px;
-        height: 38.4px;
-    }
-    #navhamMenu{
-        display:flex;
+    .navbar-Container {
         gap:8px;
-        font-size:43px;
+        margin-left:8px;
     }
-    #navhamlogbutton{
-        font-size: 43px;
-        height: 40px;
-        width: 77px;
-        padding-top:1.6%;
+    .navlisticon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff4f0;
+        width: 33px;
+        height: 33px;
+        font-size:36px;
     }
-    #navInicio{
-        display:none;
-    }
-    #navPubli{
-        display:none;
-    }
-    #navlogbut{
-        display:none;
-    }
-    #navLogText{
-        display:none;
-    }
-    .navlisticon{
-        display:block;
-        color:#FFF4F0;
-        width: 53;
-        height: 53;
-        list-style: none;
-    }   
 }
-@media (min-width: 591px) and (max-width: 450px){
-    #navhamMenu{
-        display:flex;
-        gap:34px;
-        font-size:53px;
-    }
-    header{
-        font-family: "Jomhuria";
-        background: linear-gradient(90deg, #412307 0%, #A75A12 100%);
-        height: 64px;
-        width: auto;
-        filter:drop-shadow(rgba(0, 0, 0, 0.40) 0px 10px 8px);
-        font-size: 64px;
-    }
-    .nav-lnk-container{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: right;
-        align-items: center;
-        gap: 0px 0px;
-        padding-top:0;
-        
-    }
-    .navbar-Container{
-        display: flex;
-        height: 64px;
-        margin: 0px;
-        margin-left: 24px;
-        margin-right: 12px;
-        align-items: center;
-        justify-content: left;
-        gap: 0px 32px;
-    }
-    #logonavbarimg{
-        width: 320px;
-        height: 54.5px;
-    }
-    .navhamLi{
-        display:flex;
-    }
-    
-    .navhamLogText{
-        display:block;
-    }
-    .navlisticon{
-        display:block;
-        color:#FFF4F0;
-        width: 53;
-        height: 53;
-        list-style: none;
-    }
-    
-    #navInicio{
-        display:none;
-    }
-    #navPubli{
-        display:none;
-    }
-    #navlogbut{
-        display:none;
-    }
-    #navLogText{
-        display:none;
-    }
 
+@media screen and (min-width:26.876em) and (max-width:37.5em){
+    #navInicio,
+    #navPubli,
+    #navlogbut,
+    #navLogText {
+        display: none;
+    }
+    #logonavbarimg {
+        width: 300px;
+        height: 48px;
+    }
+    .navlisticon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff4f0;
+        width: 33px;
+        height: 33px;
+        font-size:42px;
+    }
 }
-@media (min-width: 451px) and (max-width: 1020px){
-    header{
-        font-family: "Jomhuria";
-        background: linear-gradient(90deg, #412307 0%, #A75A12 100%);
-        height: 64px;
-        width: auto;
-        filter:drop-shadow(rgba(0, 0, 0, 0.40) 0px 10px 8px);
-    }
-    .nav-lnk-container{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: right;
-        align-items: center;
-        gap: 0px 64px;
-        padding-top:0;
-        
-    }
-    .navbar-Container{
-        display: flex;
-        height: 64px;
-        margin: 0px;
-        margin-left: 24px;
-        margin-right: 12px;
-        align-items: center;
-        justify-content: left;
-        gap: 0px 64px;
-    }
-    #logonavbarimg{
-        width: 320px;
-        height: 54.5px;
-    }
-    #navhamMenu{
-        display:flex;
-    }
-    .navhamLi{
-        display:flex;
-    }
-    
-    .navhamLogText{
-        display:block;
-    }
-    .navlisticon{
-        display:block;
-        color:#FFF4F0;
-        width: 53;
-        height: 53;
-        list-style: none;
-    }
-    
-    #navInicio{
-        display:none;
-    }
-    #navPubli{
-        display:none;
-    }
-    #navlogbut{
-        display:none;
-    }
-    #navLogText{
-        display:none;
-    }
 
+@media screen and (min-width:37.6em) and (max-width:52em){
+    #navInicio,
+    #navPubli,
+    #navlogbut,
+    #navLogText {
+        display: none;
+    }
+    .navlisticon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff4f0;
+        width: 33px;
+        height: 33px;
+        font-size:52px;
+    }
+    #navhamButton i{
+       width:1em;
+       height:1em; 
+    }
+}
+
+@media screen and (min-width:52.1em) and (max-width:61.25em){
+    #logonavbarimg {
+        width: 300px;
+        height: 48px;
+    }
+    .nav-lnk-container {
+        gap:48px;
+    }
 }
