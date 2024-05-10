@@ -63,12 +63,6 @@ body h1{
 .autoria p{
     font-family: Open Sans, serif;
 }
-.foto-perfil{
-    background-color: white;
-    width: 30px;
-    height: 30px;
-    border-radius: 100px;
-}
 .box-text{
     line-height: 25px;
     text-indent: 1em;
