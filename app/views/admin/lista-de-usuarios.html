@@ -3,10 +3,12 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
 		<link rel="stylesheet" href="/public/css/lista-de-usuarios.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Almendra">
+        <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jomhuria">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     </head>
     
     <body>
@@ -14,73 +16,97 @@
             <div id="titlebackUserList">
                 <div class="titleboxUserList">
                     <img class = "torrezinhatabela" src="/public/assets/torrezinha.png">
-                    <h1 class="titleUserList">Lista de Usuários</b></h1>
+                    <h1 class="titleUserList">Lista de Usuários</h1>
                     <button class="criarUserList">Criar</button>
                     <img class = "torrezinhatabela" src="/public/assets/torrezinha.png">
                 </div>
             </div>
-            <table id="tableUserList">
-                <thead class="theadUserList">
-                    <tr>
-                        <th class="thUserList">ID</th>
-                        <th class="thUserList">Nome</th>
-                        <th class="thUserList">E-mail</th>
-                        <th class="thUserList">Ações</th>
-                    </tr>
-                </thead>
-                <tbody class="tbodyUserList">
-                    <tr>
-                        <td class="tdUserList">1</td>
-                        <td class="tdUserList">Cristian</td>
-                        <td class="tdUserList">cristianbarbosa123467891234567@gmail.com</td>
-                        <td class="tdUserList">
-                            <button class="viewUserList">Visualizar</button>
-                            <button class="editUserList">Editar</button>
-                            <button class="delUserList">Deletar</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="tdUserList">1</td>
-                        <td class="tdUserList">Cristian</td>
-                        <td class="tdUserList">cristianbarbosa123467891234567@email.com</td>
-                        <td class="tdUserList">
-                            <button class="viewUserList">Visualizar</button>
-                            <button class="editUserList">Editar</button>
-                            <button class="delUserList">Deletar</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="tdUserList">1</td>
-                        <td class="tdUserList">Cristian</td>
-                        <td class="tdUserList">cristianbarbosacristian@email.com</td>
-                        <td class="tdUserList">
-                            <button class="viewUserList">Visualizar</button>
-                            <button class="editUserList">Editar</button>
-                            <button class="delUserList">Deletar</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="tdUserList">1</td>
-                        <td class="tdUserList">Cristian</td>
-                        <td class="tdUserList">cristianbarbosacristian@email.com</td>
-                        <td class="tdUserList">
-                            <button class="viewUserList">Visualizar</button>
-                            <button class="editUserList">Editar</button>
-                            <button class="delUserList">Deletar</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="tdUserList">1</td>
-                        <td class="tdUserList">Cristian</td>
-                        <td class="tdUserList">cristianbarbosacristian@email.com</td>
-                        <td class="tdUserList">
-                            <button class="viewUserList">Visualizar</button>
-                            <button class="editUserList">Editar</button>
-                            <button class="delUserList">Deletar</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div id="tabcontainerUserList">
+                <table id="tableUserList">
+                    <thead class="theadUserList">
+                        <tr>
+                            <th class="thUserList">ID</th>
+                            <th class="thUserList">Nome</th>
+                            <th class="thUserList">E-mail</th>
+                            <th class="thUserList">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbodyUserList">
+                        <tr>
+                            <td class="tdUserList">1222</td>
+                            <td class="tdUserList">Cristian</td>
+                            <td class="tdUserList">cristianbarbosa123467891234567@gmail.com</td>
+                            <td class="tdUserList">
+                                <div id="actionsBtsUserList">
+                                    <button class="viewUserList"><i class="bi bi-eye"></i> <b class =buttextUserList>Ver</b></button>
+                                    <button class="editUserList"><i class="bi bi-pencil-square"></i> <b class =buttextUserList>Editar</b></button>
+                                    <button class="delUserList"><i class="bi bi-x-lg"></i> <b class =buttextUserList>Deletar</b></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tdUserList">1222</td>
+                            <td class="tdUserList">Cristian</td>
+                            <td class="tdUserList">cristianbarbosa123467891234567@gmail.com</td>
+                            <td class="tdUserList">
+                                <div id="actionsBtsUserList">
+                                    <button class="viewUserList"><i class="bi bi-eye"></i> <b class =buttextUserList>Ver</b></button>
+                                    <button class="editUserList"><i class="bi bi-pencil-square"></i> <b class =buttextUserList>Editar</b></button>
+                                    <button class="delUserList"><i class="bi bi-x-lg"></i> <b class =buttextUserList>Deletar</b></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tdUserList">1222</td>
+                            <td class="tdUserList">Cristian</td>
+                            <td class="tdUserList">cristianbarbosa123467891234567@gmail.com</td>
+                            <td class="tdUserList">
+                                <div id="actionsBtsUserList">
+                                    <button class="viewUserList"><i class="bi bi-eye"></i> <b class =buttextUserList>Ver</b></button>
+                                    <button class="editUserList"><i class="bi bi-pencil-square"></i> <b class =buttextUserList>Editar</b></button>
+                                    <button class="delUserList"><i class="bi bi-x-lg"></i> <b class =buttextUserList>Deletar</b></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tdUserList">1222</td>
+                            <td class="tdUserList">Cristian</td>
+                            <td class="tdUserList">cristianbarbosa123467891234567@gmail.com</td>
+                            <td class="tdUserList">
+                                <div id="actionsBtsUserList">
+                                    <button class="viewUserList"><i class="bi bi-eye"></i> <b class =buttextUserList>Ver</b></button>
+                                    <button class="editUserList"><i class="bi bi-pencil-square"></i> <b class =buttextUserList>Editar</b></button>
+                                    <button class="delUserList"><i class="bi bi-x-lg"></i> <b class =buttextUserList>Deletar</b></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tdUserList">1222</td>
+                            <td class="tdUserList">Cristian</td>
+                            <td class="tdUserList">cristianbarbosa123467891234567@gmail.com</td>
+                            <td class="tdUserList">
+                                <div id="actionsBtsUserList">
+                                    <button class="viewUserList"><i class="bi bi-eye"></i> <b class =buttextUserList>Ver</b></button>
+                                    <button class="editUserList"><i class="bi bi-pencil-square"></i> <b class =buttextUserList>Editar</b></button>
+                                    <button class="delUserList"><i class="bi bi-x-lg"></i> <b class =buttextUserList>Deletar</b></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tdUserList">1222</td>
+                            <td class="tdUserList">Cristian</td>
+                            <td class="tdUserList">cristianbarbosa123467891234567@gmail.com</td>
+                            <td class="tdUserList">
+                                <div id="actionsBtsUserList">
+                                    <button class="viewUserList"><i class="bi bi-eye"></i> <b class =buttextUserList>Ver</b></button>
+                                    <button class="editUserList"><i class="bi bi-pencil-square"></i> <b class =buttextUserList>Editar</b></button>
+                                    <button class="delUserList"><i class="bi bi-x-lg"></i> <b class =buttextUserList>Deletar</b></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </main>
     </body>
 </html>
