@@ -96,6 +96,10 @@
     font-family: Jomhuria;
 }
 
+.nsei {
+    background-color: #E6A549;
+}
+
 .fundoFormulario {
     background-color: #E6A549;
     border: none;
@@ -174,6 +178,7 @@ textarea {
 .imagemInput::-webkit-file-upload-button {
     display: none;
 }
+
 .imagemInput::before {
     content: 'Adicione a foto: ';
 }
