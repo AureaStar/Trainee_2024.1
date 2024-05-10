@@ -52,7 +52,7 @@ ul .items-menu:hover{
 ul .items-menu a{
     line-height: 20px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
     font-family: Jomhuria;
     color: white;
     margin-bottom: 8%;
@@ -96,7 +96,7 @@ ul .items-menu a .icon{
 .btn-open{
     background-color: #429741;
     font-family: Jomhuria;
-    font-size: 18px;
+    font-size: 28px;
     border-radius: 10px;
     color: white;
     padding: 4px;
@@ -111,7 +111,7 @@ ul .items-menu a .icon{
 .btn-close{
     background-color: rgb(219, 42, 42);
     font-family: Jomhuria;
-    font-size: 18px;
+    font-size: 28px;
     border-radius: 10px;
     color: white;
     padding: 4px;
