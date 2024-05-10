@@ -53,7 +53,7 @@ ul .items-menu{
 }
 ul .items-menu:hover{
     background-color: #429741a2;
-    border: 1px solid #429741;
+    border: 0px solid #429741;
 }
 ul .items-menu a{
     line-height: 20px;
