@@ -264,7 +264,7 @@ header {
         padding-top:0.5%;
     }
 }
-@media screen and (min-width:651px) and (max-width:832px){
+@media screen and (min-width:651px) and (max-width:720px){
     #navInicio,
     #navPubli,
     #navlogbut,
@@ -295,6 +295,16 @@ header {
         height: 44px;
         width: 82px;
         padding-top:0.6%;
+    }
+}
+@media screen and (min-width:721px) and (max-width:832px){
+    #logonavbarimg {
+        width: 280px;
+        height: 44.80px;
+    }
+    .nav-lnk-container {
+        gap:28px;
+        font-size: 56px;
     }
 }
 @media screen and (min-width:833px) and (max-width:980px){

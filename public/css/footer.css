@@ -143,9 +143,6 @@ footer{
         gap: 7px; 
         
     }
-    .fotValor{
-        
-    }
     .footValList{
         text-decoration:none;
         list-style: none;
@@ -458,6 +455,10 @@ footer{
     #fotlogoIconBox{
         display:flex;
         gap:14px;
+    }
+    #logoCodeFooter{
+        width:160px;
+        height:36.09px;
     }
 }
 @media (min-width: 766px) and (max-width: 900px){
