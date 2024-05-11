@@ -2,11 +2,13 @@ const cposts = document.querySelector(".c-posts");
 const firstPost = document.querySelectorAll(".post-mobile")[0];
 const arrows = document.querySelectorAll(".carousel i");
 
-/*arrows.forEach(arrow => {
+let firstPostWidth = firstPost.clientWidth;
+
+arrows.forEach(arrow => {
     arrow.addEventListener("click", () => {
-        console.log(arrow);
+        cposts.scrollLeft += arrow.id == "arrow-left" ? -firstPostWidth : firstPostWidth;
     });
-});*/
+});
 
 
 

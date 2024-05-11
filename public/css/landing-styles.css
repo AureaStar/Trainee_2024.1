@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     font-size: 0px;
+    box-sizing: border-box;
 }
 
 
@@ -104,6 +105,9 @@
 }
 
 #login{
+    border: none;
+    cursor: pointer;
+    outline: inherit;
     filter:drop-shadow(black 4px 4px 4px);
     background-color: #439741;
     font-size: 64px;
@@ -116,17 +120,19 @@
 }
 
 #publi{
+    border: none;
+    cursor: pointer;
+    outline: inherit;
     filter:drop-shadow(black 4px 4px 4px);
-    background-color: transparent;
-    border-width: 4px;
+    background-color: rgb(116, 116, 116);
     border-color: white;
-    color: white;
     font-size: 64px;
+    border-width: 2px;
 }
 
 #publi:hover{
-    background-color: #429741a2;
-    border: 2.5px solid #429741;
+    background-color: rgb(56, 57, 56);
+    border: 2.5px solid rgb(116, 116, 116);
 }
 
 
@@ -160,7 +166,7 @@
     font-family: "Almendra", serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 88px;
+    font-size: 92px;
 }
 
 .post-space h2{
@@ -204,6 +210,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    padding-bottom: 4%;
     box-shadow: 8px 8px 16px 0px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     width: 100%;
@@ -215,9 +222,12 @@
 }
 
 .post-grande p{
+    display:-webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     padding-left: 4%;
     padding-right: 4%;
-    padding-bottom: 4%;
     text-align: left;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
@@ -236,12 +246,16 @@
     border-radius: 30px;
     width: 100%;
     height: 100%;
+    padding-bottom: 4%;
 }
 
 .post p{
+    display:-webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     padding-left: 4%;
     padding-right: 4%;
-    padding-bottom: 4%;
     text-align: left;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
@@ -279,6 +293,9 @@
 
 #ler-mais{
     padding-top: 1%;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
     filter:drop-shadow(black 4px 4px 4px);
     background-color: #439741;
     color: white;
@@ -295,13 +312,6 @@
     border: 2.5px solid #429741;
 }
 
-.c-item h2{
-    display: none;  
-}
-
-.c-item p{
-    display: none;
-}
 
 /*RESPONSIVIDADE MOBILE*/
 @media (max-width:1200px){
@@ -314,76 +324,87 @@
     
 /*CARROSSEL*/
 
-    .post-grid{
-        display: none;
-    }
+.post-grid{
+    display: none;
+}
 
-    .carousel{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        height: 56%;
-        border-radius: 30px;
-        white-space: nowrap;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-    }
+.post-space{
+    width: 90%;
+}
 
-    .carousel i{
-        position: relative;
-        width: 48px;
-        height: 48px;
-        line-height: 45px;
-        font-size: 20px;
-        text-align: center;
-        cursor: pointer;
-        background-color: white;
-        color: #502F11;
-        border-radius: 50%;
-    }
+.carousel{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 56%;
+    border-radius: 30px;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
 
-    .carousel i:first-child{
-        left: 24px;
-    }
+.carousel i{
+    position: relative;
+    box-shadow: 8px 8px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 48px;
+    height: 48px;
+    line-height: 45px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    color: #502F11;
+    border-radius: 50%;
+}
 
-    .carousel i:last-child{
-        right: 24px;
-    }
+.carousel i:first-child{
+    left: 24px;
+}
 
-    .c-posts{
-        display: inline-block;
-        width: 72%;
-        height: 100%;
-        /*border: 8px solid brown;*/
-        white-space: nowrap;
-        overflow: hidden;
-    }
+.carousel i:last-child{
+    right: 24px;
+}
 
-    .post-mobile{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        width: 100%;
-        height: 100%;
-    }
+.c-posts{
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 72%;
+    height: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 8px solid #231405;
+}
 
-    .post-mobile p{
-        padding-left: 4%;
-        padding-right: 4%;
-        padding-bottom: 8%;
-        text-align: left;
-        text-wrap: wrap;
-        font-family: "Open Sans", sans-serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-        font-variation-settings:
-        "wdth" 100;
-        font-weight: 700;
-        font-size: 32px;
-    }
+.post-mobile{
+    display: flex;
+    flex: 0 0 100%;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    object-fit: cover;
+    padding-bottom: 8%;
+}
 
-    
+.post-mobile p{
+    display:-webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding-left: 4%;
+    padding-right: 4%;
+    text-align: left;
+    text-wrap: wrap;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+
 
 /*=============================================*/
     
@@ -393,6 +414,7 @@
 
     #ler-mais{
         font-size: 56px;
+        width: 44%;
     }
 }
 
@@ -431,19 +453,27 @@
         font-size: 56px;
     }
 
-    .c-item h2{
+    .post-mobile h2{
         font-size: 30px;
     }
 
-    .c-item p{
+    .post-mobile p{
         font-size: 30px;
     }
 }
 
 @media (max-width: 720px){
     .carousel{
-        width: 80%;
-        height: 50%;
+        width: 100%;
+        height: 58%;
+    }
+
+    .carousel i{
+        width: 56px; 
+    }
+
+    .c-posts{
+        width: 100%;
     }
 
     .img-torre{
@@ -451,12 +481,16 @@
         height: 140px;
     }
 
-    .c-item h2{
+    .post-mobile h2{
+        font-size: 32px;
+    }
+
+    .post-mobile p{
         font-size: 28px;
     }
 
-    .c-item p{
-        font-size: 28px;
+    #ler-mais{
+        width: 50%;
     }
 }
 
@@ -465,8 +499,12 @@
         font-size: 80px;
     }
 
+    .post-space{
+        width: 100%;
+    }
+
     #ler-mais{
-        width: 40%;
+        width: 60%;
         font-size: 56px;
     }
 
@@ -482,8 +520,12 @@
     }
 
     .carousel{
-        width: 80%;
-        height: 45%;
+        width: 100%;
+        height: 50%;
+    }
+
+    .c-posts{
+        width: 100%;
     }
 
     .hero-buttons{
@@ -519,11 +561,11 @@
         padding-top: 12%;
     }
 
-    .c-item h2{
+    .post-mobile h2{
         font-size: 24px;
     }
 
-    .c-item p{
+    .post-mobile p{
         font-size: 24px;
     }
 
@@ -534,9 +576,8 @@
         font-size: 68px;
     }
 
-    .carousel{
-        width: 80%;
-        height: 40%;
+    .c-posts{
+        height: 80%;
     }
 
     .img-torre{
@@ -556,14 +597,19 @@
     }
 
     #ler-mais{
-        width: 60%;
+        width: 70%;
     }
 
-    .c-item h2{
-        font-size: 20px;
+    .post-mobile{
+        padding-bottom: 4%;
     }
 
-    .c-item p{
+    .post-mobile h2{
+        font-size: 24px;
+    }
+
+    .post-mobile p{
+        -webkit-line-clamp: 3;
         font-size: 20px;
     }
 }
@@ -573,9 +619,8 @@
         font-size: 60px;
     }
 
-    .carousel{
-        width: 80%;
-        height: 36%;
+    .post-mobile h2{
+        font-size: 22px;
     }
 
     .img-torre{
