@@ -3,6 +3,9 @@
     padding: 0;
     list-style: none;
 }
+.negrito{
+    font-weight:bold;
+}
 footer{
     font-family: "Open Sans";
     color: #FFF4F0;
@@ -30,9 +33,21 @@ footer{
 	cursor: pointer;
 	outline: inherit;
 }
-#logoCode{
+#logoCodefooter{
+    margin-top: 3% ;
     width: 185px;
     height: 41.733px;
+}
+#fotlogoIconBox{
+    display:none;
+    gap:20px;
+}
+#logoCodeFotBox{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:12px;
 }
 #fotBoxInverter{
     display:flex;
@@ -99,13 +114,136 @@ footer{
     gap: 8px; 
     flex-direction:row;
 }
-
-.footericons{
-    width:32px;
-    height:32px;
-    color:#FFF4F0;;
+.footerSocialButtons{
+    font-size:32px;
 }
-@media (max-width: 590px){
+@media (max-width: 302px){
+    footer{
+        font-family: "Open Sans";
+        font-size:12px;
+        color: #FFF4F0;
+        height: 226px;
+        background: linear-gradient(90deg, #412307 0%, #A75A12 100%);
+    }
+    .footer-Container{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        gap:16px;
+        
+    }
+    .fotValor ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+        height: 127px;
+        gap: 7px; 
+        
+    }
+    .fotValor{
+        
+    }
+    .footValList{
+        text-decoration:none;
+        list-style: none;
+    }
+    #boxValContacts{
+        display:flex;
+        flex-direction:row-reverse;
+        align-items: center;
+        gap:6px;
+        width:100%;
+        padding: 0px;
+        font-size:11px;
+    }
+    #fotBoxInverter{
+        flex-direction:column-reverse;
+        gap:0px;
+    }
+    .fotContacts{
+        height: 112px;
+        padding: 0px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 7px; 
+    }
+    #fotSocialsTitle{
+        display:none;
+    }
+    
+    
+    #fotIconBox{
+        display:flex;
+        gap: 16px; 
+        flex-direction:row;
+    }
+}
+@media (min-width: 303px) and (max-width: 353px){
+    footer{
+        font-family: "Open Sans";
+        font-size:12px;
+        color: #FFF4F0;
+        height: 226px;
+        background: linear-gradient(90deg, #412307 0%, #A75A12 100%);
+    }
+    .footer-Container{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        gap:16px;
+        
+    }
+    .fotValor ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+        height: 127px;
+        padding: 2px;
+        gap: 7px; 
+        
+    }
+    
+    .footValList{
+        text-decoration:none;
+        list-style: none;
+    }
+    #boxValContacts{
+        display:flex;
+        flex-direction:row-reverse;
+        align-items: center;
+        gap:0px
+    }
+    #fotBoxInverter{
+        flex-direction:column-reverse;
+        gap:0px;
+    }
+    .fotContacts{
+        height: 112px;
+        padding: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 7px; 
+    }
+    #fotSocialsTitle{
+        display:none;
+    }
+    
+    
+    #fotIconBox{
+        display:flex;
+        gap: 16px; 
+        flex-direction:row;
+    }
+}
+@media (min-width: 354px) and (max-width: 433px){
     footer{
         font-family: "Open Sans";
         font-size:13px;
@@ -118,7 +256,7 @@ footer{
         flex-direction:column;
         justify-content: center;
         align-items: center;
-        gap:4px;
+        gap:16px;
         
     }
     .fotValor ul{
@@ -165,14 +303,8 @@ footer{
         gap: 16px; 
         flex-direction:row;
     }
-    
-    .footericons{
-        width:32px;
-        height:32px;
-        color:#FFF4F0;
-    }
 }
-@media (min-width: 591px) and (max-width: 450px){
+@media (min-width: 434px) and (max-width: 550px){
     footer{
         font-family: "Open Sans";
         color: #FFF4F0;
@@ -238,7 +370,7 @@ footer{
         color:#FFF4F0;
     }
 }
-@media (min-width: 451px) and (max-width: 1020px){
+@media (min-width: 551px) and (max-width: 640px){
     footer{
         font-family: "Open Sans";
         color: #FFF4F0;
@@ -302,5 +434,43 @@ footer{
         width:32px;
         height:32px;
         color:#FFF4F0;
+    }
+}
+@media (min-width: 641px) and (max-width: 765px){
+    .footer-Container{
+        gap:16px;
+    }
+    #boxValContacts{
+        gap:16px;
+    }
+    #fotBoxInverter{
+        gap:16px;
+    }
+    #fotSocials{
+        display:none;
+    }
+    .footer-Container{
+        font-size:14px;
+    }
+    #logoCodeFotBox{
+        margin-bottom:1%;
+    }
+    #fotlogoIconBox{
+        display:flex;
+        gap:14px;
+    }
+}
+@media (min-width: 766px) and (max-width: 900px){
+    .footer-Container{
+        gap:16px;
+    }
+    #boxValContacts{
+        gap:16px;
+    }
+    #fotBoxInverter{
+        gap:16px;
+    }
+    .footer-Container{
+        font-size:14px;
     }
 }

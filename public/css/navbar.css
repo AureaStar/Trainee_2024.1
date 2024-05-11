@@ -69,6 +69,13 @@ header {
     color: #fff4f0;
     cursor: pointer;
     outline: inherit;
+    border: 2.5px solid;
+    border-color: transparent;
+    transition: background 0.2s;
+}
+#navLogText:hover {
+    background-color: #429741a2;
+    border: 2.5px solid #429741;
 }
 
 .navlisticon {
@@ -102,7 +109,6 @@ header {
 #navhamlogbutton {
     background: rgba(67, 151, 65, 0.65);
     display: flex;
-    border: none;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -114,6 +120,15 @@ header {
     font-family: Jomhuria;
     color: #fff4f0;
     padding-top: 1.1%;
+    cursor: pointer;
+    outline: inherit;
+    border: 2.5px solid;
+    border-color: transparent;
+    transition: background 0.2s;
+}
+#navhamlogbutton:hover {
+    background-color: #429741a2;
+    border: 2.5px solid #429741;
 }
 @media screen and (max-width:320px){
     #navInicio,
