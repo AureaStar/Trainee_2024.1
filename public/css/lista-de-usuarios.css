@@ -39,7 +39,7 @@ body{
     font-family:Almendra;
     font-weight:bold;
 }
-.torrezinhatabela{
+.torrezinhatabUserList{
     height:78px;
     width:94,44px;
 }
@@ -163,7 +163,7 @@ button{
     #titlebackUserList{
         height:2em;
     }
-    .torrezinhatabela{
+    .torrezinhatabUserList{
         height:32px;
         width:38,74px;
     }
@@ -265,7 +265,7 @@ button{
     #titlebackUserList{
         height:3em;
     }
-    .torrezinhatabela{
+    .torrezinhatabUserList{
         height:32px;
         width:38,74px;
     }
@@ -367,7 +367,7 @@ button{
     #titlebackUserList{
         height:3em;
     }
-    .torrezinhatabela{
+    .torrezinhatabUserList{
         height:32px;
         width:38,74px;
     }
@@ -671,8 +671,4 @@ button{
         height: 40px;
         transition: background 0.2s;
     }
-}
-
-@media screen and (min-width:931px) and (max-width:930px){
-
 }
