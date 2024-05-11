@@ -61,6 +61,7 @@ ul .items-menu a{
 }
 ul .items-menu a .link-txt{
     display: flex;
+    padding-top: 4px;
     margin-left: 40px;
 }
 ul .items-menu a .icon{
