@@ -100,7 +100,7 @@ ul .items-menu a .icon{
     font-size: 28px;
     border-radius: 10px;
     color: white;
-    padding: 4px;
+    padding: 4px 2px 0px;
     box-shadow: none;
     transition: 0.02s;
     border: none;
@@ -115,7 +115,7 @@ ul .items-menu a .icon{
     font-size: 28px;
     border-radius: 10px;
     color: white;
-    padding: 4px;
+    padding: 4px 2px 0px;
     box-shadow: none;
     transition: 0.02s;
     border: none;
