@@ -19,7 +19,7 @@
 .modalV {
     position: absolute;
     background-color: #412307;
-    height: 70%;
+    height: 65%;
     width: 65%;
     display: flex;
     flex-direction: column;
@@ -234,7 +234,7 @@ textarea {
 
 @media only screen and (max-width: 600px) {
     .modalV {
-        height: 65%;
+        height: 62%;
         width: 70%;
         border-radius: 15px;
         padding: 3%;
@@ -245,7 +245,7 @@ textarea {
     }
 
     .modal-body {
-        gap: 5px;
+        gap: 2px;
     }
 
     .titulo {
@@ -296,7 +296,7 @@ textarea {
     }
 
     .modal-body {
-        gap: 5px;
+        gap: 2px;
     }
 
     .titulo {

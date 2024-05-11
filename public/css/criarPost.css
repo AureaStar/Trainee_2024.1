@@ -326,7 +326,7 @@ textarea {
         height: 65%;
         width: 70%;
         border-radius: 15px;
-        padding: 5%;
+        padding: 3%;
     }
 
     .modal-content {
@@ -334,7 +334,7 @@ textarea {
     }
 
     .modal-body {
-        gap: 5px;
+        gap: 2px;
     }
 
 
