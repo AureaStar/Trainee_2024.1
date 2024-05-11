@@ -107,7 +107,6 @@ ul .items-menu a .icon{
 }
 .btn-open:hover{
     background-color: #429741a2;
-    border: 2.5px solid #429741;
 }
 .btn-close{
     background-color: rgb(219, 42, 42);
@@ -122,5 +121,4 @@ ul .items-menu a .icon{
 }
 .btn-close:hover{
     background-color: rgb(124, 5, 5);
-    border: 2.5px solid rgb(219, 42, 42);
 }
