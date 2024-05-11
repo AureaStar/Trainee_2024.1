@@ -96,6 +96,26 @@
     font-family: Jomhuria;
 }
 
+.boxselect {
+    background-color: #E6A549;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 3px solid #e29c3a;
+    border-radius: 5px;
+    padding-left: 2%;
+}
+
+.boxselect:hover {
+    background-color: #e6a54900;
+    border: 3px solid #e29c3a;
+}
+
+.nsei {
+    background-color: #E6A549;
+    align-items: center;
+}
+
 .fundoFormulario {
     background-color: #E6A549;
     border: none;
@@ -218,7 +238,7 @@ textarea {
 
 @media only screen and (max-width: 600px) {
     .modalM {
-        height: 65%;
+        height: 70%;
         width: 70%;
         border-radius: 15px;
         padding: 3%;
@@ -229,7 +249,7 @@ textarea {
     }
 
     .modal-body {
-        gap: 5px;
+        gap: 2px;
     }
 
     .titulo {

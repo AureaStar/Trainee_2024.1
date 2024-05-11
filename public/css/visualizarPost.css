@@ -96,6 +96,21 @@
     font-family: Jomhuria;
 }
 
+.boxselect {
+    background-color: #E6A549;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 3px solid #e29c3a;
+    border-radius: 5px;
+    padding-left: 2%;
+}
+
+.boxselect:hover {
+    background-color: #e6a54900;
+    border: 3px solid #e29c3a;
+}
+
 .fundoFormulario {
     background-color: #E6A549;
     border: none;
