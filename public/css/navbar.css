@@ -40,6 +40,7 @@ header {
     align-items: center;
     gap: 64px;
     padding-top: 0.7%;
+    margin-right:64px;
 }
 
 .navlist {
@@ -77,12 +78,21 @@ header {
     background-color: #429741a2;
     border: 2.5px solid #429741;
 }
-
-.navlisticon {
-    display: none;
+.navhamLi{
+    display:none;
 }
 
-#navhamMenu {
+.navlisticon{
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    background: none;
+    text-decoration:none;
+    color: #FFF4F0;
+    border: none;
+}
+
+.navhamMenu {
     background: linear-gradient(90deg, #412307 0%, #a75a12 100%);
     width: 100%;
     height: 64px;
@@ -93,7 +103,27 @@ header {
     gap: 64px;
     font-size: 54px;
 }
-#navhamButton{
+.open{
+    display:flex;
+}
+.hidden{
+    display:none;
+}
+.navhamButton{
+    text-decoration:none;
+    background: none;
+    color: #FFF4F0;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    
+}
+#navopenhamButton{
     text-decoration:none;
     background: none;
     color: #FFF4F0;
@@ -105,6 +135,7 @@ header {
     display:flex;
     justify-content: center;
     align-items: center;
+    gap:0px;
 }
 #navhamlogbutton {
     background: rgba(67, 151, 65, 0.65);
@@ -137,6 +168,9 @@ header {
     #navLogText {
         display: none;
     }
+    .nav-lnk-container {
+        margin-right:0px;
+    }
     #logonavbarimg {
         width: 220px;
         height: 35.20px;
@@ -154,8 +188,13 @@ header {
         height: 33px;
         font-size:36px;
     }
-    #navhamMenu {
+    .navhamLiClosed{
         display:flex;
+    }
+    .navhamLiOpen{
+        display:flex;
+    }
+    .navhamMenu {
         gap:12px;
         font-size:42px;
     }
@@ -163,6 +202,12 @@ header {
         font-size: 34px;
         height: 32px;
         width: 54px;
+    }
+    .navhamLi{
+        display:flex;
+    }
+    .hidden{
+        display:none;
     }
 }
 @media screen and (min-width:321px) and (max-width:430px){
@@ -172,6 +217,9 @@ header {
     #navLogText {
         display: none;
     }
+    .nav-lnk-container {
+        margin-right:12px;
+    }
     #logonavbarimg {
         width: 220px;
         height: 35.20px;
@@ -189,8 +237,10 @@ header {
         height: 33px;
         font-size:36px;
     }
-    #navhamMenu {
+    .navhamLiClosed{
         display:flex;
+    }
+    .navhamMenu {
         gap:8px;
         font-size:48px;
     }
@@ -199,6 +249,12 @@ header {
         height: 34px;
         width: 68px;
         padding-top:0.6%;
+    }
+    .navhamLi{
+        display:flex;
+    }
+    .hidden{
+        display:none;
     }
 }
 
@@ -209,6 +265,9 @@ header {
     #navLogText {
         display: none;
     }
+    .nav-lnk-container {
+        margin-right:24px;
+    }
     #logonavbarimg {
         width: 300px;
         height: 48px;
@@ -222,14 +281,22 @@ header {
         height: 33px;
         font-size:42px;
     }
-    #navhamMenu {
+    .navhamLiClosed{
         display:flex;
+    }
+    .navhamMenu {
         gap:48px;
     }
     #navhamlogbutton {
         height: 42px;
         width: 82px;
         padding-top:0.8%;
+    }
+    .navhamLi{
+        display:flex;
+    }
+    .hidden{
+        display:none;
     }
 }
 
@@ -240,6 +307,9 @@ header {
     #navLogText {
         display: none;
     }
+    .nav-lnk-container {
+        margin-right:0px;
+    }
     .navlisticon {
         display: flex;
         justify-content: center;
@@ -250,18 +320,26 @@ header {
         font-size:52px;
         margin-right:16px;
     }
+    .navhamLiClosed{
+        display:flex;
+    }
     #navhamButton i{
        width:1em;
        height:1em; 
     }
-    #navhamMenu {
-        display:flex;
+    .navhamMenu {
         gap:84px;
     }
     #navhamlogbutton {
         height: 44px;
         width: 82px;
         padding-top:0.5%;
+    }
+    .navhamLi{
+        display:flex;
+    }
+    .hidden{
+        display:none;
     }
 }
 @media screen and (min-width:651px) and (max-width:720px){
@@ -271,6 +349,12 @@ header {
     #navLogText {
         display: none;
     }
+    .open{
+        display:flex;
+    }
+    .nav-lnk-container {
+        margin-right:0px;
+    }
     .navlisticon {
         display: flex;
         justify-content: center;
@@ -281,12 +365,14 @@ header {
         font-size:52px;
         margin-right:16px;
     }
+    .navhamLiClosed{
+        display:flex;
+    }
     #navhamButton i{
        width:1em;
        height:1em; 
     }
-    #navhamMenu {
-        display:flex;
+    .navhamMenu {
         gap:104px;
         font-size:64px;
     }
@@ -295,6 +381,12 @@ header {
         height: 44px;
         width: 82px;
         padding-top:0.6%;
+    }
+    .navhamLi{
+        display:flex;
+    }
+    .hidden{
+        display:none;
     }
 }
 @media screen and (min-width:721px) and (max-width:832px){
@@ -305,6 +397,7 @@ header {
     .nav-lnk-container {
         gap:28px;
         font-size: 56px;
+        margin-right:28px;
     }
 }
 @media screen and (min-width:833px) and (max-width:980px){
@@ -314,5 +407,8 @@ header {
     }
     .nav-lnk-container {
         gap:48px;
+    }
+    .navhamMenu{
+        display:none;
     }
 }
