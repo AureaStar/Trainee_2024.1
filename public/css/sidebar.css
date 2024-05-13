@@ -170,3 +170,49 @@ ul .items-menu a .icon{
         left: 30%;
     }
 }
+
+@media (min-width: 481px) { /* IPad e Tablet */
+
+    .sidebar{
+        background-size: 2000px;
+        width: 6%;
+        padding: 330px 0 40px 1%;
+    }
+    .sidebar:hover{
+        width: 38%;
+    }
+
+    /* Itens */
+    ul .items-menu a{
+        padding-left: 4px;
+        line-height: 10px;
+    }
+    ul .items-menu a .link-txt{
+            display: flex;
+            padding-top: 15px;
+            font-size: 48px;
+            margin-left: 20px;
+    }
+    ul .items-menu a .icon{
+            font-size: 28px;
+    }
+
+    /* Modal */
+
+    .modal-logout{
+        padding: 12px;
+        background-size: 1200px;
+        width: 40%;
+        top: 35%;
+        left: 30%;
+    }
+    .modal-logout p{
+        font-size: 28px;
+    }
+    .btn-open{
+        font-size: 48px;
+    }
+    .btn-close{
+        font-size: 48px;
+    }
+}
