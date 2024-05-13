@@ -84,8 +84,8 @@ ul .items-menu a .icon{
     align-items: center;
     justify-items: center;
     position: absolute;
-    top: 45%;
-    left: 50%;
+    top: 35%;
+    left: 42%;
     box-shadow: rgb(0, 0, 0) 0px 0px 0px 3px;
 }
 .modal-logout p{
