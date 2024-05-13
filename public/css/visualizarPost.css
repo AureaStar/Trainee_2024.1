@@ -182,14 +182,15 @@ textarea {
 
 .box {
     color: rgb(255, 255, 255);
-    font-size: 15px;
-    font-family: Jomhuria;
     font-size: 28px;
+    font-family: Jomhuria;
+    padding-left: 2%;
 }
 
 .imagemInput::-webkit-file-upload-button {
     display: none;
 }
+
 .imagemInput::before {
     content: 'Adicione a foto: ';
 }
@@ -234,7 +235,7 @@ textarea {
 
 @media only screen and (max-width: 600px) {
     .modalV {
-        height: 62%;
+        height: 65%;
         width: 70%;
         border-radius: 15px;
         padding: 3%;
@@ -254,6 +255,11 @@ textarea {
 
     .fundoFormulario {
         height: 8%;
+    }
+
+    .fundoC {
+        height: 7%;
+        padding-top: 5px;
     }
 
     .fundoFormularioCont {
@@ -285,7 +291,7 @@ textarea {
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
     .modalV {
-        height: 65%;
+        height: 70%;
         width: 70%;
         border-radius: 15px;
         padding: 3%;
