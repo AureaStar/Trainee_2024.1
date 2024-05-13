@@ -136,28 +136,16 @@ ul .items-menu a .icon{
     }
 
     /* Itens */
-    .sidebar-close{
-        display: none; 
-        font-size: 20px;
-        color: white;
-        margin-bottom: 6%;
-    }
-    ul .items-menu:hover{
-        background-color: #429741a2;
-        border: 0px solid #429741;
-        border-radius: 15px;
-    }
     ul .items-menu a{
         padding-left: 4px;
         line-height: 10px;
     }
     ul .items-menu a .link-txt{
-            display: flex;
-            padding-top: 7px;
-            margin-left: 20px;
+        padding-top: 7px;
+        margin-left: 20px;
     }
     ul .items-menu a .icon{
-            font-size: 18px;
+        font-size: 18px;
     }
 
     /* Modal */
