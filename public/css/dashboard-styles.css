@@ -195,9 +195,105 @@ h1 img{
     border: 2.5px solid rgb(219, 42, 42);
 }
 
+.modal-logout{
+    padding: 12px;
+    background-color: #412307;
+    background-attachment: fixed;
+    background-size: contain;
+    color: white;
+    border-radius: 20px;
+    width: 20%;
+    height: 24%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    top: 40%;
+    left: 39.2%;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    font-weight: 700;
+}
+
+.modal-logout button{
+    text-align: center;
+    justify-content: center;
+    font-family: "Jomhuria", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    width: 32%;
+}
+
+.btn-modal{
+    display: flex;
+    width: 100%;
+    gap: 3%;
+    padding-bottom: 2%;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-logout p{
+    margin-top: 20%;
+    margin-bottom: 16%;
+    font-size: 26px;
+}
+
+.btn-open{
+    background-color: #429741;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 4px;
+    color: white;
+    box-shadow: none;
+    transition: 0.02s;
+    cursor: pointer;     
+    outline: inherit;
+    border: 2.5px solid transparent;
+}
+
+.btn-open:hover{
+    background-color: #429741a2;
+    border: 2.5px solid #429741;
+}
+
+.btn-close{
+    background-color: rgb(219, 42, 42);
+    font-size: 18px;
+    border-radius: 10px;
+    color: white;
+    padding: 4px;
+    box-shadow: none;
+    transition: 0.02s;
+    cursor: pointer;     
+    outline: inherit;
+    border: 2.5px solid transparent;
+}
+
+.btn-close:hover{
+    background-color: rgb(158, 19, 19);
+    border: 2.5px solid rgb(219, 42, 42);
+}
 
 
 /*Responsividade*/
+@media (max-width: 1500px){
+    .modal-logout p{
+        font-size: 22px;
+    }
+
+    .modal-logout button{
+        font-size: 32px;
+        width: 40%;
+    }
+
+}
+
 @media (max-width: 1400px){
 
     .d-central-buttons button{
@@ -210,7 +306,28 @@ h1 img{
 
 }
 
+@media (max-width: 1260px){
+    .modal-logout p{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .modal-logout button{
+        font-size: 28px;
+    }
+}
+
 @media (max-width: 1150px){
+    .modal-logout{
+        width: 28%;
+        top: 38%;
+        left: 35%;
+    }
+
+    .modal-logout button{
+        font-size: 32px;
+        width: 44%;
+    }
 
     .d-central-buttons button{
         width: 40%;
@@ -253,6 +370,17 @@ h1 img{
 
 }
 
+@media (max-width: 800px){
+    .modal-logout {
+        width: 40%;
+        left: 28.5%;
+    }
+
+    .modal-logout button{
+        font-size: 32px;
+    }
+}
+
 
 @media (max-width: 700px){
     h1{
@@ -289,6 +417,20 @@ h1 img{
 }
 
 @media (max-width: 620px){
+    .modal-logout {
+        width: 70%;
+        padding-bottom: 10%;
+        left: 13%;
+    }
+
+    .modal-logout p{
+        font-size: 28px;
+    }
+
+    .modal-logout button{
+        font-size: 36px;
+    }
+
     .d-title{
         height: 20%;
     }
@@ -322,6 +464,14 @@ h1 img{
 }
 
 @media (max-width: 520px){
+    .modal-logout {
+        padding-bottom: 12%;
+    }
+
+    .modal-logout p{
+        font-size: 26px;
+    }
+
     .d-title{
         height: 24%;
     }

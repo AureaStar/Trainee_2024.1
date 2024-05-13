@@ -47,13 +47,20 @@
         </div>
 
         <div class="d-logout">
-            <button id="btn-logout"><img src="../../../public/assets/logout-icon.png">Encerrar sessão</button>
+            <button id="btn-logout" onclick="openModal('modal')"><img src="../../../public/assets/logout-icon.png">Encerrar sessão</button>
         </div>
 
 
         </div>
 
-
+        <div class="modal-logout" id="modal">
+            <p>Deseja realmente sair?</p>
+            <div class="btn-modal">
+                <button type="button" class="btn-open">Confirmar</button>
+                <button type="button" class="btn-close" onclick="closeModal('modal')">Cancelar</button>
+            </div>
+        </div>
+    
     </div>
     
 
