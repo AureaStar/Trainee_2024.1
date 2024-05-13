@@ -52,14 +52,18 @@ header {
     color: #e6a549;
     text-decoration: none;
 }
-
+.navbarLandingpg{
+    text-decoration: none;
+    width:fit-content;
+    color:white;
+}
 #navLogText {
     background: rgba(67, 151, 65, 0.65);
     display: flex;
     border: none;
-    width: 180px;
+    width: 140px;
     height: 44px;
-    padding-top: 0.6%;
+    padding-top: 0.8%;
     justify-content: center;
     align-items: center;
     gap: 0px;
