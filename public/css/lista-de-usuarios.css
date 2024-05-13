@@ -52,10 +52,11 @@ main{
 }
 div#tabcontainerUserList{
     display:flex;
-    justify-content:left;
+    justify-content:center;
     align-items: center;
     width:55em;
     overflow-x:auto;
+    padding: 20px;
 }
 #tableUserList{
     background: rgba(65, 35, 7, 0.80);
@@ -63,14 +64,13 @@ div#tabcontainerUserList{
     filter:drop-shadow(rgba(0, 0, 0, 0.50) 10px 10px 8px);
     border-collapse: collapse;
 }
-#tableUserList tr:hover{
-    background-color: #429741a2;
-}
 .thUserList {
     padding: 8px 7px;
     color:#E6A549;
     font-size: 40px;
     width:auto;
+    padding: 15px;
+
 }
 
 .tdUserList {
@@ -78,6 +78,15 @@ div#tabcontainerUserList{
     font-size: 16px;
     font-family:Open Sans;
     width:auto;
+    padding: 15px;
+}
+.tdUserList button{
+    margin-left: 5px;
+
+}
+tbody tr:hover{
+    background-color: rgba(66,151,65, 0.2)
+
 }
 #actionsBtsUserList{
     display:flex;
@@ -96,7 +105,7 @@ button{
 	font: inherit;
 	cursor: pointer;
     font-size:18px;
-    width:130px;
+    width:120px;
 }
 
 .criarUserList{
