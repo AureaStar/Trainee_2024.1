@@ -67,6 +67,10 @@ header {
     background: none;
     font-size: 64px;
     color: #e6a549;
+    transition: ease-in-out 0.2s;
+}
+#navbinicio:hover{
+    transform: scale(108%);
 }
 #navbpubli{
     display: flex;
@@ -80,8 +84,11 @@ header {
     font-family: Jomhuria;
     font-size: 64px;
     color: #e6a549;
+    transition: ease-in-out 0.2s;
 }
-
+#navbpubli:hover{
+    transform: scale(108%);
+}
 #navLogText {
     background: rgba(67, 151, 65, 0.65);
     display: flex;
@@ -102,10 +109,12 @@ header {
     border: 2.5px solid;
     border-color: transparent;
     transition: background 0.2s;
+    transition: ease-in-out 0.2s;
 }
 #navLogText:hover {
     background-color: #429741a2;
     border: 2.5px solid #429741;
+    transform: scale(108%);
 }
 .navhamLi{
     display:none;
@@ -143,6 +152,10 @@ header {
     font-size: 54px;
     color: #e6a549;
     padding-top:1%;
+    transition: ease-in-out 0.2s;
+}
+#navhaminicio:hover{
+    transform: scale(108%);
 }
 #navhampubli{
     display: flex;
@@ -155,6 +168,10 @@ header {
     font-size: 54px;
     color: #e6a549;
     padding-top:1%;
+    transition: ease-in-out 0.2s;
+}
+#navhampubli:hover{
+    transform: scale(108%);
 }
 .open{
     display:flex;
@@ -174,7 +191,19 @@ header {
     justify-content: center;
     align-items: center;
     display:flex;
-    
+    transition: ease-in-out 0.2s;
+}
+#navclosedhhamButton{
+    transition: ease-in-out 0.2s;
+}
+#navclosedhhamButton:hover{
+    transform:scale(108%);
+}
+#navopenhhamButton{
+    transition: ease-in-out 0.2s;
+}
+#navopenhhamButton:hover{
+    transform:scale(108%);
 }
 #navopenhamButton{
     text-decoration:none;
@@ -189,6 +218,7 @@ header {
     justify-content: center;
     align-items: center;
     gap:0px;
+    transition: ease-in-out 0.2s;
 }
 #navhamlogbutton {
     background: rgba(67, 151, 65, 0.65);
@@ -203,16 +233,20 @@ header {
     font-size: 54px;
     font-family: Jomhuria;
     color: #fff4f0;
-    padding-top: 1.1%;
+    padding:3%;
+    padding-top: 3.5%;
+    
     cursor: pointer;
     outline: inherit;
     border: 2.5px solid;
     border-color: transparent;
     transition: background 0.2s;
+    transition: ease-in-out 0.2s;
 }
 #navhamlogbutton:hover {
     background-color: #429741a2;
     border: 2.5px solid #429741;
+    transform: scale(108%);
 }
 @media screen and (max-width:320px){
     #navInicio,
@@ -261,6 +295,7 @@ header {
         font-size: 34px;
         height: 32px;
         width: 54px;
+        padding-top:4%;
     }
     .navhamLi{
         display:flex;
@@ -313,7 +348,7 @@ header {
         font-size: 42px;
         height: 34px;
         width: 68px;
-        padding-top:0.6%;
+        padding-top:3.5%;
     }
     .navhamLi{
         display:flex;
@@ -355,7 +390,7 @@ header {
     #navhamlogbutton {
         height: 42px;
         width: 82px;
-        padding-top:0.8%;
+        padding-top:4%;
     }
     .navhamLi{
         display:flex;
@@ -398,7 +433,7 @@ header {
     #navhamlogbutton {
         height: 44px;
         width: 82px;
-        padding-top:0.5%;
+        padding-top:3.5%;
     }
     .navhamLi{
         display:flex;
@@ -445,7 +480,7 @@ header {
         font-size: 54px;
         height: 44px;
         width: 82px;
-        padding-top:0.6%;
+        padding-top:3.5%;
     }
     .navhamLi{
         display:flex;
@@ -464,6 +499,12 @@ header {
         font-size: 56px;
         margin-right:28px;
     }
+    #navbinicio{
+        font-size: 56px;
+    }
+    #navbpubli{
+        font-size: 56px;
+    }
 }
 @media screen and (min-width:833px) and (max-width:980px){
     #logonavbarimg {
@@ -473,6 +514,11 @@ header {
     .nav-lnk-container {
         gap:48px;
     }
+    .navhamMenu{
+        display:none;
+    }
+}
+@media screen and (min-width:721px){
     .navhamMenu{
         display:none;
     }
