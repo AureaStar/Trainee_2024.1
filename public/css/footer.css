@@ -3,6 +3,76 @@
     padding: 0;
     list-style: none;
 }
+
+.footerfiltro{
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    display:none;
+    z-index: 2;
+}
+.modalfotValor{
+    width:85%;
+    margin:inherit;
+    height:fit-content;
+    position:absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 14px;
+    background: linear-gradient(180deg, #52331D 0%, #744321 100%);
+    filter: drop-shadow(rgba(0, 0, 0, 0.80) 10px 10px 8px);
+    gap:48px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    z-index: 3;
+}
+.tboxmodalfotValor{
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    width:93.5%;
+}
+.tboxmodalfotValor h1{
+    font-family:Almendra;
+    font-size:40px;
+    color:white;
+    width:70%
+}
+.clseboxmodalfotValor{
+    width:100%;
+    display:flex;
+    justify-content:right;
+    color:white;
+    font-size: 40px;
+}
+.clseboxmodalfotValor button{
+    text-decoration:none;
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+.textmodalfotValor{
+    width:93%;
+    font-family:Open Sans;
+    font-size: 24px;
+    color:#FFF4F0
+
+}
+.verModal{
+    display:flex;
+}
+
+
 .negrito{
     font-weight:bold;
 }
@@ -42,12 +112,18 @@ footer{
     display:none;
     gap:20px;
 }
+#logoCodeFotBox img{
+    width: 185px;
+    height: 41.733px;
+}
 #logoCodeFotBox{
     display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap:12px;
+    width: 185px;
+    height: 41.733px;
 }
 #fotBoxInverter{
     display:flex;
@@ -118,6 +194,9 @@ footer{
     font-size:32px;
 }
 @media (max-width: 302px){
+    .textmodalfotValor{
+        font-size:14px;
+    }
     footer{
         font-family: "Open Sans";
         font-size:12px;
@@ -131,7 +210,7 @@ footer{
         justify-content: center;
         align-items: center;
         gap:16px;
-        
+        padding-top:5%;
     }
     .fotValor ul{
         flex-direction: column;
@@ -180,6 +259,9 @@ footer{
     }
 }
 @media (min-width: 303px) and (max-width: 353px){
+    .textmodalfotValor{
+        font-size:18px;
+    }
     footer{
         font-family: "Open Sans";
         font-size:12px;
@@ -193,7 +275,7 @@ footer{
         justify-content: center;
         align-items: center;
         gap:16px;
-        
+        padding-top:3%;
     }
     .fotValor ul{
         flex-direction: column;
@@ -241,6 +323,9 @@ footer{
     }
 }
 @media (min-width: 354px) and (max-width: 433px){
+    .textmodalfotValor{
+        font-size:16px;
+    }
     footer{
         font-family: "Open Sans";
         font-size:13px;
@@ -254,7 +339,7 @@ footer{
         justify-content: center;
         align-items: center;
         gap:16px;
-        
+        padding-top:2%;
     }
     .fotValor ul{
         flex-direction: column;
@@ -302,6 +387,9 @@ footer{
     }
 }
 @media (min-width: 434px) and (max-width: 550px){
+    .textmodalfotValor{
+        font-size:18px;
+    }
     footer{
         font-family: "Open Sans";
         color: #FFF4F0;
@@ -314,7 +402,7 @@ footer{
         justify-content: center;
         align-items: center;
         gap:16px;
-        
+        padding-top:1.5%;
     }
     .fotValor ul{
         flex-direction: column;
@@ -368,6 +456,9 @@ footer{
     }
 }
 @media (min-width: 551px) and (max-width: 640px){
+    .textmodalfotValor{
+        font-size:18px;
+    }
     footer{
         font-family: "Open Sans";
         color: #FFF4F0;
@@ -380,7 +471,7 @@ footer{
         justify-content: center;
         align-items: center;
         gap:16px;
-        
+        padding-top:0.8%;
     }
     .fotValor ul{
         flex-direction: column;
