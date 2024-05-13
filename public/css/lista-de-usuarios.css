@@ -50,15 +50,14 @@ main{
     align-items: center;
     gap:48px;
 }
+.tabscroll{
+    overflow-x:auto;
+}
 div#tabcontainerUserList{
     display:flex;
     justify-content:center;
     align-items: center;
     width:55em;
-    overflow-x:auto;
-
-    padding: 20px;
-
     filter:drop-shadow(rgba(0, 0, 0, 0.80) 10px 10px 8px);
 }
 #tableUserList{
@@ -66,13 +65,15 @@ div#tabcontainerUserList{
     border-radius: 10px;
     border-collapse: collapse;
 }
+.tbodyUserList tr:hover{
+    background-color: rgba(66, 151, 65, 0.2);
+}
 .thUserList {
     padding: 8px 7px;
     color:#E6A549;
-    font-size: 40px;
+    font-family:Open Sans;
+    font-size: 18px;
     width:auto;
-    padding: 15px;
-
 }
 
 .tdUserList {
@@ -80,15 +81,6 @@ div#tabcontainerUserList{
     font-size: 16px;
     font-family:Open Sans;
     width:auto;
-    padding: 15px;
-}
-.tdUserList button{
-    margin-left: 5px;
-
-}
-tbody tr:hover{
-    background-color: rgba(66,151,65, 0.2)
-
 }
 #actionsBtsUserList{
     display:flex;
@@ -107,7 +99,7 @@ button{
 	font: inherit;
 	cursor: pointer;
     font-size:18px;
-    width:120px;
+    width:130px;
 }
 
 .criarUserList{
@@ -202,8 +194,9 @@ button{
         font-size:12px;
     }
     #actionsBtsUserList{
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        width:123px;
     }
     .buttextUserList{
         display:none;
@@ -255,7 +248,7 @@ button{
     }
     .thUserList {
         padding: 4px 18px;
-        font-size: 24px; 
+        font-size: 14px;  
     }
     
     .tdUserList {
@@ -304,8 +297,9 @@ button{
         font-size:12px;
     }
     #actionsBtsUserList{
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        width:123px;
     }
     .buttextUserList{
         display:none;
@@ -357,7 +351,7 @@ button{
     }
     .thUserList {
         padding: 4px 18px;
-        font-size: 24px; 
+        font-size: 14px; 
     }
     
     .tdUserList {
@@ -383,8 +377,9 @@ button{
         width:38,74px;
     }
     #actionsBtsUserList{
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        width:123px;
     }
     .buttextUserList{
         display:none;
@@ -439,7 +434,7 @@ button{
     }
     .thUserList {
         padding: 4px 18px;
-        font-size: 24px; 
+        font-size: 14px; 
     }
     
     .tdUserList {
@@ -458,8 +453,9 @@ button{
         gap:10px;
     }
     #actionsBtsUserList{
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        width:123px;
     }
     .buttextUserList{
         display:none;
@@ -513,7 +509,7 @@ button{
     }
     .thUserList {
         padding: 4px 18px;
-        font-size: 24px; 
+        font-size: 18px; 
     }
     
     .tdUserList {
@@ -531,8 +527,9 @@ button{
         gap:14px;
     }
     #actionsBtsUserList{
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        width:123px;
     }
     .buttextUserList{
         display:none;
@@ -563,11 +560,11 @@ button{
         font: inherit;
         cursor: pointer;
         font-size:16px;
-        width:33px;
+        width:40px;
     }
     .viewUserList{
         font-size:16px;
-        width:33px;
+        width:40px;
     }
     
     .criarUserList{
@@ -583,6 +580,12 @@ button{
         width: 120px;
         height: 40px;
         transition: background 0.2s;
+    }
+    .tdUserList {
+        font-size: 13px;
+        font-family:Open Sans;
+        justify-content:center;
+        align-content: center;
     }
 }
 @media screen and (min-width:701px) and (max-width:832px){ /* Tablet */
@@ -607,6 +610,9 @@ button{
     #titlebackUserList{
         height:6.5em;
     }
+    .buttextUserList{
+        display:none;
+    }
     button{
         color: #FFF4F0;
         text-decoration:none;
@@ -617,13 +623,17 @@ button{
         font: inherit;
         cursor: pointer;
         font-size:16px;
-        width:100px;
+        width:38px;
     }
     .viewUserList{
         font-size:16px;
-        width:100px;
+        width:38px;
     }
-    
+    #actionsBtsUserList{
+        flex-direction: row;
+        align-items: center;
+        width:153px;
+    }
     .criarUserList{
         display:flex;
         justify-content:center;
@@ -638,6 +648,12 @@ button{
         height: 40px;
         transition: background 0.2s;
     }
+    .tdUserList {
+        font-size: 14px;
+        font-family:Open Sans;
+        justify-content:center;
+        align-content: center;
+    }
 }
 @media screen and (min-width:833px) and (max-width:930px){
     .titleboxUserList{
@@ -649,23 +665,25 @@ button{
         height:7em;
     }
     #actionsBtsUserList{
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        width:252px;
     }
+
     .titleUserList{
         font-size:34px;
     }
     div#tabcontainerUserList{
-        width:38em;
+        width:50em;
         overflow-x:auto;
     }
     button{
         font-size:14px;
-        width:83px;
+        width:78px;
     }
     .viewUserList{
         font-size:14px;
-        width:83px;
+        width:78px;
     }
     
     .criarUserList{
