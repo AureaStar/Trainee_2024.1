@@ -122,3 +122,51 @@ ul .items-menu a .icon{
 .btn-close:hover{
     background-color: rgb(124, 5, 5);
 }
+
+/* Responsividade */
+@media (max-width: 480px){ /* Celular */
+
+.sidebar{
+    background-size: 1175px;
+    width: 8%;
+    padding: 195px 0 40px 1%;
+}
+.sidebar:hover{
+    width: 38%;
+}
+
+/* Itens */
+.sidebar-close{
+    display: none; 
+    font-size: 20px;
+    color: white;
+    margin-bottom: 6%;
+}
+ul .items-menu:hover{
+    background-color: #429741a2;
+    border: 0px solid #429741;
+    border-radius: 15px;
+}
+ul .items-menu a{
+    padding-left: 4px;
+    line-height: 10px;
+}
+ul .items-menu a .link-txt{
+        display: flex;
+        padding-top: 7px;
+        margin-left: 20px;
+}
+ul .items-menu a .icon{
+        font-size: 18px;
+}
+
+/* Modal */
+
+.modal-logout{
+    padding: 12px;
+    background-size: 400px;
+    width: 40%;
+    top: 35%;
+    left: 30%;
+}
+}
