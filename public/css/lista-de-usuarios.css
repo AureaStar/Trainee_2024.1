@@ -56,9 +56,7 @@ div#tabcontainerUserList{
     align-items: center;
     width:55em;
     overflow-x:auto;
-
     padding: 20px;
-
     filter:drop-shadow(rgba(0, 0, 0, 0.80) 10px 10px 8px);
 }
 #tableUserList{
