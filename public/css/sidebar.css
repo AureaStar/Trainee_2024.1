@@ -204,3 +204,48 @@ ul .items-menu a .icon{
         font-size: 48px;
     }
 }
+
+@media (min-width: 769px) { /* Telas pequenas e laptopos */
+
+    .sidebar{
+        background-size: 2500px;
+        width: 6%;
+        padding: 450px 0 40px 1%;
+    }
+    .sidebar:hover{
+        width: 30%;
+    }
+
+    /* Itens */
+    ul .items-menu a{
+        padding-left: 4px;
+        line-height: 10px;
+    }
+    ul .items-menu a .link-txt{
+        padding-top: 20px;
+        font-size: 56px;
+        margin-left: 30px;
+    }
+    ul .items-menu a .icon{
+        font-size: 36px;
+    }
+
+    /* Modal */
+
+    .modal-logout{
+        padding: 12px;
+        background-size: 1380px;
+        width: 50%;
+        top: 35%;
+        left: 30%;
+    }
+    .modal-logout p{
+        font-size: 38px;
+    }
+    .btn-open{
+        font-size: 50px;
+    }
+    .btn-close{
+        font-size: 50px;
+    }
+}
