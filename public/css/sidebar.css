@@ -176,13 +176,13 @@ ul .items-menu a .icon{
         line-height: 10px;
     }
     ul .items-menu a .link-txt{
-            display: flex;
-            padding-top: 15px;
-            font-size: 48px;
-            margin-left: 30px;
+        display: flex;
+        padding-top: 15px;
+        font-size: 48px;
+        margin-left: 30px;
     }
     ul .items-menu a .icon{
-            font-size: 28px;
+        font-size: 28px;
     }
 
     /* Modal */
@@ -205,7 +205,7 @@ ul .items-menu a .icon{
     }
 }
 
-@media (min-width: 769px) { /* Telas pequenas e laptopos */
+@media (min-width: 769px) { /* Telas pequenas e laptops */
 
     .sidebar{
         background-size: 2500px;
