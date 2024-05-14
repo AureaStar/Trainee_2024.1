@@ -29,7 +29,6 @@ header {
 }
 #logonavbarimg:hover {
     filter: drop-shadow(0px 0px 2px #E6A549);
-    /* background: radial-gradient(50% 50% at 50% 50%, rgba(212, 162, 91, 0.31) 0%, rgba(153, 153, 153, 0.00) 100%); */
 }
 .logoNavbar {
     display: flex;

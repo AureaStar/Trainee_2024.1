@@ -65,7 +65,10 @@
     width:93%;
     font-family:Open Sans;
     font-size: 24px;
-    color:#FFF4F0
+    color:#FFF4F0;
+    display:flex;
+    flex-direction: column;
+    gap:8px;
 
 }
 .verModal{
