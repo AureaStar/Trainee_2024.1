@@ -197,7 +197,7 @@ h1 img{
 
 .modal-logout{
     padding: 12px;
-    background-color: #412307;
+    background-image: url(../assets/fundo-sidebar.jpg);
     background-attachment: fixed;
     background-size: contain;
     color: white;
@@ -259,7 +259,7 @@ h1 img{
 }
 
 .btn-open:hover{
-    background-color: #429741a2;
+    background-color: #387537;
     border: 2.5px solid #429741;
 }
 
