@@ -41,15 +41,15 @@ ul{
     height: 100%;
     list-style-type: none;
 }
-ul .items-menu{
+ul .itens-menu{
     transition: 0.2s;
 }
-ul .items-menu:hover{
+ul .itens-menu:hover{
     background-color: #429741a2;
     border: 0px solid #429741;
     border-radius: 15px;
 }
-ul .items-menu a{
+ul .itens-menu a{
     line-height: 20px;
     text-decoration: none;
     font-size: 30px;
@@ -59,13 +59,13 @@ ul .items-menu a{
     display: flex;
     padding: 15px 5%;
 }
-ul .items-menu a .link-txt{
+ul .itens-menu a .link-txt{
     display: flex;
     padding-top: 4px;
     font-size: 34px;
     margin-left: 40px;
 }
-ul .items-menu a .icon{
+ul .itens-menu a .icon{
     font-size: 20px;
 }
 
@@ -137,15 +137,15 @@ ul .items-menu a .icon{
     }
 
     /* Itens */
-    ul .items-menu a{
+    ul .itens-menu a{
         padding-left: 4px;
         line-height: 10px;
     }
-    ul .items-menu a .link-txt{
+    ul .itens-menu a .link-txt{
         padding-top: 7px;
         margin-left: 25px;
     }
-    ul .items-menu a .icon{
+    ul .itens-menu a .icon{
         font-size: 18px;
     }
 
@@ -172,17 +172,17 @@ ul .items-menu a .icon{
     }
 
     /* Itens */
-    ul .items-menu a{
+    ul .itens-menu a{
         padding-left: 4px;
         line-height: 10px;
     }
-    ul .items-menu a .link-txt{
+    ul .itens-menu a .link-txt{
         display: flex;
         padding-top: 15px;
         font-size: 48px;
         margin-left: 30px;
     }
-    ul .items-menu a .icon{
+    ul .itens-menu a .icon{
         font-size: 28px;
     }
 
@@ -218,16 +218,16 @@ ul .items-menu a .icon{
     }
 
     /* Itens */
-    ul .items-menu a{
+    ul .itens-menu a{
         padding-left: 4px;
         line-height: 10px;
     }
-    ul .items-menu a .link-txt{
+    ul .itens-menu a .link-txt{
         padding-top: 20px;
         font-size: 56px;
         margin-left: 30px;
     }
-    ul .items-menu a .icon{
+    ul .itens-menu a .icon{
         font-size: 36px;
     }
 
