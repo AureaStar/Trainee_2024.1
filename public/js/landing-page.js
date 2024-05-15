@@ -10,8 +10,42 @@ arrows.forEach(arrow => {
     });
 });
 
+let boolSwipeStart = false, prevPageX, prevSwipeLeft, positionDiff;
+
+const autoCentral = () => {
+    if (cposts.scrollLeft == (cposts.scrollWidth - cposts.clientWidth)) return;
+
+    positionDiff = Math.abs(positionDiff);
+    let firstPostWidth = firstPost.clientWidth;
+    let valDiff = firstPostWidth - positionDiff;
+
+    if (cposts.scrollLeft > prevSwipeLeft){
+        return cposts.scrollLeft += positionDiff > firstPostWidth / 3 ? valDiff : -positionDiff;
+    }
+    cposts.scrollLeft -= positionDiff > firstPostWidth / 3 ? valDiff : -positionDiff;
+}
 
 
+const swipeStart = (e) => {
+    boolSwipeStart = true;
+    prevPageX = e.touches[0].pageX;
+    prevSwipeLeft = cposts.scrollLeft;
+}
+
+const swiping = (e) =>{
+    if (!swipeStart) return;
+    positionDiff = e.touches[0].pageX - prevPageX;
+    cposts.scrollLeft = prevSwipeLeft - positionDiff;
+    /*showHideIcons();*/
+}
+
+const swipeStop = () =>{
+    boolSwipeStart = false;
+    autoCentral();
+}
 
 
+cposts.addEventListener("touchstart", swipeStart);
+cposts.addEventListener("touchmove", swiping);
+cposts.addEventListener("touchend", swipeStop);
 
