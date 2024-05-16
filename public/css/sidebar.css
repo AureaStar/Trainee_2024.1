@@ -176,6 +176,17 @@ ul .itens-menu-login a .icon{
     ul .itens-menu a .icon{
         font-size: 18px;
     }
+    ul .itens-menu-login a{
+        padding-left: 4px;
+        line-height: 10px;
+    }
+    ul .itens-menu-login a .link-txt{
+        padding-top: 7px;
+        margin-left: 25px;
+    }
+    ul .itens-menu-login a .icon{
+        font-size: 18px;
+    }
 
     /* Modal */
 
@@ -213,7 +224,20 @@ ul .itens-menu-login a .icon{
     ul .itens-menu a .icon{
         font-size: 28px;
     }
-
+    ul .itens-menu-login a{
+        padding-left: 4px;
+        line-height: 10px;
+    }
+    ul .itens-menu-login a .link-txt{
+        display: flex;
+        padding-top: 15px;
+        font-size: 48px;
+        margin-left: 30px;
+    }
+    ul .itens-menu-login a .icon{
+        font-size: 28px;
+    }
+    
     /* Modal */
 
     .modal-logout{
@@ -256,6 +280,18 @@ ul .itens-menu-login a .icon{
         margin-left: 30px;
     }
     ul .itens-menu a .icon{
+        font-size: 36px;
+    }
+    ul .itens-menu-login a{
+        padding-left: 4px;
+        line-height: 10px;
+    }
+    ul .itens-menu-login a .link-txt{
+        padding-top: 20px;
+        font-size: 56px;
+        margin-left: 30px;
+    }
+    ul .itens-menu-login a .icon{
         font-size: 36px;
     }
 
