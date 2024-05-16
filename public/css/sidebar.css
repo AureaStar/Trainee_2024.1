@@ -4,13 +4,6 @@
     margin: 0;
 }
 
-/* Background */
-body{
-    background-image: url(/public/assets/background.png);
-    background-attachment: fixed;
-    background-size: cover;
-}
-
 /* Sidebar */
 
 /* Estrutura */
@@ -24,7 +17,7 @@ body{
     padding: 170px 0 40px 1%;
     box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.8);
     overflow: hidden;
-    transition: 0.02s;
+    transition: width 0.2s;
     position: fixed;
     top: 0;
     left: 0;
@@ -115,7 +108,8 @@ ul .itens-menu-login a .icon{
     position: absolute;
     top: 35%;
     left: 42%;
-    box-shadow: rgb(0, 0, 0) 0px 0px 0px 3px;
+    box-shadow: rgb(0, 0, 0) 2px 2px 4px 4px;
+    z-index: 4;
 }
 .modal-logout p{
     margin-top: 20%;
