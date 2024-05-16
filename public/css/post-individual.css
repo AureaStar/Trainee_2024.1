@@ -63,6 +63,11 @@ body h1{
 .autoria p{
     font-family: Open Sans, serif;
 }
+.autoria-perfil{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
 .box-text{
     line-height: 25px;
     text-indent: 1em;
@@ -90,12 +95,12 @@ body h1{
     .box{
         margin-bottom: 4%;
     }
-    .foto-perfil{
-        width: 20px;
-        height: 20px;
-    }
     .autoria p{
         font-size: 12px;
+    }
+    .autoria-perfil{
+        width: 28px;
+        height: 28px;
     }
     .box-text{
         line-height: 16px;
@@ -120,12 +125,12 @@ body h1{
     .box{
         margin-bottom: 2%;
     }
-    .foto-perfil{
-        width: 30px;
-        height: 30px;
-    }
     .autoria p{
         font-size: 18px;
+    }
+    .autoria-perfil{
+        width: 36px;
+        height: 36px;
     }
     .box-text{
         font-size: 18px;
@@ -153,6 +158,10 @@ body h1{
         width: 30px;
         height: 30px;
     }
+    .autoria-perfil{
+        width: 40px;
+        height: 40px;
+    }
     .autoria p{
         font-size: 18px;
     }
@@ -178,9 +187,9 @@ body h1{
     .box{
         margin-bottom: 2%;
     }
-    .foto-perfil{
-        width: 30px;
-        height: 30px;
+    .autoria-perfil{
+        width: 36px;
+        height: 36px;
     }
     .autoria p{
         font-size: 20px;
