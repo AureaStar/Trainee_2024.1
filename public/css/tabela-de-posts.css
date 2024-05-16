@@ -12,14 +12,14 @@ body{
     color: #FFF4F0;
     margin-bottom: 16px;
 }
-#titlebackUserList{
+#titlebackPostList{
     display:flex;
     justify-content:center;
     width:100%;
     height:8.5em;
     background: url("/public/assets/fundo-titulo-tabela.png") repeat;
 }
-.titleboxUserList{
+.titleboxPostList{
     filter:drop-shadow(rgba(0, 0, 0, 0.70) 10px 10px 8px);
     display:flex;
     gap: 70px;
@@ -32,14 +32,14 @@ body{
     border-radius:10px;
     font-size: 30px;
 }
-.titleUserList{
+.titlePostList{
     padding-top:1%;
     font-weight: normal;
     font-size:34px;
     font-family:Almendra;
     font-weight:bold;
 }
-.torrezinhatabUserList{
+.torrezinhatabPostList{
     height:78px;
     width:94,44px;
 }
@@ -54,69 +54,65 @@ main{
     overflow-x:auto;
     border-radius: 10px;
 }
-div#tabcontainerUserList{
+div#tabcontainerPostList{
     display:flex;
     justify-content:center;
     align-items: center;
     width:55em;
     filter:drop-shadow(rgba(0, 0, 0, 0.80) 10px 10px 8px);
 }
-#tableUserList{
+#tablePostList{
     background: rgba(65, 35, 7, 0.80);
     border-radius: 10px;
     border-collapse: collapse;
 }
-.tbodyUserList tr:hover{
+.tbodyPostList tr:hover{
     background-color: rgba(66, 151, 65, 0.2);
 }
-.thUserList {
-    padding: 8px 6px;
+.thPostList {
+    padding: 8px 15px;
     color:#E6A549;
     font-family:Open Sans;
     font-size: 18px;
     width:auto;
 }
 
-.tdUserList {
-    padding: 8px 6px;
+.tdPostList {
+    padding: 8px 15px;
     font-size: 16px;
     font-family:Open Sans;
     width:auto;
 }
-#actionsBtsUserList{
+#actionsBtsPostList{
     display:flex;
     justify-content:center;
-    flex-wrap:nowrap;
+    
     gap:1px;
+
 }
 
 button{
     color: #FFF4F0;
     text-decoration:none;
     background: black;
-	color: inherit;
-	border-radius:10px;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
+    color: inherit;
+    border-radius:10px;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
     font-size:18px;
     width:130px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    outline:none;
-    border: 2.5px solid #42974100;
+    outline: none;
+    border-color: transparent;
 }
 
-.criarUserList{
+.criarPostList{
     display:flex;
     justify-content:center;
     align-items:center;
     padding-top:1%;
     background:rgba(67, 151, 65, 0.65);
     font-size:50px;
-    border:transparent;
-    outline:none;
     color: white;
     border-radius: 10px;
     width: 140px;
@@ -125,67 +121,63 @@ button{
 }
 
 
-.criarUserList:hover {
-    background-color: #429741a2;
+.criarPostList:hover { 
     border: 2.5px solid #429741;
 }
-.viewUserList{
+.viewPostList{
     background:rgba(67, 151, 65, 0.65);
     border-radius: 10px;
     transition: background 0.2s;
 }
-.viewUserList i,.editUserList i,.delUserList i{
-    padding-right:5%;
-}
 
-.viewUserList:hover {
-    background-color: #429741a2;
+
+.viewPostList:hover {
     border: 2.5px solid #429741;
 }
-.editUserList{
+.editPostList{
     background:rgba(67, 151, 65, 0.65);
     transition: background 0.2s;
 }
-.editUserList:hover {
-    background-color: #429741a2;
+
+
+.editPostList:hover {
     border: 2.5px solid #429741;
 }
-.delUserList{
+.delPostList{
     background:rgb(131, 20, 20);
     transition: background 0.2s;
 }
 
 
-.delUserList:hover {
-    background-color:rgb(131, 20, 20);
+.delPostList:hover {
     border: 2.5px solid rgb(182, 21, 21);
 }
 
 @media screen and (max-width:320px){
-    .titleboxUserList{
+    .titleboxPostList{
         width:9em;
         height:70px;
         gap:8px;
     }
-    #titlebackUserList{
+    #titlebackPostList{
         height:2em;
     }
-    .torrezinhatabUserList{
+    .torrezinhatabPostList{
         height:32px;
         width:38,74px;
     }
-    .criarUserList{
+    .criarPostList{
         width: 50px;
         height: 30px;
         font-size:26px;
     }
-    .thUserList {
+    .thPostList {
         padding: 4px 0px;
         color:#E6A549;
         font-size: 20px; 
     }
     
-    .tdUserList {
+    .tdPostList {
         padding: 8px 10px;
         font-size: 12px;
         font-family:Open Sans;
@@ -197,25 +189,25 @@ button{
         width:60px;
         font-size:12px;
     }
-    #actionsBtsUserList{
+    #actionsBtsPostList{
         flex-direction: row;
         align-items: center;
         width:123px;
     }
-    .buttextUserList{
+    .buttextPostList{
         display:none;
     }
-    .titleUserList{
+    .titlePostList{
         font-size:16px;
     }
-    div#tabcontainerUserList{
+    div#tabcontainerPostList{
         width:14.4em;
         overflow-x:auto;
     }
     main{
         gap:48px;
     }
-    #titlebackUserList{
+    #titlebackPostList{
         height:6em;
     }
     button{
@@ -231,12 +223,12 @@ button{
         width:40px;
         height:30px;
     }
-    .viewUserList{
+    .viewPostList{
         font-size:16px;
         width:40px;
     }
     
-    .criarUserList{
+    .criarPostList{
         display:flex;
         justify-content:center;
         align-items:center;
@@ -250,12 +242,12 @@ button{
         height: 26px;
         transition: background 0.2s;
     }
-    .thUserList {
+    .thPostList {
         padding: 4px 18px;
         font-size: 14px;  
     }
     
-    .tdUserList {
+    .tdPostList {
         padding: 8px 18px;
         font-size: 12px;
         font-family:Open Sans;
@@ -265,30 +257,30 @@ button{
 }
 
 @media screen and (min-width:321px) and (max-width:430px){
-    .titleboxUserList{
+    .titleboxPostList{
         width:10.4em;
         height:70px;
         gap:16px;
     }
-    #titlebackUserList{
+    #titlebackPostList{
         height:3em;
     }
-    .torrezinhatabUserList{
+    .torrezinhatabPostList{
         height:32px;
         width:38,74px;
     }
-    .criarUserList{
+    .criarPostList{
         width: 50px;
         height: 30px;
         font-size:26px;
     }
-    .thUserList {
+    .thPostList {
         padding: 4px 0px;
         color:#E6A549;
         font-size: 20px; 
     }
     
-    .tdUserList {
+    .tdPostList {
         padding: 8px 10px;
         font-size: 12px;
         font-family:Open Sans;
@@ -300,25 +292,25 @@ button{
         width:60px;
         font-size:12px;
     }
-    #actionsBtsUserList{
+    #actionsBtsPostList{
         flex-direction: row;
         align-items: center;
         width:123px;
     }
-    .buttextUserList{
+    .buttextPostList{
         display:none;
     }
-    .titleUserList{
+    .titlePostList{
         font-size:20px;
     }
-    div#tabcontainerUserList{
+    div#tabcontainerPostList{
         width:17em;
         overflow-x:auto;
     }
     main{
         gap:48px;
     }
-    #titlebackUserList{
+    #titlebackPostList{
         height:6em;
     }
     button{
@@ -334,12 +326,12 @@ button{
         width:40px;
         height:30px;
     }
-    .viewUserList{
+    .viewPostList{
         font-size:16px;
         width:40px;
     }
     
-    .criarUserList{
+    .criarPostList{
         display:flex;
         justify-content:center;
         align-items:center;
@@ -353,12 +345,12 @@ button{
         height: 35px;
         transition: background 0.2s;
     }
-    .thUserList {
+    .thPostList {
         padding: 4px 18px;
         font-size: 14px; 
     }
     
-    .tdUserList {
+    .tdPostList {
         padding: 8px 18px;
         font-size: 12px;
         font-family:Open Sans;
@@ -368,41 +360,41 @@ button{
 }
 
 @media screen and (min-width:431px) and (max-width:600px){
-    .titleboxUserList{
+    .titleboxPostList{
         width:17em;
         height:70px;
         gap:14px;
     }
-    #titlebackUserList{
+    #titlebackPostList{
         height:3em;
     }
-    .torrezinhatabUserList{
+    .torrezinhatabPostList{
         height:32px;
         width:38,74px;
     }
-    #actionsBtsUserList{
+    #actionsBtsPostList{
         flex-direction: row;
         align-items: center;
         width:123px;
     }
-    .buttextUserList{
+    .buttextPostList{
         display:none;
     }
-    .titleboxUserList{
+    .titleboxPostList{
         gap:44px;
         width:13.8em;
     }
-    .titleUserList{
+    .titlePostList{
         font-size:20px;
     }
-    div#tabcontainerUserList{
+    div#tabcontainerPostList{
         width:23em;
         overflow-x:auto;
     }
     main{
         gap:48px;
     }
-    #titlebackUserList{
+    #titlebackPostList{
         height:6em;
     }
     button{
@@ -417,12 +409,12 @@ button{
         font-size:16px;
         width:40px;
     }
-    .viewUserList{
+    .viewPostList{
         font-size:16px;
         width:40px;
     }
     
-    .criarUserList{
+    .criarPostList{
         display:flex;
         justify-content:center;
         align-items:center;
@@ -436,12 +428,12 @@ button{
         height: 37px;
         transition: background 0.2s;
     }
-    .thUserList {
+    .thPostList {
         padding: 4px 18px;
         font-size: 14px; 
     }
     
-    .tdUserList {
+    .tdPostList {
         padding: 8px 18px;
         font-size: 12px;
         font-family:Open Sans;
@@ -451,33 +443,33 @@ button{
 }
 
 @media screen and (min-width:601px) and (max-width:650px){
-    .titleboxUserList{
+    .titleboxPostList{
         width:19em;
         height:86px;
         gap:10px;
     }
-    #actionsBtsUserList{
+    #actionsBtsPostList{
         flex-direction: row;
         align-items: center;
         width:123px;
     }
-    .buttextUserList{
+    .buttextPostList{
         display:none;
     }
-    .titleboxUserList{
+    .titleboxPostList{
         gap:44px;
     }
-    .titleUserList{
+    .titlePostList{
         font-size:24px;
     }
-    div#tabcontainerUserList{
+    div#tabcontainerPostList{
         width:32.5em;
         overflow-x:auto;
     }
     main{
         gap:48px;
     }
-    #titlebackUserList{
+    #titlebackPostList{
         height:6.5em;
     }
     button{
@@ -492,12 +484,12 @@ button{
         font-size:16px;
         width:40px;
     }
-    .viewUserList{
+    .viewPostList{
         font-size:16px;
         width:40px;
     }
     
-    .criarUserList{
+    .criarPostList{
         display:flex;
         justify-content:center;
         align-items:center;
@@ -511,12 +503,12 @@ button{
         height: 40px;
         transition: background 0.2s;
     }
-    .thUserList {
+    .thPostList {
         padding: 4px 18px;
         font-size: 18px; 
     }
     
-    .tdUserList {
+    .tdPostList {
         padding: 8px 18px;
         font-size: 12px;
         font-family:Open Sans;
@@ -525,33 +517,33 @@ button{
     }
 }
 @media screen and (min-width:651px) and (max-width:700px){
-    .titleboxUserList{
+    .titleboxPostList{
         width:20em;
         height:86px;
         gap:14px;
     }
-    #actionsBtsUserList{
+    #actionsBtsPostList{
         flex-direction: row;
         align-items: center;
         width:123px;
     }
-    .buttextUserList{
+    .buttextPostList{
         display:none;
     }
-    .titleboxUserList{
+    .titleboxPostList{
         gap:44px;
     }
-    .titleUserList{
+    .titlePostList{
         font-size:24px;
     }
-    div#tabcontainerUserList{
+    div#tabcontainerPostList{
         width:34.5em;
         overflow-x:auto;
     }
     main{
         gap:48px;
     }
-    #titlebackUserList{
+    #titlebackPostList{
         height:6.5em;
     }
     button{
@@ -566,12 +558,12 @@ button{
         font-size:16px;
         width:40px;
     }
-    .viewUserList{
+    .viewPostList{
         font-size:16px;
         width:40px;
     }
     
-    .criarUserList{
+    .criarPostList{
         display:flex;
         justify-content:center;
         align-items:center;
@@ -585,36 +577,36 @@ button{
         height: 40px;
         transition: background 0.2s;
     }
-    .tdUserList {
+    .tdPostList {
         font-size: 13px;
         font-family:Open Sans;
         justify-content:center;
         align-content: center;
     }
 }
-@media screen and (min-width:701px) and (max-width:832px){ /* Tablet */
-    .titleboxUserList{
+@media screen and (min-width:701px) and (max-width:832px){
+    .titleboxPostList{
         width:22em;
         height:86px;
         gap:14px;
     }
-    .titleboxUserList{
+    .titleboxPostList{
         gap:44px;
     }
-    .titleUserList{
+    .titlePostList{
         font-size:24px;
     }
-    div#tabcontainerUserList{
+    div#tabcontainerPostList{
         width:37em;
         overflow-x:auto;
     }
     main{
         gap:48px;
     }
-    #titlebackUserList{
+    #titlebackPostList{
         height:6.5em;
     }
-    .buttextUserList{
+    .buttextPostList{
         display:none;
     }
     button{
@@ -629,16 +621,16 @@ button{
         font-size:16px;
         width:38px;
     }
-    .viewUserList{
+    .viewPostList{
         font-size:16px;
         width:38px;
     }
-    #actionsBtsUserList{
+    #actionsBtsPostList{
         flex-direction: row;
         align-items: center;
         width:153px;
     }
-    .criarUserList{
+    .criarPostList{
         display:flex;
         justify-content:center;
         align-items:center;
@@ -652,7 +644,7 @@ button{
         height: 40px;
         transition: background 0.2s;
     }
-    .tdUserList {
+    .tdPostList {
         font-size: 14px;
         font-family:Open Sans;
         justify-content:center;
@@ -660,24 +652,24 @@ button{
     }
 }
 @media screen and (min-width:833px) and (max-width:930px){
-    .titleboxUserList{
+    .titleboxPostList{
         width:24em;
         height:86px;
         gap:14px;
     }
-    #titlebackUserList{
+    #titlebackPostList{
         height:7em;
     }
-    #actionsBtsUserList{
+    #actionsBtsPostList{
         flex-direction: row;
         align-items: center;
         width:252px;
     }
 
-    .titleUserList{
+    .titlePostList{
         font-size:34px;
     }
-    div#tabcontainerUserList{
+    div#tabcontainerPostList{
         width:50em;
         overflow-x:auto;
     }
@@ -685,12 +677,12 @@ button{
         font-size:14px;
         width:78px;
     }
-    .viewUserList{
+    .viewPostList{
         font-size:14px;
         width:78px;
     }
     
-    .criarUserList{
+    .criarPostList{
         display:flex;
         justify-content:center;
         align-items:center;
