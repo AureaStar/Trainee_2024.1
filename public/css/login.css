@@ -92,7 +92,7 @@ body {
     height: 50px;
     border-radius: 10px;
     background-color: #e6a549;
-    border:none;
+    border: 2.5px solid #E6A549;
     outline: none;
     display: flex;
     align-items: center;
@@ -156,7 +156,7 @@ body {
     padding-bottom: 40px;
     width: 140px;
     height: 40px;
-    border: none;
+    border: 2.5px solid #429741;
     transition: background 0.2s;
 }
 
