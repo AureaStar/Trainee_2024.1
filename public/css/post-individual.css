@@ -95,6 +95,9 @@ body h1{
     .box{
         margin-bottom: 4%;
     }
+    .autoria{
+        margin-bottom: 5%;
+    }
     .autoria p{
         font-size: 12px;
     }
@@ -106,6 +109,8 @@ body h1{
         line-height: 16px;
         font-size: 12px;
         text-align: justify;
+        padding-left: 6%;
+        padding-right: 6%;
     }
 }
 
