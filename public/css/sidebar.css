@@ -1,0 +1,310 @@
+/* Reset */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Sidebar */
+
+/* Estrutura */
+.sidebar{
+    background-color: #412307;
+    background-image: url(/public/assets/fundo-sidebar.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    width: 3%;
+    height: 100%;
+    padding: 170px 0 40px 1%;
+    box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.8);
+    overflow: hidden;
+    transition: width 0.2s;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.sidebar:hover{
+    width: 20%;
+}
+
+/* Itens */
+.sidebar-close{
+    display: none;
+}
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+ul .itens-menu{
+    transition: 0.2s;
+}
+ul .itens-menu:hover{
+    background-color: #429741a2;
+    border: 0px solid #429741;
+    border-radius: 15px;
+}
+ul .itens-menu a{
+    line-height: 20px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Jomhuria;
+    color: white;
+    margin-bottom: 8%;
+    display: flex;
+    padding: 15px 5%;
+}
+ul .itens-menu a .link-txt{
+    display: flex;
+    padding-top: 4px;
+    font-size: 34px;
+    margin-left: 40px;
+}
+ul .itens-menu a .icon{
+    font-size: 20px;
+}
+ul .itens-menu-login{
+    transition: 0.2s;
+}
+ul .itens-menu-login:hover{
+    background-color: rgb(124, 5, 5);
+    border: 0px solid rgb(219, 42, 42);
+    border-radius: 15px;
+}
+ul .itens-menu-login a{
+    line-height: 20px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Jomhuria;
+    color: white;
+    margin-bottom: 8%;
+    display: flex;
+    padding: 15px 5%;
+}
+ul .itens-menu-login a .link-txt{
+    display: flex;
+    padding-top: 4px;
+    font-size: 34px;
+    margin-left: 40px;
+}
+ul .itens-menu-login a .icon{
+    font-size: 20px;
+}
+
+
+/* Modal */
+
+.modal-logout{
+    padding: 12px;
+    background-image: url(/public/assets/fundo-sidebar.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    color: white;
+    border-radius: 20px;
+    width: 15%;
+    height: fit-content;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    top: 35%;
+    left: 42%;
+    box-shadow: rgb(0, 0, 0) 2px 2px 4px 4px;
+    z-index: 4;
+}
+.modal-logout p{
+    margin-top: 20%;
+    margin-bottom: 20%;
+    font-family: Open Sans;
+    font-size: 18px;
+}
+.btn-open{
+    background-color: #429741;
+    font-family: Jomhuria;
+    font-size: 28px;
+    border-radius: 10px;
+    color: white;
+    padding: 4px 2px 0px;
+    box-shadow: none;
+    transition: 0.02s;
+    border: none;
+}
+.btn-open:hover{
+    background-color: #429741a2;
+}
+.btn-close{
+    background-color: rgb(219, 42, 42);
+    font-family: Jomhuria;
+    font-size: 28px;
+    border-radius: 10px;
+    color: white;
+    padding: 4px 2px 0px;
+    box-shadow: none;
+    transition: 0.02s;
+    border: none;
+}
+.btn-close:hover{
+    background-color: rgb(124, 5, 5);
+}
+
+/* Responsividade */
+@media (max-width: 600px){ 
+
+    .sidebar{
+        background-size: 1175px;
+        width: 8%;
+        padding: 195px 0 40px 1%;
+    }
+    .sidebar:hover{
+        width: 42%;
+    }
+
+    /* Itens */
+    ul .itens-menu a{
+        padding-left: 4px;
+        line-height: 10px;
+    }
+    ul .itens-menu a .link-txt{
+        padding-top: 7px;
+        margin-left: 25px;
+    }
+    ul .itens-menu a .icon{
+        font-size: 18px;
+    }
+    ul .itens-menu-login a{
+        padding-left: 4px;
+        line-height: 10px;
+    }
+    ul .itens-menu-login a .link-txt{
+        padding-top: 7px;
+        margin-left: 25px;
+    }
+    ul .itens-menu-login a .icon{
+        font-size: 18px;
+    }
+
+    /* Modal */
+
+    .modal-logout{
+        padding: 12px;
+        background-size: 400px;
+        width: 40%;
+        top: 35%;
+        left: 30%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) { 
+
+    .sidebar{
+        background-size: 2000px;
+        width: 6%;
+        padding: 330px 0 40px 1%;
+    }
+    .sidebar:hover{
+        width: 30%;
+    }
+
+    /* Itens */
+    ul .itens-menu a{
+        padding-left: 4px;
+        line-height: 10px;
+    }
+    ul .itens-menu a .link-txt{
+        display: flex;
+        padding-top: 15px;
+        font-size: 48px;
+        margin-left: 30px;
+    }
+    ul .itens-menu a .icon{
+        font-size: 28px;
+    }
+    ul .itens-menu-login a{
+        padding-left: 4px;
+        line-height: 10px;
+    }
+    ul .itens-menu-login a .link-txt{
+        display: flex;
+        padding-top: 15px;
+        font-size: 48px;
+        margin-left: 30px;
+    }
+    ul .itens-menu-login a .icon{
+        font-size: 28px;
+    }
+    
+    /* Modal */
+
+    .modal-logout{
+        padding: 12px;
+        background-size: 1200px;
+        width: 40%;
+        top: 35%;
+        left: 30%;
+    }
+    .modal-logout p{
+        font-size: 28px;
+    }
+    .btn-open{
+        font-size: 48px;
+    }
+    .btn-close{
+        font-size: 48px;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1024px) { 
+
+    .sidebar{
+        background-size: 2500px;
+        width: 6%;
+        padding: 450px 0 40px 1%;
+    }
+    .sidebar:hover{
+        width: 30%;
+    }
+
+    /* Itens */
+    ul .itens-menu a{
+        padding-left: 4px;
+        line-height: 10px;
+    }
+    ul .itens-menu a .link-txt{
+        padding-top: 20px;
+        font-size: 56px;
+        margin-left: 30px;
+    }
+    ul .itens-menu a .icon{
+        font-size: 36px;
+    }
+    ul .itens-menu-login a{
+        padding-left: 4px;
+        line-height: 10px;
+    }
+    ul .itens-menu-login a .link-txt{
+        padding-top: 20px;
+        font-size: 56px;
+        margin-left: 30px;
+    }
+    ul .itens-menu-login a .icon{
+        font-size: 36px;
+    }
+
+    /* Modal */
+
+    .modal-logout{
+        padding: 12px;
+        background-size: 1500px;
+        width: 50%;
+        top: 35%;
+        left: 30%;
+    }
+    .modal-logout p{
+        font-size: 38px;
+    }
+    .btn-open{
+        font-size: 50px;
+    }
+    .btn-close{
+        font-size: 50px;
+    }
+}
