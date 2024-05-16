@@ -136,6 +136,18 @@
     font-size: 28px;
 }
 
+.imagemPerfilInput::-webkit-file-upload-button {
+    display: none;
+}
+
+.imagemPerfilInput::before {
+    content: 'Adicione a foto de perfil: ';
+}
+
+.imagemPerfilInput {
+    align-content: center;
+}
+
 @media only screen and (max-width: 600px) {
     .modalV {
         height: 45%;

@@ -7,43 +7,47 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Open The Modal -->
-<button class="CriarPost">Editar Usuário</button>
+<button class="EditarUsuario">Editar Usuário</button>
 
 <!-- The Modal -->
 
-<div id="myModal" class="modalM">
+<div id="myModal" class="modalEditarUsuario">
 
     <!-- Modal content -->
-    <div class="modal-content">
-        <div class="modal-header">
+    <div class="modal-contentEditarUsuario">
+        <div class="modal-headerEditarUsuario">
             <img class="imagemlogo" src="../../../public/assets/Logo.png" alt="">
             <h2 class="titulo">Editar Usuário</h2>
             <img class="imagemlogo" src="../../../public/assets/Logo.png" alt="">
 
         </div>
-        <form class="modal-body">
+        <form class="modal-bodyEditarUsuario">
+            <label for="name" class="namebok"></label>
+            <div class="fundoFormularioUsuario">
+                <input type="file" class="box imagemPerfilInput" name="imagem" required>
+            </div>
 
             <label for="name" class="namebox">Nome:</label>
-            <div class="fundoFormulario">
+            <div class="fundoFormularioUsuario">
                 <input type="text" class="box" placeholder="Editar o nome" name="name">
             </div>
 
             <label for="email" class="namebox">Email:</label>
-            <div class="fundoFormulario">
+            <div class="fundoFormularioUsuario">
                 <input type="email" class="box" placeholder="Edite o email" name="email">
             </div>
 
             <label for="senha" class="namebox">Senha:</label>
-            <div class="fundoFormulario">
+            <div class="fundoFormularioUsuario">
                 <input type="password" class="box" placeholder="Edite a senha" name="senha">
             </div>
 
             <label for="senha-repeat" class="namebox">Confirme a senha:</label>
-            <div class="fundoFormulario">
+            <div class="fundoFormularioUsuario">
                 <input type="password" class="box" placeholder="Repita a senha editada" name="senha-repeat">
             </div>
 
-            <div class="modal-footer">
+            <div class="modal-footerEditarUsuario">
                 <button type="submit" class="fechar">Editar</button>
                 <button class="cancelar">Cancelar</button>
 
