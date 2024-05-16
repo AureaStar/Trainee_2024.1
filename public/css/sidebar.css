@@ -68,6 +68,34 @@ ul .itens-menu a .link-txt{
 ul .itens-menu a .icon{
     font-size: 20px;
 }
+ul .itens-menu-login{
+    transition: 0.2s;
+}
+ul .itens-menu-login:hover{
+    background-color: rgb(124, 5, 5);
+    border: 0px solid rgb(219, 42, 42);
+    border-radius: 15px;
+}
+ul .itens-menu-login a{
+    line-height: 20px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Jomhuria;
+    color: white;
+    margin-bottom: 8%;
+    display: flex;
+    padding: 15px 5%;
+}
+ul .itens-menu-login a .link-txt{
+    display: flex;
+    padding-top: 4px;
+    font-size: 34px;
+    margin-left: 40px;
+}
+ul .itens-menu-login a .icon{
+    font-size: 20px;
+}
+
 
 /* Modal */
 
