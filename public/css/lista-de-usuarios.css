@@ -134,7 +134,9 @@ button{
     border-radius: 10px;
     transition: background 0.2s;
 }
-
+.viewUserList i,.editUserList i,.delUserList i{
+    padding-right:5%;
+}
 
 .viewUserList:hover {
     background-color: #429741a2;
@@ -144,8 +146,6 @@ button{
     background:rgba(67, 151, 65, 0.65);
     transition: background 0.2s;
 }
-
-
 .editUserList:hover {
     background-color: #429741a2;
     border: 2.5px solid #429741;
