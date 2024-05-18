@@ -1,26 +1,9 @@
-.EditarUsuario {
-    background-color: #439741;
-    height: 5%;
-    width: 9%;
-    border-radius: 5px;
-    padding-top: 3px;
-    color: white;
-    font-family: Jomhuria;
-    font-size: 28px;
-    border: none;
-    outline: none;
-}
-
-.CriarPost:hover {
-    background-color: rgba(0, 128, 0, 0.51);
-    border: #439741;
-}
 
 .modalEditarUsuario {
     position: absolute;
     background-color: #412307;
     height: 70%;
-    width: 50%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -142,7 +125,7 @@
 }
 
 .imagemPerfilInput::before {
-    content: 'Adicione a foto de perfil: ';
+    content: 'Edite a foto de perfil: ';
 }
 
 .imagemPerfilInput {
@@ -189,11 +172,12 @@
 
 @media only screen and (max-width: 600px) {
     .modalEditarUsuario {
-        height: 65%;
+        height: 69%;
         width: 70%;
         border-radius: 15px;
         padding: 3%;
     }
+    
 
     .modal-contentEditarUsuario {
         gap: 5px;
@@ -204,7 +188,7 @@
     }
 
     .titulo {
-        font-size: 22px;
+        font-size: 25px;
     }
 
     .modal-footerEditarUsuario {
@@ -233,20 +217,20 @@
         height: 100%;
         width: 32%;
         padding-top: 2px;
-        font-size: 24px;
+        font-size: 28px;
     }
 
     .cancelar {
         height: 100%;
         width: 32%;
         padding-top: 2px;
-        font-size: 24px;
+        font-size: 28px;
     }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
     .modalEditarUsuario {
-        height: 65%;
+        height: 69%;
         width: 70%;
         border-radius: 15px;
         padding: 5%;
@@ -260,14 +244,13 @@
         gap: 5px;
     }
 
-
     .titulo {
         font-size: 38px;
     }
 
     .modal-footerEditarUsuario {
         padding-top: 2%;
-        height: 8%;
+        height: 7%;
         margin-top: 1%;
     }
 
@@ -290,19 +273,19 @@
     .fechar {
         height: 100%;
         width: 30%;
-        padding-top: 0px;
+        padding-top: 2px;
         font-size: 28px;
     }
 
     .cancelar {
         height: 100%;
         width: 30%;
-        padding-top: 0px;
+        padding-top: 2px;
         font-size: 28px;
     }
 }
 
-@media only screen and (max-width: 310px) {
+@media only screen and (max-width: 350px) {
     .titulo {
         font-size: 18px;
     }
