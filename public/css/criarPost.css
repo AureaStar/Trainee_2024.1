@@ -1,20 +1,3 @@
-.CriarPost {
-    background-color: #439741;
-    height: 5%;
-    width: 9%;
-    border-radius: 5px;
-    padding-top: 3px;
-    color: white;
-    font-family: Jomhuria;
-    font-size: 28px;
-    border: none;
-    outline: none;
-}
-
-.CriarPost:hover {
-    background-color: rgba(0, 128, 0, 0.51);
-    border: #439741;
-}
 
 .modalC {
     position: absolute;
