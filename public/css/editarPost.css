@@ -383,3 +383,22 @@ textarea {
         font-size: 28px;
     }
 }
+
+@media only screen and (max-width: 340px) {
+    .titulo {
+        font-size: 24px;
+    }
+    .fechar {
+        height: 100%;
+        width: 30%;
+        padding-top: 1px;
+        font-size: 22px;
+    }
+
+    .cancelar {
+        height: 100%;
+        width: 30%;
+        padding-top: 0px;
+        font-size: 22px;
+    }
+}

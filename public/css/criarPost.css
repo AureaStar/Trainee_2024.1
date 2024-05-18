@@ -321,6 +321,7 @@ textarea {
     }
 }
 
+
 @media only screen and (min-width: 601px) and (max-width: 900px) {
     .modalC {
         height: 65%;
@@ -390,5 +391,24 @@ textarea {
         width: 30%;
         padding-top: 0px;
         font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .titulo {
+        font-size: 26px;
+    }
+    .fechar {
+        height: 100%;
+        width: 30%;
+        padding-top: 1px;
+        font-size: 22px;
+    }
+
+    .cancelar {
+        height: 100%;
+        width: 30%;
+        padding-top: 0px;
+        font-size: 22px;
     }
 }
