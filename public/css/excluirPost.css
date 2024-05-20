@@ -2,6 +2,9 @@
 .modalD {
     background-color: #412307;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     height: 10%;
     width: 65%;
     display: flex;
