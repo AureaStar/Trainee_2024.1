@@ -1,6 +1,9 @@
 
 .modalCriarUsuario {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: #412307;
     height: 72%;
     width: 60%;
@@ -229,7 +232,7 @@
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
     .modalCriarUsuario {
-        height: 69%;
+        height: 72%;
         width: 70%;
         border-radius: 15px;
         padding: 5%;
