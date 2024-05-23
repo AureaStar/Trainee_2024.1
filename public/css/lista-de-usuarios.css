@@ -1,0 +1,707 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    background: url("/public/assets/fundocourolistaUser.png") repeat;
+    background-size: auto;
+    height: 100%;
+    font-family: "Jomhuria";
+    color: #FFF4F0;
+    margin-bottom: 16px;
+}
+#titlebackUserList{
+    display:flex;
+    justify-content:center;
+    width:100%;
+    height:8.5em;
+    background: url("/public/assets/fundo-titulo-tabela.png") repeat;
+}
+.titleboxUserList{
+    filter:drop-shadow(rgba(0, 0, 0, 0.70) 10px 10px 8px);
+    display:flex;
+    gap: 70px;
+    background: rgba(65, 35, 7, 0.80);
+    width:800px;
+    height:100px;
+    margin-top:1%;
+    justify-content:center;
+    align-items:center;
+    border-radius:10px;
+    font-size: 30px;
+}
+.titleUserList{
+    padding-top:1%;
+    font-weight: normal;
+    font-size:34px;
+    font-family:Almendra;
+    font-weight:bold;
+}
+.torrezinhatabUserList{
+    height:78px;
+    width:94,44px;
+}
+main{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap:48px;
+}
+.tabscroll{
+    overflow-x:auto;
+    border-radius: 10px;
+}
+div#tabcontainerUserList{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width:55em;
+    filter:drop-shadow(rgba(0, 0, 0, 0.80) 10px 10px 8px);
+}
+#tableUserList{
+    background: rgba(65, 35, 7, 0.80);
+    border-radius: 10px;
+    border-collapse: collapse;
+}
+.tbodyUserList tr:hover{
+    background-color: rgba(66, 151, 65, 0.2);
+}
+.thUserList {
+    padding: 8px 6px;
+    color:#E6A549;
+    font-family:Open Sans;
+    font-size: 18px;
+    width:auto;
+}
+
+.tdUserList {
+    padding: 8px 6px;
+    font-size: 16px;
+    font-family:Open Sans;
+    width:auto;
+}
+#actionsBtsUserList{
+    display:flex;
+    justify-content:center;
+    flex-wrap:nowrap;
+    gap:1px;
+}
+
+button{
+    color: #FFF4F0;
+    text-decoration:none;
+    background: black;
+	color: inherit;
+	border-radius:10px;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+    font-size:18px;
+    width:130px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    outline:none;
+    border: 2.5px solid #42974100;
+}
+
+.criarUserList{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-top:1%;
+    background:rgba(67, 151, 65, 0.65);
+    font-size:50px;
+    border:transparent;
+    outline:none;
+    color: white;
+    border-radius: 10px;
+    width: 140px;
+    height: 40px;
+    transition: background 0.2s;
+}
+
+
+.criarUserList:hover {
+    background-color: #429741a2;
+    border: 2.5px solid #429741;
+}
+.viewUserList{
+    background:rgba(67, 151, 65, 0.65);
+    border-radius: 10px;
+    transition: background 0.2s;
+}
+.viewUserList i,.editUserList i,.delUserList i{
+    padding-right:5%;
+}
+
+.viewUserList:hover {
+    background-color: #429741a2;
+    border: 2.5px solid #429741;
+}
+.editUserList{
+    background:rgba(67, 151, 65, 0.65);
+    transition: background 0.2s;
+}
+.editUserList:hover {
+    background-color: #429741a2;
+    border: 2.5px solid #429741;
+}
+.delUserList{
+    background:rgb(131, 20, 20);
+    transition: background 0.2s;
+}
+
+
+.delUserList:hover {
+    background-color:rgb(131, 20, 20);
+    border: 2.5px solid rgb(182, 21, 21);
+}
+
+@media screen and (max-width:320px){
+    .titleboxUserList{
+        width:9em;
+        height:70px;
+        gap:8px;
+    }
+    #titlebackUserList{
+        height:2em;
+    }
+    .torrezinhatabUserList{
+        height:32px;
+        width:38,74px;
+    }
+    .criarUserList{
+        width: 50px;
+        height: 30px;
+        font-size:26px;
+    }
+    .thUserList {
+        padding: 4px 0px;
+        color:#E6A549;
+        font-size: 20px; 
+    }
+    
+    .tdUserList {
+        padding: 8px 10px;
+        font-size: 12px;
+        font-family:Open Sans;
+        justify-content:center;
+        align-content: center;
+    }
+    button{
+        height:20px;
+        width:60px;
+        font-size:12px;
+    }
+    #actionsBtsUserList{
+        flex-direction: row;
+        align-items: center;
+        width:123px;
+    }
+    .buttextUserList{
+        display:none;
+    }
+    .titleUserList{
+        font-size:16px;
+    }
+    div#tabcontainerUserList{
+        width:14.4em;
+        overflow-x:auto;
+    }
+    main{
+        gap:48px;
+    }
+    #titlebackUserList{
+        height:6em;
+    }
+    button{
+        color: #FFF4F0;
+        text-decoration:none;
+        background: black;
+        color: inherit;
+        border-radius:10px;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        font-size:16px;
+        width:40px;
+        height:30px;
+    }
+    .viewUserList{
+        font-size:16px;
+        width:40px;
+    }
+    
+    .criarUserList{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        padding-top:2%;
+        background:rgba(67, 151, 65, 0.65);
+        font-size:27px;
+        border-color: transparent;
+        color: white;
+        border-radius: 10px;
+        width: 53px;
+        height: 26px;
+        transition: background 0.2s;
+    }
+    .thUserList {
+        padding: 4px 18px;
+        font-size: 14px;  
+    }
+    
+    .tdUserList {
+        padding: 8px 18px;
+        font-size: 12px;
+        font-family:Open Sans;
+        justify-content:center;
+        align-content: center;
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:430px){
+    .titleboxUserList{
+        width:10.4em;
+        height:70px;
+        gap:16px;
+    }
+    #titlebackUserList{
+        height:3em;
+    }
+    .torrezinhatabUserList{
+        height:32px;
+        width:38,74px;
+    }
+    .criarUserList{
+        width: 50px;
+        height: 30px;
+        font-size:26px;
+    }
+    .thUserList {
+        padding: 4px 0px;
+        color:#E6A549;
+        font-size: 20px; 
+    }
+    
+    .tdUserList {
+        padding: 8px 10px;
+        font-size: 12px;
+        font-family:Open Sans;
+        justify-content:center;
+        align-content: center;
+    }
+    button{
+        height:20px;
+        width:60px;
+        font-size:12px;
+    }
+    #actionsBtsUserList{
+        flex-direction: row;
+        align-items: center;
+        width:123px;
+    }
+    .buttextUserList{
+        display:none;
+    }
+    .titleUserList{
+        font-size:20px;
+    }
+    div#tabcontainerUserList{
+        width:17em;
+        overflow-x:auto;
+    }
+    main{
+        gap:48px;
+    }
+    #titlebackUserList{
+        height:6em;
+    }
+    button{
+        color: #FFF4F0;
+        text-decoration:none;
+        background: black;
+        color: inherit;
+        border-radius:10px;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        font-size:16px;
+        width:40px;
+        height:30px;
+    }
+    .viewUserList{
+        font-size:16px;
+        width:40px;
+    }
+    
+    .criarUserList{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        padding-top:2%;
+        background:rgba(67, 151, 65, 0.65);
+        font-size:30px;
+        border-color: transparent;
+        color: white;
+        border-radius: 10px;
+        width: 55px;
+        height: 35px;
+        transition: background 0.2s;
+    }
+    .thUserList {
+        padding: 4px 18px;
+        font-size: 14px; 
+    }
+    
+    .tdUserList {
+        padding: 8px 18px;
+        font-size: 12px;
+        font-family:Open Sans;
+        justify-content:center;
+        align-content: center;
+    }
+}
+
+@media screen and (min-width:431px) and (max-width:600px){
+    .titleboxUserList{
+        width:17em;
+        height:70px;
+        gap:14px;
+    }
+    #titlebackUserList{
+        height:3em;
+    }
+    .torrezinhatabUserList{
+        height:32px;
+        width:38,74px;
+    }
+    #actionsBtsUserList{
+        flex-direction: row;
+        align-items: center;
+        width:123px;
+    }
+    .buttextUserList{
+        display:none;
+    }
+    .titleboxUserList{
+        gap:44px;
+        width:13.8em;
+    }
+    .titleUserList{
+        font-size:20px;
+    }
+    div#tabcontainerUserList{
+        width:23em;
+        overflow-x:auto;
+    }
+    main{
+        gap:48px;
+    }
+    #titlebackUserList{
+        height:6em;
+    }
+    button{
+        color: #FFF4F0;
+        text-decoration:none;
+        background: black;
+        color: inherit;
+        border-radius:10px;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        font-size:16px;
+        width:40px;
+    }
+    .viewUserList{
+        font-size:16px;
+        width:40px;
+    }
+    
+    .criarUserList{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        padding-top:1.3%;
+        background:rgba(67, 151, 65, 0.65);
+        font-size:33px;
+        border-color: transparent;
+        color: white;
+        border-radius: 10px;
+        width: 65px;
+        height: 37px;
+        transition: background 0.2s;
+    }
+    .thUserList {
+        padding: 4px 18px;
+        font-size: 14px; 
+    }
+    
+    .tdUserList {
+        padding: 8px 18px;
+        font-size: 12px;
+        font-family:Open Sans;
+        justify-content:center;
+        align-content: center;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:650px){
+    .titleboxUserList{
+        width:19em;
+        height:86px;
+        gap:10px;
+    }
+    #actionsBtsUserList{
+        flex-direction: row;
+        align-items: center;
+        width:123px;
+    }
+    .buttextUserList{
+        display:none;
+    }
+    .titleboxUserList{
+        gap:44px;
+    }
+    .titleUserList{
+        font-size:24px;
+    }
+    div#tabcontainerUserList{
+        width:32.5em;
+        overflow-x:auto;
+    }
+    main{
+        gap:48px;
+    }
+    #titlebackUserList{
+        height:6.5em;
+    }
+    button{
+        color: #FFF4F0;
+        text-decoration:none;
+        background: black;
+        color: inherit;
+        border-radius:10px;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        font-size:16px;
+        width:40px;
+    }
+    .viewUserList{
+        font-size:16px;
+        width:40px;
+    }
+    
+    .criarUserList{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        padding-top:1%;
+        background:rgba(67, 151, 65, 0.65);
+        font-size:50px;
+        border-color: transparent;
+        color: white;
+        border-radius: 10px;
+        width: 110px;
+        height: 40px;
+        transition: background 0.2s;
+    }
+    .thUserList {
+        padding: 4px 18px;
+        font-size: 18px; 
+    }
+    
+    .tdUserList {
+        padding: 8px 18px;
+        font-size: 12px;
+        font-family:Open Sans;
+        justify-content:center;
+        align-content: center;
+    }
+}
+@media screen and (min-width:651px) and (max-width:700px){
+    .titleboxUserList{
+        width:20em;
+        height:86px;
+        gap:14px;
+    }
+    #actionsBtsUserList{
+        flex-direction: row;
+        align-items: center;
+        width:123px;
+    }
+    .buttextUserList{
+        display:none;
+    }
+    .titleboxUserList{
+        gap:44px;
+    }
+    .titleUserList{
+        font-size:24px;
+    }
+    div#tabcontainerUserList{
+        width:34.5em;
+        overflow-x:auto;
+    }
+    main{
+        gap:48px;
+    }
+    #titlebackUserList{
+        height:6.5em;
+    }
+    button{
+        color: #FFF4F0;
+        text-decoration:none;
+        background: black;
+        color: inherit;
+        border-radius:10px;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        font-size:16px;
+        width:40px;
+    }
+    .viewUserList{
+        font-size:16px;
+        width:40px;
+    }
+    
+    .criarUserList{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        padding-top:1%;
+        background:rgba(67, 151, 65, 0.65);
+        font-size:50px;
+        border-color: transparent;
+        color: white;
+        border-radius: 10px;
+        width: 120px;
+        height: 40px;
+        transition: background 0.2s;
+    }
+    .tdUserList {
+        font-size: 13px;
+        font-family:Open Sans;
+        justify-content:center;
+        align-content: center;
+    }
+}
+@media screen and (min-width:701px) and (max-width:832px){ /* Tablet */
+    .titleboxUserList{
+        width:22em;
+        height:86px;
+        gap:14px;
+    }
+    .titleboxUserList{
+        gap:44px;
+    }
+    .titleUserList{
+        font-size:24px;
+    }
+    div#tabcontainerUserList{
+        width:37em;
+        overflow-x:auto;
+    }
+    main{
+        gap:48px;
+    }
+    #titlebackUserList{
+        height:6.5em;
+    }
+    .buttextUserList{
+        display:none;
+    }
+    button{
+        color: #FFF4F0;
+        text-decoration:none;
+        background: black;
+        color: inherit;
+        border-radius:10px;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        font-size:16px;
+        width:38px;
+    }
+    .viewUserList{
+        font-size:16px;
+        width:38px;
+    }
+    #actionsBtsUserList{
+        flex-direction: row;
+        align-items: center;
+        width:153px;
+    }
+    .criarUserList{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        padding-top:1%;
+        background:rgba(67, 151, 65, 0.65);
+        font-size:50px;
+        border-color: transparent;
+        color: white;
+        border-radius: 10px;
+        width: 140px;
+        height: 40px;
+        transition: background 0.2s;
+    }
+    .tdUserList {
+        font-size: 14px;
+        font-family:Open Sans;
+        justify-content:center;
+        align-content: center;
+    }
+}
+@media screen and (min-width:833px) and (max-width:930px){
+    .titleboxUserList{
+        width:24em;
+        height:86px;
+        gap:14px;
+    }
+    #titlebackUserList{
+        height:7em;
+    }
+    #actionsBtsUserList{
+        flex-direction: row;
+        align-items: center;
+        width:252px;
+    }
+
+    .titleUserList{
+        font-size:34px;
+    }
+    div#tabcontainerUserList{
+        width:50em;
+        overflow-x:auto;
+    }
+    button{
+        font-size:14px;
+        width:78px;
+    }
+    .viewUserList{
+        font-size:14px;
+        width:78px;
+    }
+    
+    .criarUserList{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        padding-top:1%;
+        background:rgba(67, 151, 65, 0.65);
+        font-size:50px;
+        border-color: transparent;
+        color: white;
+        border-radius: 10px;
+        width: 140px;
+        height: 40px;
+        transition: background 0.2s;
+    }
+}
