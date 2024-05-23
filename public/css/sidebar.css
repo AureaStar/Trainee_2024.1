@@ -65,8 +65,8 @@ ul .itens-menu-login{
     transition: 0.2s;
 }
 ul .itens-menu-login:hover{
-    background-color: rgb(124, 5, 5);
-    border: 0px solid rgb(219, 42, 42);
+    background-color: rgb(219, 42, 42);
+    border: 0px solid rgb(124, 5, 5);
     border-radius: 15px;
 }
 ul .itens-menu-login a{
