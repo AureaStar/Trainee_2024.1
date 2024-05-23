@@ -1,0 +1,643 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header {
+    font-family: "Jomhuria";
+    background: linear-gradient(90deg, #412307 0%, #A75A12 100%);
+    height: 1em;
+    width: 100%;
+    filter: drop-shadow(rgba(0, 0, 0, 0.40) 0px 10px 8px);
+    font-size: 64px;
+}
+
+.navbar-Container {
+    display: flex;
+    height: 64px;
+    margin: 0 24px;
+    align-items: center;
+    justify-content: left;
+}
+
+#logonavbarimg {
+    width: 400px;
+    height: 64px;
+    background: #a75a1200;
+    transition: 0.5s ease-in-out;
+}
+#logonavbarimg:hover {
+    filter: drop-shadow(0px 0px 2px #E6A549);
+}
+.logoNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-lnk-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    gap:64px;
+    padding-top: 0.7%;
+    margin-right:64px;
+}
+
+.navbarlist {
+    margin: 0;
+    padding: 0;
+}
+
+.navtext {
+    color: #e6a549;
+    text-decoration: none;
+}
+.navbarLandingpg{
+    text-decoration: none;
+    width:fit-content;
+    color:white;
+}
+#navbinicio{
+    display: flex;
+    cursor: pointer;
+    outline: inherit;
+    text-decoration: none;
+    border: none;
+    font-family: Jomhuria;
+    background: none;
+    font-size: 64px;
+    color: #e6a549;
+    transition: ease-in-out 0.2s;
+}
+#navbinicio:hover{
+    transform: scale(108%);
+}
+#navbpubli{
+    display: flex;
+    cursor: pointer;
+    outline: inherit;
+    text-decoration: none;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    font-family: Jomhuria;
+    font-size: 64px;
+    color: #e6a549;
+    transition: ease-in-out 0.2s;
+}
+#navbpubli:hover{
+    transform: scale(108%);
+}
+#navLogText {
+    background: rgba(67, 151, 65, 0.65);
+    display: flex;
+    border:rgba(67, 151, 65, 0.65);
+    width: 190px;
+    height: 44px;
+    padding-top: 0.8%;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 54px;
+    font-family: Jomhuria;
+    color: #fff4f0;
+    cursor: pointer;
+    outline: inherit;
+    transition: background 0.2s;
+    transition: ease-in-out 0.2s;
+}
+#navLogText:hover {
+    background-color: #429741a2;
+    border: 2.5px solid #429741;
+    transform: scale(108%);
+}
+.navhamLi{
+    display:none;
+}
+
+.navlisticon{
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    background: none;
+    text-decoration:none;
+    color: #FFF4F0;
+    border: none;
+}
+
+.navhamMenu {
+    background: linear-gradient(90deg, #412307 0%, #a75a12 100%);
+    width: 100%;
+    height: 64px;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    font-size: 54px;
+}
+#navhaminicio{
+    display: flex;
+    cursor: pointer;
+    outline: inherit;
+    text-decoration: none;
+    border: none;
+    font-family: Jomhuria;
+    background: none;
+    font-size: 54px;
+    color: #e6a549;
+    padding-top:1%;
+    transition: ease-in-out 0.2s;
+}
+#navhaminicio:hover{
+    transform: scale(108%);
+}
+#navhampubli{
+    display: flex;
+    cursor: pointer;
+    outline: inherit;
+    text-decoration: none;
+    border: none;
+    font-family: Jomhuria;
+    background: none;
+    font-size: 54px;
+    color: #e6a549;
+    padding-top:1%;
+    transition: ease-in-out 0.2s;
+}
+#navhampubli:hover{
+    transform: scale(108%);
+}
+.open{
+    display:flex;
+}
+.hidden{
+    display:none;
+}
+.navhamButton{
+    text-decoration:none;
+    background: none;
+    color: #FFF4F0;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    transition: ease-in-out 0.2s;
+}
+#navclosedhhamButton{
+    transition: ease-in-out 0.2s;
+}
+#navclosedhhamButton:hover{
+    transform:scale(108%);
+}
+#navopenhhamButton{
+    transition: ease-in-out 0.2s;
+}
+#navopenhhamButton:hover{
+    transform:scale(108%);
+}
+#navopenhamButton{
+    text-decoration:none;
+    background: none;
+    color: #FFF4F0;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:0px;
+    transition: ease-in-out 0.2s;
+}
+#navhamlogbutton {
+    background: #429741a2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height:46px;
+    width:80px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 54px;
+    font-family: Jomhuria;
+    color: #fff4f0;
+    padding:3%;
+    padding-top: 3.5%;
+    cursor: pointer;
+    outline: inherit;
+    border: 2.5px solid;
+    border-color:#429741a2;
+    transition: background 0.2s;
+    transition: ease-in-out 0.2s;
+}
+#navhamlogbutton:hover {
+    background-color: #429741a2;
+    border: 2.5px solid #429741;
+    transform: scale(108%);
+}
+@media screen and (max-width:320px){
+    #navInicio,
+    #navPubli,
+    #navlogbut,
+    #navLogText {
+        display: none;
+    }
+    .nav-lnk-container {
+        margin-right:0px;
+    }
+    #logonavbarimg {
+        width: 220px;
+        height: 35.20px;
+    }
+    .navbar-Container {
+        gap:8px;
+        margin-left:8px;
+    }
+    .navlisticon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff4f0;
+        width: 33px;
+        height: 33px;
+        font-size:36px;
+    }
+    .navhamLiClosed{
+        display:flex;
+    }
+    .navhamLiOpen{
+        display:flex;
+    }
+    .navhamMenu {
+        gap:12px;
+        font-size:42px;
+    }
+    .navhamMenu {
+        gap:0;
+        font-size:48px;
+        flex-direction: column;
+        height:fit-content;
+        padding-bottom: 3%;
+    }
+    #navhaminicio{
+        font-size:42px;
+    }
+    #navhampubli{
+        font-size:42px;
+    }
+    #navhamlogbutton {
+        font-size: 34px;
+        height: 32px;
+        width: 54px;
+        padding-top:4%;
+    }
+    .navhamLi{
+        display:flex;
+    }
+    .hidden{
+        display:none;
+    }
+    #logonavbarimg {
+        transition: 0.2s ease-in-out;
+    }
+    #navhampubli{
+        padding-bottom:4%;
+    }
+    #navhamlogbutton {
+        padding-top: 3.5%;
+    }
+}
+@media screen and (min-width:321px) and (max-width:430px){
+    #navInicio,
+    #navPubli,
+    #navlogbut,
+    #navLogText {
+        display: none;
+    }
+    .nav-lnk-container {
+        margin-right:12px;
+    }
+    #logonavbarimg {
+        width: 220px;
+        height: 35.20px;
+    }
+    .navbar-Container {
+        gap:8px;
+        margin-left:8px;
+    }
+    .navlisticon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff4f0;
+        width: 33px;
+        height: 33px;
+        font-size:36px;
+    }
+    .navhamLiClosed{
+        display:flex;
+    }
+    .navhamMenu {
+        gap:0;
+        font-size:48px;
+        flex-direction: column;
+        height:fit-content;
+        padding-bottom: 3%;
+    }
+    #navhaminicio{
+        font-size:48px;
+    }
+    #navhampubli{
+        font-size:48px;
+    }
+    #navhampubli{
+        padding-bottom:4%;
+    }
+    #navhamlogbutton {
+        padding-top: 3.5%;
+    }
+    #navhamlogbutton {
+        font-size: 42px;
+        height: 34px;
+        width: 68px;
+        padding-top:3.5%;
+    }
+    .navhamLi{
+        display:flex;
+    }
+    .hidden{
+        display:none;
+    }
+    #logonavbarimg {
+        transition: 0.2s ease-in-out;
+    }
+}
+@media screen and (min-width:431px) and (max-width:515px){
+    #navInicio,
+    #navPubli,
+    #navlogbut,
+    #navLogText {
+        display: none;
+    }
+    .nav-lnk-container {
+        margin-right:24px;
+    }
+    #logonavbarimg {
+        width: 300px;
+        height: 48px;
+    }
+    .navlisticon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff4f0;
+        width: 33px;
+        height: 33px;
+        font-size:42px;
+    }
+    .navhamLiClosed{
+        display:flex;
+    }
+    .navhamMenu {
+        gap:4px;
+        flex-direction: column;
+        height:fit-content;
+        padding-bottom: 3%;
+    }
+    #navhampubli{
+        padding-bottom:4%;
+    }
+    #navhamlogbutton {
+        padding-top: 3.5%;
+    }
+    #navhamlogbutton {
+        height: 42px;
+        width: 82px;
+        padding-top:4%;
+    }
+    .navhamLi{
+        display:flex;
+    }
+    .hidden{
+        display:none;
+    }
+    #logonavbarimg {
+        transition: 0.2s ease-in-out;
+    }
+}
+@media screen and (min-width:516px) and (max-width:600px){
+    #navInicio,
+    #navPubli,
+    #navlogbut,
+    #navLogText {
+        display: none;
+    }
+    #navhampubli{
+        padding-bottom:3%;
+    }
+    #navhamlogbutton {
+        padding-top: 3.5%;
+    }
+    .nav-lnk-container {
+        margin-right:24px;
+    }
+    #logonavbarimg {
+        width: 300px;
+        height: 48px;
+    }
+    .navlisticon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff4f0;
+        width: 33px;
+        height: 33px;
+        font-size:42px;
+    }
+    .navhamLiClosed{
+        display:flex;
+    }
+    .navhamMenu {
+        gap:4px;
+        flex-direction: column;
+        padding-bottom: 3%;
+        height: fit-content;
+    }
+    #navhamlogbutton {
+        height: 42px;
+        width: 82px;
+        padding-top:4%;
+    }
+    .navhamLi{
+        display:flex;
+    }
+    .hidden{
+        display:none;
+    }
+    #logonavbarimg {
+        transition: 0.2s ease-in-out;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:650px){
+    #navInicio,
+    #navPubli,
+    #navlogbut,
+    #navLogText {
+        display: none;
+    }
+    #navhampubli{
+        padding-bottom:2.5%;
+    }
+    #navhamlogbutton {
+        padding-top: 3.5%;
+    }
+    .nav-lnk-container {
+        margin-right:0px;
+    }
+    .navlisticon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff4f0;
+        width: 33px;
+        height: 33px;
+        font-size:52px;
+        margin-right:16px;
+    }
+    .navhamLiClosed{
+        display:flex;
+    }
+    #navhamButton i{
+       width:1em;
+       height:1em; 
+    }
+    .navhamMenu {
+        gap:4px;
+        flex-direction: column;
+        padding-bottom: 3%;
+        height: fit-content;
+    }
+    #navhamlogbutton {
+        height: 44px;
+        width: 82px;
+        padding-top:3.5%;
+    }
+    .navhamLi{
+        display:flex;
+    }
+    .hidden{
+        display:none;
+    }
+    #logonavbarimg {
+        transition: 0.2s ease-in-out;
+    }
+}
+@media screen and (min-width:651px) and (max-width:720px){
+    #navInicio,
+    #navPubli,
+    #navlogbut,
+    #navLogText {
+        display: none;
+    }
+    #navhampubli{
+        padding-bottom:2%;
+    }
+    #navhamlogbutton {
+        padding-top: 3.5%;
+    }
+    .open{
+        display:flex;
+    }
+    .nav-lnk-container {
+        margin-right:0px;
+    }
+    .navlisticon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff4f0;
+        width: 33px;
+        height: 33px;
+        font-size:52px;
+        margin-right:16px;
+    }
+    .navhamLiClosed{
+        display:flex;
+    }
+    #navhamButton i{
+       width:1em;
+       height:1em; 
+    }
+    .navhamMenu {
+        gap:4px;
+        font-size:64px;
+        flex-direction: column;
+        height:fit-content;
+        padding-bottom: 3%;
+    }
+    #navhamlogbutton {
+        font-size: 54px;
+        height: 44px;
+        width: 82px;
+        padding-top:3.5%;
+    }
+    .navhamLi{
+        display:flex;
+    }
+    .hidden{
+        display:none;
+    }
+    #logonavbarimg {
+        transition: 0.2s ease-in-out;
+    }
+}
+@media screen and (min-width:721px) and (max-width:832px){
+    #logonavbarimg {
+        width: 280px;
+        height: 44.80px;
+    }
+    .nav-lnk-container {
+        gap:28px;
+        font-size: 56px;
+        margin-right:28px;
+    }
+    #navbinicio{
+        font-size: 56px;
+    }
+    #navbpubli{
+        font-size: 56px;
+    }
+}
+@media screen and (min-width:833px) and (max-width:980px){
+    #logonavbarimg {
+        width: 300px;
+        height: 48px;
+    }
+    .nav-lnk-container {
+        gap:48px;
+        margin-right:48px;
+    }
+    .navhamMenu{
+        display:none;
+    }
+}
+@media screen and (min-width:721px){
+    .navhamMenu{
+        display:none;
+    }
+}
