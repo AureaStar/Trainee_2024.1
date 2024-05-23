@@ -1,0 +1,634 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 0px;
+    box-sizing: border-box;
+}
+
+
+
+/*HERO SECTION - DESKTOP*/
+
+.carousel{
+    display: none;
+}
+
+.total{
+    background-color: #502F11;
+    width: 100%;
+    height: 200vh;
+    flex-direction: column;
+}
+
+.background-img{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    background-image: url(../assets/site-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-torre{
+    width: 800px;
+    height: 192px;
+    align-self: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../assets/torre-logo.png);
+    
+}
+
+.hero-section{
+    padding-bottom: 80px;
+    display: flex;
+    width: 864px;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.transparent{
+    margin-top: 0px;
+    border-radius: 20px;
+    background: rgba(217, 217, 217, 0.08);
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+.transparent h1{
+    padding-top: 16px;
+    padding-bottom: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #E6A549;
+    text-align: center;
+    font-size: 44px;
+    font-weight: 800;
+}
+
+.transparent p{
+    padding: 8px 32px 80px 32px;
+    color: white;
+    text-align: justify;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.hero-buttons{
+    width: 864px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 4%;
+    padding-top: 48px;
+}
+
+.btn-hero{
+    color: white;
+    justify-content: center;
+    text-align: center;
+    border-radius: 28px;
+    padding-top: 0.8%;
+    width: 252px;
+    height: 72px;
+    font-family: "Jomhuria", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#login{
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    filter:drop-shadow(black 4px 4px 4px);
+    background-color: #439741;
+    font-size: 64px;
+    border-width: 1px;
+}
+
+#login:hover{
+    background-color: #429741a2;
+    border: 2.5px solid #429741;
+}
+
+#publi{
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    filter:drop-shadow(black 4px 4px 4px);
+    background-color: rgb(116, 116, 116);
+    border-color: white;
+    font-size: 64px;
+    border-width: 2px;
+}
+
+#publi:hover{
+    background-color: rgb(56, 57, 56);
+    border: 2.5px solid rgb(116, 116, 116);
+}
+
+
+
+/*PUBLICAÇÕES*/
+
+.publi-img{
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    background-image: url(../assets/Couro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.post-space{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-space h1{
+    padding-top: 2%;
+    padding-bottom: 32px;
+    font-family: "Almendra", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 92px;
+}
+
+.post-space h2{
+    text-align: left;
+    padding-bottom: 1%;
+    padding-left: 4%;
+    color:#439741;
+    font-family: "Almendra", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+}
+
+.post-space h3{
+    text-align: left;
+    padding-bottom: 1%;
+    padding-left: 4%;
+    color:#439741;
+    font-family: "Almendra", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+}
+
+
+.post-grid{
+    display: grid;
+    width: 100%;
+    height: 56%;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    column-gap: 1.5%;
+    row-gap: 3%;
+}
+
+.post-grande{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 4%;
+    box-shadow: 8px 8px 16px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3; 
+}
+
+.post-grande p{
+    display:-webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding-left: 4%;
+    padding-right: 4%;
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: 8px 8px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 4%;
+}
+
+.post p{
+    display:-webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding-left: 4%;
+    padding-right: 4%;
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+#post1{
+    grid-row-start: 1;
+    grid-column-start: 3;
+}
+
+#post2{
+    grid-row-start: 1;
+    grid-column-start: 4;
+}
+
+#post3{
+    grid-row-start:2;
+    grid-column-start:3;
+}
+
+#post4{
+    grid-row-start: 2;
+    grid-column-start: 4;
+}
+
+.btn-post{
+    padding-top: 5%;
+    width: 100%;
+}
+
+#ler-mais{
+    padding-top: 1%;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    filter:drop-shadow(black 4px 4px 4px);
+    background-color: #439741;
+    color: white;
+    border-radius: 28px;
+    width: 32%;
+    font-family: "Jomhuria", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    border: 2.5px solid transparent;
+}
+
+#ler-mais:hover{
+    background-color: #429741a2;
+    border: 2.5px solid #429741;
+}
+
+
+/*RESPONSIVIDADE MOBILE*/
+@media (max-width:1200px){
+    .post-space{
+        width: 840px;
+    }
+}
+
+@media (max-width:1000px){
+    
+/*CARROSSEL*/
+
+.post-grid{
+    display: none;
+}
+
+.post-space{
+    width: 90%;
+}
+
+.carousel{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 56%;
+    border-radius: 30px;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.carousel i{
+    position: relative;
+    box-shadow: 8px 8px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 48px;
+    height: 48px;
+    line-height: 45px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    color: #502F11;
+    border-radius: 50%;
+}
+
+.carousel i:first-child{
+    left: 24px;
+}
+
+.carousel i:last-child{
+    right: 24px;
+}
+
+.c-posts{
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 72%;
+    height: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 8px solid #231405;
+}
+
+.post-mobile{
+    display: flex;
+    flex: 0 0 100%;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    object-fit: cover;
+    padding-bottom: 8%;
+}
+
+.post-mobile p{
+    display:-webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding-left: 4%;
+    padding-right: 4%;
+    text-align: left;
+    text-wrap: wrap;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+
+
+/*=============================================*/
+    
+    .post-space h1{
+        font-size: 84px;
+    }
+
+    #ler-mais{
+        font-size: 56px;
+        width: 44%;
+    }
+}
+
+@media (max-width: 865px){
+    .hero-buttons{
+        width: 100%;
+    }
+
+    .img-torre{
+        width: 90%;
+        height: 160px;
+    }
+    
+    .hero-section{
+        width: 100%;
+    }
+    
+    
+    .transparent h1{
+        font-size: 40px;
+    }
+    
+    .transparent p{
+        font-size: 32px;
+    }
+    
+    .btn-hero{
+        width: 45%;
+    }
+
+    #login{
+        font-size: 56px;
+    }
+
+    #publi{
+        font-size: 56px;
+    }
+
+    .post-mobile h2{
+        font-size: 30px;
+    }
+
+    .post-mobile p{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 720px){
+    .carousel{
+        width: 100%;
+        height: 58%;
+    }
+
+    .carousel i{
+        width: 56px; 
+    }
+
+    .c-posts{
+        width: 100%;
+    }
+
+    .img-torre{
+        width: 90%;
+        height: 140px;
+    }
+
+    .post-mobile h2{
+        font-size: 32px;
+    }
+
+    .post-mobile p{
+        font-size: 28px;
+    }
+
+    #ler-mais{
+        width: 50%;
+    }
+}
+
+@media (max-width: 630px){
+    .post-space h1{
+        font-size: 80px;
+    }
+
+    .post-space{
+        width: 100%;
+    }
+
+    #ler-mais{
+        width: 60%;
+        font-size: 56px;
+    }
+
+    .img-torre{
+        width: 90%;
+        height: 120px;
+    }
+}
+
+@media (max-width: 560px){
+    .post-space h1{
+        font-size: 72px;
+    }
+
+    .carousel{
+        width: 100%;
+        height: 50%;
+    }
+
+    .c-posts{
+        width: 100%;
+    }
+
+    .hero-buttons{
+        width: 100%;
+        gap: 8%;
+    }
+    
+    .hero-section{
+        width: 100%;
+    }
+
+    #login{
+        font-size: 52px;
+    }
+
+    #publi{
+        font-size: 52px;
+    }
+
+    .transparent h1{
+        font-size: 36px;
+    }
+    
+    .transparent p{
+        font-size: 30px;
+    }
+    
+    .btn-hero{
+        width: 45%;
+    }
+
+    .btn-post{
+        padding-top: 12%;
+    }
+
+    .post-mobile h2{
+        font-size: 24px;
+    }
+
+    .post-mobile p{
+        font-size: 24px;
+    }
+
+}
+
+@media (max-width: 469px){
+    .post-space h1{
+        font-size: 68px;
+    }
+
+    .c-posts{
+        height: 80%;
+    }
+
+    .img-torre{
+        height: 100px;
+    }
+
+    .transparent p{
+        font-size: 24px;
+    }
+
+    #login{
+        font-size: 48px;
+    }
+
+    #publi{
+        font-size: 48px;
+    }
+
+    #ler-mais{
+        width: 70%;
+    }
+
+    .post-mobile{
+        padding-bottom: 4%;
+    }
+
+    .post-mobile h2{
+        font-size: 24px;
+    }
+
+    .post-mobile p{
+        -webkit-line-clamp: 3;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 390px){
+    .post-space h1{
+        font-size: 60px;
+    }
+
+    .post-mobile h2{
+        font-size: 22px;
+    }
+
+    .img-torre{
+        height: 84px;
+    }
+
+    .transparent p{
+        font-size: 20px;
+    }
+}
