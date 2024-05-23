@@ -1,0 +1,400 @@
+
+.modalC {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #412307;
+    height: 78%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 2%;
+    box-shadow: 10px 10px 50px 10px;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 15px;
+}
+
+.modal-header {
+    background-color: #3c2007;
+    width: 100%;
+    height: 10%;
+    padding: 1%;
+    margin: 0px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgb(143, 86, 6) 0px 0px 80px 1px;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+}
+
+.modal-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    margin-top: 2%;
+}
+
+.imagemlogo {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
+.titulo {
+    color: white;
+    margin: 0;
+    font-size: 38px;
+    font-family: "Almendra", serif;
+    font-weight: 700;
+}
+
+.namebox {
+    color: white;
+    font-size: 34px;
+    font-family: Jomhuria;
+}
+
+.box {
+    color: rgb(255, 255, 255);
+    font-family: Jomhuria;
+    font-size: 28px;
+}
+
+.boxselect {
+    background-color: #E6A549;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 3px solid #e29c3a;
+    border-radius: 5px;
+    padding-left: 2%;
+}
+
+.boxselect:hover {
+    background-color: #e6a54900;
+    border: 3px solid #e29c3a;
+}
+
+.nsei {
+    background-color: #E6A549;
+    align-items: center;
+}
+
+.fundoFormulario {
+    background-color: #E6A549;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    height: 10%;
+    width: 100%;
+}
+.fundoFormularioCont {
+    background-color: #E6A549;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    height: 24%;
+    width: 100%;
+}
+
+.fundoFormulario:hover {
+    background-color: hsla(35, 76%, 59%, 0.8);
+}
+
+.fundoFormularioCont:hover {
+    background-color: hsla(35, 76%, 59%, 0.8);
+}
+
+.fundoFormulario input::placeholder {
+    color: rgb(255, 255, 255);
+    font-family: Jomhuria;
+    font-size: 28px;
+}
+
+.fundoFormularioCont textarea::placeholder {
+    color: rgb(255, 255, 255);
+    font-family: Jomhuria;
+    font-size: 28px;
+}
+
+.fundoFormulario input {
+    background-color: #e29c3a;
+    border: 3px solid #e29c3a;
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+    padding-left: 2%;
+}
+
+.fundoFormulario input:hover {
+    background-color: rgba(180, 126, 17, 0);
+    border: 3px solid #e29c3a;
+}
+
+.fundoFormularioCont textarea {
+    background-color: #e29c3a;
+    border: 3px solid #e29c3a;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    padding-left: 2%;
+    padding-top: 1%;
+}
+
+.fundoFormularioCont textarea:hover {
+    background-color: rgba(180, 126, 17, 0);
+    border: 3px solid #e29c3a;
+}
+
+textarea {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.imagemInput::-webkit-file-upload-button {
+    display: none;
+}
+
+.imagemInput::before {
+    content: 'Adicione a foto: ';
+}
+
+.imagemInput {
+    align-content: center;
+}
+
+.fechar {
+    background-color: #226c20;
+    height: 100%;
+    width: 20%;
+    border-radius: 5px;
+    padding-top: 3px;
+    color: white;
+    font-family: Jomhuria;
+    font-size: 32px;
+    border: 3px solid #226c20;
+    outline: none;
+    transition: background 0.2s;
+}
+
+.fechar:hover {
+    background-color: rgba(16, 123, 16, 0.51);
+    border: 3px solid #226c20;
+}
+
+.cancelar {
+    background-color:red;
+    height: 100%;
+    width: 20%;
+    border-radius: 5px;
+    padding-top: 3px;
+    color: white;
+    font-family: Jomhuria;
+    font-size: 32px;
+    border: 3px solid red;
+    outline: none;
+    transition: background 0.2s;
+}
+
+.cancelar:hover {
+    background-color: rgba(255, 0, 0, 0.581);
+    border: 3px solid red;
+}
+
+@media only screen and (max-width: 600px) {
+    .modalC {
+        height: 70%;
+        width: 70%;
+        border-radius: 15px;
+        padding: 3%;
+    }
+
+    .modal-content {
+        gap: 5px;
+    }
+
+    .modal-header {
+        height: 8%;
+    }
+
+    .modal-body {
+        gap: 2px;
+    }
+
+    .titulo {
+        font-size: 28px;
+    }
+
+    .modal-footer {
+        padding-top: 5%;
+        height: 7%;
+    }
+
+    .fundoFormulario {
+        height: 8%;
+    }
+
+    .fundoFormularioCont {
+        height: 20%;
+    }
+
+    .fundoFormulario input::placeholder {
+        font-size: 22px;
+    }
+    
+    .fundoFormularioCont textarea::placeholder {
+        font-size: 22px;
+    }
+
+    .box {
+        font-size: 22px;
+    }
+
+    .namebox {
+        font-size: 30px;
+    }
+    
+    .imagemInput::-webkit-file-upload-button {
+        display: none;
+    }
+
+    .imagemInput::before {
+        content: 'Adicione a foto: ';
+    }
+
+    .fechar {
+        height: 100%;
+        width: 30%;
+        padding-top: 0px;
+        font-size: 28px;
+    }
+
+    .cancelar {
+        height: 100%;
+        width: 30%;
+        padding-top: 0px;
+        font-size: 28px;
+    }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .modalC {
+        height: 78%;
+        width: 70%;
+        border-radius: 15px;
+        padding: 3%;
+    }
+
+    .modal-content {
+        gap: 5px;
+    }
+
+    .modal-body {
+        gap: 2px;
+    }
+
+    .titulo {
+        font-size: 38px;
+    }
+
+    .modal-footer {
+        padding-top: 2%;
+        height: 7%;
+    }
+
+    .fundoFormulario {
+        height: 10%;
+    }
+
+    .fundoFormularioCont {
+        height: 22%;
+    }
+
+    .fundoFormulario input::placeholder {
+        font-size: 30px;
+    }
+    
+    .fundoFormularioCont textarea::placeholder {
+        font-size: 30px;
+    }
+
+    .box {
+        font-size: 30px;
+    }
+
+    .namebox {
+        font-size: 34px;
+    }
+    
+    .imagemInput::-webkit-file-upload-button {
+        display: none;
+    }
+
+    .imagemInput::before {
+        content: 'Adicione a foto: ';
+    }
+
+    .fechar {
+        height: 100%;
+        width: 30%;
+        padding-top: 0px;
+        font-size: 28px;
+    }
+
+    .cancelar {
+        height: 100%;
+        width: 30%;
+        padding-top: 0px;
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .titulo {
+        font-size: 26px;
+    }
+    .fechar {
+        height: 100%;
+        width: 30%;
+        padding-top: 1px;
+        font-size: 22px;
+    }
+
+    .cancelar {
+        height: 100%;
+        width: 30%;
+        padding-top: 0px;
+        font-size: 22px;
+    }
+}
