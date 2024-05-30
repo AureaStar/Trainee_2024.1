@@ -15,9 +15,9 @@
     <!-- Modal content -->
     <div class="modal-contentEditarUser">
         <div class="modal-headerEditarUser">
-            <img class="imagemlogo" src="../../../public/assets/Logo.png" alt="">
-            <h2 class="titulo">Editar Usuário</h2>
-            <img class="imagemlogo" src="../../../public/assets/Logo.png" alt="">
+            <img class="imagemlogoEditarUser" src="../../../public/assets/Logo.png" alt="">
+            <h2 class="tituloEditarUser">Editar Usuário</h2>
+            <img class="imagemlogoEditarUser" src="../../../public/assets/Logo.png" alt="">
         </div>
         <form class="modal-bodyEditarUser" action>
             <label for="name" class="nameboxEditarUser">Imagem de Perfil</label>
