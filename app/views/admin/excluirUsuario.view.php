@@ -9,19 +9,21 @@
 <!-- Open The Modal -->
 
 <!-- The Modal -->
-<div id="myModalExcluir<?= $user->id ?>" class="modalE modall">
+<div id="myModalExcluir<?= $user->id ?>" class="modalEUser modall">
 
     <!-- Modal content -->
-    <div class="modal-content">
-        <div class="modal-header">
-            <img class="imagemlogo" src="../../../public/assets/Logo.png" alt="">
-            <h2 class="titulo">Certeza que deseja excluir o seu usuário?</h2>
-            <img class="imagemlogo" src="../../../public/assets/Logo.png" alt="">
+    <div class="modal-contentEUser">
+        <div class="modal-headerEUser">
+            <img class="imagemlogoEUser" src="../../../public/assets/Logo.png" alt="">
+            <h2 class="tituloEUser">Certeza que deseja excluir o seu usuário?</h2>
+            <img class="imagemlogoEUser" src="../../../public/assets/Logo.png" alt="">
         </div>
-        <form class="modal-body" action="/usuarios/delete" method="post">
-            <input type="hidden" name="id" value="<?= $user->id ?>">
-            <button type="submit" class="sim">Sim</button>
-            <button type="button" class="não" onclick="fechaModal()">Não</button>
-        </form>
+        <div class="modal-bodyEUser">
+            <form action="/usuarios/delete" method="post">
+                <input type="hidden" name="id" value="<?= $user->id ?>">
+                <button type="submit" class="simEUser">Sim</button>
+                <button type="button" class="nãoEUser" onclick="fechaModal()">Não</button>
+            </form>
+        </div>
     </div>
 </div>

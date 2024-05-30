@@ -15,42 +15,41 @@
     <!-- Modal content -->
     <div class="modal-contentCriarUsuario">
         <div class="modal-headerCriarUsuario">
-            <img class="imagemlogo" src="../../../public/assets/Logo.png" alt="">
-            <h2 class="titulo">Criar Usuário</h2>
-            <img class="imagemlogo" src="../../../public/assets/Logo.png" alt="">
+            <img class="imagemlogoCriarUsuario" src="../../../public/assets/Logo.png" alt="">
+            <h2 class="tituloCriarUsuario">Criar Usuário</h2>
+            <img class="imagemlogoCriarUsuario" src="../../../public/assets/Logo.png" alt="">
 
         </div>
         <form class="modal-bodyCriarUsuario">
 
-            <label for="name" class="namebox">Imagem de Perfil:</label>
-            <div class="fundoFormularioUsuario">
-                <input type="file" class="box imagemPerfilInput" name="imagem" required>
+            <label for="name" class="nameboxCriarUsuario">Imagem de Perfil:</label>
+            <div class="fundoFormularioUsuarioCriarUsuario">
+                <input type="file" class="boxCriarUsuario imagemPerfilInputCriarUsuario" name="imagem" required>
             </div>
 
-            <label for="name" class="namebox">Nome:</label>
-            <div class="fundoFormularioUsuario">
-                <input type="text" class="box" placeholder="Insira o seu nome" name="name" required>
+            <label for="name" class="nameboxCriarUsuario">Nome:</label>
+            <div class="fundoFormularioUsuarioCriarUsuario">
+                <input type="text" class="boxCriarUsuario" placeholder="Insira o seu nome" name="name" required>
             </div>
 
-            <label for="email" class="namebox">Email:</label>
-            <div class="fundoFormularioUsuario">
+            <label for="email" class="nameboxCriarUsuario">Email:</label>
+            <div class="fundoFormularioUsuarioCriarUsuario">
                 <input type="email" class="box" placeholder="Insira seu email" name="email" required>
             </div>
 
-            <label for="senha" class="namebox">Senha:</label>
-            <div class="fundoFormularioUsuario">
-                <input type="password" class="box" placeholder="Insira sua senha" name="senha" required>
+            <label for="senha" class="nameboxCriarUsuario">Senha:</label>
+            <div class="fundoFormularioUsuarioCriarUsuario">
+                <input type="password" class="boxCriarUsuario" placeholder="Insira sua senha" name="senha" required>
             </div>
 
-            <label for="senha-repeat" class="namebox">Confirme sua senha:</label>
-            <div class="fundoFormularioUsuario">
-                <input type="password" class="box" placeholder="Repita sua senha" name="senha-repeat" required>
+            <label for="senha-repeat" class="nameboxCriarUsuario">Confirme sua senha:</label>
+            <div class="fundoFormularioUsuarioCriarUsuario">
+                <input type="password" class="boxCriarUsuario" placeholder="Repita sua senha" name="senha-repeat" required>
             </div>
 
             <div class="modal-footerCriarUsuario">
-                <button type="submit" class="fechar">Criar</button>
-                <button type="button" class="cancelar" onclick="fechaModal()">Cancelar</button>
-
+                <button type="submit" class="fecharCriarUsuario">Criar</button>
+                <button type="button" class="cancelarCriarUsuario" onclick="fechaModal()">Cancelar</button>
             </div>
         </form>
     </div>

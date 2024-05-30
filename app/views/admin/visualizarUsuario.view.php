@@ -9,36 +9,34 @@
 <!-- Open The Modal -->
 
 <!-- The Modal -->
-
-<div id="myModalVizualizar<?= $user->id ?>" class="modalV modall">
-
+<div id="myModalVizualizar<?= $user->id ?>" class="modalVUser modall">
     <!-- Modal content -->
-    <div class="modal-content">
-        <div class="modal-header">
-            <img class="imagemlogo" src="../../../public/assets/Logo.png" alt="">
-            <h2 class="titulo">Visualizar Usuário</h2>
-            <img class="imagemlogo" src="../../../public/assets/Logo.png" alt="">
+    <div class="modal-contentVUser">
+        <div class="modal-headerVUser">
+            <img class="imagemlogoVUser" src="../../../public/assets/Logo.png" alt="">
+            <h2 class="tituloVUser">Visualizar Usuário</h2>
+            <img class="imagemlogoVUser" src="../../../public/assets/Logo.png" alt="">
 
         </div>
-        <form class="modal-body">
-            <label for="name" class="namebox">Imagem de Usuário:</label>
-            <div class="fundoFormulario">
+        <form class="modal-bodyVUser">
+            <label for="name" class="nameboxVUser">Imagem de Usuário:</label>
+            <div class="fundoFormularioVUser">
                 <img src="<?= $user->image ?>" alt="">
             </div>
 
-            <label for="name" class="namebox">Nome:</label>
-            <div class="fundoFormulario">
-                <input type="text" value="<?= $user->name ?>" class="box" id="name" name="name" readonly>
+            <label for="name" class="nameboxVUser">Nome:</label>
+            <div class="fundoFormularioVUser">
+                <input type="text" value="<?= $user->name ?>" class="boxVUser" id="name" name="name" readonly>
             </div>
 
-            <label for="email" class="namebox">Email:</label>
-            <div class="fundoFormulario">
-                <input type="email" value="<?= $user->email ?>" class="box" id="email" name="email" readonly>
+            <label for="email" class="nameboxVUser">Email:</label>
+            <div class="fundoFormularioVUser">
+                <input type="email" value="<?= $user->email ?>" class="boxVUser" id="email" name="email" readonly>
             </div>
 
-            <label for="senha" class="namebox">Senha:</label>
-            <div class="fundoFormulario">
-                <input type="password" value="<?= $user->password ?>" class="box" id="senha" name="senha" readonly>
+            <label for="senha" class="nameboxVUser">Senha:</label>
+            <div class="fundoFormularioVUser">
+                <input type="password" value="<?= $user->password ?>" class="boxVUser" id="senha" name="senha" readonly>
             </div>
 
         </form>

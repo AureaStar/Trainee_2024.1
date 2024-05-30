@@ -10,48 +10,45 @@
 
 <!-- The Modal -->
 
-<div id="myModalEditar<?= $user->id ?>" class="modalEditarUsuario modall">
+<div id="myModalEditar<?= $user->id ?>" class="modalEditarUser modall">
 
     <!-- Modal content -->
-    <div class="modal-contentEditarUsuario">
-        <div class="modal-headerEditarUsuario">
+    <div class="modal-contentEditarUser">
+        <div class="modal-headerEditarUser">
             <img class="imagemlogo" src="../../../public/assets/Logo.png" alt="">
             <h2 class="titulo">Editar Usuário</h2>
             <img class="imagemlogo" src="../../../public/assets/Logo.png" alt="">
-
         </div>
-        <form class="modal-bodyEditarUsuario" action>
-            <label for="name" class="namebox">Imagem de Perfil</label>
-            <div class="fundoFormularioUsuario">
-                <input type="file" value="<?= $user->image ?>" class="box imagemPerfilInput" name="imagem" required>
+        <form class="modal-bodyEditarUser" action>
+            <label for="name" class="nameboxEditarUser">Imagem de Perfil</label>
+            <div class="fundoFormularioUsuarioEditarUser">
+                <input type="file" value="<?= $user->image ?>" class="boxEditarUser imagemPerfilInputEditarUser" name="imagem" required>
             </div>
 
-            <label for="name" class="namebox">Nome:</label>
-            <div class="fundoFormularioUsuario">
-                <input type="text" value="<?= $user->name ?>" class="box" placeholder="Editar o nome" name="name">
+            <label for="name" class="nameboxEditarUser">Nome:</label>
+            <div class="fundoFormularioUsuarioEditarUser">
+                <input type="text" value="<?= $user->name ?>" class="boxEditarUser" placeholder="Editar o nome" name="name">
             </div>
 
-            <label for="email" class="namebox">Email:</label>
-            <div class="fundoFormularioUsuario">
-                <input type="email" value="<?= $user->email ?>" class="box" placeholder="Edite o email" name="email">
+            <label for="email" class="nameboxEditarUser">Email:</label>
+            <div class="fundoFormularioUsuarioEditarUser">
+                <input type="email" value="<?= $user->email ?>" class="boxEditarUser" placeholder="Edite o email" name="email">
             </div>
 
-            <label for="senha" class="namebox">Senha:</label>
-            <div class="fundoFormularioUsuario">
-                <input type="password" value="<?= $user->password ?>" class="box" placeholder="Edite a senha" name="senha">
+            <label for="senha" class="nameboxEditarUser">Senha:</label>
+            <div class="fundoFormularioUsuarioEditarUser">
+                <input type="password" value="<?= $user->password ?>" class="boxEditarUser" placeholder="Edite a senha" name="senha">
             </div>
 
-            <label for="senha-repeat" class="namebox">Confirme a senha:</label>
-            <div class="fundoFormularioUsuario">
-                <input type="password" class="box" placeholder="Repita a senha editada" name="senha-repeat">
+            <label for="senha-repeat" class="nameboxEditarUser">Confirme a senha:</label>
+            <div class="fundoFormularioUsuarioEditarUser">
+                <input type="password" class="boxEditarUser" placeholder="Repita a senha editada" name="senha-repeat">
             </div>
 
-            <div class="modal-footerEditarUsuario">
-                <button type="submit" class="fechar">Editar</button>
-                <button type="button" class="cancelar" onclick="fechaModal()">Cancelar</button>
-
+            <div class="modal-footerEditarUser">
+                <button type="submit" class="fecharEditarUser">Editar</button>
+                <button type="button" class="cancelarEditarUser" onclick="fechaModal()">Cancelar</button>
             </div>
         </form>
     </div>
-
 </div>

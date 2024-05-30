@@ -6,15 +6,15 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #412307;
-    height: 72%;
-    width: 65%;
+    height: 70%;
+    width: 70%;
     display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
     padding: 2%;
-    box-shadow: 10px 10px 50px 10px;
+    box-shadow: black 10px 10px 50px 10px;
 }
 
 .modal-contentCriarUsuario {
@@ -30,7 +30,7 @@
 .modal-headerCriarUsuario {
     background-color: #3c2007;
     width: 100%;
-    height: 10%;
+    height: 8%;
     padding: 1%;
     margin: 0px;
     border-radius: 5px;
@@ -61,7 +61,7 @@
     margin-top: 2%;
 }
 
-.imagemlogo {
+.imagemlogoCriarUsuario {
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -69,7 +69,7 @@
     margin: 0%;
 }
 
-.titulo {
+.tituloCriarUsuario {
     color: white;
     margin: 0;
     font-size: 38px;
@@ -77,66 +77,65 @@
     font-weight: 700;
 }
 
-.namebox {
+.nameboxCriarUsuario {
     color: white;
     font-size: 34px;
     font-family: Jomhuria;
 }
 
-.fundoFormularioUsuario {
+.fundoFormularioUsuarioCriarUsuario {
     background-color: #E6A549;
-    border: none;
+    border: #E6A549 solid 3px;
     outline: none;
     border-radius: 5px;
-    height: 14%;
+    height: 18%;
     width: 100%;
 }
 
-.fundoFormularioUsuario:hover {
+.fundoFormularioUsuarioCriarUsuario:hover {
     background-color: hsla(35, 76%, 59%, 0.8);
+    border: #E6A549 solid 3px;
 }
 
-.fundoFormularioUsuario input::placeholder {
+.fundoFormularioUsuarioCriarUsuario input::placeholder {
     color: rgb(255, 255, 255);
     font-family: Jomhuria;
     font-size: 28px;
 }
 
-.fundoFormularioUsuario input {
-    background-color: #e29c3a;
-    border: 3px solid #e29c3a;
+.fundoFormularioUsuarioCriarUsuario input {
+    background-color: #e29c3a00;
+    border: none;
     outline: none;
-    width: 100%;
     border-radius: 5px;
-    height: 100%;
     padding-left: 2%;
 }
 
-.fundoFormularioUsuario input:hover {
+.fundoFormularioUsuarioCriarUsuario input:hover {
     background-color: rgba(180, 126, 17, 0);
-    border: 3px solid #e29c3a;
+    border: none;
 }
 
-.box {
+.boxCriarUsuario {
     color: rgb(255, 255, 255);
     font-size: 15px;
     font-family: Jomhuria;
     font-size: 28px;
 }
 
-.imagemPerfilInput::-webkit-file-upload-button {
+.imagemPerfilInputCriarUsuario::-webkit-file-upload-button {
     display: none;
 }
 
-.imagemPerfilInput::before {
+.imagemPerfilInputCriarUsuario::before {
     content: 'Adicione a foto de perfil: ';
 }
 
-.imagemPerfilInput {
+.imagemPerfilInputCriarUsuario {
     align-content: center;
 }
 
-.fechar {
+.fecharCriarUsuario {
     background-color: #226c20;
     height: 100%;
     width: 18%;
@@ -150,12 +149,12 @@
     transition: background 0.2s;
 }
 
-.fechar:hover {
+.fecharCriarUsuario:hover {
     background-color: rgba(16, 123, 16, 0.51);
     border: 3px solid #226c20;
 }
 
-.cancelar {
+.cancelarCriarUsuario {
     background-color:red;
     height: 100%;
     width: 18%;
@@ -169,61 +168,61 @@
     transition: background 0.2s;
 }
 
-.cancelar:hover {
+.cancelarCriarUsuario:hover {
     background-color: rgba(255, 0, 0, 0.581);
     border: 3px solid red;
 }
 
 @media only screen and (max-width: 600px) {
-    .modalCriarUsuario {
+    .modalCriarUsuarioCriarUsuario {
         height: 70%;
         width: 70%;
         border-radius: 15px;
         padding: 3%;
     }
 
-    .modal-contentCriarUsuario {
+    .modal-contentCriarUsuarioCriarUsuario {
         gap: 5px;
     }
 
-    .modal-bodyCriarUsuario {
+    .modal-bodyCriarUsuarioCriarUsuario {
         gap: 5px;
     }
 
-    .titulo {
+    .tituloCriarUsuario {
         font-size: 28px;
     }
 
-    .modal-footerCriarUsuario {
+    .modal-footerCriarUsuarioCriarUsuario {
         padding-top: 5%;
         height: 8%;
         margin-top: 1%;
     }
 
-    .fundoFormularioUsuario {
+    .fundoFormularioUsuarioCriarUsuario {
         height: 10%;
     }
 
-    .fundoFormularioUsuario input::placeholder {
+    .fundoFormularioUsuarioCriarUsuario input::placeholder {
         font-size: 22px;
     }
 
-    .box {
+    .boxCriarUsuario {
         font-size: 22px;
     }
 
-    .namebox {
+    .nameboxCriarUsuario {
         font-size: 30px;
     }
 
-    .fechar {
+    .fecharCriarUsuario {
         height: 100%;
         width: 30%;
         padding-top: 0px;
         font-size: 28px;
     }
 
-    .cancelar {
+    .cancelarCriarUsuario {
         height: 100%;
         width: 30%;
         padding-top: 0px;
@@ -232,56 +231,55 @@
 }
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
-    .modalCriarUsuario {
+    .modalCriarUsuarioCriarUsuario {
         height: 72%;
         width: 70%;
         border-radius: 15px;
         padding: 5%;
     }
 
-    .modal-contentCriarUsuario {
+    .modal-contentCriarUsuarioCriarUsuario {
         gap: 5px;
     }
 
-    .modal-bodyCriarUsuario {
+    .modal-bodyCriarUsuarioCriarUsuario {
         gap: 5px;
     }
 
-
-    .titulo {
+    .tituloCriarUsuario {
         font-size: 38px;
     }
 
-    .modal-footerCriarUsuario {
+    .modal-footerCriarUsuarioCriarUsuario {
         padding-top: 2%;
         height: 8%;
         margin-top: 1%;
     }
 
-    .fundoFormularioUsuario {
+    .fundoFormularioUsuarioCriarUsuario {
         height: 10%;
     }
 
-    .fundoFormularioUsuario input::placeholder {
+    .fundoFormularioUsuarioCriarUsuario input::placeholder {
         font-size: 30px;
     }
     
-    .box {
+    .boxCriarUsuario {
         font-size: 30px;
     }
 
-    .namebox {
+    .nameboxCriarUsuario {
         font-size: 34px;
     }
 
-    .fechar {
+    .fecharCriarUsuario {
         height: 100%;
         width: 30%;
         padding-top: 0px;
         font-size: 28px;
     }
 
-    .cancelar {
+    .cancelarCriarUsuario {
         height: 100%;
         width: 30%;
         padding-top: 0px;
@@ -290,17 +288,18 @@
 }
 
 @media only screen and (max-width: 350px) {
-    .titulo {
+    .tituloCriarUsuario {
         font-size: 20px;
     }
-    .fechar {
+
+    .fecharCriarUsuario {
         height: 100%;
         width: 30%;
         padding-top: 1px;
         font-size: 22px;
     }
 
-    .cancelar {
+    .cancelarCriarUsuario {
         height: 100%;
         width: 30%;
         padding-top: 0px;
