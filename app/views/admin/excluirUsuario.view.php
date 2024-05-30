@@ -18,9 +18,10 @@
             <h2 class="titulo">Certeza que deseja excluir o seu usuário?</h2>
             <img class="imagemlogo" src="../../../public/assets/Logo.png" alt="">
         </div>
-        <div class="modal-body">
+        <form class="modal-body">
+            <input type="hidden" name="id" value="<?= $user->id ?>">
             <button class="sim">Sim</button>
             <button class="não">Não</button>
-        </div>
+        </form>
     </div>
 </div>
