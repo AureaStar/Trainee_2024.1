@@ -15,6 +15,16 @@
         <?php 
             require 'criarUsuario.view.php';
         ?>
+        
+        <?php foreach($users as $user): ?>
+        <?php 
+            require 'visualizarUsuario.view.php';
+            require 'editarUsuario.view.php';
+            require 'excluirUsuario.view.php';                         //require '../../views/admin/';
+        ?>
+        <?php endforeach; ?>
+        
+        <?php foreach($users as $user): ?>
         <main id="mainUserList">
             <div id="titlebackUserList">
                 <div class="titleboxUserList">
@@ -37,12 +47,6 @@
                         </thead>
                         <tbody class="tbodyUserList">
                             <?php foreach($users as $user): ?>
-                                <?php 
-                                    require 'visualizarUsuario.view.php';
-                                    require 'editarUsuario.view.php';
-                                    require 'excluirUsuario.view.php';
-                                    //require '../../views/admin/';
-                                ?>
                             <tr>
                                 <td class="tdUserList"><?= $user->id ?></td>
                                 <td class="tdUserList"><?= $user->name ?></td>
@@ -70,6 +74,7 @@
                 </div>
             </div>
         </main>
+        <?php endforeach; ?>
     </body>
     <script src="/public/js/modal.js"></script>
 </html>
