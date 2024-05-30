@@ -41,11 +41,12 @@
                                     require 'visualizarUsuario.view.php';
                                     require 'editarUsuario.view.php';
                                     require 'excluirUsuario.view.php';
+                                    //require '../../views/admin/';
                                 ?>
                             <tr>
                                 <td class="tdUserList"><?= $user->id ?></td>
-                                <td class="tdUserList">Cristian</td>
-                                <td class="tdUserList">cristianbarbosa123467891234567@gmail.com</td>
+                                <td class="tdUserList"><?= $user->name ?></td>
+                                <td class="tdUserList"><?= $user->email ?></td>
                                 <td class="tdUserList">
                                     <div id="actionsBtsUserList">
                                         <button class="viewUserList" onclick="abreModal('myModalVizualizar<?= $user->id ?>')">
