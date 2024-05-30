@@ -9,7 +9,7 @@
 <!-- Open The Modal -->
 
 <!-- The Modal -->
-<div id="ModalExcluir" class="modalE">
+<div id="myModalExcluir<?= $user->id ?>" class="modalE modall">
 
     <!-- Modal content -->
     <div class="modal-content">
@@ -18,10 +18,10 @@
             <h2 class="titulo">Certeza que deseja excluir o seu usuário?</h2>
             <img class="imagemlogo" src="../../../public/assets/Logo.png" alt="">
         </div>
-        <form class="modal-body">
+        <form class="modal-body" action="/usuarios/delete" method="post">
             <input type="hidden" name="id" value="<?= $user->id ?>">
-            <button class="sim">Sim</button>
-            <button class="não">Não</button>
+            <button type="submit" class="sim">Sim</button>
+            <button type="button" class="não" onclick="fechaModal()">Não</button>
         </form>
     </div>
 </div>

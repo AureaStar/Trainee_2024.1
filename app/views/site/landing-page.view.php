@@ -14,7 +14,6 @@
 
 <body>
     
-    
     <div class="total">
         
         <div class="background-img">

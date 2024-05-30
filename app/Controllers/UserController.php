@@ -7,15 +7,35 @@ use Exception;
 
 class UserController
 {
+    public function editar()
+    {
+        $temporario = $_FILES['imagem']['tmp_name'];
+        $nomeimagem = $_FILES['imagem']['name'];
+        $destinoimagem = "../../htdocs/Trainee_2024.1/public/imagens/";
+        move_uploaded_file($temporario, $destinoimagem . $nomeimagem);
+        $caminhodaimagem = "../../public/imagens/" . $nomeimagem;
 
+        $parameters = [
+            'name' => $_POST['name'],
+            'email' => $_POST['email'],
+            'password' => $_POST['senha'],
+            'image' => $caminhodaimagem
+        ];
+
+        $id = $_POST['id'];
+        App::get('database')->editar('users', $id, $parameters);
+    }
     public function delete()
     {
         $id = $_POST['id'];
-        App::get('database')->delete('users',$id);
+        App::get('database')->delete('users' ,$id);
+        return redirect('usuarios');
     }
     public function index()
     {
-        return view('site/index');
+        //define users que é a tabela
+        $users = App::get('database')->selectAll('users');
+        return view('admin/lista-de-usuarios', compact('users'));
     }
 }
 

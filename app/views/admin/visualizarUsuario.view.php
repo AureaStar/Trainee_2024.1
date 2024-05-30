@@ -10,7 +10,7 @@
 
 <!-- The Modal -->
 
-<div id="myModal" class="modalV">
+<div id="myModalVizualizar<?= $user->id ?>" class="modalV modall">
 
     <!-- Modal content -->
     <div class="modal-content">
@@ -23,22 +23,22 @@
         <form class="modal-body">
             <label for="name" class="namebox">Imagem de Usuário:</label>
             <div class="fundoFormulario">
-                <img src="#" alt="">
+                <img src="<?= $user->image ?>" alt="">
             </div>
 
             <label for="name" class="namebox">Nome:</label>
             <div class="fundoFormulario">
-                <input type="text" class="box" id="name" name="name" readonly>
+                <input type="text" value="<?= $user->name ?>" class="box" id="name" name="name" readonly>
             </div>
 
             <label for="email" class="namebox">Email:</label>
             <div class="fundoFormulario">
-                <input type="email" class="box" id="email" name="email" readonly>
+                <input type="email" value="<?= $user->email ?>" class="box" id="email" name="email" readonly>
             </div>
 
             <label for="senha" class="namebox">Senha:</label>
             <div class="fundoFormulario">
-                <input type="password" class="box" id="senha" name="senha" readonly>
+                <input type="password" value="<?= $user->password ?>" class="box" id="senha" name="senha" readonly>
             </div>
 
         </form>

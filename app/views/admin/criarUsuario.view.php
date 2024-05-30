@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../../../public/css/editarUsuario.css">
+<link rel="stylesheet" href="../../../public/css/criarUsuario.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jomhuria">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sail">
 <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700" rel="stylesheet"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
@@ -10,45 +10,46 @@
 
 <!-- The Modal -->
 
-<div id="myModal" class="modalEditarUsuario">
+<div id="myModalCriar" class="modalCriarUsuario modall">
 
     <!-- Modal content -->
-    <div class="modal-contentEditarUsuario">
-        <div class="modal-headerEditarUsuario">
+    <div class="modal-contentCriarUsuario">
+        <div class="modal-headerCriarUsuario">
             <img class="imagemlogo" src="../../../public/assets/Logo.png" alt="">
-            <h2 class="titulo">Editar Usuário</h2>
+            <h2 class="titulo">Criar Usuário</h2>
             <img class="imagemlogo" src="../../../public/assets/Logo.png" alt="">
 
         </div>
-        <form class="modal-bodyEditarUsuario">
-            <label for="name" class="namebox">Imagem de Perfil</label>
+        <form class="modal-bodyCriarUsuario">
+
+            <label for="name" class="namebox">Imagem de Perfil:</label>
             <div class="fundoFormularioUsuario">
                 <input type="file" class="box imagemPerfilInput" name="imagem" required>
             </div>
 
             <label for="name" class="namebox">Nome:</label>
             <div class="fundoFormularioUsuario">
-                <input type="text" class="box" placeholder="Editar o nome" name="name">
+                <input type="text" class="box" placeholder="Insira o seu nome" name="name" required>
             </div>
 
             <label for="email" class="namebox">Email:</label>
             <div class="fundoFormularioUsuario">
-                <input type="email" class="box" placeholder="Edite o email" name="email">
+                <input type="email" class="box" placeholder="Insira seu email" name="email" required>
             </div>
 
             <label for="senha" class="namebox">Senha:</label>
             <div class="fundoFormularioUsuario">
-                <input type="password" class="box" placeholder="Edite a senha" name="senha">
+                <input type="password" class="box" placeholder="Insira sua senha" name="senha" required>
             </div>
 
-            <label for="senha-repeat" class="namebox">Confirme a senha:</label>
+            <label for="senha-repeat" class="namebox">Confirme sua senha:</label>
             <div class="fundoFormularioUsuario">
-                <input type="password" class="box" placeholder="Repita a senha editada" name="senha-repeat">
+                <input type="password" class="box" placeholder="Repita sua senha" name="senha-repeat" required>
             </div>
 
-            <div class="modal-footerEditarUsuario">
-                <button type="submit" class="fechar">Editar</button>
-                <button class="cancelar">Cancelar</button>
+            <div class="modal-footerCriarUsuario">
+                <button type="submit" class="fechar">Criar</button>
+                <button type="button" class="cancelar" onclick="fechaModal()">Cancelar</button>
 
             </div>
         </form>

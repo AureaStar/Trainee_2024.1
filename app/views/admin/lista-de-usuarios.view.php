@@ -12,12 +12,15 @@
     </head>
     
     <body>
+        <?php 
+            require 'criarUsuario.view.php';
+        ?>
         <main id="mainUserList">
             <div id="titlebackUserList">
                 <div class="titleboxUserList">
                     <img class = "torrezinhatabUserList" src="/public/assets/torrezinha.png">
                     <h1 class="titleUserList">Lista de Usuários</h1>
-                    <button class="criarUserList">Criar</button>
+                    <button class="criarUserList" onclick="abreModal('myModalCriar')">Criar</button>
                     <img class = "torrezinhatabUserList" src="/public/assets/torrezinha.png">
                 </div>
             </div>
@@ -33,22 +36,39 @@
                             </tr>
                         </thead>
                         <tbody class="tbodyUserList">
+                            <?php foreach($users as $user): ?>
+                                <?php 
+                                    require 'visualizarUsuario.view.php';
+                                    require 'editarUsuario.view.php';
+                                    require 'excluirUsuario.view.php';
+                                ?>
                             <tr>
-                                <td class="tdUserList">1222</td>
+                                <td class="tdUserList"><?= $user->id ?></td>
                                 <td class="tdUserList">Cristian</td>
                                 <td class="tdUserList">cristianbarbosa123467891234567@gmail.com</td>
                                 <td class="tdUserList">
                                     <div id="actionsBtsUserList">
-                                        <button class="viewUserList"><i class="bi bi-eye"></i><b class = "buttextUserList">Ver</b></button>
-                                        <button class="editUserList"><i class="bi bi-pencil-square"></i> <b class ="buttextUserList">Editar</b></button>
-                                        <button class="delUserList"><i class="bi bi-x-lg"></i><b class ="buttextUserList">Deletar</b></button>
+                                        <button class="viewUserList" onclick="abreModal('myModalVizualizar<?= $user->id ?>')">
+                                            <i class="bi bi-eye"></i>
+                                            <b class = "buttextUserList">Ver</b>
+                                        </button>
+                                        <button class="editUserList" onclick="abreModal('myModalEditar<?= $user->id ?>')">
+                                            <i class="bi bi-pencil-square"></i>
+                                            <b class ="buttextUserList">Editar</b>
+                                        </button>
+                                        <button class="delUserList" onclick="abreModal('myModalExcluir<?= $user->id ?>')">
+                                            <i class="bi bi-x-lg"></i>
+                                            <b class ="buttextUserList">Deletar</b>
+                                        </button>
                                     </div>
                                 </td>
                             </tr>
+                            <?php endforeach; ?>
                         </tbody>
                     </table>
                 </div>
             </div>
         </main>
     </body>
+    <script src="/public/js/modal.js"></script>
 </html>
