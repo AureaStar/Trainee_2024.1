@@ -10,7 +10,7 @@
 
 <!-- The Modal -->
 
-<div id="modalVisualizar" class="modalV">
+<div id="modalVisualizar<?= $post->id ?>" class="modalV">
 
     <!-- Modal content -->
     <div class="modal-content">
@@ -24,7 +24,7 @@
 
             <label for="title" class="namebox">Título:</label>
             <div class="fundoFormulario">
-                <input type="text" class="box" id="title" name="title" readonly>
+                <input type="text" class="box" id="title" name="title" readonly value="<?= $post->title ?>" >
             </div>
 
             <label for="text" class="namebox">Conteúdo:</label>
@@ -46,7 +46,7 @@
             <label for="data" class="namebox">Data de criação do post:</label>
             <div class="fundoFormulario">
                 <input type="date" class="box" id="data" name="data" readonly>
-    
+            </div>
         </form>
     </div>
 </div>

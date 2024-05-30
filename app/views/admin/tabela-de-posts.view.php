@@ -36,11 +36,12 @@
                         </thead>
                         <tbody class="tbodyPostList">
                             <?php foreach($posts as $post): ?>
+                                <?php foreach($users as $user): ?>
                             <tr>
-                                <td class="tdPostList"><?= $user->id ?></td>
-                                <td class="tdPostList"><?= $user->title ?></td>
-                                <td class="tdPostList"><?= $user->author ?></td>
-                                <td class="tdPostList"><?= $user->created_at ?></td>
+                                <td class="tdPostList"><?= $post->id ?></td>
+                                <td class="tdPostList"><?= $post->title ?></td>
+                                <td class="tdPostList"><?= $post->author == $user->id ? $user->name : "" ?></td>
+                                <td class="tdPostList"><?= $post->created_at ?></td>
                                 <td class="tdPostList">
                                     <div id="actionsBtsPostList">
                                         <button class="viewPostList"><i class="bi bi-eye"></i> <b class="buttextPostList">Ver</b></button>
@@ -49,11 +50,23 @@
                                     </div>
                                 </td>
                             </tr>
+                                <?php endforeach ?>
                             <?php endforeach ?>
                         </tbody>
                     </table>
                 </div>
             </div>
         </main>
+        <?php foreach($posts as $post): ?>
+            <?php foreach($users as $user): ?>
+                <?php 
+                    require 'editarPost.php';
+                    require 'excluirPost.php';
+                    require 'visualizarPost.php';
+                ?>
+            <?php endforeach ?>
+        <?php endforeach ?>
+
+        <?php require 'criarPost.php'; ?> 
     </body>
 </html>

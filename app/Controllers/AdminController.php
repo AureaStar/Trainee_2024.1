@@ -11,8 +11,9 @@ class AdminController
     public function index()
     {
         $posts = App::get('database')->selectAll('posts');
+        $users = App::get('database')->selectAll('users');
 
-        return view('admin/tabela-de-posts', compact('posts'));
+        return view('admin/tabela-de-posts', compact('posts', 'users'));
     }
 }
 
