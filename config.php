@@ -2,7 +2,7 @@
 
 return [
     'database' => [
-        'name' => 'torre_do_sabio',
+        'name' => 'biblioteca_do_sabio',
         'username' => 'root',
         'password' => '',
         'connection' => 'mysql:host=127.0.0.1',
