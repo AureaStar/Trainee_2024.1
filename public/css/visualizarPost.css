@@ -162,13 +162,11 @@
 }
 
 textarea {
-    display: none;
     max-height: 100%;
     max-width: 100%;
 }
 
 .boxV {
-    display: none;
     color: rgb(255, 255, 255);
     font-size: 28px;
     font-family: Jomhuria;
