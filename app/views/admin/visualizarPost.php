@@ -13,39 +13,39 @@
 <div id="modalVisualizar<?= $post->id ?>" class="modalV">
 
     <!-- Modal content -->
-    <div class="modal-content">
-        <div class="modal-header">
-            <img class="imagemlogo" src="../../../public/assets/Logo.png" alt="">
-            <h2 class="titulo">Visualizar Post</h2>
-            <img class="imagemlogo" src="../../../public/assets/Logo.png" alt="">
+    <div class="modalV-content">
+        <div class="modalV-header">
+            <img class="imagemVlogo" src="../../../public/assets/Logo.png" alt="">
+            <h2 class="tituloV">Visualizar Post</h2>
+            <img class="imagemVlogo" src="../../../public/assets/Logo.png" alt="">
 
         </div>
-        <form class="modal-body">
+        <form class="modalV-body">
 
-            <label for="title" class="namebox">Título:</label>
-            <div class="fundoFormulario">
-                <input type="text" class="box" id="title" name="title" readonly value="<?= $post->title ?>" >
+            <label for="title" class="nameVbox">Título:</label>
+            <div class="fundoVFormulario">
+                <input type="text" class="boxV" id="title" name="title" readonly value="<?= $post->title ?>">
             </div>
 
-            <label for="text" class="namebox">Conteúdo:</label>
-            <div class="fundoFormularioCont">
+            <label for="text" class="nameVbox">Conteúdo:</label>
+            <div class="fundoVFormularioCont">
                 <img src="" alt="">
-                <textarea type="text" class="box" id="text" name="text" readonly></textarea>
+                <textarea type="text" class="boxV" id="text" name="text" readonly><?= $post->content ?></textarea>
             </div>
 
-            <label for="filter" class="namebox">Categoria:</label>
-            <div class="fundoFormulario fundoC">
-                <a class="box">Categoria</a>
+            <label for="filter" class="nameVbox">Categoria:</label>
+            <div class="fundoVFormulario fundoC">
+                <a class="boxV"><?= $post->category ?></a>
             </div>
 
-            <label for="imagem" class="namebox">Imagem:</label>
-            <div class="fundoFormulario">
+            <label for="imagem" class="nameVbox">Imagem:</label>
+            <div class="fundoVFormulario">
                 <img src="" alt="">
             </div>
 
-            <label for="data" class="namebox">Data de criação do post:</label>
-            <div class="fundoFormulario">
-                <input type="date" class="box" id="data" name="data" readonly>
+            <label for="data" class="nameVbox">Data de criação do post:</label>
+            <div class="fundoVFormulario">
+                <input type="date" class="boxV" id="data" name="data" readonly value="<?= $post->created_at ?>">
             </div>
         </form>
     </div>
