@@ -7,7 +7,7 @@
     background-color: #412307;
     height: 65%;
     width: 65%;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,7 @@
     box-shadow: 10px 10px 50px 10px;
 }
 
-.modal-content {
+.modalV-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,7 +26,7 @@
     gap: 10px;
 }
 
-.modal-header {
+.modalV-header {
     background-color: #3c2007;
     width: 100%;
     height: 10%;
@@ -40,7 +40,7 @@
     box-shadow: rgb(143, 86, 6) 0px 0px 80px 1px;
 }
 
-.modal-body {
+.modalV-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,7 +60,7 @@
     margin-top: 2%;
 }
 
-.imagemlogo {
+.imagemVlogo {
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -76,13 +76,13 @@
     font-weight: 700;
 }
 
-.namebox {
+.nameVbox {
     color: white;
     font-size: 34px;
     font-family: Jomhuria;
 }
 
-.boxselect {
+.boxVselect {
     background-color: #E6A549;
     width: 100%;
     height: 100%;
@@ -97,7 +97,7 @@
     border: 3px solid #e29c3a;
 }
 
-.fundoFormulario {
+.fundoVFormulario {
     background-color: #E6A549;
     border: none;
     outline: none;
@@ -105,7 +105,7 @@
     height: 10%;
     width: 100%;
 }
-.fundoFormularioCont {
+.fundoVFormularioCont {
     background-color: #E6A549;
     border: none;
     outline: none;
@@ -114,23 +114,23 @@
     width: 100%;
 }
 
-.fundoFormulario:hover {
+.fundoVFormulario:hover {
     background-color: hsla(35, 76%, 59%, 0.8);
 }
 
-.fundoFormulario input::placeholder {
+.fundoVFormulario input::placeholder {
     color: rgb(255, 255, 255);
     font-family: Jomhuria;
     font-size: 28px;
 }
 
-.fundoFormularioCont textarea::placeholder {
+.fundoVFormularioCont textarea::placeholder {
     color: rgb(255, 255, 255);
     font-family: Jomhuria;
     font-size: 28px;
 }
 
-.fundoFormulario input {
+.fundoVFormulario input {
     background-color: #e29c3a;
     border: 3px solid #e29c3a;
     outline: none;
@@ -140,12 +140,12 @@
     padding-left: 2%;
 }
 
-.fundoFormulario input:hover {
+.fundoVFormulario input:hover {
     background-color: rgba(180, 126, 17, 0);
     border: 3px solid #e29c3a;
 }
 
-.fundoFormularioCont textarea {
+.fundoVFormularioCont textarea {
     background-color: #e29c3a;
     border: 3px solid #e29c3a;
     outline: none;
@@ -156,17 +156,19 @@
     padding-top: 3%;
 }
 
-.fundoFormularioCont textarea:hover {
+.fundoVFormularioCont textarea:hover {
     background-color: rgba(180, 126, 17, 0);
     border: 3px solid #e29c3a;
 }
 
 textarea {
+    display: none;
     max-height: 100%;
     max-width: 100%;
 }
 
-.box {
+.boxV {
+    display: none;
     color: rgb(255, 255, 255);
     font-size: 28px;
     font-family: Jomhuria;
