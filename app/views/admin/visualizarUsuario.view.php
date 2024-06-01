@@ -17,7 +17,7 @@
             <h2 class="tituloVUser">Visualizar Usuário</h2>
             <img class="imagemlogoVUser" src="../../../public/assets/Logo.png" alt="">
         </div>
-        <form class="modal-bodyVUser">
+        <form class="modal-bodyVUser" >
             <label for="name" class="nameboxVUser">Imagem de Usuário:</label>
             <div class="fundoFormularioVUser">
                 <img src="<?= $user->image ?>" alt="">
