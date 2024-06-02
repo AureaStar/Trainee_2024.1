@@ -8,7 +8,7 @@ class QueryBuilder
 {
     public function criar ($table, $parameters)
     {
-        $sql = sprintf('INSERT INTO % (%) VALUES (%)', $table,
+        $sql = sprintf('INSERT INTO %s (%s) VALUES (%s)', $table,
             implode(', ', array_keys($parameters)),
             ':' . implode(', :', array_keys($parameters))
         );

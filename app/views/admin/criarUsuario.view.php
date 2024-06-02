@@ -20,26 +20,26 @@
             <img class="imagemlogoCriarUsuario" src="../../../public/assets/Logo.png" alt="">
 
         </div>
-        <form class="modal-bodyCriarUsuario">
+        <form class="modal-bodyCriarUsuario" action="/usuarios/criar" method="post">
 
             <label for="name" class="nameboxCriarUsuario">Imagem de Perfil:</label>
             <div class="fundoFormularioUsuarioCriarUsuario">
-                <input type="file" value="<?= $user->image ?>" class="boxCriarUsuario imagemPerfilInputCriarUsuario" name="image" required>
+                <input type="file" class="boxCriarUsuario imagemPerfilInputCriarUsuario" name="imagem" required>
             </div>
 
             <label for="name" class="nameboxCriarUsuario">Nome:</label>
             <div class="fundoFormularioUsuarioCriarUsuario">
-                <input type="text" value="<?= $user->name ?>" class="boxCriarUsuario" placeholder="Insira o seu nome" name="name" required>
+                <input type="text" class="boxCriarUsuario" placeholder="Insira o seu nome" name="name" required>
             </div>
 
             <label for="email" class="nameboxCriarUsuario">Email:</label>
             <div class="fundoFormularioUsuarioCriarUsuario">
-                <input type="email" value="<?= $user->email ?>" class="box" placeholder="Insira seu email" name="email" required>
+                <input type="email" class="box" placeholder="Insira seu email" name="email" required>
             </div>
 
             <label for="senha" class="nameboxCriarUsuario">Senha:</label>
             <div class="fundoFormularioUsuarioCriarUsuario">
-                <input type="password" value="<?= $user->password ?>" class="boxCriarUsuario" placeholder="Insira sua senha" name="senha" required>
+                <input type="password" class="boxCriarUsuario" placeholder="Insira sua senha" name="senha" required>
             </div>
 
             <label for="senha-repeat" class="nameboxCriarUsuario">Confirme sua senha:</label>
