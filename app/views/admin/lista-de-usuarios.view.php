@@ -24,7 +24,7 @@
         ?>
         <?php endforeach; ?>
         
-        <?php foreach($users as $user): ?>
+        <?php /*foreach($users as $user): */?>
         <main id="mainUserList">
             <div id="titlebackUserList">
                 <div class="titleboxUserList">
@@ -74,7 +74,7 @@
                 </div>
             </div>
         </main>
-        <?php endforeach; ?>
+        <?php /*endforeach;*/ ?>
     </body>
     <script src="/public/js/modal.js"></script>
 </html>

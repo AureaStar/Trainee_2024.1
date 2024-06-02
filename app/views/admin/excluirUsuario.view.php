@@ -18,12 +18,10 @@
             <h2 class="tituloEUser">Certeza que deseja excluir o seu usuário?</h2>
             <img class="imagemlogoEUser" src="../../../public/assets/Logo.png" alt="">
         </div>
-        <div class="modal-bodyEUser">
-            <form action="/usuarios/delete" method="post">
-                <input type="hidden" name="id" value="<?= $user->id ?>">
-                <button type="submit" class="simEUser">Sim</button>
-                <button type="button" class="nãoEUser" onclick="fechaModal()">Não</button>
-            </form>
-        </div>
+        <form class="modal-bodyEUser" action="/usuarios/delete" method="post">
+            <input type="hidden" name="id" value="<?= $user->id ?>">
+            <button type="submit" class="simEUser">Sim</button>
+            <button type="button" class="nãoEUser" onclick="fechaModal()">Não</button>
+         </form>
     </div>
 </div>

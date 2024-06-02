@@ -10,4 +10,4 @@ use App\Core\Router;
     $router->get('usuarios','UserController@index');
     $router->post('usuarios/delete','UserController@delete');
     $router->post('usuarios/editar','UserController@editar');
-    /*$router->post('usuarios/criar','UserController@criar');*/
+    $router->post('usuarios/criar','UserController@criar');
