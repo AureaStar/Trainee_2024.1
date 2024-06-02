@@ -6,6 +6,23 @@ use PDO, Exception;
 
 class QueryBuilder
 {
+    public function criar ($table, $parameters)
+    {
+        $sql = sprintf('INSERT INTO % (%) VALUES (%)', $table,
+            implode(', ', array_keys($parameters)),
+            ':' . implode(', :', array_keys($parameters))
+        );
+
+        try {
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute($parameters);
+
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+
+        } catch (Exception $e) {
+            die ($e->getMessage());
+        }
+    }
     public function editar ($table, $id, $parameters)
     {
         $sql = sprintf('UPDATE %s SET %s WHERE %s', $table, 
