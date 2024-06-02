@@ -6,6 +6,7 @@ use PDO, Exception;
 
 class QueryBuilder
 {
+    /*
     public function criar ($table, $parameters)
     {
         $sql = sprintf('INSERT INTO %s (%s) VALUES (%s)', $table,
@@ -23,6 +24,7 @@ class QueryBuilder
             die ($e->getMessage());
         }
     }
+    */
     public function editar ($table, $id, $parameters)
     {
         $sql = sprintf('UPDATE %s SET %s WHERE %s', $table, 

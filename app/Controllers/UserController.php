@@ -7,6 +7,7 @@ use Exception;
 
 class UserController
 {
+    /*
     public function criar()
     {
         $temporario = $_FILES['imagem']['tmp_name'];
@@ -25,6 +26,7 @@ class UserController
         App::get('database')->criar('users', $parameters);
         header("Location: /users");
     }
+    */
     public function editar()
     {
         $temporario = $_FILES['imagem']['tmp_name'];
