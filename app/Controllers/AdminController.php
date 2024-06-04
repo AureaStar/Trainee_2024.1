@@ -25,7 +25,7 @@ class AdminController
             'created_at' => $_POST['data']
         ];
 
-        App::get('database')->insert('users', $parameters);
+        App::get('database')->insert('posts', $parameters);
 
         header('Location: /posts');
     }
