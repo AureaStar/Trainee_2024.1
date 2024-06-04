@@ -1,5 +1,5 @@
 
-.modalC {
+.modalVC {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -7,7 +7,7 @@
     background-color: #412307;
     height: 78%;
     width: 65%;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,7 @@
     box-shadow: 10px 10px 50px 10px;
 }
 
-.modal-content {
+.modalV-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,7 +26,7 @@
     gap: 15px;
 }
 
-.modal-header {
+.modalV-header {
     background-color: #3c2007;
     width: 100%;
     height: 10%;
@@ -40,7 +40,7 @@
     box-shadow: rgb(143, 86, 6) 0px 0px 80px 1px;
 }
 
-.modal-body {
+.modalV-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,7 +50,7 @@
     margin: 0%;
 }
 
-.modal-footer {
+.modalV-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -60,7 +60,7 @@
     margin-top: 2%;
 }
 
-.imagemlogo {
+.imagemVlogo {
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -68,7 +68,7 @@
     margin: 0%;
 }
 
-.titulo {
+.tituloV {
     color: white;
     margin: 0;
     font-size: 38px;
@@ -76,19 +76,19 @@
     font-weight: 700;
 }
 
-.namebox {
+.nameVbox {
     color: white;
     font-size: 34px;
     font-family: Jomhuria;
 }
 
-.box {
+.boxV {
     color: rgb(255, 255, 255);
     font-family: Jomhuria;
     font-size: 28px;
 }
 
-.boxselect {
+.boxVselect {
     background-color: #E6A549;
     width: 100%;
     height: 100%;
@@ -98,7 +98,7 @@
     padding-left: 2%;
 }
 
-.boxselect:hover {
+.boxVselect:hover {
     background-color: #e6a54900;
     border: 3px solid #e29c3a;
 }
@@ -108,7 +108,7 @@
     align-items: center;
 }
 
-.fundoFormulario {
+.fundoVFormulario {
     background-color: #E6A549;
     border: none;
     outline: none;
@@ -116,7 +116,7 @@
     height: 10%;
     width: 100%;
 }
-.fundoFormularioCont {
+.fundoVFormularioCont {
     background-color: #E6A549;
     border: none;
     outline: none;
@@ -125,27 +125,27 @@
     width: 100%;
 }
 
-.fundoFormulario:hover {
+.fundoVFormulario:hover {
     background-color: hsla(35, 76%, 59%, 0.8);
 }
 
-.fundoFormularioCont:hover {
+.fundoVFormularioCont:hover {
     background-color: hsla(35, 76%, 59%, 0.8);
 }
 
-.fundoFormulario input::placeholder {
+.fundoVFormulario input::placeholder {
     color: rgb(255, 255, 255);
     font-family: Jomhuria;
     font-size: 28px;
 }
 
-.fundoFormularioCont textarea::placeholder {
+.fundoVFormularioCont textarea::placeholder {
     color: rgb(255, 255, 255);
     font-family: Jomhuria;
     font-size: 28px;
 }
 
-.fundoFormulario input {
+.fundoVFormulario input {
     background-color: #e29c3a;
     border: 3px solid #e29c3a;
     outline: none;
@@ -155,12 +155,12 @@
     padding-left: 2%;
 }
 
-.fundoFormulario input:hover {
+.fundoVFormulario input:hover {
     background-color: rgba(180, 126, 17, 0);
     border: 3px solid #e29c3a;
 }
 
-.fundoFormularioCont textarea {
+.fundoVFormularioCont textarea {
     background-color: #e29c3a;
     border: 3px solid #e29c3a;
     outline: none;
@@ -171,7 +171,7 @@
     padding-top: 1%;
 }
 
-.fundoFormularioCont textarea:hover {
+.fundoVFormularioCont textarea:hover {
     background-color: rgba(180, 126, 17, 0);
     border: 3px solid #e29c3a;
 }
@@ -181,19 +181,19 @@ textarea {
     max-width: 100%;
 }
 
-.imagemInput::-webkit-file-upload-button {
+.imagemVInput::-webkit-file-upload-button {
     display: none;
 }
 
-.imagemInput::before {
+.imagemVInput::before {
     content: 'Adicione a foto: ';
 }
 
-.imagemInput {
+.imagemVInput {
     align-content: center;
 }
 
-.fechar {
+.fecharV {
     background-color: #226c20;
     height: 100%;
     width: 20%;
@@ -207,12 +207,12 @@ textarea {
     transition: background 0.2s;
 }
 
-.fechar:hover {
+.fecharV:hover {
     background-color: rgba(16, 123, 16, 0.51);
     border: 3px solid #226c20;
 }
 
-.cancelar {
+.cancelarV {
     background-color:red;
     height: 100%;
     width: 20%;
@@ -226,7 +226,7 @@ textarea {
     transition: background 0.2s;
 }
 
-.cancelar:hover {
+.cancelarV:hover {
     background-color: rgba(255, 0, 0, 0.581);
     border: 3px solid red;
 }

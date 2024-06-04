@@ -10,50 +10,50 @@
 
 <!-- The Modal -->
 
-<div id="modalCriar" class="modalC">
+<div id="modalVCriar" class="modalVC">
 
     <!-- Modal content -->
-    <div class="modal-content">
-        <div class="modal-header">
-            <img class="imagemlogo" src="../../../public/assets/Logo.png" alt="">
-            <h2 class="titulo">Criar Post</h2>
-            <img class="imagemlogo" src="../../../public/assets/Logo.png" alt="">
+    <div class="modalV-content">
+        <div class="modalV-header">
+            <img class="imagemVlogo" src="../../../public/assets/Logo.png" alt="">
+            <h2 class="tituloV">Criar Post</h2>
+            <img class="imagemVlogo" src="../../../public/assets/Logo.png" alt="">
 
         </div>
-        <form class="modal-body">
+        <form class="modalV-body">
 
-            <label for="title" class="namebox">Título:</label>
-            <div class="fundoFormulario">
-                <input type="text" class="box" placeholder="Insira o título" name="title" required>
+            <label for="title" class="nameVbox">Título:</label>
+            <div class="fundoVFormulario">
+                <input type="text" class="boxV" placeholder="Insira o título" name="title" required>
             </div>
 
             <label for="text" class="namebox">Conteúdo:</label>
-            <div class="fundoFormularioCont">
-                <textarea type="text" class="box" placeholder="Escreva o conteúdo" name="text" required></textarea>
+            <div class="fundoVFormularioCont">
+                <textarea type="text" class="boxV" placeholder="Escreva o conteúdo" name="text" required></textarea>
             </div>
 
-            <label for="filter" class="namebox">Categoria:</label>
-            <div class="fundoFormulario">
-                <select name="categorias" class="box boxselect">                    
+            <label for="filter" class="nameVbox">Categoria:</label>
+            <div class="fundoVFormulario">
+                <select name="categorias" class="boxV boxVselect">                    
                     <option class="nsei" value="1">Categoria 1</option>                   
                     <option class="nsei" value="2">Categoria 2</option> 
                     <option class="nsei" value="3">Categoria 3</option>
                 </select>
             </div>
 
-            <label for="imagem" class="namebox">Imagem:</label>
-            <div class="fundoFormulario">
-                <input type="file" class="box imagemInput" name="imagem" required>
+            <label for="imagem" class="nameVbox">Imagem:</label>
+            <div class="fundoVFormulario">
+                <input type="file" class="boxV imagemVInput" name="imagem" required>
             </div>
 
-            <label for="data" class="namebox">Data de criação do post:</label>
-            <div class="fundoFormulario">
-                <input type="date" class="box" placeholder="XX/XX/XXXX" name="data" required>
+            <label for="data" class="nameVbox">Data de criação do post:</label>
+            <div class="fundoVFormulario">
+                <input type="date" class="boxV" placeholder="XX/XX/XXXX" name="data" required>
             </div>
 
-            <div class="modal-footer">
-                <button type="submit" class="fechar">Criar</button>
-                <button class="cancelar">Cancelar</button>
+            <div class="modalV-footer">
+                <button type="submit" class="fecharV">Criar</button>
+                <button class="cancelarV">Cancelar</button>
 
             </div>
         </form>
