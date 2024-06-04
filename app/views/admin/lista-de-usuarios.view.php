@@ -20,7 +20,7 @@
         <?php 
             require 'visualizarUsuario.view.php';
             require 'editarUsuario.view.php';
-            require 'excluirUsuario.view.php';                         //require '../../views/admin/';
+            require 'excluirUsuario.view.php';                         
         ?>
         <?php endforeach; ?>
         
