@@ -30,7 +30,7 @@
             <label for="text" class="nameVbox">Conteúdo:</label>
             <div class="fundoVFormularioCont">
                 <img src="" alt="">
-                <textarea type="text" class="boxV" id="text" name="text" readonly><?= $post->content ?></textarea>
+                <div type="text" class="boxV" id="text" name="text" readonly><?= $post->content ?></div>
             </div>
 
             <label for="filter" class="nameVbox">Categoria:</label>
