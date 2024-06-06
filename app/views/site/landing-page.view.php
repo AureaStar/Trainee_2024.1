@@ -13,7 +13,7 @@
 
 
 <body>
-    
+    <?php require_once "app/views/site/navbar.view.php"?>
     <div class="total">
         
         <div class="background-img">
