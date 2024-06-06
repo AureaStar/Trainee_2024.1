@@ -10,7 +10,8 @@ footer{
 
 .footerfiltro{
     width:100%;
-    height:100%;
+    height: 217.7vh;
+    top: 0%;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     display:none;
@@ -21,12 +22,12 @@ footer{
     margin:inherit;
     height:fit-content;
     position:absolute;
+    top: 160%;
+    left: 50%;
     display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 14px;
     background: linear-gradient(180deg, #52331D 0%, #744321 100%);
@@ -329,7 +330,15 @@ footer{
         flex-direction:row;
     }
 }
-@media (min-width: 354px) and (max-width: 433px){
+@media (min-width: 330px) and (max-width: 433px){
+    .modalfotValor{
+        top: 175%
+    }
+
+    .footerfiltro{     
+        height: 231.5vh;
+    }
+
     .textmodalfotValor{
         font-size:16px;
     }
@@ -394,6 +403,14 @@ footer{
     }
 }
 @media (min-width: 434px) and (max-width: 550px){
+    .modalfotValor{
+        top: 175%
+    }
+
+    .footerfiltro{     
+        height: 231.5vh;
+    }
+
     .textmodalfotValor{
         font-size:18px;
     }
@@ -463,6 +480,14 @@ footer{
     }
 }
 @media (min-width: 551px) and (max-width: 640px){
+    .modalfotValor{
+        top: 175%
+    }
+
+    .footerfiltro{     
+        height: 231.3vh;
+    }
+
     .textmodalfotValor{
         font-size:18px;
     }
