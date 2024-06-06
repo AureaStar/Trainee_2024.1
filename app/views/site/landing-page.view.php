@@ -117,10 +117,11 @@
                 
             </div>
 
+            <?php require_once "app/views/site/footer.view.php"?>
         </div>
 
 
-        <script src="../../../public/js/landing-page.js"></script>
-</body>
+    </body>
+    <script src="../../../public/js/landing-page.js"></script>
 
 </html>

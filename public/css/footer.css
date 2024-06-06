@@ -4,6 +4,10 @@
     list-style: none;
 }
 
+footer{
+    z-index: 3;
+}
+
 .footerfiltro{
     width:100%;
     height:100%;
@@ -269,7 +273,7 @@ footer{
         font-family: "Open Sans";
         font-size:12px;
         color: #FFF4F0;
-        height: 226px;
+        height: 238px;
         background: linear-gradient(90deg, #412307 0%, #A75A12 100%);
     }
     .footer-Container{
@@ -333,7 +337,7 @@ footer{
         font-family: "Open Sans";
         font-size:13px;
         color: #FFF4F0;
-        height: 226px;
+        height: 236px;
         background: linear-gradient(90deg, #412307 0%, #A75A12 100%);
     }
     .footer-Container{
@@ -396,7 +400,7 @@ footer{
     footer{
         font-family: "Open Sans";
         color: #FFF4F0;
-        height: 226px;
+        height: 236px;
         background: linear-gradient(90deg, #412307 0%, #A75A12 100%);
     }
     .footer-Container{
@@ -465,7 +469,7 @@ footer{
     footer{
         font-family: "Open Sans";
         color: #FFF4F0;
-        height: 226px;
+        height: 234px;
         background: linear-gradient(90deg, #412307 0%, #A75A12 100%);
     }
     .footer-Container{

@@ -1,7 +1,6 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-size: 0px;
     box-sizing: border-box;
 }
 
@@ -161,7 +160,7 @@
 }
 
 .post-space h1{
-    padding-top: 2%;
+    padding-top: 5%;
     padding-bottom: 32px;
     font-family: "Almendra", serif;
     font-weight: 700;
@@ -287,7 +286,7 @@
 }
 
 .btn-post{
-    padding-top: 5%;
+    padding-top: 3%;
     width: 100%;
 }
 

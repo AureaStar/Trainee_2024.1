@@ -5,6 +5,8 @@
 }
 
 header {
+    z-index: 3;
+    position: fixed;
     font-family: "Jomhuria";
     background: linear-gradient(90deg, #412307 0%, #A75A12 100%);
     height: 1em;
