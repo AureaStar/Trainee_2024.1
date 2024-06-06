@@ -24,19 +24,23 @@
         <div class="d-buttons">
 
         <div class="d-central-buttons">
-            <button id="btn-publi">
-                <img src="../../../public/assets/post-icon.png">
-                <div class="central-pub">
+            <form method="get" action="tabela_posts">
+                <button id="btn-publi">
+                    <img src="../../../public/assets/post-icon.png">
+                    <div class="central-pub">
                 Publicações
-                </div>
-            </button>
-
-            <button id="btn-user">
-                <img src="../../../public/assets/users.png">
-                <div class="central-pub">
+            </div>
+        </button>
+    </form>
+        
+    <form method="get" action="tabela_users">
+        <button id="btn-user">
+            <img src="../../../public/assets/users.png">
+            <div class="central-pub">
                 Usuários
-                </div>
-            </button>
+            </div>
+        </button>
+    </form>
 
             <button id="btn-logout-mobile" onclick="openModal('modal')">
                 <img src="../../../public/assets/logout-icon.png">

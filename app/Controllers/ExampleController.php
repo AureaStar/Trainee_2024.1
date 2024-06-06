@@ -22,5 +22,26 @@ class ExampleController
     {
         return view('site/post-individual');
     }
+
+    public function dashboard()
+    {
+        return view('admin/dashboard');
+    }
+
+    public function tabela_posts()
+    {
+        return view('admin/tabela-de-posts');
+    }
+
+    public function tabela_users()
+    {
+        return view('admin/lista-de-usuarios');
+    }
+
+    public function login()
+    {
+        return view('site/login');
+    }
+
 }
 

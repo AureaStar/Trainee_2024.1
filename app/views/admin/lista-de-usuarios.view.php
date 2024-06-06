@@ -12,6 +12,8 @@
     </head>
     
     <body>
+    <?php require_once "app/views/admin/sidebar.view.php"?>
+    
         <main id="mainUserList">
             <div id="titlebackUserList">
                 <div class="titleboxUserList">

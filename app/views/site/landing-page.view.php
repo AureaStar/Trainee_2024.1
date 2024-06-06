@@ -29,7 +29,9 @@
                 </div>
 
                 <div class="hero-buttons">
+                <form method="get" action="posts">
                     <button class="btn-hero" id="login">Publicações</button>
+                </form>       
                     <button class="btn-hero" id="publi">Sobre nós</button>
                 </div>
 
@@ -108,10 +110,11 @@
                 </div>
             
             
-                    
         
                 <div class="btn-post">
-                    <button type="button" onclick="location.href='http://localhost:8080/posts'" id="ler-mais">LER MAIS</button>
+                    <form method="get" action="posts">
+                        <button id="ler-mais">LER MAIS</button>
+                    </form>   
                 </div>
             </div>
                 
