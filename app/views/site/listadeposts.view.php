@@ -10,8 +10,9 @@
     <link rel="stylesheet" type="text/css" href="../../../public/css/listadeposts.css" />
     <title>Lista de posts</title>
 </head>
+    
 <body>
-    <header>
+<?php require_once "app/views/site/navbar.view.php"?>
         <div class="header_main">
             <h1> Nossos artigos </h1>
             <div class="search_main">
@@ -29,11 +30,12 @@
                     <div class="funil"> 
                         <i onclick="submitform('formCat')" class="fa-solid fa-filter" style="color: #ffffff;"></i>
                     </div>
-                
+                    
                 </form>
             </div>
         </div>
-    </header>
+    
+
     <main class="main_content">
             <div class= "content">
                 <div class="card" style="background-image: url(../../../public/assets/card.jpg);">
