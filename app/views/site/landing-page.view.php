@@ -28,12 +28,12 @@
                     <p>Embarque nessa aventura e conheça os mais diversos tesouros escondidos dos jogos de tabuleiro!</p>
                 </div>
 
+            <form method="get" action="posts">
                 <div class="hero-buttons">
-                <form method="get" action="posts">
-                    <button class="btn-hero" id="login">Publicações</button>
-                </form>       
-                    <button class="btn-hero" id="publi">Sobre nós</button>
+                    <input type="submit" class="btn-hero" id="login" value="Publicações"></input>
+                    <input type="submit" class="btn-hero" id="publi" value="Sobre nós"></input>
                 </div>
+            </form>       
 
 
             </div>

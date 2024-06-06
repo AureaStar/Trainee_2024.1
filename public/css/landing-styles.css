@@ -440,7 +440,11 @@
     .transparent p{
         font-size: 32px;
     }
-    
+
+    form{
+        width: 100vw;
+    }
+
     .btn-hero{
         width: 45%;
     }
