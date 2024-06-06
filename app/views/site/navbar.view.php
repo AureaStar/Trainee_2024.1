@@ -12,27 +12,29 @@
     </head>
         <header>
             <nav class="navbar-Container">
-                <a  class="logoNavbar" rel="logo da Torre do Sábio" href=""><img id = "logonavbarimg" src="/public/assets/logo-linda-sem-linha.png"></a><!--falta href-->
+                <a  class="logoNavbar" rel="logo da Torre do Sábio" href="#"><img id = "logonavbarimg" src="/public/assets/logo-linda-sem-linha.png"></a>
                 <ul class = "nav-lnk-container">
-                    <form method="get" action="">
                     <li id="navInicio" class="navbarlist">
+                        <form method="get" action="">
                         <button id="navbinicio">Início</button>
-                    </li><!--falta href-->
-                    </form>
+                        </form>
+                    </li>
                     
-                    <form method="get" action="posts">
-                        <li id="navPubli" class="navbarlist">
+                    <li id="navPubli" class="navbarlist">
+                            <form method="get" action="posts">
                             <button id="navbpubli">Publicações</button>
+                            </form>
                         </li>
-                    </form>
 
                     <li class="navhamLi navhamLiClosed"><button onclick="navhamshow()" id="navclosedhhamButton" class="navhamButton"><i class="navlisticon bi bi-list"></i></button></li>
                     <li class="navhamLi navhamLiOpen hidden"><button onclick="navhamshow()" id="navopenhhamButton" class="navhamButton"><i class="navlisticon bi bi-caret-down-fill"></i></button></li>
                 </ul>
 
-                <form method="get" action="login">
-                    <button id="navLogText">Login</button>
-                </form>
+                <li id="navLogin" class="navbarlist">
+                    <form method="get" action="login">
+                        <button id="navLogText">Login</button>
+                    </form>
+                </li>
             </nav>
             <div class="navhamMenu">
             <form method="get" action="">      

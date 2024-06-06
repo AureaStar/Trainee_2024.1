@@ -611,6 +611,19 @@ header {
         display:none;
     }
 }
+
+@media screen and (min-width:700px) and (max-width:895px){
+    #navLogText{
+        width: 100px;
+     }   
+}
+
+@media screen and (min-width:981px) and (max-width:1030px){
+   #navLogText{
+       width: 160px;
+    }
+}
+
 @media screen and (min-width:721px){
     .navhamMenu{
         display:none;
