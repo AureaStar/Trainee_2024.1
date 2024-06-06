@@ -6,4 +6,3 @@ use App\Core\Router;
 
     $router->get('', 'ExampleController@index');
 
-?>
