@@ -111,7 +111,7 @@
                     
         
                 <div class="btn-post">
-                    <button id="ler-mais">LER MAIS</button>
+                    <button type="button" onclick="location.href='http://localhost:8080/posts'" id="ler-mais">LER MAIS</button>
                 </div>
             </div>
                 

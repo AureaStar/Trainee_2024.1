@@ -36,7 +36,7 @@
     </header>
     <main class="main_content">
             <div class= "content">
-                <div class="card"style="background-image: url(../../../public/assets/card.jpg);">
+                <div onclick ="location.href='http://localhost:8080/post_individual'" class="card"style="background-image: url(../../../public/assets/card.jpg);">
                     <h4>
                         Noticias e Lançamentos 
                     </h4>
