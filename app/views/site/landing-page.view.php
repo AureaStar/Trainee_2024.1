@@ -28,7 +28,7 @@
                     <p>Embarque nessa aventura e conheça os mais diversos tesouros escondidos dos jogos de tabuleiro!</p>
                 </div>
 
-            <form method="get" action="posts">
+            <form class="form_landing" method="get" action="posts">
                 <div class="hero-buttons">
                     <input type="submit" class="btn-hero" id="login" value="Publicações"></input>
                     <input type="submit" class="btn-hero" id="publi" value="Sobre nós"></input>
@@ -112,7 +112,7 @@
             
         
                 <div class="btn-post">
-                    <form method="get" action="posts">
+                    <form class="form_landing" method="get" action="posts">
                         <button id="ler-mais">LER MAIS</button>
                     </form>   
                 </div>
