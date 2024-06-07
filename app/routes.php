@@ -6,6 +6,7 @@ use App\Core\Router;
 
 
     $router->get('', 'ExampleController@index');
+    $router->get('index', 'ExampleController@index');
     $router->get('posts','ExampleController@posts');
     $router->get('post_individual','ExampleController@individual_post');
     $router->get('dashboard','ExampleController@dashboard');

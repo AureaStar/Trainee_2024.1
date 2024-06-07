@@ -33,10 +33,17 @@ header {
     filter: drop-shadow(0px 0px 2px #E6A549);
 }
 .logoNavbar {
+    border: none;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.logoNavbar:hover {
+    cursor: pointer;
+}
+    
 
 .nav-lnk-container {
     width: 100%;

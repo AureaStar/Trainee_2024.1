@@ -49,3 +49,12 @@ cposts.addEventListener("touchstart", swipeStart);
 cposts.addEventListener("touchmove", swiping);
 cposts.addEventListener("touchend", swipeStop);
 
+//Função de scrollar pra baixo
+
+function AboutUs(){
+    window.scroll({
+        top: 1300,
+        left: 0,
+        behavior: "smooth",
+      });
+}

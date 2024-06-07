@@ -12,10 +12,12 @@
     </head>
         <header>
             <nav class="navbar-Container">
-                <a  class="logoNavbar" rel="logo da Torre do Sábio" href="#"><img id = "logonavbarimg" src="/public/assets/logo-linda-sem-linha.png"></a>
+                <form method="get" action="index">
+                    <button class="logoNavbar" rel="logo da Torre do Sábio"><img id = "logonavbarimg" src="/public/assets/logo-linda-sem-linha.png"></button>
+                </form>
                 <ul class = "nav-lnk-container">
                     <li id="navInicio" class="navbarlist">
-                        <form method="get" action="">
+                        <form method="get" action="index">
                         <button id="navbinicio">Início</button>
                         </form>
                     </li>
@@ -37,7 +39,7 @@
                 </li>
             </nav>
             <div class="navhamMenu">
-            <form method="get" action="">      
+            <form method="get" action="index">      
                 <button id="navhaminicio">Início</button>
             </form>
 

@@ -31,7 +31,7 @@
             <form class="form_landing" method="get" action="posts">
                 <div class="hero-buttons">
                     <input type="submit" class="btn-hero" id="login" value="Publicações"></input>
-                    <input type="submit" class="btn-hero" id="publi" value="Sobre nós"></input>
+                    <input type="button" onclick="AboutUs()" class="btn-hero" id="publi" value="Sobre nós"></input>
                 </div>
             </form>       
 
