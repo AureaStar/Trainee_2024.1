@@ -8,6 +8,10 @@ body{
     height: 100vh;
 }
 
+form{
+    display:contents;
+}
+
 #btn-logout-mobile{
     display: none;
 }

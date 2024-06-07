@@ -25,7 +25,7 @@
 
         <div class="d-central-buttons">
             <form method="get" action="tabela_posts">
-                <button id="btn-publi">
+                <button type="submit" id="btn-publi">
                     <img src="../../../public/assets/post-icon.png">
                     <div class="central-pub">
                 Publicações
@@ -34,7 +34,7 @@
     </form>
         
     <form method="get" action="tabela_users">
-        <button id="btn-user">
+        <button type="submit" id="btn-user">
             <img src="../../../public/assets/users.png">
             <div class="central-pub">
                 Usuários
@@ -60,7 +60,9 @@
         <div class="modal-logout" id="modal">
             <p>Deseja realmente sair?</p>
             <div class="btn-modal">
-                <button type="button" class="btn-open">Confirmar</button>
+                <form method="get" action="login">
+                <button type="submit" class="btn-open">Confirmar</button>
+                </form>
                 <button type="button" class="btn-close" onclick="closeModal('modal')">Cancelar</button>
             </div>
         </div>
