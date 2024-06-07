@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Core\App;
 use Exception;
 
-class ExampleController
+class SiteController
 {
 
     public function index()
@@ -21,21 +21,6 @@ class ExampleController
     public function individual_post()
     {
         return view('site/post-individual');
-    }
-
-    public function dashboard()
-    {
-        return view('admin/dashboard');
-    }
-
-    public function tabela_posts()
-    {
-        return view('admin/tabela-de-posts');
-    }
-
-    public function tabela_users()
-    {
-        return view('admin/lista-de-usuarios');
     }
 
     public function login()
