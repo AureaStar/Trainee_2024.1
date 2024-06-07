@@ -33,6 +33,21 @@ button {
     z-index: 5;
 }
 
+button{
+    color: #FFF4F0;
+    text-decoration:none;
+    background: transparent;
+    color: inherit;
+    border-radius:10px;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    font-size:18px;
+    width:130px;
+    outline: none;
+    border-color: transparent;
+}
+
 /* Itens */
 .sidebar-close{
     display: none;
@@ -50,6 +65,7 @@ ul .itens-menu:hover{
     border-radius: 15px;
 }
 ul .itens-menu button{
+    width: 100%;
     line-height: 20px;
     text-decoration: none;
     font-size: 30px;
@@ -77,6 +93,7 @@ ul .itens-menu-login:hover{
     border-radius: 15px;
 }
 ul .itens-menu-login button{
+    width: 100%;
     line-height: 20px;
     text-decoration: none;
     font-size: 30px;
@@ -116,7 +133,7 @@ ul .itens-menu-login button .icon{
     top: 35%;
     left: 42%;
     box-shadow: rgb(0, 0, 0) 2px 2px 4px 4px;
-    z-index: 4;
+    z-index: 11;
 }
 .modal-logout p{
     margin-top: 20%;

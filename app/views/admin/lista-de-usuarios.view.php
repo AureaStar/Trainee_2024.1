@@ -11,15 +11,15 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     </head>
     
-    <body>
     <?php require_once "app/views/admin/sidebar.view.php"?>
-    
+    <body>
+        
         <main id="mainUserList">
             <div id="titlebackUserList">
                 <div class="titleboxUserList">
                     <img class = "torrezinhatabUserList" src="/public/assets/torrezinha.png">
                     <h1 class="titleUserList">Lista de Usuários</h1>
-                    <button class="criarUserList">Criar</button>
+                    <button class="btn-table" id="criarUserList">Criar</button>
                     <img class = "torrezinhatabUserList" src="/public/assets/torrezinha.png">
                 </div>
             </div>
@@ -41,9 +41,9 @@
                                 <td class="tdUserList">cristianbarbosa123467891234567@gmail.com</td>
                                 <td class="tdUserList">
                                     <div id="actionsBtsUserList">
-                                        <button class="viewUserList"><i class="bi bi-eye"></i><b class = "buttextUserList">Ver</b></button>
-                                        <button class="editUserList"><i class="bi bi-pencil-square"></i> <b class ="buttextUserList">Editar</b></button>
-                                        <button class="delUserList"><i class="bi bi-x-lg"></i><b class ="buttextUserList">Deletar</b></button>
+                                        <button class="btn-table" id="viewUserList"><i class="bi bi-eye"></i><b class = "buttextUserList">Ver</b></button>
+                                        <button class="btn-table" id="editUserList"><i class="bi bi-pencil-square"></i> <b class ="buttextUserList">Editar</b></button>
+                                        <button class="btn-table" id="delUserList"><i class="bi bi-x-lg"></i><b class ="buttextUserList">Deletar</b></button>
                                     </div>
                                 </td>
                             </tr>
