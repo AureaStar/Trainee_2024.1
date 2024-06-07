@@ -20,7 +20,7 @@
             <img class="imagemlogoCriarUsuario" src="../../../public/assets/Logo.png" alt="">
 
         </div>
-        <form class="modal-bodyCriarUsuario" action="/usuarios/criar" method="post">
+        <form id="formuCriar" class="modal-bodyCriarUsuario" action="/usuarios/criar" method="post">
 
             <label for="name" class="nameboxCriarUsuario">Imagem de Perfil:</label>
             <div class="fundoFormularioUsuarioCriarUsuario">
@@ -29,23 +29,27 @@
 
             <label for="name" class="nameboxCriarUsuario">Nome:</label>
             <div class="fundoFormularioUsuarioCriarUsuario">
-                <input type="text" class="boxCriarUsuario" placeholder="Insira o seu nome" name="name" required>
+                <input type="text" class="boxCriarUsuario  required" placeholder="Insira o seu nome" name="name" required>
             </div>
+            <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
 
             <label for="email" class="nameboxCriarUsuario">Email:</label>
             <div class="fundoFormularioUsuarioCriarUsuario">
-                <input type="email" class="box" placeholder="Insira seu email" name="email" required>
+                <input type="email" class="boxCriarUsuario required" placeholder="Insira seu email" name="email" required>
             </div>
+            <span class="span-required">Digite um email válido</span>
 
             <label for="senha" class="nameboxCriarUsuario">Senha:</label>
             <div class="fundoFormularioUsuarioCriarUsuario">
-                <input type="password" class="boxCriarUsuario" placeholder="Insira sua senha" name="senha" required>
+                <input type="password" class="boxCriarUsuario required" placeholder="Insira sua senha" name="senha" required>
             </div>
+            <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
 
             <label for="senha-repeat" class="nameboxCriarUsuario">Confirme sua senha:</label>
             <div class="fundoFormularioUsuarioCriarUsuario">
-                <input type="password" class="boxCriarUsuario" placeholder="Repita sua senha" name="senha-repeat" required>
+                <input type="password" class="boxCriarUsuario required" placeholder="Repita sua senha" name="senha-repeat" required>
             </div>
+            <span class="span-required">As senhas não conferem</span>
 
             <div class="modal-footerCriarUsuario">
                 <button type="submit" class="fecharCriarUsuario">Criar</button>
@@ -53,5 +57,7 @@
             </div>
         </form>
     </div>
-
 </div>
+    <script src="/public/js/validacao.js"></script>
+
+    
