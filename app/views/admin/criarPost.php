@@ -53,10 +53,10 @@
 
             <div class="modalV-footer">
                 <button type="submit" class="fecharV">Criar</button>
-                <button class="cancelarV">Cancelar</button>
+                <button class="cancelarV" onclick="fechaModal()">Cancelar</button>
 
             </div>
         </form>
     </div>
-
+    <script src="/public/js/modal.js"></script>
 </div>
