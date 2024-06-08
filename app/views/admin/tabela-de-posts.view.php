@@ -37,7 +37,7 @@
                         <tbody class="tbodyPostList">
                             <?php foreach($posts as $post): ?>
                                 <?php foreach($users as $user): ?>
-                            <tr >
+                            <tr id="<?= 'parent_'.$post->id ?>">
                                 <td class="tdPostList"><?= $post->id ?></td>
                                 <td class="tdPostList"><?= $post->title ?></td>
                                 <td class="tdPostList"><?= $post->author == $user->id ? $user->name : "" ?></td>
@@ -45,7 +45,7 @@
                                 <td class="tdPostList">
                                     <div id="actionsBtsPostList">
                                         <button class="viewPostList"><i class="bi bi-eye"></i> <b class="buttextPostList">Ver</b></button>
-                                        <button class="editPostList"><i class="bi bi-pencil-square"></i> <b class="buttextPostList">Editar</b></button>
+                                        <button id="<?= 'edit_'.$post->id ?>" class="editPostList"><i  id="<?= 'editi_'.$post->id ?>"  class="bi bi-pencil-square"></i> <b class="buttextPostList">Editar</b></button>
                                         <button id="<?= 'delete_'.$post->id ?>" class="delPostList"type="submit"><i id="<?= 'deletei_'.$post->id ?>"  class="bi bi-x-lg"></i> <b class="buttextPostList">Deletar</b></button>
                                     </div>
                                 </td>
@@ -72,6 +72,15 @@
     </body>
     <script> 
     
+        document.querySelectorAll('[id^="edit_"]').forEach(element => {
+            element.addEventListener('click',(e) => {
+                const id = e.target.id.split('_')[1]
+                const parent = document.getElementById(`parent_${id}`)
+                const itens = parent.querySelectorAll('.tdPostList') 
+                console.log(itens)
+            })
+        })
+
         document.querySelectorAll('.delPostList').forEach(element => {
             element.addEventListener('click',async (e) => {
                 
@@ -88,10 +97,19 @@
                 if (!response.ok) {
                     throw new Error('Erro ao deletar o post');
                 }
+                else {
+                    const data = await response.json();
+                    console.log('Post deletado com sucesso:', data);
+                    document.getElementById(`parent_${id}`).remove()
+                    // const responseGet = await fetch('http://localhost:8000/post/fetch', {
+                    //     method: 'GET',
+                    // });
+                    // const fetchData = await responseGet.json();
+                    // console.log(fetchData)
+                    //window.location.reload(true);
+                }
 
-                const data = await response.json();
-                console.log('Post deletado com sucesso:', data);
-                return data;
+                
             } catch (error) {
                 console.error('Erro:', error);
                 throw error;

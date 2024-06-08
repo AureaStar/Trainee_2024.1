@@ -19,6 +19,12 @@ class AdminController
         App::get('database')->deleteFromId("posts",$_POST["id"]);
         return "thamires"; 
     }
+    public function fetch(){
+        $posts = App::get('database')->selectAll('posts');
+        $users = App::get('database')->selectAll('users');
+
+        return compact('posts', 'users');
+    }
 }
 
 ?>
