@@ -20,7 +20,7 @@
             <img class="imagemVlogo" src="../../../public/assets/Logo.png" alt="">
 
         </div>
-        <form class="modalV-body">
+        <form class="modalV-body" method="POST" action="/posts/create">
 
             <label for="title" class="nameVbox">Título:</label>
             <div class="fundoVFormulario">
@@ -43,7 +43,7 @@
 
             <label for="imagem" class="nameVbox">Imagem:</label>
             <div class="fundoVFormulario">
-                <input type="file" class="boxV imagemVInput" name="imagem" required>
+                <input type="text" class="boxV imagemVInput" name="imagem" required>
             </div>
 
             <label for="data" class="nameVbox">Data de criação do post:</label>

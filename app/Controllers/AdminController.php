@@ -22,7 +22,8 @@ class AdminController
             'title' => $_POST['title'],
             'content' => $_POST['text'],
             'category' => $_POST['categorias'],
-            'created_at' => $_POST['data']
+            'created_at' => $_POST['data'],
+            'image' => $_POST['imagem']
         ];
 
         App::get('database')->insert('posts', $parameters);
