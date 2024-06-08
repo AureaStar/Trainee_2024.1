@@ -15,7 +15,7 @@
     background-color: #412307;
     height: 70%;
     width: 70%;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -183,18 +183,18 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .modalCriarUsuarioCriarUsuario {
-        height: 70%;
+    .modalCriarUsuario {
+        height: 60%;
         width: 70%;
         border-radius: 15px;
         padding: 3%;
     }
 
-    .modal-contentCriarUsuarioCriarUsuario {
+    .modal-contentCriarUsuario {
         gap: 5px;
     }
 
-    .modal-bodyCriarUsuarioCriarUsuario {
+    .modal-bodyCriarUsuario {
         gap: 5px;
     }
 
@@ -202,7 +202,7 @@
         font-size: 28px;
     }
 
-    .modal-footerCriarUsuarioCriarUsuario {
+    .modal-footerCriarUsuario {
         padding-top: 5%;
         height: 8%;
         margin-top: 1%;
@@ -240,18 +240,18 @@
 }
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
-    .modalCriarUsuarioCriarUsuario {
-        height: 72%;
+    .modalCriarUsuario {
+        height: 60%;
         width: 70%;
         border-radius: 15px;
-        padding: 5%;
+        padding: 3%;
     }
 
-    .modal-contentCriarUsuarioCriarUsuario {
+    .modal-contentCriarUsuario {
         gap: 5px;
     }
 
-    .modal-bodyCriarUsuarioCriarUsuario {
+    .modal-bodyCriarUsuari{
         gap: 5px;
     }
 
@@ -259,7 +259,7 @@
         font-size: 38px;
     }
 
-    .modal-footerCriarUsuarioCriarUsuario {
+    .modal-footerCriarUsuario {
         padding-top: 2%;
         height: 8%;
         margin-top: 1%;
