@@ -69,4 +69,5 @@
 
         <?php require 'criarPost.php'; ?> 
     </body>
+    <script src="/public/js/modal.js"></script>
 </html>
