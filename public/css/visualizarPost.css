@@ -50,7 +50,7 @@
     margin: 0%;
 }
 
-.modal-footer {
+.modalV-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -68,7 +68,7 @@
     margin: 0%;
 }
 
-.titulo {
+.tituloV {
     color: white;
     margin: 0;
     font-size: 38px;
@@ -92,7 +92,7 @@
     padding-left: 2%;
 }
 
-.boxselect:hover {
+.boxVselect:hover {
     background-color: #e6a54900;
     border: 3px solid #e29c3a;
 }
@@ -223,50 +223,50 @@
         padding: 3%;
     }
 
-    .modal-content {
+    .modalV-content {
         gap: 5px;
     }
 
-    .modal-body {
+    .modalV-body {
         gap: 2px;
     }
 
-    .titulo {
-        font-size: 24px;
+    .tituloV {
+        font-size: 20px;
     }
 
-    .fundoFormulario {
+    .fundoVFormulario {
         height: 8%;
     }
 
-    .fundoC {
+    .fundoVC {
         height: 7%;
         padding-top: 5px;
     }
 
-    .fundoFormularioCont {
+    .fundoVFormularioCont {
         height: 20%;
     }
 
-    .fundoFormulario input::placeholder {
+    .fundoVFormulario input::placeholder {
         font-size: 22px;
     }
     
-    .fundoFormularioCont textarea::placeholder {
+    .fundoVFormularioCont textarea::placeholder {
         font-size: 22px;
     }
 
-    .box {
+    .boxV {
         font-size: 22px;
     }
 
-    .namebox {
+    .nameVbox {
         font-size: 30px;
     }
 }
 
 @media only screen and (max-width: 350px) {
-    .titulo {
+    .tituloV {
         font-size: 18px;
     }
 }
@@ -279,39 +279,39 @@
         padding: 3%;
     }
 
-    .modal-content {
+    .modalV-content {
         gap: 5px;
     }
 
-    .modal-body {
+    .modalV-body {
         gap: 2px;
     }
 
-    .titulo {
+    .tituloV {
         font-size: 38px;
     }
 
-    .fundoFormulario {
+    .fundoVFormulario {
         height: 10%;
     }
 
-    .fundoFormularioCont {
+    .fundoVFormularioCont {
         height: 22%;
     }
 
-    .fundoFormulario input::placeholder {
+    .fundoVFormulario input::placeholder {
         font-size: 30px;
     }
     
-    .fundoFormularioCont textarea::placeholder {
+    .fundoVFormularioCont textarea::placeholder {
         font-size: 30px;
     }
 
-    .box {
+    .boxV {
         font-size: 30px;
     }
 
-    .namebox {
+    .nameVbox {
         font-size: 34px;
     }
 }

@@ -34,7 +34,7 @@
             </div>
 
             <label for="filter" class="nameVbox">Categoria:</label>
-            <div class="fundoVFormulario fundoC">
+            <div class="fundoVFormulario fundoVC">
                 <a class="boxV"><?= $post->category ?></a>
             </div>
 
