@@ -15,6 +15,10 @@ class AdminController
 
         return view('admin/tabela-de-posts', compact('posts', 'users'));
     }
+    public function deleteById(){
+        App::get('database')->deleteFromId("posts",$_POST["id"]);
+        return "thamires"; 
+    }
 }
 
 ?>

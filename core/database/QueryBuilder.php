@@ -28,4 +28,21 @@ class QueryBuilder
             die($e->getMessage());
         }
     }
+ 
+    public function deleteFromId ($table,$id)
+    {
+        $sql = "DELETE FROM posts WHERE id=? ";
+    
+        try{
+            echo "1";
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute([$id]);
+            echo "2";
+        } catch (Exception $e) {
+            die($e->getMessage());
+        
+        }
+        
+    
+    }
 }

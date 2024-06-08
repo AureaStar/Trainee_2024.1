@@ -37,7 +37,7 @@
                         <tbody class="tbodyPostList">
                             <?php foreach($posts as $post): ?>
                                 <?php foreach($users as $user): ?>
-                            <tr>
+                            <tr >
                                 <td class="tdPostList"><?= $post->id ?></td>
                                 <td class="tdPostList"><?= $post->title ?></td>
                                 <td class="tdPostList"><?= $post->author == $user->id ? $user->name : "" ?></td>
@@ -46,12 +46,13 @@
                                     <div id="actionsBtsPostList">
                                         <button class="viewPostList"><i class="bi bi-eye"></i> <b class="buttextPostList">Ver</b></button>
                                         <button class="editPostList"><i class="bi bi-pencil-square"></i> <b class="buttextPostList">Editar</b></button>
-                                        <button class="delPostList"><i class="bi bi-x-lg"></i> <b class="buttextPostList">Deletar</b></button>
+                                        <button id="<?= 'delete_'.$post->id ?>" class="delPostList"type="submit"><i id="<?= 'deletei_'.$post->id ?>"  class="bi bi-x-lg"></i> <b class="buttextPostList">Deletar</b></button>
                                     </div>
                                 </td>
                             </tr>
                                 <?php endforeach ?>
                             <?php endforeach ?>
+                        
                         </tbody>
                     </table>
                 </div>
@@ -62,11 +63,42 @@
                 <?php 
                     require 'editarPost.php';
                     require 'excluirPost.php';
-                    require 'visualizarPost.php';
+                   /* require 'visualizarPost.php';*/
                 ?>
             <?php endforeach ?>
         <?php endforeach ?>
 
         <?php require 'criarPost.php'; ?> 
     </body>
+    <script> 
+    
+        document.querySelectorAll('.delPostList').forEach(element => {
+            element.addEventListener('click',async (e) => {
+                
+                const id = e.target.id.split('_')[1]
+                console.log(id)
+                const formData = new FormData();
+                formData.append("id", id);
+                try {
+                    const response = await fetch('http://localhost:8000/post/delete', {
+                        method: 'POST',
+                        body:formData
+                    });
+
+                if (!response.ok) {
+                    throw new Error('Erro ao deletar o post');
+                }
+
+                const data = await response.json();
+                console.log('Post deletado com sucesso:', data);
+                return data;
+            } catch (error) {
+                console.error('Erro:', error);
+                throw error;
+            }
+
+            })
+        })
+    </script>
+
 </html>
