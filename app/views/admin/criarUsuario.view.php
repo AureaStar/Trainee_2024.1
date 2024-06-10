@@ -29,7 +29,7 @@
 
             <label for="name" class="nameboxCriarUsuario">Nome:</label>
             <div class="fundoFormularioUsuarioCriarUsuario">
-                <input type="text" class="boxCriarUsuario  required" placeholder="Insira o seu nome" name="name" required>
+                <input type="text" onchange="nameValidate()" class="boxCriarUsuario  required" placeholder="Insira o seu nome" name="name" required>
             </div>
             <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
 

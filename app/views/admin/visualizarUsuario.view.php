@@ -20,22 +20,22 @@
         <form class="modal-bodyVUser" action="/usuarios/visualizar" method="post">
             <label for="name" class="nameboxVUser">Imagem de Usuário:</label>
             <div class="fundoFormularioVUser">
-                <img src="<?= $user->image ?>" alt="">
+                <img class="imagemUser" src="<?= $user->image ?>" alt="">
             </div>
 
             <label for="name" class="nameboxVUser">Nome:</label>
             <div class="fundoFormularioVUser">
-                <input type="text" value="<?= $user->name ?>" class="boxVUser" id="name" name="name" readonly>
+                <input type="text" value="<?= $user->name ?>" class="boxVUser" name="name" readonly>
             </div>
 
             <label for="email" class="nameboxVUser">Email:</label>
             <div class="fundoFormularioVUser">
-                <input type="email" value="<?= $user->email ?>" class="boxVUser" id="email" name="email" readonly>
+                <input type="email" value="<?= $user->email ?>" class="boxVUser" name="email" readonly>
             </div>
 
             <label for="senha" class="nameboxVUser">Senha:</label>
             <div class="fundoFormularioVUser">
-                <input type="password" value="<?= $user->password ?>" class="boxVUser" id="senha" name="senha" readonly>
+                <input type="password" value="<?= $user->password ?>" class="boxVUser" name="senha" readonly>
             </div>
 
         </form>
