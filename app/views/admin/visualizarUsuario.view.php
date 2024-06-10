@@ -37,8 +37,8 @@
             <div class="fundoFormularioVUser">
                 <input type="password" value="<?= $user->password ?>" class="boxVUser" name="senha" readonly>
             </div>
-
         </form>
+        <button type="button" onclick="fechaModal()"></button>
     </div>
 
 </div>

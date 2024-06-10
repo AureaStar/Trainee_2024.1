@@ -12,6 +12,7 @@
     </head>
     
     <body>
+
         <?php 
             require 'criarUsuario.view.php';
         ?>
@@ -25,6 +26,7 @@
         <?php endforeach; ?>
         
         <?php /*foreach($users as $user): */?>
+        <div class="tela" id="tela"></div>
         <main id="mainUserList">
             <div id="titlebackUserList">
                 <div class="titleboxUserList">

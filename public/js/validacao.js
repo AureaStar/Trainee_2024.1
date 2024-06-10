@@ -18,3 +18,19 @@ function nameValidate()
         console.log('VALIDADO O NOME');
     }
 }
+
+function setError(div, index)
+{
+    div.style.border = '5px solid red';
+    spans[index].style.display = 'block';
+}
+
+/*
+function nameValidate(input)
+{
+    /*
+    let div = input.parentElement;
+    if (input.value.length < 3){
+        setError(div, 0);
+    }else{
+    console.log('VALIDADO O NOME')*/
