@@ -15,8 +15,10 @@
     <link rel="shortcut icon" type="imagex/png" href="/public/assets/torre-logo.ico">
     <title>Post individual em Torre do Sábio</title>
 </head>
+
 <body>
-    <main class="main">
+    <?php require_once "app/views/site/navbar.view.php"?>
+    <div class="main">
         <h1>Lore Ipsum</h1>
         <img class="imagem" src="/public/assets/xadrez.jpeg" alt="Imagem jogo de xadrez">
         <div class="box">
@@ -24,15 +26,10 @@
                 <img class="autoria-perfil" src="/public/assets/xadrez.jpeg" alt="Foto de perfil">
                 <p>Escrito por Username em XX/XX/XXXX</p>
             </div>
-            <div class="IndexButton">
-                <form method="get" action="posts">
-                    <button type="submit" class="material-icons icone">undo</button>
-                </form>
-            </div>
             <div class="box-text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut mauris gravida, maximus tellus id, dictum urna. Cras ornare tellus justo, sit amet maximus sapien maximus dictum. Mauris velit justo, suscipit ac leo sit amet, ornare finibus felis. Donec felis leo, euismod sed ultricies in, maximus quis nulla. Vestibulum sed congue mi. Praesent eleifend viverra ipsum, ac aliquet est euismod et. In et pharetra est, eget convallis nulla. In hac habitasse platea dictumst. Etiam ullamcorper sed est ac vestibulum. Aliquam sit amet quam ultrices elit dapibus cursus. Praesent elit lacus, suscipit quis ante non, sagittis tristique diam. Praesent vestibulum quam sit amet ipsum sodales, et eleifend ligula pharetra. </p>
             </div>
         </div>
-    </main>
+    </div>
 </body>
 </html>
