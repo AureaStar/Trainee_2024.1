@@ -12,6 +12,27 @@ form{
     display:contents;
 }
 
+.IndexButton{
+    position: absolute;
+    top: 26%;
+    justify-content: left;
+    width: fit-content;
+    height: fit-content;
+}
+
+.IndexButton button{
+    color: white;
+    filter: drop-shadow(2px 2px 6px black);
+    font-size: 56px;
+    border: none;
+    background-color: transparent;
+}
+
+.IndexButton button:hover{
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 6px #E6A549);
+}
+
 #btn-logout-mobile{
     display: none;
 }

@@ -19,6 +19,11 @@
         </div>
             <h1>Torre do Sábio</h1>
         </div>
+        <div class="IndexButton">
+            <form method="get" action="index">
+                <button type="submit" class="material-icons icone">home</button>
+            </form>
+        </div>
         <form class="AbaLogin">
             <h1>Bem Vindo(a)!</h1>
                 <div class="EmailSenha">

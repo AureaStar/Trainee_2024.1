@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Jomhuria&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../../public/css/dashboard-styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     
     <title>Torre do Sábio - Dashboard</title>
     
@@ -14,13 +16,18 @@
 <body>
 
     <div class="d-background">
-
+        
         
         <div class="d-title">
             <h1><img src="../../../public/assets/Mini-logo.png">Dashboard<img src="../../../public/assets/Mini-logo.png"></h1>    
+            <div class="IndexButton">
+                <form method="get" action="index">
+                    <button type="submit" class="material-icons icone">home</button>
+                </form>
         </div>
-
-
+        
+            
+        </div>
         <div class="d-buttons">
 
         <div class="d-central-buttons">

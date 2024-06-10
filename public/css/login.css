@@ -165,6 +165,29 @@ body {
     border: 2.5px solid #429741;
 }
 
+.IndexButton{
+    padding-top: 1%;
+    padding-left: 2%;
+    width: fit-content;
+    height: fit-content;
+}
+
+.IndexButton button{
+    filter: drop-shadow(2px 2px 6px black);
+    font-size: 56px;
+    border: none;
+    background-color: transparent;
+}
+
+.IndexButton button:hover{
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 6px #E6A549);
+}
+
+.IndexButton form{
+    display: contents;
+}
+
 @media only screen and (max-width: 600px) {
     .Logo {
         width: 80px;
