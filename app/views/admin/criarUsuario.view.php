@@ -20,7 +20,7 @@
             <img class="imagemlogoCriarUsuario" src="../../../public/assets/Logo.png" alt="">
 
         </div>
-        <form id="formuCriar" class="modal-bodyCriarUsuario" action="/usuarios/criar" method="post">
+        <form id="formuCriar" class="modal-bodyCriarUsuario" action="/usuarios/criar" method="post" enctype="multipart/form-data">
 
             <label for="name" class="nameboxCriarUsuario">Imagem de Perfil:</label>
             <div class="fundoFormularioUsuarioCriarUsuario">
