@@ -10,7 +10,7 @@
 
 <!-- The Modal -->
 
-<div id="modalVCriar" class="modalVC">
+<div id="modalVCriar" class="modalVC modall">
 
     <!-- Modal content -->
     <div class="modalV-content">
@@ -43,7 +43,7 @@
 
             <label for="imagem" class="nameVbox">Imagem:</label>
             <div class="fundoVFormulario">
-                <input type="text" class="boxV imagemVInput" name="imagem" required>
+                <input type="file" class="boxV imagemVInput" name="imagem" required>
             </div>
 
             <label for="data" class="nameVbox">Data de criação do post:</label>
@@ -53,7 +53,7 @@
 
             <div class="modalV-footer">
                 <button type="submit" class="fecharV">Criar</button>
-                <button class="cancelarV" onclick="fechaModal()">Cancelar</button>
+                <button type="button" class="cancelarV" onclick="fechaModal()">Cancelar</button>
 
             </div>
         </form>

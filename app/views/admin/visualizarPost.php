@@ -10,7 +10,7 @@
 
 <!-- The Modal -->
 
-<div id="modalVisualizar<?= $post->id ?>" class="modalV">
+<div id="modalVisualizar<?= $post->id ?>" class="modalV modall">
 
     <!-- Modal content -->
     <div class="modalV-content">

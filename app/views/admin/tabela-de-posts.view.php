@@ -12,6 +12,7 @@
     </head>
     
     <body>
+        <div class="overlay" onclick="fechaModal()"></div>
         <main id="mainPostList">
             <div id="titlebackPostList">
                 <div class="titleboxPostList">
