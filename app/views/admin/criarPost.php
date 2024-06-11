@@ -13,47 +13,47 @@
 <div id="modalVCriar" class="modalVC modall">
 
     <!-- Modal content -->
-    <div class="modalV-content">
-        <div class="modalV-header">
-            <img class="imagemVlogo" src="../../../public/assets/Logo.png" alt="">
-            <h2 class="tituloV">Criar Post</h2>
-            <img class="imagemVlogo" src="../../../public/assets/Logo.png" alt="">
+    <div class="modalVC-content">
+        <div class="modalVC-header">
+            <img class="imagemVClogo" src="../../../public/assets/Logo.png" alt="">
+            <h2 class="tituloVC">Criar Post</h2>
+            <img class="imagemVClogo" src="../../../public/assets/Logo.png" alt="">
 
         </div>
-        <form class="modalV-body" method="POST" action="/posts/create">
+        <form class="modalVC-body" method="POST" action="/posts/create" enctype="multipart/form-data">
 
-            <label for="title" class="nameVbox">Título:</label>
-            <div class="fundoVFormulario">
-                <input type="text" class="boxV" placeholder="Insira o título" name="title" required>
+            <label for="title" class="nameVCbox">Título:</label>
+            <div class="fundoVCFormulario">
+                <input type="text" class="boxVC" placeholder="Insira o título" name="title" required>
             </div>
 
-            <label for="text" class="namebox">Conteúdo:</label>
-            <div class="fundoVFormularioCont">
-                <textarea type="text" class="boxV" placeholder="Escreva o conteúdo" name="text" required></textarea>
+            <label for="text" class="nameVCbox">Conteúdo:</label>
+            <div class="fundoVCFormularioCont">
+                <textarea type="text" class="boxVC" placeholder="Escreva o conteúdo" name="text" required></textarea>
             </div>
 
-            <label for="filter" class="nameVbox">Categoria:</label>
-            <div class="fundoVFormulario">
-                <select name="categorias" class="boxV boxVselect">                    
+            <label for="filter" class="nameVCbox">Categoria:</label>
+            <div class="fundoVCFormulario">
+                <select name="categorias" class="boxVC boxVCselect">                    
                     <option class="nsei" value="1">Categoria 1</option>                   
                     <option class="nsei" value="2">Categoria 2</option> 
                     <option class="nsei" value="3">Categoria 3</option>
                 </select>
             </div>
 
-            <label for="imagem" class="nameVbox">Imagem:</label>
+            <label for="imagem" class="nameVCbox">Imagem:</label>
             <div class="fundoVFormulario">
-                <input type="file" class="boxV imagemVInput" name="imagem" required>
+                <input type="file" class="boxVC imagemVCInput" name="imagem" required>
             </div>
 
-            <label for="data" class="nameVbox">Data de criação do post:</label>
-            <div class="fundoVFormulario">
-                <input type="date" class="boxV" placeholder="XX/XX/XXXX" name="data" required>
+            <label for="data" class="nameVCbox">Data de criação do post:</label>
+            <div class="fundoVCFormulario">
+                <input type="date" class="boxVC" placeholder="XX/XX/XXXX" name="data" required>
             </div>
 
-            <div class="modalV-footer">
-                <button type="submit" class="fecharV">Criar</button>
-                <button type="button" class="cancelarV" onclick="fechaModal()">Cancelar</button>
+            <div class="modalVC-footer">
+                <button type="submit" class="fecharVC">Criar</button>
+                <button type="button" class="cancelarVC" onclick="fechaModal()">Cancelar</button>
 
             </div>
         </form>
