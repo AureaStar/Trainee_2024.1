@@ -27,33 +27,33 @@
 
             <div class="algoque">
                 <label for="name" class="nameboxEditarUser">Nome:</label>
-                <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
+                <span id="span-required-#usernameE<?= $user->id ?>" class="span-required">Nome deve ter no mínimo 3 caracteres</span>
             </div>
-            <div class="fundoFormularioUsuarioEditarUser">
+            <div id="required-#usernameE<?= $user->id ?>" class="fundoFormularioUsuarioEditarUser required">
                 <input id="usernameE<?= $user->id ?>" type="text" oninput="nameValidate('#usernameE<?= $user->id ?>')" value="<?= $user->name ?>" class="boxEditarUser" placeholder="Editar o nome" name="name" required>
             </div>
 
             <div class="algoque">
                 <label for="email" class="nameboxEditarUser">Email:</label>
-                <span class="span-required">Digite um email válido</span>
+                <span id="span-required-#emailE<?= $user->id ?>" class="span-required">Digite um email válido</span>
             </div>
-            <div class="fundoFormularioUsuarioEditarUser">
+            <div id="required-#emailE<?= $user->id ?>" class="fundoFormularioUsuarioEditarUser">
                 <input id="emailE<?= $user->id ?>" type="email" oninput="emailValidate('#emailE<?= $user->id ?>')" value="<?= $user->email ?>" class="boxEditarUser" placeholder="Edite o email" name="email" required>
             </div>
 
             <div class="algoque">
                 <label for="senha" class="nameboxEditarUser">Senha:</label>
-                <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
+                <span id="span-required-#passwordE<?= $user->id ?>" class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
             </div>
-            <div class="fundoFormularioUsuarioEditarUser">
+            <div id="required-#passwordE<?= $user->id ?>" class="fundoFormularioUsuarioEditarUser">
                 <input id="passwordE<?= $user->id ?>" type="password"  oninput="senhaValidate('#passwordE<?= $user->id ?>')" value="<?= $user->password ?>" class="boxEditarUser" placeholder="Edite a senha" name="senha" required>
             </div>
 
             <div class="algoque">
                 <label for="senha-repeat" class="nameboxEditarUser">Confirme a senha:</label>
-                <span class="span-required">As senhas não conferem</span>
+                <span id="span-required-#passwordrE<?= $user->id ?>" class="span-required">As senhas não conferem</span>
             </div>
-            <div class="fundoFormularioUsuarioEditarUser">
+            <div id="required-#passwordrE<?= $user->id ?>" class="fundoFormularioUsuarioEditarUser">
                 <input id="passwordrE<?= $user->id ?>" oninput="senhaRepeatValidate('#passwordE<?= $user->id ?>','#passwordrE<?= $user->id ?>')" type="password" class="boxEditarUser" placeholder="Repita a senha editada" name="senha-repeat" required>
             </div>
 

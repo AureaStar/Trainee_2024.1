@@ -1,12 +1,14 @@
 const form = document.getElementById('formuCriar');
 const botao = document.querySelector('.botaoUser');
+const array = [];
 
 function Error(index) {
     let span = document.getElementById('span-required-' + index);
     let borda = document.getElementById('required-' + index);
     span.style.display = 'flex';
     borda.style.border = '3px solid red';
-    botao.disabled = true;
+    array[index] = false;
+    Validacao();
 }
 
 function ErroVerificado(index) {
@@ -14,7 +16,22 @@ function ErroVerificado(index) {
     let borda = document.getElementById('required-' + index);
     span.style.display = 'none';
     borda.style.border = '3px solid green';
-    botao.disabled = false;
+    array[index] = true;
+    Validacao();
+}
+
+function Validacao () {
+    array.map((element)=>{
+        console.log("FOREACH");
+        if(element == true){
+            console.log("IF");
+            botao.disabled = false;
+        }else{
+            console.log("ELSE");
+            botao.disabled = true;
+            return 0;
+        }
+    });
 }
 
 function nameValidate(id) {
@@ -30,8 +47,8 @@ function nameValidate(id) {
 
 function emailValidate(id) {
     const email = document.querySelector(id);
-    const emailRegex = /^\w+([-+.']\w+)@\w+([-.]\w+).\w+([-.]w+)*$/;
-    
+    const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]w\+)*$/;
+
     if (!emailRegex.test(email.value)){
         Error(id);
     }else{
