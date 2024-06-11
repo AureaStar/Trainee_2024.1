@@ -173,10 +173,10 @@
 
 @media only screen and (max-width: 600px) {
     .modalEditarUsuer {
-        height: 40%;
+        height: 60%;
         width: 70%;
         border-radius: 15px;
-        padding: 3%;
+        padding: 5%;
     }
     
     .modal-contentEditarUsuer {
@@ -286,6 +286,12 @@
 }
 
 @media only screen and (max-width: 350px) {
+    .modalEditarUser {
+        height: 60%;
+        width: 70%;
+        padding: 5%;
+    }
+    
     .tituloEditarUser {
         font-size: 18px;
     }

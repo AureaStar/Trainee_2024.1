@@ -194,10 +194,10 @@
 
 @media only screen and (max-width: 600px) {
     .modalCriarUsuario {
-        height: 60%;
+        height: 65%;
         width: 70%;
         border-radius: 15px;
-        padding: 3%;
+        padding: 5%;
     }
 
     .modal-contentCriarUsuario {
@@ -251,7 +251,7 @@
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
     .modalCriarUsuario {
-        height: 60%;
+        height: 65%;
         width: 70%;
         border-radius: 15px;
         padding: 3%;
