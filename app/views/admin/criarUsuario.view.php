@@ -24,7 +24,7 @@
 
             <label for="name" class="nameboxCriarUsuario">Imagem de Perfil:</label>
             <div class="fundoFormularioUsuarioCriarUsuario">
-                <input type="file" class="boxCriarUsuario imagemPerfilInputCriarUsuario" name="imagem">
+                <input type="file" class="boxCriarUsuario imagemPerfilInputCriarUsuario" name="imagem" required>
             </div>
 
             <div class="algoque ">

@@ -1,4 +1,10 @@
 .imagemUser {
+    width: 30%;
+}
+
+.imagemperfiluser {
+    display: flex;
+    justify-content: center;
     width: 100%;
 }
 

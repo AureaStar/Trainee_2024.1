@@ -2,21 +2,24 @@
 const form = document.getElementById('formuCriar');
 const spans = document.querySelectorAll('.span-required');
 const borda = document.querySelectorAll('.required');
+const botao = document.querySelector('.fecharCriarUsuario');
 
 function Error(index) {
     spans[index].style.display = 'flex';
     borda[index].style.border = '3px solid red';
+    botao.disabled = true;
 }
 
 function ErroVerificado(index) {
     spans[index].style.display = 'none';
     borda[index].style.border = '3px solid green';
+    botao.disabled = false;
 }
 
 function nameValidate() {
-    const username = document.querySelector('.username');
+    const username = document.querySelector('#username');
 
-    if (username < 3) {
+    if (username.value.length < 3) {
         Error(0);
     }else{
         ErroVerificado(0);
@@ -25,10 +28,10 @@ function nameValidate() {
 }
 
 function emailValidate() {   
-    const email = document.querySelector('.email');
+    const email = document.querySelector('#email');
     const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]w\+)*$/;
 
-    if (email != emailRegex){
+    if (!emailRegex.test(email.value)){
         Error(1);
     }else{
         ErroVerificado(1);
@@ -37,22 +40,24 @@ function emailValidate() {
 }
 
 function senhaValidate() {
-    const password = document.querySelector('.password');
+    const password = document.querySelector('#password');
 
-    if (password < 8) {
+    if (password.value.length < 8) {
         Error(2);
     } else {
+        ErroVerificado(2);
         console.log('VALIDADO O EMAIL');
     }
 }
 
 function senhaRepeatValidate() {
-    const password = document.querySelector('.password');
-    const passwordr = document.querySelector('.passwordr');
+    const password = document.querySelector('#password');
+    const passwordr = document.querySelector('#passwordr');
 
-    if (password != passwordr) {
+    if (password.value != passwordr.value) {
         Error(3);
     } else {
+        ErroVerificado(3);
         console.log('VALIDADO O EMAIL');
     }
 }

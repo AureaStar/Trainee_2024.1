@@ -19,7 +19,7 @@
         </div>
         <form class="modal-bodyVUser" action="/usuarios/visualizar" method="post">
             <label for="name" class="nameboxVUser">Imagem de Usuário:</label>
-            <div class="fundoFormularioVUser">
+            <div class="imagemperfiluser">
                 <img class="imagemUser" src="<?= $user->image ?>" alt="">
             </div>
 
