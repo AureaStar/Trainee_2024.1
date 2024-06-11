@@ -41,8 +41,11 @@ form{
     background-color: white;
     box-shadow: 4px 4px rgb(0, 0, 0, 0.6);
     object-fit: cover;
-    width: 75%;
-    height: 400px;
+    width: 40%;
+    /* min-height: 600px; 
+       width: 70%;
+       s/ object-fit; 
+    */
     border-radius: 20px;
     margin-top: 2%;
 }
@@ -122,10 +125,17 @@ form{
         padding-right: 6%;
         padding-bottom: 4%;
     }
+
+    .p{
+        margin-bottom: 1%;
+    }
 }
 
 @media (min-width: 481px) { /* IPad e Tablet */
-    
+    .p{
+        margin-bottom: 1%;
+    }
+
     body h1{
         font-size: 44px;
         margin-bottom: 2%;

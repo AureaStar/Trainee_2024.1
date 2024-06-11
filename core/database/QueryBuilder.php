@@ -32,7 +32,7 @@ class QueryBuilder
 
 //função de pegar o post único
 public function selectOne($table, $id){
-    $sql = "select * from posts where id={$id}";
+    $sql = "select * from {$table} where id={$id}";
 
     try {
         $stmt = $this->pdo->prepare($sql);
@@ -47,7 +47,7 @@ public function selectOne($table, $id){
 
 //função do mais recente
 public function selectRecent($table){
-    $sql = "select * from posts order by created_at DESC LIMIT 1";
+    $sql = "select * from {$table} order by created_at DESC LIMIT 1";
 
     try {
         $stmt = $this->pdo->prepare($sql);
@@ -62,7 +62,7 @@ public function selectRecent($table){
 
 //função dos 4 mais recentes
 public function selectAllRecent($table){
-    $sql = "select * from posts order by created_at DESC LIMIT 4 OFFSET 1";
+    $sql = "select * from {$table} order by created_at DESC LIMIT 4 OFFSET 1";
 
     try {
         $stmt = $this->pdo->prepare($sql);
@@ -77,7 +77,7 @@ public function selectAllRecent($table){
 
 //função dos 5 mais recentes
 public function selectMobile($table){
-    $sql = "select * from posts order by created_at DESC LIMIT 5";
+    $sql = "select * from {$table} order by created_at DESC LIMIT 5";
 
     try {
         $stmt = $this->pdo->prepare($sql);

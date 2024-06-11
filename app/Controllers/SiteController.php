@@ -26,7 +26,9 @@ class SiteController
     {
         $id = $_GET['id'];
         $post = App::get('database')->selectOne('posts', $id);
-        return view('site/post-individual', compact('post')); 
+        $author = $post[0]->author;
+        $user = App::get('database')->selectOne('users', $author);
+        return view('site/post-individual', compact('post', 'user')); 
     }
 
     public function login()

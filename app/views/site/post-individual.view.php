@@ -13,21 +13,25 @@
 
     <link rel="stylesheet" href="/public/css/post-individual.css">
     <link rel="shortcut icon" type="imagex/png" href="/public/assets/torre-logo.ico">
-    <title>Post individual em Torre do Sábio</title>
+    <title><?= $post[0]->title ?></title>
 </head>
 
 <body>
     <?php require_once "app/views/site/navbar.view.php"?>
     <div class="main">
-        <h1>Lore Ipsum</h1>
-        <img class="imagem" src="/public/assets/xadrez.jpeg" alt="Imagem jogo de xadrez">
+        <h1><?= $post[0]->title ?></h1>
+        <img class="imagem" src="<?= $post[0]->image ?>" alt="Imagem jogo de xadrez">
         <div class="box">
             <div class="autoria">
-                <img class="autoria-perfil" src="/public/assets/xadrez.jpeg" alt="Foto de perfil">
-                <p>Escrito por Username em XX/XX/XXXX</p>
+                <img class="autoria-perfil" src="<?=$user[0]->image?>" alt="Foto de perfil">
+                <p>Escrito por <?= $user[0]->name?> em <?= $post[0]->created_at ?></p>
             </div>
             <div class="box-text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut mauris gravida, maximus tellus id, dictum urna. Cras ornare tellus justo, sit amet maximus sapien maximus dictum. Mauris velit justo, suscipit ac leo sit amet, ornare finibus felis. Donec felis leo, euismod sed ultricies in, maximus quis nulla. Vestibulum sed congue mi. Praesent eleifend viverra ipsum, ac aliquet est euismod et. In et pharetra est, eget convallis nulla. In hac habitasse platea dictumst. Etiam ullamcorper sed est ac vestibulum. Aliquam sit amet quam ultrices elit dapibus cursus. Praesent elit lacus, suscipit quis ante non, sagittis tristique diam. Praesent vestibulum quam sit amet ipsum sodales, et eleifend ligula pharetra. </p>
+                <?php $paragraph = explode("\n", $post[0]->content);
+                 foreach ($paragraph as $paragrafo){
+                    echo '<p class="p">' . htmlspecialchars($paragrafo) . '</p>'; 
+                 }
+                 ?> 
             </div>
         </div>
     </div>
