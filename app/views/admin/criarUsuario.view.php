@@ -32,7 +32,7 @@
                 <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
             </div>
             <div class="fundoFormularioUsuarioCriarUsuario required">
-                <input id="username" type="text" onchange="nameValidate()" class="boxCriarUsuario" placeholder="Insira o seu nome" name="name" required>
+                <input id="username" type="text" oninput="nameValidate()" class="boxCriarUsuario" placeholder="Insira o seu nome" name="name" required>
             </div>
 
             <div class="algoque ">
@@ -40,7 +40,7 @@
                 <span class="span-required">Digite um email válido</span>
             </div>
             <div class="fundoFormularioUsuarioCriarUsuario required">
-                <input id="email" type="email" onchange="emailValidate()" class="boxCriarUsuario" placeholder="Insira seu email" name="email" required>
+                <input id="email" type="email" oninput="emailValidate()" class="boxCriarUsuario" placeholder="Insira seu email" name="email" required>
             </div>
 
             <div class="algoque">
@@ -48,7 +48,7 @@
                 <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
             </div>
             <div class="fundoFormularioUsuarioCriarUsuario required">
-                <input id="password" type="password" onchange="senhaValidate()" class="boxCriarUsuario" placeholder="Insira sua senha" name="senha" required>
+                <input id="password" type="password" oninput="senhaValidate()" class="boxCriarUsuario" placeholder="Insira sua senha" name="senha" required>
             </div>
             
             <div class="algoque">
@@ -56,7 +56,7 @@
                 <span class="span-required">As senhas não conferem</span>
             </div>
             <div class="fundoFormularioUsuarioCriarUsuario required">
-                <input id="passwordr" type="password" onchange="senhaRepeatValidate()" class="boxCriarUsuario" placeholder="Repita sua senha" name="senha-repeat" required>
+                <input id="passwordr" type="password" oninput="senhaRepeatValidate()" class="boxCriarUsuario" placeholder="Repita sua senha" name="senha-repeat" required>
             </div>
 
             <div class="modal-footerCriarUsuario">

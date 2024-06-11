@@ -18,7 +18,7 @@ function nameValidate() {
 
     if (username < 3) {
         Error(0);
-    } else {
+    }else{
         ErroVerificado(0);
         console.log('VALIDADO O NOME');
     }
