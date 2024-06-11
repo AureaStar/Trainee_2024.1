@@ -75,10 +75,10 @@
                 <div id="fotSocials">
                     <p id ="fotSocialsTitle">Redes Sociais:</p>
                     <div id = "fotIconBox">
-                        <button class="footerSocialButtons"><i class="bi bi-whatsapp"></i></button>
-                        <button class="footerSocialButtons"><i class="bi bi-instagram"></i></button>
-                        <button class="footerSocialButtons"><i class="bi bi-facebook"></i></button>
-                        <button class="footerSocialButtons"><i class="bi bi-twitter-x"></i></button>
+                        <a href="https://www.instagram.com/codejr/" class="footerSocialButtons"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/codejr/" class="footerSocialButtons"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.instagram.com/codejr/" class="footerSocialButtons"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/codejr/" class="footerSocialButtons"><i class="bi bi-twitter-x"></i></a>
                     </div>
                 </div>
                 </div>
