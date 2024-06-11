@@ -1,14 +1,15 @@
 const form = document.getElementById('formuCriar');
 const botao = document.querySelector('.botaoUser');
-const array = [];
+//const array = [];
 
 function Error(index) {
     let span = document.getElementById('span-required-' + index);
     let borda = document.getElementById('required-' + index);
     span.style.display = 'flex';
     borda.style.border = '3px solid red';
-    array[index] = false;
-    Validacao();
+    botao.disabled = true;
+    //array[index] = false;
+    //Validacao();
 }
 
 function ErroVerificado(index) {
@@ -16,23 +17,24 @@ function ErroVerificado(index) {
     let borda = document.getElementById('required-' + index);
     span.style.display = 'none';
     borda.style.border = '3px solid green';
-    array[index] = true;
-    Validacao();
+    botao.disabled = false;
+    //array[index] = true;
+    //Validacao();
 }
 
-function Validacao () {
-    array.map((element)=>{
-        console.log("FOREACH");
-        if(element == true){
-            console.log("IF");
-            botao.disabled = false;
-        }else{
-            console.log("ELSE");
-            botao.disabled = true;
-            return 0;
-        }
-    });
-}
+// function Validacao () {
+//     array.map((element)=>{
+//         console.log("FOREACH");
+//         if(element == true){
+//             console.log("IF");
+//             botao.disabled = false;
+//         }else{
+//             console.log("ELSE");
+//             botao.disabled = true;
+//             return 0;
+//         }
+//     });
+// }
 
 function nameValidate(id) {
     const username = document.querySelector(id);

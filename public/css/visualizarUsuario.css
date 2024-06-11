@@ -1,5 +1,6 @@
 .imagemUser {
-    width: 30%;
+    width: 40%;
+    border-radius: 10px;
 }
 
 .imagemperfiluser {
@@ -15,7 +16,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #412307;
-    height: 60%;
+    height: 89%;
     width: 70%;
     display: none;
     flex-direction: column;
@@ -166,8 +167,12 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .imagemUser {
+        width: 40%;
+        border-radius: 10px;
+    }
     .modalVUser {
-        height: 55%;
+        height: 60%;
         width: 70%;
         border-radius: 15px;
         padding: 5%;
@@ -207,7 +212,19 @@
     }
 }
 
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 382px) {
+    .imagemUser {
+        width: 55%;
+        border-radius: 10px;
+    }
+
+    .modalVUser {
+        height: 70%;
+        width: 70%;
+        border-radius: 15px;
+        padding: 5%;
+    }
+
     .tituloVUser {
         font-size: 14px;
     }
@@ -223,8 +240,12 @@
 }
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
+    .imagemUser {
+        width: 50%;
+        border-radius: 10px;
+    }
     .modalVUser {
-        height: 60%;
+        height: 80%;
         width: 70%;
         border-radius: 15px;
         padding: 5%;
