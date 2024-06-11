@@ -64,7 +64,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 2% 2%;
-    margin: 8% 34%;
+    margin: 5% 34%;
     background-color: rgba(0, 0, 0, 0.40);
     border-radius: 30px;
     gap: 25px;
@@ -166,15 +166,29 @@ body {
 }
 
 .IndexButton{
+    display: flex;
+    align-self: center;
     padding-top: 1%;
-    padding-left: 2%;
     width: fit-content;
     height: fit-content;
 }
 
-.IndexButton button{
-    filter: drop-shadow(2px 2px 6px black);
+.IndexButton button a{
+    margin-top: 10%;
+    color: white;
+    font-family: "Jomhuria", serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 56px;
+}
+
+.IndexButton button{
+    gap: 4%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    filter: drop-shadow(2px 2px 6px black);
+    font-size: 60px;
     border: none;
     background-color: transparent;
 }
@@ -229,7 +243,7 @@ body {
     
     .AbaLogin {
         padding: 2% 4%;
-        margin: 30% 20%;
+        margin: 16% 20%;
     
     }
 
@@ -278,7 +292,21 @@ body {
         height: 30px;
         padding-bottom: 0px;
     }
-            
+    
+    .IndexButton button a{
+        font-size: 44px;
+    }
+    
+    .IndexButton button{
+        gap: 4%;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        filter: drop-shadow(2px 2px 6px black);
+        font-size: 48px;
+        border: none;
+        background-color: transparent;
+    }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 980px) {
@@ -322,7 +350,7 @@ body {
     
     .AbaLogin {
         padding: 2% 4%;
-        margin: 12% 28%;
+        margin: 10% 28%;
     
     }
     

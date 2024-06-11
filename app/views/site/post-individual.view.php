@@ -19,10 +19,16 @@
 <body>
     <?php require_once "app/views/site/navbar.view.php"?>
     <div class="main">
-        <h1><?= $post[0]->title ?></h1>
+            <div class="IndexButton">
+                <form method="get" action="posts">
+                    <button type="submit" class="material-icons icone">arrow_back</button>
+                </form>
+            </div>
+            <h1><?= $post[0]->title ?></h1>
+        
         <img class="imagem" src="<?= $post[0]->image ?>" alt="Imagem jogo de xadrez">
         <div class="box">
-            <div class="autoria">
+            <div class="autoria"> 
                 <img class="autoria-perfil" src="<?=$user[0]->image?>" alt="Foto de perfil">
                 <p>Escrito por <?= $user[0]->name?> em <?= $post[0]->created_at ?></p>
             </div>

@@ -21,7 +21,7 @@
         </div>
         <div class="IndexButton">
             <form method="get" action="index">
-                <button type="submit" class="material-icons icone">home</button>
+                <button type="submit" class="material-icons icone2">home <a>Início</a></button>
             </form>
         </div>
         <form class="AbaLogin">
