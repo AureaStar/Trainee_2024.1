@@ -38,55 +38,21 @@
 
     <main class="main_content">
             <div class= "content">
-                <div class="card" style="background-image: url(../../../public/assets/card.jpg);">
+                <?php foreach($posts as $post) :?>
+                <form onclick='Redirect(this)' method="get" action="post_individual">
+                <input hidden name="id" value="<?= $post->id?>">
+                <div class="card" style="background-image: url(<?= $post->image ?>);">
                     <h4>
-                        Noticias e Lançamentos 
+                    <?=$post->category?> 
                     </h4>
                     <h5>
-                        Médicos não querem que você conheça esse jogo
+                    <?=$post->title?>
                     </h5>
                 </div>
-                <div class="card" style="background-image: url(../../../public/assets/card.jpg);">
-                    <h4>
-                        História dos jogos de tabuleiro 
-                    </h4>
-                    <h5>
-                        Médicos não querem que você conheça esse jogo
-                    </h5>
-                </div>
-                <div class="card" style="background-image: url(../../../public/assets/card.jpg);">
-                    <h4>
-                        Guia para iniciantes 
-                    </h4>
-                    <h5>
-                        Médicos não querem que você conheça esse jogo
-                    </h5>
-                </div>
-                <div class="card" style="background-image: url(../../../public/assets/card.jpg);">
-                    <h4>
-                       Curiosidades e fatos interresantes 
-                    </h4>
-                    <h5>
-                        Médicos não querem que você conheça esse jogo
-                    </h5>
-                </div>
-                <div class="card" style="background-image: url(../../../public/assets/card.jpg);">
-                    <h4>
-                        Dicas de estratégias 
-                    </h4>
-                    <h5>
-                        Médicos não querem que você conheça esse jogo
-                    </h5>
-                </div>
-                <div class="card" style="background-image: url(../../../public/assets/card.jpg);">
-                    <h4>
-                        Novos jogos 
-                    </h4>
-                    <h5>
-                        Médicos não querem que você conheça esse jogo
-                    </h5>
-                </div>
+                </form>
+                <?php endforeach;?>
         </div>
+
         <div class="pagination_row">
             <span>
                 1
@@ -103,6 +69,8 @@
 </body>
 <script src="https://kit.fontawesome.com/c49cc74a49.js" crossorigin="anonymous"></script>
 <script>
-
+function Redirect(form){
+    form.submit();
+}
 </script>
 </html>

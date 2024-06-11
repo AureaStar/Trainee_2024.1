@@ -55,7 +55,7 @@
                             <p><?=$postRecent[0]->title?></p>
                         </div>
                     </form>
-<?php $numPost = 1?>
+                <?php $numPost = 1?>
                     <?php foreach($posts as $post) :?>
                     <form onclick='Redirect(this)' method="get" action="post_individual">
                         <input hidden name="id" value="<?= $post->id?>">
