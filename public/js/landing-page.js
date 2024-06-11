@@ -58,3 +58,7 @@ function AboutUs(){
         behavior: "smooth",
       });
 }
+
+function Redirect(form){
+    form.submit();
+}

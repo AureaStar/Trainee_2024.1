@@ -48,27 +48,24 @@
                 <h1>Publicações</h1>
                 
                 <div class="post-grid">
-                    
-                    <div style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 37.9%, rgba(255, 255, 255, 0.28) 100%), url(../../../public/assets/PostPrincipal.jpg) lightgray 50% / cover no-repeat" class="post-grande">
-                        <h2>Notícias e lançamentos</h2>
-                        <p>Conheça Xadrez 2, lançamento chocante e doideira!</p>
-                    </div>
-                    <div style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 37.9%, rgba(255, 255, 255, 0.28) 100%), url(../../../public/assets/Post1.jpg) lightgray 50% / cover no-repeat" class="post" id="post1">
-                        <h3>Notícias e lançamentos</h3>
-                        <p>Conheça Terras de Andor, novo jogo para jogar!</p>
-                    </div>
-                    <div style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 37.9%, rgba(255, 255, 255, 0.28) 100%), url(../../../public/assets/Post2.jpg) lightgray 50% / cover no-repeat" class="post" id="post2">
-                        <h3>Notícias e lançamentos</h3>
-                        <p>Tchibum na Lagoa: cheirinho de infância vem forte!</p>
-                    </div>
-                    <div style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 37.9%, rgba(255, 255, 255, 0.28) 100%), url(../../../public/assets/Post3.jpg) lightgray 50% / cover no-repeat" class="post" id="post3">
-                        <h3>Notícias e lançamentos</h3>
-                        <p>Quem aí lembra desse jogo? Amava jogar com 8 anos!</p>
-                    </div>
-                    <div style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 37.9%, rgba(255, 255, 255, 0.28) 100%), url(../../../public/assets/Post4.png) lightgray 50% / cover no-repeat" class="post" id="post4">
-                        <h3>Notícias e lançamentos</h3>
-                        <p>Receita pra guerra e problemas de pressão é isso!</p>
-                    </div>
+                    <form onclick='Redirect(this)' method="get" action="post_individual">
+                        <input hidden name="id" value="<?= $postRecent[0]->id?>">
+                        <div style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 37.9%, rgba(255, 255, 255, 0.28) 100%), url(<?= $postRecent[0]->image ?>) lightgray 50% / cover no-repeat" class="post-grande">
+                            <h2><?=$postRecent[0]->category?></h2>
+                            <p><?=$postRecent[0]->title?></p>
+                        </div>
+                    </form>
+<?php $numPost = 1?>
+                    <?php foreach($posts as $post) :?>
+                    <form onclick='Redirect(this)' method="get" action="post_individual">
+                        <input hidden name="id" value="<?= $post->id?>">
+                        <div style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 37.9%, rgba(255, 255, 255, 0.28) 100%), url(<?= $post->image ?>) lightgray 50% / cover no-repeat" class="post" id="post<?=$numPost?>">
+                            <h3><?=$post->category?></h3>
+                            <p><?=$post->title?></p>
+                        </div>
+                    </form>
+                    <?php $numPost++?>
+                    <?php endforeach;?>
 
                 </div>
 
@@ -78,32 +75,17 @@
                     
                     <i class="fa-solid fa-angle-left" id="arrow-left"></i>
                     <div class="c-posts">
+                    <?php foreach($postsMobile as $postM) :?>
+                        <form onclick='Redirect(this)' method="get" action="post_individual">
+                            <input hidden name="id" value="<?= $postM->id?>">
+                            <div style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 37.9%, rgba(255, 255, 255, 0.28) 100%), url(<?= $postM->image ?>) lightgray 50% / cover no-repeat" class="post-mobile">
+                                <h2><?=$postM->category?></h2>
+                                <p><?=$postM->title?></p>
+                            </div>
+                        </form>
+                        <?php endforeach;?>
 
-                        <div style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 37.9%, rgba(255, 255, 255, 0.28) 100%), url(../../../public/assets/PostPrincipal.jpg) lightgray 50% / cover no-repeat" class="post-mobile">
-                            <h2>Notícias e lançamentos</h2>
-                            <p>Conheça Xadrez 2, lançamento chocante e doideira!</p>
-                        </div>
-
-                        <div style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 37.9%, rgba(255, 255, 255, 0.28) 100%), url(../../../public/assets/Post1.jpg) lightgray 50% / cover no-repeat" class="post-mobile">
-                            <h2>Notícias e lançamentos</h2>
-                            <p>Conheça Terras de Andor, novo jogo para jogar!</p>
-                        </div>
-
-                        <div style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 37.9%, rgba(255, 255, 255, 0.28) 100%), url(../../../public/assets/Post2.jpg) lightgray 50% / cover no-repeat" class="post-mobile">
-                            <h2>Notícias e lançamentos</h2>
-                            <p>Tchibum na Lagoa: cheirinho de infância vem forte!</p>
-                        </div>
-
-                        <div style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 37.9%, rgba(255, 255, 255, 0.28) 100%), url(../../../public/assets/Post3.jpg) lightgray 50% / cover no-repeat" class="post-mobile">
-                            <h2>Notícias e lançamentos</h2>
-                            <p>Quem aí lembra desse jogo? Amava jogar com 8 anos!</p>
-                        </div>
-
-                        <div style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 37.9%, rgba(255, 255, 255, 0.28) 100%), url(../../../public/assets/Post4.png) lightgray 50% / cover no-repeat" class="post-mobile">
-                            <h2>Notícias e lançamentos</h2>
-                            <p>Receita pra guerra e problemas de pressão é isso!</p>
-                        </div>
-
+                    
                     </div>
                     <i class="fa-solid fa-angle-right" id="arrow-right"></i>
                     

@@ -10,17 +10,23 @@ class SiteController
 
     public function index()
     {
-        return view('site/landing-page');
+        $postsMobile = App::get('database')->selectMobile('posts');
+        $posts = App::get('database')->selectAllRecent('posts');
+        $postRecent = App::get('database')->selectRecent('posts'); 
+        return view('site/landing-page', compact('posts', 'postsMobile', 'postRecent'));
     }
 
     public function posts()
     {
-        return view('site/listadeposts');
+        $posts = App::get('database')->selectAll('posts');
+        return view('site/listadeposts', compact('posts'));
     }
 
     public function individual_post()
     {
-        return view('site/post-individual');
+        $id = $_GET['id'];
+        $post = App::get('database')->selectOne('posts', $id);
+        return view('site/post-individual', compact('post')); 
     }
 
     public function login()

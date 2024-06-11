@@ -19,6 +19,14 @@
     flex-direction: column;
 }
 
+form{
+    display: contents;
+}
+
+form:hover{
+    cursor: pointer;
+}
+
 .background-img{
     display:flex;
     align-items: center;
