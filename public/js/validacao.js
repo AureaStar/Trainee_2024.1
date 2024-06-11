@@ -1,18 +1,19 @@
-
 const form = document.getElementById('formuCriar');
-const spans = document.querySelectorAll('.span-required');
-const borda = document.querySelectorAll('.required');
-const botao = document.querySelector('.fecharCriarUsuario');
+const botao = document.querySelector('.botaoUser');
 
 function Error(index) {
-    spans[index].style.display = 'flex';
-    borda[index].style.border = '3px solid red';
+    let span = document.getElementById('span-required-' + index);
+    let borda = document.getElementById('required-' + index);
+    span.style.display = 'flex';
+    borda.style.border = '3px solid red';
     botao.disabled = true;
 }
 
 function ErroVerificado(index) {
-    spans[index].style.display = 'none';
-    borda[index].style.border = '3px solid green';
+    let span = document.getElementById('span-required-' + index);
+    let borda = document.getElementById('required-' + index);
+    span.style.display = 'none';
+    borda.style.border = '3px solid green';
     botao.disabled = false;
 }
 
@@ -20,21 +21,21 @@ function nameValidate(id) {
     const username = document.querySelector(id);
 
     if (username.value.length < 3) {
-        Error(0);
+        Error(id);
     }else{
-        ErroVerificado(0);
+        ErroVerificado(id);
         console.log('VALIDADO O NOME');
     }
 }
 
-function emailValidate(id) {   
+function emailValidate(id) {
     const email = document.querySelector(id);
-    const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]w\+)*$/;
-
+    const emailRegex = /^\w+([-+.']\w+)@\w+([-.]\w+).\w+([-.]w+)*$/;
+    
     if (!emailRegex.test(email.value)){
-        Error(1);
+        Error(id);
     }else{
-        ErroVerificado(1);
+        ErroVerificado(id);
         console.log('VALIDADO O EMAIL');
     }
 }
@@ -43,9 +44,9 @@ function senhaValidate(id) {
     const password = document.querySelector(id);
 
     if (password.value.length < 8) {
-        Error(2);
+        Error(id);
     } else {
-        ErroVerificado(2);
+        ErroVerificado(id);
         console.log('VALIDADO O EMAIL');
     }
 }
@@ -55,14 +56,12 @@ function senhaRepeatValidate(id, id2) {
     const passwordr = document.querySelector(id2);
 
     if (password.value != passwordr.value) {
-        Error(3);
+        Error(id2);
     } else {
-        ErroVerificado(3);
+        ErroVerificado(id2);
         console.log('VALIDADO O EMAIL');
     }
 }
-
-
 
 
 /*

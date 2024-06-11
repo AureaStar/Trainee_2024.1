@@ -29,38 +29,38 @@
 
             <div class="algoque ">
                 <label for="name" class="nameboxCriarUsuario">Nome:</label>
-                <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
+                <span id="span-required-#username" class="span-required">Nome deve ter no mínimo 3 caracteres</span>
             </div>
-            <div class="fundoFormularioUsuarioCriarUsuario required">
+            <div id="required-#username" class="fundoFormularioUsuarioCriarUsuario required">
                 <input id="username" type="text" oninput="nameValidate('#username')" class="boxCriarUsuario" placeholder="Insira o seu nome" name="name" required>
             </div>
 
-            <div class="algoque ">
+            <div class="algoque">
                 <label for="email" class="nameboxCriarUsuario">Email:</label>
-                <span class="span-required">Digite um email válido</span>
+                <span id="span-required-#email" class="span-required">Digite um email válido</span>
             </div>
-            <div class="fundoFormularioUsuarioCriarUsuario required">
+            <div id="required-#email" class="fundoFormularioUsuarioCriarUsuario required">
                 <input id="email" type="email" oninput="emailValidate('#email')" class="boxCriarUsuario" placeholder="Insira seu email" name="email" required>
             </div>
 
             <div class="algoque">
                 <label for="senha" class="nameboxCriarUsuario">Senha:</label>
-                <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
+                <span id="span-required-#password" class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
             </div>
-            <div class="fundoFormularioUsuarioCriarUsuario required">
+            <div id="required-#password" class="fundoFormularioUsuarioCriarUsuario required">
                 <input id="password" type="password" oninput="senhaValidate('#password')" class="boxCriarUsuario" placeholder="Insira sua senha" name="senha" required>
             </div>
             
             <div class="algoque">
                 <label for="senha-repeat" class="nameboxCriarUsuario">Confirme sua senha:</label>
-                <span class="span-required">As senhas não conferem</span>
+                <span id="span-required-#passwordr" class="span-required">As senhas não conferem</span>
             </div>
-            <div class="fundoFormularioUsuarioCriarUsuario required">
+            <div id="required-#passwordr" class="fundoFormularioUsuarioCriarUsuario required">
                 <input id="passwordr" type="password" oninput="senhaRepeatValidate('#password','#passwordr')" class="boxCriarUsuario" placeholder="Repita sua senha" name="senha-repeat" required>
             </div>
 
             <div class="modal-footerCriarUsuario">
-                <button type="submit" class="fecharCriarUsuario">Criar</button>
+                <button type="submit" class="fecharCriarUsuario botaoUser">Criar</button>
                 <button type="button" class="cancelarCriarUsuario" onclick="fechaModal()">Cancelar</button>
             </div>
         </form>
