@@ -161,7 +161,7 @@
 
 @media only screen and (max-width: 600px) {
     .modalVUser {
-        height: 40%;
+        height: 55%;
         width: 70%;
         border-radius: 15px;
         padding: 3%;
@@ -209,11 +209,16 @@
     .fundoFormularioVUser {
         height: 12%;
     }
+
+    .fecharViUser {
+        width: 20%;
+        font-size: 20px;
+    }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
     .modalVUser {
-        height: 45%;
+        height: 60%;
         width: 70%;
         border-radius: 15px;
         padding: 3%;
