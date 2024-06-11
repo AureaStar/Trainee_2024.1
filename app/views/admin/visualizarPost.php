@@ -29,8 +29,7 @@
 
             <label for="text" class="nameVbox">Conteúdo:</label>
             <div class="fundoVFormularioCont">
-                <img src="" alt="">
-                <div type="text" class="boxV" id="text" name="text" readonly><?= $post->content ?></div>
+                <textarea type="text" class="boxV" id="text" name="text" readonly><?= $post->content ?></textarea>
             </div>
 
             <label for="filter" class="nameVbox">Categoria:</label>
@@ -39,9 +38,7 @@
             </div>
 
             <label for="imagem" class="nameVbox">Imagem:</label>
-            <div class="fundoVFormulario">
-                <img src="" alt="">
-            </div>
+                <img class="imagem-post" src="<?= $post->image ?>" alt="">
 
             <label for="data" class="nameVbox">Data de criação do post:</label>
             <div class="fundoVFormulario">

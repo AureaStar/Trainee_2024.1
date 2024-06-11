@@ -30,7 +30,7 @@ class AdminController
             'author' => 1,
             'category' => $_POST['categorias'],
             'created_at' => $_POST['data'],
-            'image' => $_POST['imagem']
+            'image' => $caminhodaimagem
         ];
 
         App::get('database')->insert('posts', $parameters);
