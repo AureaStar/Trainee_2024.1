@@ -16,8 +16,8 @@ function ErroVerificado(index) {
     botao.disabled = false;
 }
 
-function nameValidate() {
-    const username = document.querySelector('#username');
+function nameValidate(id) {
+    const username = document.querySelector(id);
 
     if (username.value.length < 3) {
         Error(0);
@@ -27,8 +27,8 @@ function nameValidate() {
     }
 }
 
-function emailValidate() {   
-    const email = document.querySelector('#email');
+function emailValidate(id) {   
+    const email = document.querySelector(id);
     const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]w\+)*$/;
 
     if (!emailRegex.test(email.value)){
@@ -39,8 +39,8 @@ function emailValidate() {
     }
 }
 
-function senhaValidate() {
-    const password = document.querySelector('#password');
+function senhaValidate(id) {
+    const password = document.querySelector(id);
 
     if (password.value.length < 8) {
         Error(2);
@@ -50,9 +50,9 @@ function senhaValidate() {
     }
 }
 
-function senhaRepeatValidate() {
-    const password = document.querySelector('#password');
-    const passwordr = document.querySelector('#passwordr');
+function senhaRepeatValidate(id, id2) {
+    const password = document.querySelector(id);
+    const passwordr = document.querySelector(id2);
 
     if (password.value != passwordr.value) {
         Error(3);

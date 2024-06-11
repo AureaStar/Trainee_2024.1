@@ -25,24 +25,33 @@
                 <input type="file" value="<?= $user->image ?>" class="boxEditarUser imagemPerfilInputEditarUser" name="imagem" required>
             </div>
 
-            <label for="name" class="nameboxEditarUser">Nome:</label>
+            <div class="algoque">
+                <label for="name" class="nameboxEditarUser">Nome:</label>
+                <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
+            </div>
             <div class="fundoFormularioUsuarioEditarUser">
-                <input type="text" value="<?= $user->name ?>" class="boxEditarUser" placeholder="Editar o nome" name="name">
+                <input id="usernameE<?= $user->id ?>" type="text" oninput="nameValidate('#usernameE<?= $user->id ?>')" value="<?= $user->name ?>" class="boxEditarUser" placeholder="Editar o nome" name="name">
             </div>
 
-            <label for="email" class="nameboxEditarUser">Email:</label>
+            <div class="algoque">
+                <label for="email" class="nameboxEditarUser">Email:</label>
+                <span class="span-required">Digite um email válido</span>
+            </div>
             <div class="fundoFormularioUsuarioEditarUser">
-                <input type="email" value="<?= $user->email ?>" class="boxEditarUser" placeholder="Edite o email" name="email">
+                <input id="emailE<?= $user->id ?>" type="email" oninput="emailValidate('#emailE<?= $user->id ?>')" value="<?= $user->email ?>" class="boxEditarUser" placeholder="Edite o email" name="email">
             </div>
 
-            <label for="senha" class="nameboxEditarUser">Senha:</label>
+            <div class="algoque">
+                <label for="senha" class="nameboxEditarUser">Senha:</label>
+                <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
+            </div>
             <div class="fundoFormularioUsuarioEditarUser">
-                <input type="password" value="<?= $user->password ?>" class="boxEditarUser" placeholder="Edite a senha" name="senha">
+                <input id="passwordE<?= $user->id ?>" type="password"  oninput="senhaValidate('#passwordE<?= $user->id ?>')" value="<?= $user->password ?>" class="boxEditarUser" placeholder="Edite a senha" name="senha">
             </div>
 
             <label for="senha-repeat" class="nameboxEditarUser">Confirme a senha:</label>
             <div class="fundoFormularioUsuarioEditarUser">
-                <input type="password" class="boxEditarUser" placeholder="Repita a senha editada" name="senha-repeat">
+                <input id="passwordrE<?= $user->id ?>" oninput="senhaRepeatValidate('#passwordE<?= $user->id ?>','#passwordrE<?= $user->id ?>')" type="password" class="boxEditarUser" placeholder="Repita a senha editada" name="senha-repeat">
             </div>
 
             <div class="modal-footerEditarUser">
@@ -52,3 +61,4 @@
         </form>
     </div>
 </div>
+<script src="/public/js/validacao.js"></script>
