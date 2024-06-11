@@ -6,19 +6,37 @@
     transform: translate(-50%, -50%);
     background-color: #412307;
     height: 85%;
-    width: 65%;
+    width: 70%;
     display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
     padding: 2%;
-    box-shadow: 10px 10px 50px 10px;
+    box-shadow: black 10px 10px 50px 10px;
     z-index: 4;
 }
 
 .imagem-post{
-    width: 30%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    width: 100%;
+}
+.right{
+    width: 70%;
+    margin-left: 5%;
+}
+
+.imagem-legal{
+    display: flex;
+    justify-content: center;
 }
 
 .modalV-content {
@@ -83,7 +101,7 @@
 
 .nameVbox {
     color: white;
-    font-size: 34px;
+    font-size: 40px;
     font-family: Jomhuria;
 }
 
@@ -107,7 +125,7 @@
     border: none;
     outline: none;
     border-radius: 5px;
-    height: 10%;
+    height: 12%;
     width: 100%;
 }
 .fundoVFormularioCont {
@@ -141,7 +159,7 @@
     outline: none;
     width: 97.5%;
     border-radius: 5px;
-    height: 80%;
+    height: 100%;
     padding-left: 2%;
 }
 
@@ -157,8 +175,8 @@
     width: 100%;
     height: 100%;
     border-radius: 5px;
-    padding-left: 2%;
-    padding-top: 3%;
+    padding-left: 1.8%;
+    padding-top: 1%;
 }
 
 .fundoVFormularioCont textarea:hover {
@@ -220,12 +238,45 @@
     border: 3px solid red;
 }
 
+.fecharViPost {
+    background-color: #226c20;
+    height: 100%;
+    width: 15%;
+    border-radius: 5px;
+    padding-top: 3px;
+    color: white;
+    font-family: Jomhuria;
+    font-size: 32px;
+    border: 3px solid #226c20;
+    outline: none;
+    transition: background 0.2s;
+}
+
+.modal-footerViPost {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    margin-top: 2%;
+}
+
+.fecharViPost:hover {
+    background-color: rgba(16, 123, 16, 0.51);
+    border: 3px solid #226c20;
+}
+
 @media only screen and (max-width: 600px) {
     .modalV {
-        height: 65%;
+        height: 85%;
         width: 70%;
         border-radius: 15px;
         padding: 3%;
+    }
+
+    .container{
+        flex-direction: column;
     }
 
     .modalV-content {
@@ -261,6 +312,15 @@
         font-size: 22px;
     }
 
+    .fundoVFormulario input{
+        padding-left: 1%;
+    }
+
+    .fundoVFormularioCont textarea {
+        padding-left: 1%;
+        padding-top: 3%;
+    }
+
     .boxV {
         font-size: 22px;
     }
@@ -268,24 +328,69 @@
     .nameVbox {
         font-size: 30px;
     }
+
+    .fecharViPost {
+        width: 20%;
+        font-size: 28px;
+    }
+
+    .imagem-post{
+        width: 60%;
+    }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 370px) {
     .tituloV {
         font-size: 18px;
+    }
+    .fundoVFormulario input{
+        padding-left: 0.5%;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .fundoVFormularioCont textarea {
+        padding-left: 0.3%;
+        padding-top: 4%;
+    }
+
+    .fecharViPost {
+        width: 20%;
+        font-size: 20px;
+    }
+    .imagem-post{
+        width: 70%;
     }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
     .modalV {
-        height: 80%;
+        top: 55%;
+        height: 90%;
         width: 70%;
         border-radius: 15px;
         padding: 3%;
     }
 
+    .container{
+        flex-direction: column;
+    }
+
+    .left{
+        margin-bottom: 0;
+    }
+    .right{
+        margin-left: 0;
+    }
     .modalV-content {
         gap: 5px;
+    }
+
+    .imagem-post{
+        display: flex;
+        justify-content: center;
     }
 
     .modalV-body {
@@ -312,12 +417,20 @@
         font-size: 30px;
     }
 
+    .fundoVFormularioCont textarea {
+        padding-top: 2%;
+    }
+
     .boxV {
         font-size: 30px;
     }
 
     .nameVbox {
         font-size: 34px;
+    }
+
+    .imagem-post{
+        width: 50%;
     }
 }
 

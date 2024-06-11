@@ -22,29 +22,37 @@
         </div>
         <form class="modalV-body">
 
-            <label for="title" class="nameVbox">Título:</label>
-            <div class="fundoVFormulario">
-                <input type="text" class="boxV" id="title" name="title" readonly value="<?= $post->title ?>">
+        <div class="container">
+
+            <div class="left">
+                <label for="title" class="nameVbox">Título:</label>
+                    <div class="fundoVFormulario">
+                        <input type="text" class="boxV" id="title" name="title" readonly value="<?= $post->title ?>">
+                    </div>
+
+                <label for="text" class="nameVbox">Conteúdo:</label>
+                    <div class="fundoVFormularioCont">
+                        <textarea type="text" class="boxV" id="text" name="text" readonly><?= $post->content ?></textarea>
+                    </div>
+
+                <label for="filter" class="nameVbox">Categoria:</label>
+                    <div class="fundoVFormulario fundoVC">
+                        <a class="boxV"><?= $post->category ?></a>
+                    </div>
             </div>
 
-            <label for="text" class="nameVbox">Conteúdo:</label>
-            <div class="fundoVFormularioCont">
-                <textarea type="text" class="boxV" id="text" name="text" readonly><?= $post->content ?></textarea>
+            <div class="right">
+                <label for="imagem" class="nameVbox" id="imagem-bacana">Imagem:</label>
+                    <div class="imagem-legal">
+                        <img class="imagem-post" src="<?= $post->image ?>" alt="">
+                    </div>
             </div>
+        </div>
 
-            <label for="filter" class="nameVbox">Categoria:</label>
-            <div class="fundoVFormulario fundoVC">
-                <a class="boxV"><?= $post->category ?></a>
-            </div>
-
-            <label for="imagem" class="nameVbox">Imagem:</label>
-                <img class="imagem-post" src="<?= $post->image ?>" alt="">
-
-            <label for="data" class="nameVbox">Data de criação do post:</label>
-            <div class="fundoVFormulario">
-                <input type="date" class="boxV" id="data" name="data" readonly value="<?= $post->created_at ?>">
-            </div>
         </form>
+        <div class="modal-footerViPost">
+            <button type="button" class="fecharViPost" onclick="fechaModal()">Fechar</button>
+        </div>
     </div>
 </div>
 
