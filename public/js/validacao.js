@@ -25,20 +25,6 @@ function nameValidate() {
 }
 
 function emailValidate() {   
-    /*
-    CODIGO JONES 1
-    const email = document.querySelector('.email');
-    var exclude = /[^@-.w]|^[_@.-]|[._-]{2}|[@.]{2}|(@)[^@]*1/;
-    var check = /@[w-]+./;
-    var checkend = /.[a-zA-Z]{2,3}$/;
-
-    if (((email.search(exclude) != -1) || (email.search(check)) == -1) || (email.search(checkend) == -1)) {
-        return false;
-    } else {
-        return true;
-    }
-    */
-
     const email = document.querySelector('.email');
     const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]w\+)*$/;
 

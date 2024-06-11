@@ -37,8 +37,11 @@
             <div class="fundoFormularioVUser">
                 <input type="password" value="<?= $user->password ?>" class="boxVUser" name="senha" readonly>
             </div>
+
+            <div class="modal-footerViUser">
+                <button type="button" class="fecharViUser" onclick="fechaModal()">Fechar</button>
+            </div>
         </form>
-        <button type="button" onclick="fechaModal()"></button>
     </div>
 
 </div>

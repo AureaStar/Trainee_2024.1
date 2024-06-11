@@ -9,6 +9,12 @@
     color: red;
 }
 
+.algoque {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
 .modalCriarUsuario {
     z-index: 5;
     position: absolute;
