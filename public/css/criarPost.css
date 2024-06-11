@@ -17,7 +17,7 @@
     z-index: 4;
 }
 
-.modalV-content {
+.modalVC-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,7 +27,7 @@
     gap: 15px;
 }
 
-.modalV-header {
+.modalVC-header {
     background-color: #3c2007;
     width: 100%;
     height: 10%;
@@ -41,7 +41,7 @@
     box-shadow: rgb(143, 86, 6) 0px 0px 80px 1px;
 }
 
-.modalV-body {
+.modalVC-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,7 +51,7 @@
     margin: 0%;
 }
 
-.modalV-footer {
+.modalVC-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -61,7 +61,7 @@
     margin-top: 2%;
 }
 
-.imagemVlogo {
+.imagemVClogo {
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -69,7 +69,7 @@
     margin: 0%;
 }
 
-.tituloV {
+.tituloVC {
     color: white;
     margin: 0;
     font-size: 38px;
@@ -77,19 +77,19 @@
     font-weight: 700;
 }
 
-.nameVbox {
+.nameVCbox {
     color: white;
     font-size: 34px;
     font-family: Jomhuria;
 }
 
-.boxV {
+.boxVC {
     color: rgb(255, 255, 255);
     font-family: Jomhuria;
     font-size: 28px;
 }
 
-.boxVselect {
+.boxVCselect {
     background-color: #E6A549;
     width: 100%;
     height: 100%;
@@ -99,7 +99,7 @@
     padding-left: 2%;
 }
 
-.boxVselect:hover {
+.boxVCselect:hover {
     background-color: #e6a54900;
     border: 3px solid #e29c3a;
 }
@@ -109,7 +109,7 @@
     align-items: center;
 }
 
-.fundoVFormulario {
+.fundoVCFormulario {
     background-color: #E6A549;
     border: none;
     outline: none;
@@ -117,7 +117,7 @@
     height: 10%;
     width: 100%;
 }
-.fundoVFormularioCont {
+.fundoVCFormularioCont {
     background-color: #E6A549;
     border: none;
     outline: none;
@@ -126,27 +126,27 @@
     width: 100%;
 }
 
-.fundoVFormulario:hover {
+.fundoVCFormulario:hover {
     background-color: hsla(35, 76%, 59%, 0.8);
 }
 
-.fundoVFormularioCont:hover {
+.fundoVCFormularioCont:hover {
     background-color: hsla(35, 76%, 59%, 0.8);
 }
 
-.fundoVFormulario input::placeholder {
+.fundoVCFormulario input::placeholder {
     color: rgb(255, 255, 255);
     font-family: Jomhuria;
     font-size: 28px;
 }
 
-.fundoVFormularioCont textarea::placeholder {
+.fundoVCFormularioCont textarea::placeholder {
     color: rgb(255, 255, 255);
     font-family: Jomhuria;
     font-size: 28px;
 }
 
-.fundoVFormulario input {
+.fundoVCFormulario input {
     background-color: #e29c3a;
     border: 3px solid #e29c3a;
     outline: none;
@@ -156,12 +156,12 @@
     padding-left: 2%;
 }
 
-.fundoVFormulario input:hover {
+.fundoVCFormulario input:hover {
     background-color: rgba(180, 126, 17, 0);
     border: 3px solid #e29c3a;
 }
 
-.fundoVFormularioCont textarea {
+.fundoVCFormularioCont textarea {
     background-color: #e29c3a;
     border: 3px solid #e29c3a;
     outline: none;
@@ -172,7 +172,7 @@
     padding-top: 1%;
 }
 
-.fundoVFormularioCont textarea:hover {
+.fundoVCFormularioCont textarea:hover {
     background-color: rgba(180, 126, 17, 0);
     border: 3px solid #e29c3a;
 }
@@ -182,19 +182,19 @@ textarea {
     max-width: 97.5%;
 }
 
-.imagemVInput::-webkit-file-upload-button {
+.imagemVCInput::-webkit-file-upload-button {
     display: none;
 }
 
-.imagemVInput::before {
+.imagemVCInput::before {
     content: 'Adicione a foto: ';
 }
 
-.imagemVInput {
+.imagemVCInput {
     align-content: center;
 }
 
-.fecharV {
+.fecharVC {
     background-color: #226c20;
     height: 100%;
     width: 20%;
@@ -208,12 +208,12 @@ textarea {
     transition: background 0.2s;
 }
 
-.fecharV:hover {
+.fecharVC:hover {
     background-color: rgba(16, 123, 16, 0.51);
     border: 3px solid #226c20;
 }
 
-.cancelarV {
+.cancelarVC {
     background-color:red;
     height: 100%;
     width: 20%;
@@ -227,80 +227,80 @@ textarea {
     transition: background 0.2s;
 }
 
-.cancelarV:hover {
+.cancelarVC:hover {
     background-color: rgba(255, 0, 0, 0.581);
     border: 3px solid red;
 }
 
 @media only screen and (max-width: 600px) {
-    .modalC {
+    .modalVC {
         height: 70%;
         width: 70%;
         border-radius: 15px;
         padding: 3%;
     }
 
-    .modal-content {
+    .modalVC-content {
         gap: 5px;
     }
 
-    .modal-header {
+    .modalVC-header {
         height: 8%;
     }
 
-    .modal-body {
+    .modalVC-body {
         gap: 2px;
     }
 
-    .titulo {
+    .tituloVC {
         font-size: 28px;
     }
 
-    .modal-footer {
+    .modalVC-footer {
         padding-top: 5%;
         height: 7%;
     }
 
-    .fundoFormulario {
+    .fundoVCFormulario {
         height: 8%;
     }
 
-    .fundoFormularioCont {
+    .fundoVCFormularioCont {
         height: 20%;
     }
 
-    .fundoFormulario input::placeholder {
+    .fundoVCFormulario input::placeholder {
         font-size: 22px;
     }
     
-    .fundoFormularioCont textarea::placeholder {
+    .fundoVCFormularioCont textarea::placeholder {
         font-size: 22px;
     }
 
-    .box {
+    .boxVC {
         font-size: 22px;
     }
 
-    .namebox {
+    .nameVCbox {
         font-size: 30px;
     }
     
-    .imagemInput::-webkit-file-upload-button {
+    .imagemVCInput::-webkit-file-upload-button {
         display: none;
     }
 
-    .imagemInput::before {
+    .imagemVCInput::before {
         content: 'Adicione a foto: ';
     }
 
-    .fechar {
+    .fecharVC {
         height: 100%;
         width: 30%;
         padding-top: 0px;
         font-size: 28px;
     }
 
-    .cancelar {
+    .cancelarVC {
         height: 100%;
         width: 30%;
         padding-top: 0px;
@@ -310,70 +310,70 @@ textarea {
 
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
-    .modalC {
+    .modalVC {
         height: 78%;
         width: 70%;
         border-radius: 15px;
         padding: 3%;
     }
 
-    .modal-content {
+    .modalVC-content {
         gap: 5px;
     }
 
-    .modal-body {
+    .modalVC-body {
         gap: 2px;
     }
 
-    .titulo {
+    .tituloVC {
         font-size: 38px;
     }
 
-    .modal-footer {
+    .modalVC-footer {
         padding-top: 2%;
         height: 7%;
     }
 
-    .fundoFormulario {
+    .fundoVCFormulario {
         height: 10%;
     }
 
-    .fundoFormularioCont {
+    .fundoVCFormularioCont {
         height: 22%;
     }
 
-    .fundoFormulario input::placeholder {
+    .fundoVCFormulario input::placeholder {
         font-size: 30px;
     }
     
-    .fundoFormularioCont textarea::placeholder {
+    .fundoVCFormularioCont textarea::placeholder {
         font-size: 30px;
     }
 
-    .box {
+    .boxVC {
         font-size: 30px;
     }
 
-    .namebox {
+    .nameboxVC {
         font-size: 34px;
     }
     
-    .imagemInput::-webkit-file-upload-button {
+    .imagemVCInput::-webkit-file-upload-button {
         display: none;
     }
 
-    .imagemInput::before {
+    .imagemVCInput::before {
         content: 'Adicione a foto: ';
     }
 
-    .fechar {
+    .fecharVC {
         height: 100%;
         width: 30%;
         padding-top: 0px;
         font-size: 28px;
     }
 
-    .cancelar {
+    .cancelarVC {
         height: 100%;
         width: 30%;
         padding-top: 0px;
@@ -382,20 +382,24 @@ textarea {
 }
 
 @media only screen and (max-width: 340px) {
-    .titulo {
-        font-size: 26px;
+    .tituloVC {
+        font-size: 20px;
     }
-    .fechar {
+    .fecharVC {
         height: 100%;
         width: 30%;
         padding-top: 1px;
-        font-size: 22px;
+        font-size: 20px;
     }
 
-    .cancelar {
+    .cancelarVC {
         height: 100%;
         width: 30%;
         padding-top: 0px;
         font-size: 22px;
+    }
+
+    .nameVCbox{
+        font-size: 24px;
     }
 }
