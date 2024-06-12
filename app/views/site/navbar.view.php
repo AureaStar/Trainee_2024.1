@@ -12,18 +12,18 @@
     </head>
         <header>
             <nav class="navbar-Container">
-                <form method="get" action="index">
+                <form method="get" action="/index">
                     <button class="logoNavbar" rel="logo da Torre do Sábio"><img id = "logonavbarimg" src="/public/assets/logo-linda-sem-linha.png"></button>
                 </form>
                 <ul class = "nav-lnk-container">
                     <li id="navInicio" class="navbarlist">
-                        <form method="get" action="index">
+                        <form method="get" action="/index">
                         <button id="navbinicio">Início</button>
                         </form>
                     </li>
                     
                     <li id="navPubli" class="navbarlist">
-                            <form method="get" action="posts">
+                            <form method="get" action="/posts">
                             <button id="navbpubli">Publicações</button>
                             </form>
                         </li>
@@ -33,21 +33,21 @@
                 </ul>
 
                 <li id="navLogin" class="navbarlist">
-                    <form method="get" action="login">
+                    <form method="get" action="/login">
                         <button id="navLogText">Login</button>
                     </form>
                 </li>
             </nav>
             <div class="navhamMenu">
-            <form method="get" action="index">      
+            <form method="get" action="/index">      
                 <button id="navhaminicio">Início</button>
             </form>
 
-            <form method="get" action="posts">
+            <form method="get" action="/posts">
                 <button  id="navhampubli">Publicações</button>
             </form>
 
-            <form method="get" action="login">
+            <form method="get" action="/login">
                 <button id="navhamlogbutton">Login</button>
             </form>
             </div>

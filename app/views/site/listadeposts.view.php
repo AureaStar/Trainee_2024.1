@@ -1,3 +1,9 @@
+<?php
+function Filter(string $string){
+    return (isset($_GET['categorias']) and $_GET['categorias'] == "$string")?'selected':'';
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,34 +18,45 @@
 </head>
     
 <body>
+<form hidden method="get" action="/posts" id="formReset"></form>
+
 <?php require_once "app/views/site/navbar.view.php"?>
         <div class="header_main">
             <h1> Nossos artigos </h1>
-            <div class="search_main">
-                <form action="/app/views/site/listadeposts.html" class="search" id="formSearch">
+            <form class="search_main" method="get" action="/posts/search" id="formSearch">
+                <div class="search">
                     <i onclick="submitform('formSearch')" class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
                     <input class="input-list" type="text"  placeholder="Pesquisa" name="search">  
-                </form>
-                <form action="/app/views/site/listadeposts.html" id="formCat" class="filter-form">
-                    <select name="categorias" class="filter">                    
-                        <option value=" ">Categorias</option>                   
-                        <option value="1">Categoria 1</option>                   
-                        <option value="2">Categoria 2</option> 
-                        <option value="3">Categoria 3</option>
+                </div>
+                <div class="filter-form">
+                    
+                    <select onchange="submitform('formSearch')" name="categorias" class="filter">                    
+                        <option <?= Filter("")?> 
+                            value="">Categorias
+                        </option>                   
+                        <option <?= Filter("Novidades e lançamentos")?> 
+                            value="Novidades e lançamentos">Novidades e lançamentos
+                        </option>                   
+                        <option <?= Filter("Teste")?> 
+                            value="Teste">Teste
+                        </option> 
+                        <option <?= Filter("Pão")?> 
+                            value="Pão">Pão
+                        </option>
                     </select>
                     <div class="funil"> 
-                        <i onclick="submitform('formCat')" class="fa-solid fa-filter" style="color: #ffffff;"></i>
+                        <i onclick="submitform('formReset')" class="fa-solid fa-refresh" style="color: #ffffff;"></i>
                     </div>
                     
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
     
 
     <main class="main_content">
             <div class= "content">
                 <?php foreach($posts as $post) :?>
-                <form onclick='Redirect(this)' method="get" action="post_individual">
+                <form onclick='Redirect(this)' method="get" action="/post_individual">
                 <input hidden name="id" value="<?= $post->id?>">
                 <div class="card" style="background-image: url(<?= $post->image ?>);">
                     <h4>
@@ -70,6 +87,11 @@
 <script src="https://kit.fontawesome.com/c49cc74a49.js" crossorigin="anonymous"></script>
 <script>
 function Redirect(form){
+    form.submit();
+}
+
+function submitform(id){
+    let form = document.getElementById(id);
     form.submit();
 }
 </script>
