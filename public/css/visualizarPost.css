@@ -18,6 +18,8 @@
 }
 
 .imagem-post{
+    max-width: 1920px;
+    min-width: 256px;
     width: 100%;
     border-radius: 20px;
 }
