@@ -13,7 +13,7 @@
     align-items: center;
     border-radius: 20px;
     padding: 2%;
-    box-shadow: 10px 10px 50px 10px;
+    box-shadow: black 10px 10px 50px 10px;
     z-index: 4;
 }
 
@@ -158,7 +158,7 @@
 
 .fundoVCFormulario input:hover {
     background-color: rgba(180, 126, 17, 0);
-    border: 3px solid #e29c3a;
+    border: 3px solid #e29c3a;    
 }
 
 .fundoVCFormularioCont textarea {
@@ -166,7 +166,7 @@
     border: 3px solid #e29c3a;
     outline: none;
     width: 100%;
-    height: 100%;
+    height: 80%;
     border-radius: 5px;
     padding-left: 2%;
     padding-top: 1%;
@@ -178,8 +178,13 @@
 }
 
 textarea {
-    max-height: 80%;
+    max-height: 100%;
     max-width: 97.5%;
+}
+
+input {
+    max-height: 80%;
+    padding-left: 2%;
 }
 
 .imagemVCInput::-webkit-file-upload-button {
@@ -188,6 +193,7 @@ textarea {
 
 .imagemVCInput::before {
     content: 'Adicione a foto: ';
+    padding-left: 0.5%;
 }
 
 .imagemVCInput {
@@ -234,7 +240,7 @@ textarea {
 
 @media only screen and (max-width: 600px) {
     .modalVC {
-        height: 70%;
+        height: 77%;
         width: 70%;
         border-radius: 15px;
         padding: 3%;
@@ -277,6 +283,15 @@ textarea {
         font-size: 22px;
     }
 
+    .fundoVCFormulario input {
+        width: 97%;
+    }
+
+    .fundoVCFormularioCont textarea {
+        height: 88%;
+        width: 97%;
+    }
+
     .boxVC {
         font-size: 22px;
     }
@@ -311,7 +326,7 @@ textarea {
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
     .modalVC {
-        height: 78%;
+        height: 85%;
         width: 70%;
         border-radius: 15px;
         padding: 3%;
@@ -323,6 +338,10 @@ textarea {
 
     .modalVC-body {
         gap: 2px;
+    }
+
+    .fundoVCFormularioCont textarea {
+        height: 90%;
     }
 
     .tituloVC {
@@ -382,6 +401,10 @@ textarea {
 }
 
 @media only screen and (max-width: 340px) {
+    .modalVC {
+        height: 75%;
+    }
+    
     .tituloVC {
         font-size: 20px;
     }
