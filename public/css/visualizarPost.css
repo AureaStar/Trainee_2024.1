@@ -157,10 +157,9 @@
     background-color: #e29c3a;
     border: 3px solid #e29c3a;
     outline: none;
-    width: 97.5%;
+    width: 97%;
     border-radius: 5px;
     height: 100%;
-    padding-left: 2%;
 }
 
 .fundoVFormulario input:hover {
@@ -173,7 +172,7 @@
     border: 3px solid #e29c3a;
     outline: none;
     width: 100%;
-    height: 100%;
+    height: 85%;
     border-radius: 5px;
     padding-left: 1.8%;
     padding-top: 1%;
@@ -276,7 +275,11 @@
     }
 
     .container{
+        display: block;
         flex-direction: column;
+    }
+    .right {
+        margin-left: 0;
     }
 
     .modalV-content {
@@ -292,7 +295,7 @@
     }
 
     .fundoVFormulario {
-        height: 8%;
+        height: 10%;
     }
 
     .fundoVC {
@@ -313,12 +316,13 @@
     }
 
     .fundoVFormulario input{
-        padding-left: 1%;
+        width: 97%;
+        height: 78%;
     }
 
     .fundoVFormularioCont textarea {
-        padding-left: 1%;
-        padding-top: 3%;
+        width: 96%;
+        height: 80%;
     }
 
     .boxV {
@@ -340,6 +344,10 @@
 }
 
 @media only screen and (max-width: 370px) {
+    .modalV-body {
+        height: 75%;
+    }
+    
     .tituloV {
         font-size: 18px;
     }
@@ -357,7 +365,7 @@
     }
 
     .fecharViPost {
-        width: 20%;
+        width: 25%;
         font-size: 20px;
     }
     .imagem-post{
@@ -388,9 +396,6 @@
         gap: 5px;
     }
 
-    .imagem-legal{
-    }
-
     .modalV-body {
         gap: 2px;
     }
@@ -413,10 +418,6 @@
     
     .fundoVFormularioCont textarea::placeholder {
         font-size: 30px;
-    }
-
-    .fundoVFormularioCont textarea {
-        padding-top: 2%;
     }
 
     .boxV {
