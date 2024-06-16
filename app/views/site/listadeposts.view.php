@@ -16,7 +16,7 @@ function Filter(string $string){
     <link rel="stylesheet" type="text/css" href="../../../public/css/listadeposts.css" />
     <title>Lista de posts</title>
 </head>
-    
+  
 <body>
 <form hidden method="get" action="/posts" id="formReset"></form>
 
@@ -83,7 +83,9 @@ function Filter(string $string){
             <i class="fa-solid fa-caret-right" style="color: #ffffff;"></i>
         </div>
     </main>
+    <?php require_once "app/views/site/footer.view.php"?>
 </body>
+
 <script src="https://kit.fontawesome.com/c49cc74a49.js" crossorigin="anonymous"></script>
 <script>
 function Redirect(form){
