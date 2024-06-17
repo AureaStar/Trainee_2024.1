@@ -27,11 +27,12 @@ class QueryBuilder
     
     public function editar ($table, $id, $parameters)
     {
-
         $sql = sprintf('UPDATE %s SET %s WHERE %s', $table, 
         implode(',', array_map(function($parameters){
             return $parameters . '=:' . $parameters;
         }, array_keys($parameters))), 'id=:id');
+
+        $parameters["id"] = $id;
 
         try {
             $stmt = $this->pdo->prepare($sql);

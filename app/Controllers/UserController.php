@@ -62,6 +62,9 @@ class UserController
     public function delete()
     {
         $id = $_POST['id'];
+        $user = App::get('database')->selectOne('users', $id)[0];
+        $imagem_rota = "../../htdocs/Trainee_2024.1/public/imagens/" . basename($user->image);
+        unlink($imagem_rota);
         App::get('database')->delete('users' ,$id);
         return redirect('usuarios');
     }
