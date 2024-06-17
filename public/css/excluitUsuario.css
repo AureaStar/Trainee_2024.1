@@ -8,7 +8,7 @@
     transform: translate(-50%, -50%);
     height: 10%;
     width: 65%;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -79,6 +79,7 @@
     border: 3px solid #226c20;
     outline: none;
     transition: background 0.2s;
+    padding-top: 4px;
 }
 
 .simEUser:hover {
@@ -97,6 +98,7 @@
     border: 3px solid red;
     outline: none;
     transition: background 0.2s;
+    padding-top: 4px;
 }
 
 .nãoEUser:hover {
@@ -127,19 +129,21 @@
 
     .modal-bodyEUser {
         width: 100%;
-        height: 18%;
+        height: 40%;
     }
     
     .simEUser {
         height: 100%;
         width: 20%;
-        font-size: 24px;
+        font-size: 21px;
+        padding-top: 4px;
     }
  
     .nãoEUser {
         height: 100%;
         width: 20%;
-        font-size: 24px;
+        font-size: 21px;
+        padding-top: 4px;
     }
 }
 
@@ -175,18 +179,20 @@
 
     .modal-bodyEUser {
         width: 100%;
-        height: 18%;
+        height: 90%;
     }
     
     .simEUser {
         height: 100%;
         width: 20%;
         font-size: 24px;
+        padding-top: 4px;
     }
  
     .nãoEUser {
         height: 100%;
         width: 20%;
         font-size: 24px;
+        padding-top: 4px;
     }
 }
