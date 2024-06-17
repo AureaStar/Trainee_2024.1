@@ -12,7 +12,7 @@ class UserController
     {
         if(App::get('database')->verificaEmail($_POST['email']) == false){
             $temporario = $_FILES['imagem']['tmp_name'];
-            $nomeimagem = $_FILES['imagem']['name'];
+            $nomeimagem = sha1(uniqid($_FILES['imagem']['name'], true)) . '.' . pathinfo($_FILES['imagem']['name'], PATHINFO_EXTENSION);
             $destinoimagem = "../../htdocs/Trainee_2024.1/public/imagens/";
             move_uploaded_file($temporario, $destinoimagem . $nomeimagem);
             $caminhodaimagem = "../../public/imagens/" . $nomeimagem;
@@ -39,7 +39,7 @@ class UserController
         if(App::get('database')->verificaEmail($_POST['email']) == false||$_POST['email']== $user->email){
             if(isset($_FILES['imagem'])){
                 $temporario = $_FILES['imagem']['tmp_name'];
-                $nomeimagem = $_FILES['imagem']['name'];
+                $nomeimagem = sha1(uniqid($_FILES['imagem']['name'], true)) . '.' . pathinfo($_FILES['imagem']['name'], PATHINFO_EXTENSION);
                 $destinoimagem = "../../htdocs/Trainee_2024.1/public/imagens/";
                 move_uploaded_file($temporario, $destinoimagem . $nomeimagem);
                 $caminhodaimagem = "../../public/imagens/" . $nomeimagem;
