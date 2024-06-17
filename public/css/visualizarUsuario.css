@@ -1,6 +1,7 @@
 .imagemUser {
     width: 90%;
     border-radius: 10px;
+    max-width: 280px;
 }
 
 .imagemperfiluser {
@@ -20,7 +21,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #412307;
-    height: 60%;
+    height: 65%;
     width: 70%;
     display: none;
     flex-direction: column;
@@ -59,7 +60,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     width: 100%;
     height: 100%;
     margin: 0%;
