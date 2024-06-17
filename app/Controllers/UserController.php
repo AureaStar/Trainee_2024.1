@@ -10,41 +10,50 @@ class UserController
     
     public function criar()
     {
-        $temporario = $_FILES['imagem']['tmp_name'];
-        $nomeimagem = $_FILES['imagem']['name'];
-        $destinoimagem = "../../htdocs/Trainee_2024.1/public/imagens/";
-        move_uploaded_file($temporario, $destinoimagem . $nomeimagem);
-        $caminhodaimagem = "../../public/imagens/" . $nomeimagem;
+        if(App::get('database')->verificaEmail($_POST['email']) == false){
+            $temporario = $_FILES['imagem']['tmp_name'];
+            $nomeimagem = $_FILES['imagem']['name'];
+            $destinoimagem = "../../htdocs/Trainee_2024.1/public/imagens/";
+            move_uploaded_file($temporario, $destinoimagem . $nomeimagem);
+            $caminhodaimagem = "../../public/imagens/" . $nomeimagem;
 
-        $parameters = [
-            'name' => $_POST['name'],
-            'email' => $_POST['email'],
-            'password' => $_POST['senha'],
-            'image' => $caminhodaimagem
-        ];
-
-        App::get('database')->criar('users', $parameters);
+            $parameters = [
+                'name' => $_POST['name'],
+                'email' => $_POST['email'],
+                'password' => $_POST['senha'],
+                'image' => $caminhodaimagem
+            ];
+            App::get('database')->criar('users', $parameters);
+            header("Location: /usuarios");
+            return 0;
+        }
+        session_start();
+        $_SESSION['erroEmail'] = true;
         header("Location: /usuarios");
     }
     
     public function editar()
     {
-        $temporario = $_FILES['imagem']['tmp_name'];
-        $nomeimagem = $_FILES['imagem']['name'];
-        $destinoimagem = "../../htdocs/Trainee_2024.1/public/imagens/";
-        move_uploaded_file($temporario, $destinoimagem . $nomeimagem);
-        $caminhodaimagem = "../../public/imagens/" . $nomeimagem;
-
-        $parameters = [
-            'name' => $_POST['name'],
-            'email' => $_POST['email'],
-            'password' => $_POST['senha'],
-            'image' => $caminhodaimagem
-        ];
-
         $id = $_POST['id'];
-        App::get('database')->editar('users', $id, $parameters);
-        return redirect('usuarios');
+        if(App::get('database')->verificaEmail($_POST['email']) == false||$_POST['email']==App::get('database')->selectOne('users', $id)[0]->email){
+            $temporario = $_FILES['imagem']['tmp_name'];
+            $nomeimagem = $_FILES['imagem']['name'];
+            $destinoimagem = "../../htdocs/Trainee_2024.1/public/imagens/";
+            move_uploaded_file($temporario, $destinoimagem . $nomeimagem);
+            $caminhodaimagem = "../../public/imagens/" . $nomeimagem;
+
+            $parameters = [
+                'name' => $_POST['name'],
+                'email' => $_POST['email'],
+                'password' => $_POST['senha'],
+                'image' => $caminhodaimagem
+            ];
+            App::get('database')->editar('users', $id, $parameters);
+            return redirect('usuarios');
+        }
+        session_start();
+        $_SESSION['erroEmail'] = true;
+        header("Location: /usuarios");
 
     }
     public function delete()

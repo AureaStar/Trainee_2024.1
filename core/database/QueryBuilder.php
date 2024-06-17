@@ -27,6 +27,7 @@ class QueryBuilder
     
     public function editar ($table, $id, $parameters)
     {
+
         $sql = sprintf('UPDATE %s SET %s WHERE %s', $table, 
         implode(',', array_map(function($parameters){
             return $parameters . '=:' . $parameters;
@@ -71,6 +72,31 @@ class QueryBuilder
 
         } catch (Exception $e) {
             die($e->getMessage());
+        }
+    }
+    public function selectOne($table, $id){
+        $sql = "select * from {$table} where id={$id}";
+    
+        try {
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute();
+    
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+    
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
+    public function verificaEmail(string $email){
+        // $sql = "select count(*) as contE from users WHERE email = :email";
+        $sql = sprintf('SELECT COUNT(*) as contE FROM %s WHERE %s', 'users', 'email = :email');
+        try {
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute(compact('email'));
+            $linha = $stmt->fetch(PDO::FETCH_ASSOC);
+            return ($linha['contE']>0);
+        } catch (Exception $e) {
+            die ($e->getMessage());
         }
     }
 }

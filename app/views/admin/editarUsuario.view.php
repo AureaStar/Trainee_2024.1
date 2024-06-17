@@ -19,10 +19,11 @@
             <h2 class="tituloEditarUser">Editar Usuário</h2>
             <img class="imagemlogoEditarUser" src="../../../public/assets/Logo.png" alt="">
         </div>
-        <form class="modal-bodyEditarUser" action="/usuarios/editar" method="post">
+        <form class="modal-bodyEditarUser" action="/usuarios/editar" method="post" enctype="multipart/form-data">
+            <input value="<?= $user->id ?>" name="id" hidden></input>
             <label for="name" class="nameboxEditarUser">Imagem de Perfil</label>
             <div class="fundoFormularioUsuarioEditarUser">
-                <input type="file" value="<?= $user->image ?>" class="boxEditarUser imagemPerfilInputEditarUser" name="imagem" required>
+                <input type="file" value="<?= $user->image ?>" class="boxEditarUser imagemPerfilInputEditarUser" name="imagem">
             </div>
 
             <div class="algoque">
