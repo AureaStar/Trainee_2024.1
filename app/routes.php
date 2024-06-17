@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Controllers;
-use App\Controllers\AdminController;
+use App\Controllers\AdminPostController;
 use App\Core\Router;
 
-    $router->get('posts', 'AdminController@index');
-    $router->post('posts/create', 'AdminController@create');
+    $router->get('admin/posts', 'AdminPostController@index');
+    $router->post('admin/posts/create', 'AdminPostController@create');
 ?>

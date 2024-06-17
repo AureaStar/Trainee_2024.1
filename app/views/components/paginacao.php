@@ -1,7 +1,7 @@
 <nav style="display:flex; justify-content:center" aria-label="Page navigation example">
     <ul class="pagination">
     <li class="page-item <?= $page <= 1 ? "disabled" : "" ?>">
-        <a class="page-link" href="?pagina=<? $page - 1 ?>" aria-label="Previous">
+        <a class="page-link" href="?pagina=<?= $page - 1 ?>" aria-label="Previous">
         <span class="text-dark" aria-hidden="true">&laquo;</span>
         </a>
     </li>
@@ -11,7 +11,7 @@
     <?php endfor ?>
 
     <li class="page-item <?= $page >= $total_pages ? "disabled" : "" ?>">
-        <a class="page-link" href="?pagina=<? $page + 1 ?>" aria-label="Next">
+        <a class="page-link" href="?pagina=<?= $page + 1 ?>" aria-label="Next">
         <span class="text-dark" aria-hidden="true">&raquo;</span>
         </a>
     </li>
