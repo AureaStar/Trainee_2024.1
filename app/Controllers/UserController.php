@@ -7,7 +7,7 @@ use Exception;
 
 class UserController
 {
-    
+
     public function criar()
     {
         if(App::get('database')->verificaEmail($_POST['email']) == false){
@@ -35,13 +35,17 @@ class UserController
     public function editar()
     {
         $id = $_POST['id'];
-        if(App::get('database')->verificaEmail($_POST['email']) == false||$_POST['email']==App::get('database')->selectOne('users', $id)[0]->email){
-            $temporario = $_FILES['imagem']['tmp_name'];
-            $nomeimagem = $_FILES['imagem']['name'];
-            $destinoimagem = "../../htdocs/Trainee_2024.1/public/imagens/";
-            move_uploaded_file($temporario, $destinoimagem . $nomeimagem);
-            $caminhodaimagem = "../../public/imagens/" . $nomeimagem;
-
+        $user = App::get('database')->selectOne('users', $id)[0];
+        if(App::get('database')->verificaEmail($_POST['email']) == false||$_POST['email']== $user->email){
+            if(isset($_FILES['imagem'])){
+                $temporario = $_FILES['imagem']['tmp_name'];
+                $nomeimagem = $_FILES['imagem']['name'];
+                $destinoimagem = "../../htdocs/Trainee_2024.1/public/imagens/";
+                move_uploaded_file($temporario, $destinoimagem . $nomeimagem);
+                $caminhodaimagem = "../../public/imagens/" . $nomeimagem;
+            } else {
+                $caminhodaimagem = $user->image;
+            }
             $parameters = [
                 'name' => $_POST['name'],
                 'email' => $_POST['email'],
@@ -54,7 +58,6 @@ class UserController
         session_start();
         $_SESSION['erroEmail'] = true;
         header("Location: /usuarios");
-
     }
     public function delete()
     {
