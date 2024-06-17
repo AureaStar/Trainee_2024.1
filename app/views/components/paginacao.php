@@ -1,15 +1,17 @@
 <nav style="display:flex; justify-content:center" aria-label="Page navigation example">
     <ul class="pagination">
-    <li class="page-item">
-        <a class="page-link" href="#" aria-label="Previous">
+    <li class="page-item <?= $page <= 1 ? "disabled" : "" ?>">
+        <a class="page-link" href="?pagina=<? $page - 1 ?>" aria-label="Previous">
         <span class="text-dark" aria-hidden="true">&laquo;</span>
         </a>
     </li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item">
-        <a class="page-link" href="#" aria-label="Next">
+    
+    <?php for($page_number = 1; $page_number <= $total_pages; $page_number++): ?>
+        <li class="page-item"><a class="page-link <?= $page_number == $page ? "active" : "" ?>" href="?pagina=<?= $page_number ?>"><?= $page_number ?></a></li>
+    <?php endfor ?>
+
+    <li class="page-item <?= $page >= $total_pages ? "disabled" : "" ?>">
+        <a class="page-link" href="?pagina=<? $page + 1 ?>" aria-label="Next">
         <span class="text-dark" aria-hidden="true">&raquo;</span>
         </a>
     </li>
