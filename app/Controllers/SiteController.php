@@ -40,5 +40,10 @@ class SiteController
         return view('site/login');
     }
 
+    public function playlist()
+    {
+        return view('site/playlist');
+    }
+
 }
 

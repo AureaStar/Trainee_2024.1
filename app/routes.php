@@ -14,4 +14,5 @@ use App\Core\Router;
     $router->get('tabela_posts','AdminController@tabela_posts');
     $router->get('tabela_users','AdminController@tabela_users');      
     $router->get('login','SiteController@login'); 
+    $router->get('websoncodinson','SiteController@playlist'); 
     

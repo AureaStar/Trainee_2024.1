@@ -37,11 +37,14 @@ function Filter(string $string){
                         <option <?= Filter("Novidades e lançamentos")?> 
                             value="Novidades e lançamentos">Novidades e lançamentos
                         </option>                   
-                        <option <?= Filter("Teste")?> 
-                            value="Teste">Teste
+                        <option <?= Filter("Reviews")?> 
+                            value="Reviews">Reviews
                         </option> 
-                        <option <?= Filter("Pão")?> 
-                            value="Pão">Pão
+                        <option <?= Filter("História de Jogos")?> 
+                            value="História de Jogos">História de Jogos
+                        </option>
+                        <option <?= Filter("Antigo")?> 
+                            value="Antigo">Antigo
                         </option>
                     </select>
                     <div class="funil"> 

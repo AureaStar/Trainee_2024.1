@@ -156,6 +156,7 @@ body{
 .main_content {
     display: flex;
     flex-direction: column;
+    min-height: 35vh;
     width: 100%;
     padding: 20px 0; /* Adicione mais preenchimento para garantir espaço ao redor dos cards */
     margin-bottom: 20px;
