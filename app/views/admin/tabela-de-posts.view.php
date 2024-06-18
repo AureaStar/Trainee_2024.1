@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="pt">
 <html>
     <head>
         <meta charset="utf-8">
@@ -70,14 +69,56 @@
 
         <?php require 'criarPost.php'; ?> 
     </body>
-    <script> 
+    <script>
+        let _id = 1
+        document.getElementById("edit_submit_button").addEventListener("click",async (e) =>{
+            e.preventDefault()
+            const formData = new FormData()
+            alert(document.getElementById("modalEditar").getAttribute("target"))
+            formData.append("title", document.getElementById("edit_modal_title").value)
+            formData.append("id",_id)
+            const response = await fetch('http://localhost:8000/post/update', {
+                method: 'POST',
+                body:formData
+            });
+            console.log("thamires")
+            const data = await response.text()
+            console.log("thamire2")
+            console.log(data)
+        })
     
         document.querySelectorAll('[id^="edit_"]').forEach(element => {
-            element.addEventListener('click',(e) => {
+            element.addEventListener('click', async (e) => {
                 const id = e.target.id.split('_')[1]
+                _id = id
                 const parent = document.getElementById(`parent_${id}`)
-                const itens = parent.querySelectorAll('.tdPostList') 
-                console.log(itens)
+                const modal = document.getElementById("modalEditar")
+                modal.style.display = "flex"
+                modal.setAttribute("target",id)
+
+                
+                const formData = new FormData();
+                formData.append("id", id);
+                const response = await fetch('http://localhost:8000/posts/findOne/?id='+id, {
+                    method: 'GET',
+                });
+                if (!response.ok) {
+                    throw new Error('Erro ao deletar o post');
+                }
+                else {
+                    const data = await response.json();
+                    
+                    document.getElementById("edit_modal_title").value = data[0].title
+                    document.getElementById("edit_modal_context").value = data[0].content
+                    document.getElementById("edit_modal_creation_date").value = data[0].created_at
+                    // const responseGet = await fetch('http://localhost:8000/post/fetch', {
+                    //     method: 'GET',
+                    // });
+                    // const fetchData = await responseGet.json();
+                    // console.log(fetchData)
+                    //window.location.reload(true);
+                }
+                
             })
         })
 

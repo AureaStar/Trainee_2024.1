@@ -13,27 +13,27 @@
 <div id="modalEditar" class="modalM">
 
     <!-- Modal content -->
-    <div class="modal-content">
-        <div class="modal-header">
+    <div class="thmodal-content">
+        <div class="thmodal-header">
             <img class="imagemlogo" src="../../../public/assets/Logo.png" alt="">
             <h2 class="titulo">Editar Post</h2>
             <img class="imagemlogo" src="../../../public/assets/Logo.png" alt="">
 
         </div>
-        <form class="modal-body">
+        <form class="thmodal-body">
 
             <label for="title" class="namebox">Título:</label>
-            <div class="fundoFormulario">
-                <input type="text" class="box" placeholder="Insira o título" name="title">
+            <div class="thfundoFormulario">
+                <input id="edit_modal_title" type="text" class="box" placeholder="Insira o título" name="title">
             </div>
 
             <label for="text" class="namebox">Conteúdo:</label>
-            <div class="fundoFormularioCont">
-                <textarea type="text" class="box" placeholder="Escreva o conteúdo" name="text"></textarea>
+            <div class="thfundoFormularioCont">
+                <textarea id="edit_modal_context" type="text" class="box" placeholder="Escreva o conteúdo" name="text"></textarea>
             </div>
 
             <label for="filter" class="namebox">Categoria:</label>
-            <div class="fundoFormulario">
+            <div class="thfundoFormulario">
                 <select name="categorias" class="box boxselect">                    
                     <option class="nsei" value="1">Categoria 1</option>                   
                     <option class="nsei" value="2">Categoria 2</option> 
@@ -42,17 +42,17 @@
             </div>
 
             <label for="imagem" class="namebox">Imagem:</label>
-            <div class="fundoFormulario">
+            <div class="thfundoFormulario">
                 <input type="file" class="box imagemInput" name="imagem">
             </div>
 
             <label for="data" class="namebox">Data de edição do post:</label>
-            <div class="fundoFormulario">
-                <input type="date" class="box" placeholder="XX/XX/XXXX" name="data">
+            <div class="thfundoFormulario">
+                <input id="edit_modal_creation_date" type="date" class="box" placeholder="XX/XX/XXXX" name="data">
             </div>
 
-            <div class="modal-footer">
-                <button type="submit" class="fechar">Editar</button>
+            <div class="thmodal-footer">
+                <button type="submit" class="fechar" id="edit_submit_button">Editar</button>
                 <button class="cancelar">Cancelar</button>
 
             </div>
