@@ -21,6 +21,8 @@ function easterCounter(){
 function easterEgg(idModal){
     counter++;
     if(counter == 3 && startCounter == 4){
+    counter = 0;
+    startCounter = 0;
     let open = document.getElementById(idModal);
     open.classList.add('verModal');
     let filtro = document.querySelector('.footerfiltro');
