@@ -124,6 +124,35 @@ footer{
     width: 185px;
     height: 41.733px;
 }
+
+iframe{
+    height: 200px;
+}
+
+#websonDiv{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#webson{
+    display: flex;
+    font-family:Almendra;
+    font-size:24px;
+}
+
+.frames{
+    display:grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    column-gap: 1.5%;
+    row-gap: 3%;
+}
+
 #logoCodeFotBox{
     display:flex;
     justify-content: center;
