@@ -19,6 +19,8 @@
         </div>
             <h1>Torre do Sábio</h1>
         </div>
+
+        <div class="teeste">
         <form class="AbaLogin">
             <h1>Bem Vindo(a)!</h1>
                 <div class="EmailSenha">
@@ -35,6 +37,7 @@
                 <button type="submit">Login</button>
             </div>
         </form>
+        </div>
     </div>
 </body>
 </html>
