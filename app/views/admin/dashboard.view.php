@@ -31,7 +31,7 @@
         <div class="d-buttons">
             
             <div class="d-central-buttons">
-                <form method="get" action="tabela_posts">
+                <form method="get" action="/admin/posts">
                     <button type="submit" id="btn-publi">
                         <img src="../../../public/assets/post-icon.png">
                         <div class="central-pub">
@@ -40,7 +40,7 @@
                     </button>
                 </form>
                 
-                <form method="get" action="tabela_users">
+                <form method="get" action="/admin/users">
                     <button type="submit" id="btn-user">
                         <img src="../../../public/assets/users.png">
                         <div class="central-pub">

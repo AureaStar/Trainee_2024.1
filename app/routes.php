@@ -10,9 +10,9 @@ use App\Core\Router;
     $router->get('posts/search','SiteController@search');
     $router->get('posts','SiteController@posts');
     $router->get('post_individual','SiteController@individual_post');
-    $router->get('dashboard','AdminController@dashboard');
-    $router->get('tabela_posts','AdminController@tabela_posts');
-    $router->get('tabela_users','AdminController@tabela_users');      
+    $router->get('admin','AdminController@dashboard');
+    $router->get('admin/posts','AdminController@tabela_posts');
+    $router->get('admin/users','AdminController@tabela_users');      
     $router->get('login','SiteController@login'); 
     
     

@@ -25,7 +25,7 @@
         </div>
         
         <ul>
-            <form method="get" action="dashboard">
+            <form method="get" action="/admin">
             <li class="itens-menu">
                 <button>
                     <span class="icon"><i class="bi bi-card-text"></i></span>
@@ -35,7 +35,7 @@
             </form>
 
             <li class="itens-menu">
-            <form method="get" action="tabela_posts">
+            <form method="get" action="/admin/posts">
                 <button>
                     <span class="icon"><i class="bi bi-pencil-square"></i></span>
                     <span class="link-txt">Publicações</span>
@@ -43,7 +43,7 @@
             </li>
             </form>
 
-            <form method="get" action="tabela_users">
+            <form method="get" action="/admin/users">
                 <li class="itens-menu">
                     <button>
                         <span class="icon"><i class="bi bi-people"></i></span>
@@ -65,7 +65,7 @@
     <div class="modal-logout" id="logout">
         <p>Deseja realmente sair?</p>
         <div>
-            <form method="get" action="login">
+            <form method="get" action="/login">
                 <button type="submit" class="btn-open">Confirmar</button>
             </form>
 
