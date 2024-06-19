@@ -8,14 +8,16 @@ class QueryBuilder
 {
     public function login ($email, $password)
     {
-        $sql = sprintf('SELECT * FROM usuarios WHERE email = %s AND senha = %s', $email, $password);
+        $sql = 'SELECT * FROM users WHERE email = :email AND password = :password';
 
         try {
             $stmt = $this->pdo->prepare($sql);
+            $stmt->bindParam(':email', $email, PDO::PARAM_STR);
+            $stmt->bindParam(':password', $password, PDO::PARAM_STR);
             $stmt->execute();
-            $variavel = $stmt->fetch(PDO::FETCH_CLASS);
+            $variavel = $stmt->fetch(PDO::FETCH_ASSOC);
 
-            return $variavel->id;
+            return $variavel['id'];
 
          } catch (Exception $e) {
              die ($e->getMessage());

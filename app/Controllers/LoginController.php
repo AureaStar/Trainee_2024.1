@@ -7,6 +7,13 @@ use Exception;
 
 class LoginController
 {
+    public function logout()
+    {
+        session_start();
+        unset($_SESSION['id']);
+        session_destroy();
+        return redirect('login');
+    }
     public function login()
     {
         $email = $_POST['email'];

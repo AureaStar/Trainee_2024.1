@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    if(isset($_SESSION['id'])){
+        return redirect('admin');
+    }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
