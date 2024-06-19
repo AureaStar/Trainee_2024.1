@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jomhuria">
@@ -10,19 +11,39 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
-    <link rel="stylesheet" href="../../../public/css/login.css"/>
+    <link rel="stylesheet" href="../../../public/css/login.css" />
+    <link rel="stylesheet" href="/public/css/lista-de-usuarios.css">
+    <link rel="stylesheet" href="../../../public/css/excluitUsuario.css">
+
 </head>
+
 <body>
+    <?php
+    if (isset($_SESSION['erroLogin'])) {
+
+        if ($_SESSION['erroLogin']) {
+            echo '<div class = "modalErro modall">
+                        <div class="modal-headerEUser">
+                            <img class="imagemlogoEUser" src="../../../public/assets/Logo.png" alt="">
+                            <h2 class="tituloEUser">E-mail ou senha incorretos</h2>
+                            <img class="imagemlogoEUser" src="../../../public/assets/Logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="telaErro modall" onclick="fechaModal()"></div>';
+        }
+        $_SESSION['erroEmail'] = false;
+    }
+    ?>
     <div class="ImagemFundo">
         <div class="ImagemJogos">
             <div class="Logo">
-        </div>
+            </div>
             <h1>Torre do Sábio</h1>
         </div>
 
         <div class="teeste">
-        <form class="AbaLogin">
-            <h1>Bem Vindo(a)!</h1>
+            <form class="AbaLogin">
+                <h1>Bem Vindo(a)!</h1>
                 <div class="EmailSenha">
                     <div class="fundoEmailSenha">
                         <span class="material-icons icone">mail</span>
@@ -31,13 +52,14 @@
                     <div class="fundoEmailSenha">
                         <span class="material-icons icone">lock</span>
                         <input class="senha" type="password" placeholder="Senha" name="senha" required>
-                    </div>        
+                    </div>
                 </div>
-            <div class="Botão">
-                <button type="submit">Login</button>
-            </div>
-        </form>
+                <div class="Botão">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
         </div>
     </div>
 </body>
+<script src="/public/js/modal.js"></script>
 </html>
