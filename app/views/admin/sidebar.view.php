@@ -65,7 +65,7 @@
     <div class="modal-logout" id="logout">
         <p>Deseja realmente sair?</p>
         <div>
-            <form method="get" action="/login">
+            <form method="get" action="/logout">
                 <button type="submit" class="btn-open">Confirmar</button>
             </form>
 

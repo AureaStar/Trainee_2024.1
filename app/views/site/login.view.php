@@ -34,7 +34,7 @@
                     </div>
                     <div class="telaErro modall" onclick="fechaModal()"></div>';
         }
-        $_SESSION['erroEmail'] = false;
+        $_SESSION['erroLogin'] = false;
     }
     ?>
     <div class="ImagemFundo">
