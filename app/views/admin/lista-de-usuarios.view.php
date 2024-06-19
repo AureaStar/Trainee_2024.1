@@ -1,3 +1,7 @@
+<?php
+    session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="pt">
 <html>
@@ -12,6 +16,22 @@
     </head>
     
     <body>
+        <?php
+            if(isset($_SESSION['erroEmail'])){
+                
+                if($_SESSION['erroEmail']){
+                    echo '<div class = "modalErro modall">
+                        <div class="modal-headerEUser">
+                            <img class="imagemlogoEUser" src="../../../public/assets/Logo.png" alt="">
+                            <h2 class="tituloEUser">E-mail já cadastrado no sistema</h2>
+                            <img class="imagemlogoEUser" src="../../../public/assets/Logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="telaErro modall" onclick="fechaModal()"></div>';
+                }
+                $_SESSION['erroEmail'] = false;
+            }
+        ?>
         <?php 
             require 'criarUsuario.view.php';
         ?>
@@ -20,11 +40,12 @@
         <?php 
             require 'visualizarUsuario.view.php';
             require 'editarUsuario.view.php';
-            require 'excluirUsuario.view.php';                         //require '../../views/admin/';
+            require 'excluirUsuario.view.php';                         
         ?>
         <?php endforeach; ?>
         
         <?php /*foreach($users as $user): */?>
+        <div class="tela" id="tela" onclick="fechaModal()"></div>
         <main id="mainUserList">
             <div id="titlebackUserList">
                 <div class="titleboxUserList">

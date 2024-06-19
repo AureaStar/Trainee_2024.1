@@ -20,38 +20,52 @@
             <img class="imagemlogoCriarUsuario" src="../../../public/assets/Logo.png" alt="">
 
         </div>
-        <form class="modal-bodyCriarUsuario" action="/usuarios/criar" method="post">
+        <form id="formuCriar" class="modal-bodyCriarUsuario" action="/usuarios/criar" method="post" enctype="multipart/form-data">
 
             <label for="name" class="nameboxCriarUsuario">Imagem de Perfil:</label>
             <div class="fundoFormularioUsuarioCriarUsuario">
                 <input type="file" class="boxCriarUsuario imagemPerfilInputCriarUsuario" name="imagem" required>
             </div>
 
-            <label for="name" class="nameboxCriarUsuario">Nome:</label>
-            <div class="fundoFormularioUsuarioCriarUsuario">
-                <input type="text" class="boxCriarUsuario" placeholder="Insira o seu nome" name="name" required>
+            <div class="algoque ">
+                <label for="name" class="nameboxCriarUsuario">Nome:</label>
+                <span id="span-required-#username" class="span-required">Nome deve ter no mínimo 3 caracteres</span>
+            </div>
+            <div id="required-#username" class="fundoFormularioUsuarioCriarUsuario required">
+                <input id="username" type="text" oninput="nameValidate('#username')" class="boxCriarUsuario" placeholder="Insira o seu nome" name="name" required>
             </div>
 
-            <label for="email" class="nameboxCriarUsuario">Email:</label>
-            <div class="fundoFormularioUsuarioCriarUsuario">
-                <input type="email" class="box" placeholder="Insira seu email" name="email" required>
+            <div class="algoque">
+                <label for="email" class="nameboxCriarUsuario">Email:</label>
+                <span id="span-required-#email" class="span-required">Digite um email válido</span>
+            </div>
+            <div id="required-#email" class="fundoFormularioUsuarioCriarUsuario required">
+                <input id="email" type="email" oninput="emailValidate('#email')" class="boxCriarUsuario" placeholder="Insira seu email" name="email" required>
             </div>
 
-            <label for="senha" class="nameboxCriarUsuario">Senha:</label>
-            <div class="fundoFormularioUsuarioCriarUsuario">
-                <input type="password" class="boxCriarUsuario" placeholder="Insira sua senha" name="senha" required>
+            <div class="algoque">
+                <label for="senha" class="nameboxCriarUsuario">Senha:</label>
+                <span id="span-required-#password" class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
             </div>
-
-            <label for="senha-repeat" class="nameboxCriarUsuario">Confirme sua senha:</label>
-            <div class="fundoFormularioUsuarioCriarUsuario">
-                <input type="password" class="boxCriarUsuario" placeholder="Repita sua senha" name="senha-repeat" required>
+            <div id="required-#password" class="fundoFormularioUsuarioCriarUsuario required">
+                <input id="password" type="password" oninput="senhaValidate('#password')" class="boxCriarUsuario" placeholder="Insira sua senha" name="senha" required>
+            </div>
+            
+            <div class="algoque">
+                <label for="senha-repeat" class="nameboxCriarUsuario">Confirme sua senha:</label>
+                <span id="span-required-#passwordr" class="span-required">As senhas não conferem</span>
+            </div>
+            <div id="required-#passwordr" class="fundoFormularioUsuarioCriarUsuario required">
+                <input id="passwordr" type="password" oninput="senhaRepeatValidate('#password','#passwordr')" class="boxCriarUsuario" placeholder="Repita sua senha" name="senha-repeat" required>
             </div>
 
             <div class="modal-footerCriarUsuario">
-                <button type="submit" class="fecharCriarUsuario">Criar</button>
+                <button type="submit" class="fecharCriarUsuario botaoUser">Criar</button>
                 <button type="button" class="cancelarCriarUsuario" onclick="fechaModal()">Cancelar</button>
             </div>
         </form>
     </div>
-
 </div>
+    <script src="/public/js/validacao.js"></script>
+
+    

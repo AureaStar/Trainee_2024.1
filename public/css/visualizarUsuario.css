@@ -1,3 +1,19 @@
+.imagemUser {
+    width: 90%;
+    border-radius: 10px;
+    max-width: 280px;
+}
+
+.imagemperfiluser {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.direitaVi, .esquerdaVi{
+    width: 50%;
+}
+
 .modalVUser {
     z-index: 5;
     position: absolute;
@@ -5,7 +21,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #412307;
-    height: 55%;
+    height: 65%;
     width: 70%;
     display: none;
     flex-direction: column;
@@ -23,6 +39,7 @@
     align-items: center;
     height: 100%;
     width: 100%;
+    gap: 20px;
 }
 
 .modal-headerVUser {
@@ -41,22 +58,22 @@
 
 .modal-bodyVUser {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     width: 100%;
     height: 100%;
     margin: 0%;
 }
 
-.modal-footerVUser {
+.modal-footerViUser {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 12%;
-    margin-top: 5%;
+    height: 10%;
+    margin-top: 2%;
 }
 
 .imagemlogoVUser {
@@ -87,7 +104,7 @@
     outline: none;
     border-radius: 5px;
     height: 5vh;
-    width: 100%;
+    width: 90%;
 }
 
 .fundoFormularioVUser:hover {
@@ -135,19 +152,53 @@
     align-content: center;
 }
 
+.fecharViUser {
+    background-color: #226c20;
+    height: 100%;
+    width: 15%;
+    border-radius: 5px;
+    padding-top: 3px;
+    color: white;
+    font-family: Jomhuria;
+    font-size: 32px;
+    border: 3px solid #226c20;
+    outline: none;
+    transition: background 0.2s;
+}
+
+.fecharViUser:hover {
+    background-color: rgba(16, 123, 16, 0.51);
+    border: 3px solid #226c20;
+}
+
 @media only screen and (max-width: 600px) {
+    .imagemUser {
+        width: 60%;
+        border-radius: 10px;
+    }
     .modalVUser {
         height: 50%;
         width: 70%;
         border-radius: 15px;
-        padding: 3%;
+        padding: 5%;
     }
 
     .modal-contentVUser {
         gap: 5px;
     }
 
+    .direitaVi, .esquerdaVi{
+        width: 100%;
+    }
+
     .modal-bodyVUser {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: start;
+        width: 100%;
+        height: 100%;
+        margin: 0%;
         gap: 5px;
     }
 
@@ -156,7 +207,8 @@
     }
 
     .fundoFormularioVUser {
-        height: 10%;
+        height: 13%;
+        width: 100%;
     }
 
     .fundoFormularioVUser input::placeholder {
@@ -170,9 +222,26 @@
     .nameboxVUser {
         font-size: 28px;
     }
+
+    .fecharViUser {
+        width: 20%;
+        font-size: 28px;
+    }
 }
 
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 382px) {
+    .imagemUser {
+        width: 60%;
+        border-radius: 10px;
+    }
+
+    .modalVUser {
+        height: 55%;
+        width: 70%;
+        border-radius: 15px;
+        padding: 5%;
+    }
+
     .tituloVUser {
         font-size: 14px;
     }
@@ -180,14 +249,23 @@
     .fundoFormularioVUser {
         height: 12%;
     }
+
+    .fecharViUser {
+        width: 20%;
+        font-size: 20px;
+    }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
+    .imagemUser {
+        width: 90%;
+        border-radius: 10px;
+    }
     .modalVUser {
-        height: 55%;
+        height: 35%;
         width: 70%;
         border-radius: 15px;
-        padding: 3%;
+        padding: 5%;
     }
 
     .modal-contentVUser {

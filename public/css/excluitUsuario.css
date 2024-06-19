@@ -71,7 +71,7 @@
 .simEUser {
     background-color: #226c20;
     height: 100%;
-    width: 14%;
+    width: 15%;
     border-radius: 5px;
     color: white;
     font-family: Jomhuria;
@@ -79,6 +79,7 @@
     border: 3px solid #226c20;
     outline: none;
     transition: background 0.2s;
+    padding-top: 4px;
 }
 
 .simEUser:hover {
@@ -89,7 +90,7 @@
 .nãoEUser {
     background-color: red;
     height: 100%;
-    width: 14%;
+    width: 15%;
     border-radius: 5px;
     color: white;
     font-family: Jomhuria;
@@ -97,6 +98,7 @@
     border: 3px solid red;
     outline: none;
     transition: background 0.2s;
+    padding-top: 4px;
 }
 
 .nãoEUser:hover {
@@ -127,21 +129,21 @@
 
     .modal-bodyEUser {
         width: 100%;
-        height: 18%;
+        height: 40%;
     }
     
     .simEUser {
         height: 100%;
         width: 20%;
-        padding-bottom: 20px;
-        font-size: 24px;
+        font-size: 21px;
+        padding-top: 4px;
     }
  
     .nãoEUser {
         height: 100%;
         width: 20%;
-        padding-bottom: 20px;
-        font-size: 24px;
+        font-size: 21px;
+        padding-top: 4px;
     }
 }
 
@@ -159,7 +161,7 @@
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
     .modalEUser {
-        height: 10%;
+        height: 8%;
         width: 65%;
         border-radius: 15px;
         padding: 3%;
@@ -177,20 +179,20 @@
 
     .modal-bodyEUser {
         width: 100%;
-        height: 18%;
+        height: 90%;
     }
     
     .simEUser {
         height: 100%;
         width: 20%;
-        padding-bottom: 20px;
         font-size: 24px;
+        padding-top: 4px;
     }
  
     .nãoEUser {
         height: 100%;
         width: 20%;
-        padding-bottom: 20px;
         font-size: 24px;
+        padding-top: 4px;
     }
 }
