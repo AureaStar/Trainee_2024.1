@@ -16,8 +16,13 @@ class AdminController
         return view('admin/tabela-de-posts', compact('posts', 'users'));
     }
     public function deleteById(){
-        App::get('database')->deleteFromId("posts",$_POST["id"]);
-        return redirect ('posts'); 
+        $id = $_POST['id'];
+        $posts = App::get('database')->selectOne('posts', $id)[0];
+        $imagem_rota = "../../htdocs/Trainee_2024.1/public/imagens/" . basename($posts->image);
+        unlink($imagem_rota);
+        App::get('database')->deleteFromId('posts' ,$id);
+        return redirect('posts');
+        
     }
     
     public function update(){
