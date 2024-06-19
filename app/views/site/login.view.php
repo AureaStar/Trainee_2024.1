@@ -57,7 +57,8 @@
                     </div>
                     <div class="fundoEmailSenha">
                         <span class="material-icons icone">lock</span>
-                        <input class="senha" type="password" placeholder="Senha" name="password" required>
+                        <input id="loginn" class="senha" type="password" placeholder="Senha" name="password" required>
+                        <span id="olhinho" class="material-icons icone" onclick="mudaolho('loginn', 'olhinho')">visibility</span>
                     </div>        
                 </div>
             <div class="Botão">
@@ -67,4 +68,6 @@
     </div>
 </body>
 <script src="/public/js/modal.js"></script>
+<script src="/public/js/login.js"></script>
+
 </html>

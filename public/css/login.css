@@ -8,6 +8,10 @@ body {
     display: flex;
     align-items: center;
 }
+#olhinho{
+    cursor: pointer;
+    padding-right: 5px;
+}
 .telaErro{
     width:100%;
     height:100%;
