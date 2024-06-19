@@ -14,5 +14,6 @@ use App\Core\Router;
     $router->get('admin/posts','AdminController@tabela_posts');
     $router->get('admin/users','AdminController@tabela_users');      
     $router->get('login','SiteController@login'); 
+    $router->post('logina','LoginController@login');
     
     

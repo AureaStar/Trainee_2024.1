@@ -6,36 +6,21 @@ use PDO, Exception;
 
 class QueryBuilder
 {
-    // public function login ($email, $password)
-    // {
-    //     $sql = sprintf("SELECT * FROM usuarios WHERE email = '$email' AND senha = '$password'");
-    //     $sql_query = $this->pdo->query($sql) or die("Falha na execução do código SQL: " . $this->pdo->error);
-
-    //     try {
-    //         $stmt = $this->pdo->prepare($sql);
-    //         $stmt->execute($email, $password);
-
-    //         return $stmt->fetchAll(PDO::FETCH_CLASS);
-
-    //     } catch (Exception $e) {
-    //         die ($e->getMessage());
-    //     }
-    // }
-
-    public function login ($table, $parameters)
+    public function login ($email, $password)
     {
-        $sql = sprintf("SELECT * FROM usuarios WHERE email = '$table' AND senha = '$parameters'");
-        
+        $sql = sprintf('SELECT * FROM usuarios WHERE email = %s AND senha = %s', $email, $password);
+
         try {
             $stmt = $this->pdo->prepare($sql);
-            $stmt->execute($parameters);
+            $stmt->execute();
+            $variavel = $stmt->fetch(PDO::FETCH_CLASS);
 
-            return $stmt->fetchAll(PDO::FETCH_CLASS);
+            return $variavel->id;
 
-        } catch (Exception $e) {
-            die ($e->getMessage());
-        }
-    }
+         } catch (Exception $e) {
+             die ($e->getMessage());
+         }
+     }
 
     protected $pdo;
 

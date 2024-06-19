@@ -13,6 +13,22 @@
     <link rel="stylesheet" href="../../../public/css/login.css"/>
 </head>
 <body>
+<?php
+    if (isset($_SESSION['erroLogin'])) {
+
+        if ($_SESSION['erroLogin']) {
+            echo '<div class = "modalErro modall">
+                        <div class="modal-headerEUser">
+                            <img class="imagemlogoEUser" src="../../../public/assets/Logo.png" alt="">
+                            <h2 class="tituloEUser">E-mail ou senha incorretos</h2>
+                            <img class="imagemlogoEUser" src="../../../public/assets/Logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="telaErro modall" onclick="fechaModal()"></div>';
+        }
+        $_SESSION['erroEmail'] = false;
+    }
+    ?>
     <div class="ImagemFundo">
         <div class="ImagemJogos">
             <div class="Logo">
@@ -24,7 +40,7 @@
                 <button type="submit" class="material-icons icone2">home <a>Início</a></button>
             </form>
         </div>
-        <form class="AbaLogin">
+        <form class="AbaLogin" method="post" action="logina">
             <h1>Bem Vindo(a)!</h1>
                 <div class="EmailSenha">
                     <div class="fundoEmailSenha">
@@ -33,7 +49,7 @@
                     </div>
                     <div class="fundoEmailSenha">
                         <span class="material-icons icone">lock</span>
-                        <input class="senha" type="password" placeholder="Senha" name="senha" required>
+                        <input class="senha" type="password" placeholder="Senha" name="password" required>
                     </div>        
                 </div>
             <div class="Botão">
