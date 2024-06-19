@@ -36,6 +36,7 @@
         ?>
         <?php 
             require 'criarUsuario.view.php';
+            require 'sidebar.view.php';
         ?>
         
         <?php foreach($users as $user): ?>

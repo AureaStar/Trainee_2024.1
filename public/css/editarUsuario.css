@@ -173,18 +173,18 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .modalEditarUsuer {
-        height: 10vh;
+    .modalEditarUser {
+        height: 65%;
         width: 70%;
         border-radius: 15px;
         padding: 5%;
     }
     
-    .modal-contentEditarUsuer {
+    .modal-contentEditarUser {
         gap: 5px;
     }
 
-    .modal-bodyEditarUsuer {
+    .modal-bodyEditarUser {
         gap: 5px;
     }
 
@@ -286,6 +286,99 @@
     }
 }
 
+@media only screen and (max-height: 1369px) {
+    .modalEditarUser {
+        height: 37%;
+        width: 70%;
+        border-radius: 15px;
+        padding: 5%;
+    }
+
+    .fundoFormularioUsuarioEditarUser {
+        background-color: #E6A549;
+        border: #E6A549 solid 3px;
+        outline: none;
+        border-radius: 5px;
+        height: 3vh;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-height: 1200px) {
+    .modalEditarUser {
+        height: 46%;
+        width: 70%;
+        border-radius: 15px;
+        padding: 5%;
+    }
+
+    .fundoFormularioUsuarioEditarUser {
+        background-color: #E6A549;
+        border: #E6A549 solid 3px;
+        outline: none;
+        border-radius: 5px;
+        height: 3vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-height: 918px) {
+    .modalEditarUser {
+        height: 50%;
+        width: 70%;
+        border-radius: 15px;
+        padding: 5%;
+    }
+}
+
+@media only screen and (max-height: 845px) {
+    .modalEditarUser {
+        height: 60%;
+        width: 70%;
+        border-radius: 15px;
+        padding: 5%;
+    }
+}
+
+@media only screen and (min-width: 1023px) {
+    .modalEditarUser {
+        height: 60%;
+        width: 70%;
+        border-radius: 15px;
+        padding: 5% 3%;
+    }
+
+    .fundoFormularioUsuarioEditarUser {
+        background-color: #E6A549;
+        border: #E6A549 solid 3px;
+        outline: none;
+        border-radius: 5px;
+        height: 4.7vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-height: 601px) {
+    .modalEditarUser {
+        height: 60%;
+        width: 70%;
+        border-radius: 15px;
+        padding: 5%;
+    }
+
+    .fundoFormularioUsuarioEditarUser {
+        background-color: #E6A549;
+        border: #E6A549 solid 3px;
+        outline: none;
+        border-radius: 5px;
+        height: 4vh;
+        width: 100%;
+    }
+}
 @media only screen and (max-width: 350px) {
     .imagemPerfilInputEditarUser::before {
         content: '';
