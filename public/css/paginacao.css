@@ -1,0 +1,50 @@
+.disabled{
+    background-color:#4d4d4d;
+}
+.disabled i{
+    color:rgb(156, 155, 155);
+}
+
+.page-item a{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color:#a3521fc2;
+}
+.pagination{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:10px;
+}
+.pagination li{
+    width:35px;
+    height:35px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+.page-numbers{
+    font-family: "Open Sans";
+    font-size:20px;
+    color:rgb(156, 155, 155);
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.bi-caret-left-fill{
+    color:white;
+    font-size: 20px;
+}
+.bi-caret-right-fill{
+    color:white;
+    font-size: 20px;
+}
+
+.active{
+    color:white;
+}

@@ -71,7 +71,7 @@
 
         <?php require 'criarPost.php'; ?> 
 
-        <?php require(__DIR__ . '/../components/paginacao.php') ?>
+        <div class = "posicionaPagtabelaPost"><?php require(__DIR__ . '/../components/paginacao.php') ?></div>
     </body>
     <script src="/public/js/modal.js"></script>
 </html>
