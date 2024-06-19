@@ -55,7 +55,6 @@ main{
     border-radius: 10px;
 }
 div#tabcontainerPostList{
-    z-index: 2;
     display:flex;
     justify-content:center;
     align-items: center;
@@ -259,7 +258,7 @@ button{
 
 @media screen and (min-width:321px) and (max-width:430px){
     .titleboxPostList{
-        width:8.2em;
+        width:10.4em;
         height:70px;
         gap:16px;
     }
@@ -361,6 +360,11 @@ button{
 }
 
 @media screen and (min-width:431px) and (max-width:600px){
+    .titleboxPostList{
+        width:17em;
+        height:70px;
+        gap:14px;
+    }
     #titlebackPostList{
         height:3em;
     }
@@ -377,14 +381,9 @@ button{
         display:none;
     }
     .titleboxPostList{
-        gap:20px;
-        width:11em;
+        gap:44px;
+        width:13.8em;
     }
-
-    .tabscroll{
-        width: 20em;
-    }
-
     .titlePostList{
         font-size:20px;
     }
@@ -445,7 +444,7 @@ button{
 
 @media screen and (min-width:601px) and (max-width:650px){
     .titleboxPostList{
-        width:15em;
+        width:19em;
         height:86px;
         gap:10px;
     }
@@ -464,7 +463,7 @@ button{
         font-size:24px;
     }
     div#tabcontainerPostList{
-        width:28em;
+        width:32.5em;
         overflow-x:auto;
     }
     main{
@@ -519,7 +518,7 @@ button{
 }
 @media screen and (min-width:651px) and (max-width:700px){
     .titleboxPostList{
-        width:16em;
+        width:20em;
         height:86px;
         gap:14px;
     }
@@ -585,9 +584,9 @@ button{
         align-content: center;
     }
 }
-@media screen and (min-width:701px) and (max-width:890px){
+@media screen and (min-width:701px) and (max-width:832px){
     .titleboxPostList{
-        width:18em;
+        width:22em;
         height:86px;
         gap:14px;
     }
@@ -652,7 +651,7 @@ button{
         align-content: center;
     }
 }
-@media screen and (min-width:891px) and (max-width:1000px){
+@media screen and (min-width:833px) and (max-width:930px){
     .titleboxPostList{
         width:24em;
         height:86px;
@@ -671,7 +670,7 @@ button{
         font-size:34px;
     }
     div#tabcontainerPostList{
-        width:48em;
+        width:50em;
         overflow-x:auto;
     }
     button{

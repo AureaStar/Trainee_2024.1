@@ -2,16 +2,11 @@
 *{
     padding: 0;
     margin: 0;
-    z-index: 5;
 }
 
 /* Sidebar */
 
 /* Estrutura */
-button {
-    background-color: transparent;
-}
-
 .sidebar{
     background-color: #412307;
     background-image: url(/public/assets/fundo-sidebar.jpg);
@@ -26,26 +21,9 @@ button {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 5;
 }
 .sidebar:hover{
     width: 20%;
-    z-index: 5;
-}
-
-button{
-    color: #FFF4F0;
-    text-decoration:none;
-    background: transparent;
-    color: inherit;
-    border-radius:10px;
-    padding: 0;
-    font: inherit;
-    cursor: pointer;
-    font-size:18px;
-    width:130px;
-    outline: none;
-    border-color: transparent;
 }
 
 /* Itens */
@@ -64,8 +42,7 @@ ul .itens-menu:hover{
     border: 0px solid #429741;
     border-radius: 15px;
 }
-ul .itens-menu button{
-    width: 100%;
+ul .itens-menu a{
     line-height: 20px;
     text-decoration: none;
     font-size: 30px;
@@ -75,13 +52,13 @@ ul .itens-menu button{
     display: flex;
     padding: 15px 5%;
 }
-ul .itens-menu button .link-txt{
+ul .itens-menu a .link-txt{
     display: flex;
     padding-top: 4px;
     font-size: 34px;
     margin-left: 40px;
 }
-ul .itens-menu button .icon{
+ul .itens-menu a .icon{
     font-size: 20px;
 }
 ul .itens-menu-login{
@@ -92,8 +69,7 @@ ul .itens-menu-login:hover{
     border: 0px solid rgb(124, 5, 5);
     border-radius: 15px;
 }
-ul .itens-menu-login button{
-    width: 100%;
+ul .itens-menu-login a{
     line-height: 20px;
     text-decoration: none;
     font-size: 30px;
@@ -103,13 +79,13 @@ ul .itens-menu-login button{
     display: flex;
     padding: 15px 5%;
 }
-ul .itens-menu-login button .link-txt{
+ul .itens-menu-login a .link-txt{
     display: flex;
     padding-top: 4px;
     font-size: 34px;
     margin-left: 40px;
 }
-ul .itens-menu-login button .icon{
+ul .itens-menu-login a .icon{
     font-size: 20px;
 }
 
@@ -133,7 +109,7 @@ ul .itens-menu-login button .icon{
     top: 35%;
     left: 42%;
     box-shadow: rgb(0, 0, 0) 2px 2px 4px 4px;
-    z-index: 11;
+    z-index: 4;
 }
 .modal-logout p{
     margin-top: 20%;
@@ -183,26 +159,26 @@ ul .itens-menu-login button .icon{
     }
 
     /* Itens */
-    ul .itens-menu button{
+    ul .itens-menu a{
         padding-left: 4px;
         line-height: 10px;
     }
-    ul .itens-menu button .link-txt{
+    ul .itens-menu a .link-txt{
         padding-top: 7px;
         margin-left: 25px;
     }
-    ul .itens-menu button .icon{
+    ul .itens-menu a .icon{
         font-size: 18px;
     }
-    ul .itens-menu-login button{
+    ul .itens-menu-login a{
         padding-left: 4px;
         line-height: 10px;
     }
-    ul .itens-menu-login button .link-txt{
+    ul .itens-menu-login a .link-txt{
         padding-top: 7px;
         margin-left: 25px;
     }
-    ul .itens-menu-login button .icon{
+    ul .itens-menu-login a .icon{
         font-size: 18px;
     }
 
@@ -229,30 +205,30 @@ ul .itens-menu-login button .icon{
     }
 
     /* Itens */
-    ul .itens-menu button{
+    ul .itens-menu a{
         padding-left: 4px;
         line-height: 10px;
     }
-    ul .itens-menu button .link-txt{
+    ul .itens-menu a .link-txt{
         display: flex;
         padding-top: 15px;
         font-size: 48px;
         margin-left: 30px;
     }
-    ul .itens-menu button .icon{
+    ul .itens-menu a .icon{
         font-size: 28px;
     }
-    ul .itens-menu-login button{
+    ul .itens-menu-login a{
         padding-left: 4px;
         line-height: 10px;
     }
-    ul .itens-menu-login button .link-txt{
+    ul .itens-menu-login a .link-txt{
         display: flex;
         padding-top: 15px;
         font-size: 48px;
         margin-left: 30px;
     }
-    ul .itens-menu-login button .icon{
+    ul .itens-menu-login a .icon{
         font-size: 28px;
     }
     
@@ -288,28 +264,28 @@ ul .itens-menu-login button .icon{
     }
 
     /* Itens */
-    ul .itens-menu button{
+    ul .itens-menu a{
         padding-left: 4px;
         line-height: 10px;
     }
-    ul .itens-menu button .link-txt{
+    ul .itens-menu a .link-txt{
         padding-top: 20px;
         font-size: 56px;
         margin-left: 30px;
     }
-    ul .itens-menu button .icon{
+    ul .itens-menu a .icon{
         font-size: 36px;
     }
-    ul .itens-menu-login button{
+    ul .itens-menu-login a{
         padding-left: 4px;
         line-height: 10px;
     }
-    ul .itens-menu-login button .link-txt{
+    ul .itens-menu-login a .link-txt{
         padding-top: 20px;
         font-size: 56px;
         margin-left: 30px;
     }
-    ul .itens-menu-login button .icon{
+    ul .itens-menu-login a .icon{
         font-size: 36px;
     }
 

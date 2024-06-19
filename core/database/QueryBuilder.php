@@ -6,24 +6,6 @@ use PDO, Exception;
 
 class QueryBuilder
 {
-    public function login ($email, $password)
-    {
-        $sql = 'SELECT * FROM users WHERE email = :email AND password = :password';
-
-        try {
-            $stmt = $this->pdo->prepare($sql);
-            $stmt->bindParam(':email', $email, PDO::PARAM_STR);
-            $stmt->bindParam(':password', $password, PDO::PARAM_STR);
-            $stmt->execute();
-            $variavel = $stmt->fetch(PDO::FETCH_ASSOC);
-
-            return $variavel['id'];
-
-         } catch (Exception $e) {
-             die ($e->getMessage());
-         }
-     }
-
     public function criar ($table, $parameters)
     {
         $sql = sprintf('INSERT INTO %s (%s) VALUES (%s)', $table,
@@ -88,6 +70,19 @@ class QueryBuilder
 
             return $stmt->fetchAll(PDO::FETCH_CLASS);
 
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
+    public function selectOne($table, $id){
+        $sql = "select * from {$table} where id={$id}";
+    
+        try {
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute();
+    
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+    
         } catch (Exception $e) {
             die($e->getMessage());
         }

@@ -1,48 +1,12 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 0px;
 }
 
 body{
     width: 100vw;
     height: 100vh;
-}
-
-form{
-    display:contents;
-}
-
-.IndexButton{
-    display: flex;
-    margin-top: 1%;
-    /* margin-right: 90%; */
-    width: fit-content;
-    height: fit-content;
-}
-
-.IndexButton button a{
-    margin-top: 10%;
-    color: white;
-    font-family: "Jomhuria", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 52px;
-}
-
-.IndexButton button{
-    gap: 4%;
-    display: flex;
-    flex-direction: row;
-    color: white;
-    filter: drop-shadow(2px 2px 6px black);
-    font-size: 56px;
-    border: none;
-    background-color: transparent;
-}
-
-.IndexButton button:hover{
-    cursor: pointer;
-    filter: drop-shadow(0px 0px 6px #E6A549);
 }
 
 #btn-logout-mobile{

@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 0px;
     box-sizing: border-box;
 }
 
@@ -19,14 +20,6 @@
     flex-direction: column;
 }
 
-form{
-    display: contents;
-}
-
-form:hover{
-    cursor: pointer;
-}
-
 .background-img{
     display:flex;
     align-items: center;
@@ -39,7 +32,6 @@ form:hover{
 }
 
 .img-torre{
-    margin-top: 10%;
     width: 800px;
     height: 192px;
     align-self: center;
@@ -169,7 +161,7 @@ form:hover{
 }
 
 .post-space h1{
-    padding-top: 5%;
+    padding-top: 2%;
     padding-bottom: 32px;
     font-family: "Almendra", serif;
     font-weight: 700;
@@ -295,7 +287,7 @@ form:hover{
 }
 
 .btn-post{
-    padding-top: 3%;
+    padding-top: 5%;
     width: 100%;
 }
 
@@ -449,11 +441,7 @@ form:hover{
     .transparent p{
         font-size: 32px;
     }
-
-    .form_landing{
-        width: 100vw;
-    }
-
+    
     .btn-hero{
         width: 45%;
     }
