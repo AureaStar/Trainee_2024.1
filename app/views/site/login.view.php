@@ -15,22 +15,6 @@
 </head>
 
 <body>
-    <?php
-    if (isset($_SESSION['erroLogin'])) {
-
-        if ($_SESSION['erroLogin']) {
-            echo '<div class = "modalErro modall">
-                        <div class="modal-headerEUser">
-                            <img class="imagemlogoEUser" src="../../../public/assets/Logo.png" alt="">
-                            <h2 class="tituloEUser">E-mail ou senha incorretos</h2>
-                            <img class="imagemlogoEUser" src="../../../public/assets/Logo.png" alt="">
-                        </div>
-                    </div>
-                    <div class="telaErro modall" onclick="fechaModal()"></div>';
-        }
-        $_SESSION['erroEmail'] = false;
-    }
-    ?>
     <div class="ImagemFundo">
         <div class="ImagemJogos">
             <div class="Logo">
