@@ -12,6 +12,8 @@
     </head>
     
     <body>
+        <?php require_once "app/views/admin/sidebar.view.php"?>
+        
         <main id="mainPostList">
             <div id="titlebackPostList">
                 <div class="titleboxPostList">

@@ -4,11 +4,16 @@
     list-style: none;
 }
 
+footer{
+    z-index: 3;
+}
+
 .footerfiltro{
     width:100%;
-    height:100%;
+    height: 100%;
+    top: 0%;
     background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
+    position: fixed;
     display:none;
     z-index: 2;
 }
@@ -16,13 +21,13 @@
     width:85%;
     margin:inherit;
     height:fit-content;
-    position:absolute;
+    position: fixed;
+    top: 40%;
+    left: 50%;
     display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 14px;
     background: linear-gradient(180deg, #52331D 0%, #744321 100%);
@@ -30,7 +35,7 @@
     gap:48px;
     padding-top: 2%;
     padding-bottom: 2%;
-    z-index: 3;
+    z-index: 99;
 }
 .tboxmodalfotValor{
     display:flex;
@@ -119,6 +124,35 @@ footer{
     width: 185px;
     height: 41.733px;
 }
+
+iframe{
+    height: 200px;
+}
+
+#websonDiv{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#webson{
+    display: flex;
+    font-family:Almendra;
+    font-size:24px;
+}
+
+.frames{
+    display:grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    column-gap: 1.5%;
+    row-gap: 3%;
+}
+
 #logoCodeFotBox{
     display:flex;
     justify-content: center;
@@ -269,7 +303,7 @@ footer{
         font-family: "Open Sans";
         font-size:12px;
         color: #FFF4F0;
-        height: 226px;
+        height: 238px;
         background: linear-gradient(90deg, #412307 0%, #A75A12 100%);
     }
     .footer-Container{
@@ -325,7 +359,7 @@ footer{
         flex-direction:row;
     }
 }
-@media (min-width: 354px) and (max-width: 433px){
+@media (min-width: 330px) and (max-width: 433px){
     .textmodalfotValor{
         font-size:16px;
     }
@@ -333,7 +367,7 @@ footer{
         font-family: "Open Sans";
         font-size:13px;
         color: #FFF4F0;
-        height: 226px;
+        height: 236px;
         background: linear-gradient(90deg, #412307 0%, #A75A12 100%);
     }
     .footer-Container{
@@ -396,7 +430,7 @@ footer{
     footer{
         font-family: "Open Sans";
         color: #FFF4F0;
-        height: 226px;
+        height: 236px;
         background: linear-gradient(90deg, #412307 0%, #A75A12 100%);
     }
     .footer-Container{
@@ -465,7 +499,7 @@ footer{
     footer{
         font-family: "Open Sans";
         color: #FFF4F0;
-        height: 226px;
+        height: 234px;
         background: linear-gradient(90deg, #412307 0%, #A75A12 100%);
     }
     .footer-Container{

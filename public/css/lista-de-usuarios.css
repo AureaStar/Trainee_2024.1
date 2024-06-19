@@ -94,6 +94,7 @@ div#tabcontainerUserList{
     align-items: center;
     width:55em;
     filter:drop-shadow(rgba(0, 0, 0, 0.80) 10px 10px 8px);
+    z-index: 1;
 }
 #tableUserList{
     background: rgba(65, 35, 7, 0.80);
@@ -124,7 +125,7 @@ div#tabcontainerUserList{
     gap:1px;
 }
 
-button{
+.btn-table{
     color: #FFF4F0;
     text-decoration:none;
     background: black;
@@ -142,7 +143,7 @@ button{
     border: 2.5px solid #42974100;
 }
 
-.criarUserList{
+#criarUserList{
     display:flex;
     justify-content:center;
     align-items:center;
@@ -159,38 +160,38 @@ button{
 }
 
 
-.criarUserList:hover {
+#criarUserList:hover {
     background-color: #429741a2;
     border: 2.5px solid #429741;
 }
-.viewUserList{
+#viewUserList{
     background:rgba(67, 151, 65, 0.65);
     border-radius: 10px;
     transition: background 0.2s;
 }
-.viewUserList i,.editUserList i,.delUserList i{
+#viewUserList i,#editUserList i,#delUserList i{
     padding-right:5%;
 }
 
-.viewUserList:hover {
+#viewUserList:hover {
     background-color: #429741a2;
     border: 2.5px solid #429741;
 }
-.editUserList{
+#editUserList{
     background:rgba(67, 151, 65, 0.65);
     transition: background 0.2s;
 }
-.editUserList:hover {
+#editUserList:hover {
     background-color: #429741a2;
     border: 2.5px solid #429741;
 }
-.delUserList{
+#delUserList{
     background:rgb(131, 20, 20);
     transition: background 0.2s;
 }
 
 
-.delUserList:hover {
+#delUserList:hover {
     background-color:rgb(131, 20, 20);
     border: 2.5px solid rgb(182, 21, 21);
 }
@@ -208,7 +209,7 @@ button{
         height:32px;
         width:38,74px;
     }
-    .criarUserList{
+    #criarUserList{
         width: 50px;
         height: 30px;
         font-size:26px;
@@ -226,7 +227,7 @@ button{
         justify-content:center;
         align-content: center;
     }
-    button{
+    .btn-table{
         height:20px;
         width:60px;
         font-size:12px;
@@ -252,7 +253,7 @@ button{
     #titlebackUserList{
         height:6em;
     }
-    button{
+    .btn-table{
         color: #FFF4F0;
         text-decoration:none;
         background: black;
@@ -265,12 +266,12 @@ button{
         width:40px;
         height:30px;
     }
-    .viewUserList{
+    #viewUserList{
         font-size:16px;
         width:40px;
     }
     
-    .criarUserList{
+    #criarUserList{
         display:flex;
         justify-content:center;
         align-items:center;
@@ -311,7 +312,7 @@ button{
         height:32px;
         width:38,74px;
     }
-    .criarUserList{
+    #criarUserList{
         width: 50px;
         height: 30px;
         font-size:26px;
@@ -329,7 +330,7 @@ button{
         justify-content:center;
         align-content: center;
     }
-    button{
+    .btn-table{
         height:20px;
         width:60px;
         font-size:12px;
@@ -355,7 +356,7 @@ button{
     #titlebackUserList{
         height:6em;
     }
-    button{
+    .btn-table{
         color: #FFF4F0;
         text-decoration:none;
         background: black;
@@ -368,12 +369,12 @@ button{
         width:40px;
         height:30px;
     }
-    .viewUserList{
+    #viewUserList{
         font-size:16px;
         width:40px;
     }
     
-    .criarUserList{
+    #criarUserList{
         display:flex;
         justify-content:center;
         align-items:center;
@@ -430,7 +431,7 @@ button{
         font-size:20px;
     }
     div#tabcontainerUserList{
-        width:23em;
+        width:20em;
         overflow-x:auto;
     }
     main{
@@ -439,7 +440,7 @@ button{
     #titlebackUserList{
         height:6em;
     }
-    button{
+    .btn-table{
         color: #FFF4F0;
         text-decoration:none;
         background: black;
@@ -451,12 +452,12 @@ button{
         font-size:16px;
         width:40px;
     }
-    .viewUserList{
+    #viewUserList{
         font-size:16px;
         width:40px;
     }
     
-    .criarUserList{
+    #criarUserList{
         display:flex;
         justify-content:center;
         align-items:center;
@@ -505,7 +506,7 @@ button{
         font-size:24px;
     }
     div#tabcontainerUserList{
-        width:32.5em;
+        width:31em;
         overflow-x:auto;
     }
     main{
@@ -514,7 +515,7 @@ button{
     #titlebackUserList{
         height:6.5em;
     }
-    button{
+    .btn-table{
         color: #FFF4F0;
         text-decoration:none;
         background: black;
@@ -526,12 +527,12 @@ button{
         font-size:16px;
         width:40px;
     }
-    .viewUserList{
+    #viewUserList{
         font-size:16px;
         width:40px;
     }
     
-    .criarUserList{
+    #criarUserList{
         display:flex;
         justify-content:center;
         align-items:center;
@@ -588,7 +589,8 @@ button{
     #titlebackUserList{
         height:6.5em;
     }
-    button{
+
+    .btn-table{
         color: #FFF4F0;
         text-decoration:none;
         background: black;
@@ -600,12 +602,13 @@ button{
         font-size:16px;
         width:40px;
     }
-    .viewUserList{
+
+    #viewUserList{
         font-size:16px;
         width:40px;
     }
     
-    .criarUserList{
+    #criarUserList{
         display:flex;
         justify-content:center;
         align-items:center;
@@ -626,7 +629,7 @@ button{
         align-content: center;
     }
 }
-@media screen and (min-width:701px) and (max-width:832px){ /* Tablet */
+@media screen and (min-width:701px) and (max-width:889px){ /* Tablet */
     .titleboxUserList{
         width:22em;
         height:86px;
@@ -651,7 +654,7 @@ button{
     .buttextUserList{
         display:none;
     }
-    button{
+    .btn-table{
         color: #FFF4F0;
         text-decoration:none;
         background: black;
@@ -663,7 +666,7 @@ button{
         font-size:16px;
         width:38px;
     }
-    .viewUserList{
+    #viewUserList{
         font-size:16px;
         width:38px;
     }
@@ -672,7 +675,7 @@ button{
         align-items: center;
         width:153px;
     }
-    .criarUserList{
+    #criarUserList{
         display:flex;
         justify-content:center;
         align-items:center;
@@ -693,7 +696,7 @@ button{
         align-content: center;
     }
 }
-@media screen and (min-width:833px) and (max-width:930px){
+@media screen and (min-width:890px) and (max-width:1025px){
     .titleboxUserList{
         width:24em;
         height:86px;
@@ -712,19 +715,19 @@ button{
         font-size:34px;
     }
     div#tabcontainerUserList{
-        width:50em;
+        width:48em;
         overflow-x:auto;
     }
-    button{
+    .btn-table{
         font-size:14px;
         width:78px;
     }
-    .viewUserList{
+    #viewUserList{
         font-size:14px;
         width:78px;
     }
     
-    .criarUserList{
+    #criarUserList{
         display:flex;
         justify-content:center;
         align-items:center;
