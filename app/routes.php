@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controllers;
-use App\Controllers;
+use App\Controllers\ExampleController;
 use App\Core\Router;
 
 
@@ -12,16 +12,10 @@ use App\Core\Router;
     $router->get('post_individual','SiteController@individual_post');
     $router->get('admin','AdminController@dashboard');
     $router->get('admin/posts','AdminController@tabela_posts');
-    $router->get('admin/users','AdminController@tabela_users');      
     $router->get('login','SiteController@login'); 
     $router->post('logina','LoginController@login');
     $router->get('logout','LoginController@logout');
-<<<<<<< HEAD
-    $router->get('usuarios','UserController@index');
+    $router->get('admin/users','UserController@index');
     $router->post('usuarios/delete','UserController@delete');
     $router->post('usuarios/editar','UserController@editar');
     $router->post('usuarios/criar','UserController@criar');
-=======
-    
-    
->>>>>>> main

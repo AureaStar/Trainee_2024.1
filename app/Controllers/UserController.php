@@ -23,12 +23,12 @@ class UserController
                 'image' => $caminhodaimagem
             ];
             App::get('database')->criar('users', $parameters);
-            header("Location: /usuarios");
+            header("Location: /admin/users");
             return 0;
         }
         session_start();
         $_SESSION['erroEmail'] = true;
-        header("Location: /usuarios");
+        header("Location: /admin/users");
     }
     
     public function editar()
@@ -54,11 +54,11 @@ class UserController
                 'image' => $caminhodaimagem
             ];
             App::get('database')->editar('users', $id, $parameters);
-            return redirect('usuarios');
+            return redirect('admin/users');
         }
         session_start();
         $_SESSION['erroEmail'] = true;
-        header("Location: /usuarios");
+        header("Location: /admin/users");
     }
     public function delete()
     {
@@ -67,7 +67,7 @@ class UserController
         $imagem_rota = "../../htdocs/Trainee_2024.1/public/imagens/" . basename($user->image);
         unlink($imagem_rota);
         App::get('database')->delete('users' ,$id);
-        return redirect('usuarios');
+        return redirect('admin/users');
     }
     public function index()
     {
