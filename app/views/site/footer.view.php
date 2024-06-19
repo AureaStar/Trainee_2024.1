@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jomhuria">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     </head>
-        <div class="footerfiltro" onclick="fotfechaModal('modalMissaofotValor'); fotfechaModal('modalVisaofotValor'); fotfechaModal('modalValoresfotValor')"></div>
+        <div class="footerfiltro" onclick="fotfechaModal('modalMissaofotValor'); fotfechaModal('modalVisaofotValor'); fotfechaModal('modalValoresfotValor'); fotfechaModal('modalWebson')"></div>
         <div id="modalMissaofotValor" class="modalfotValor">
             <div class="tboxmodalfotValor">
                 <h1><b class ="negrito">Nossa Missão</b></h1>
@@ -32,6 +32,7 @@
                 Buscamos nos tornar a principal referência online para entusiastas de jogos de tabuleiro, oferecendo uma variedade de conteúdos inovadores e relevantes. Com objetivo de expandir nossa influência, conectando jogadores de todas as idades e níveis de experiência, e promover o crescimento contínuo do hobby em todo o mundo. 
             </div>
         </div>
+
         <div id="modalValoresfotValor" class="modalfotValor">
             <div class="tboxmodalfotValor">
                 <h1><b class ="negrito">Nossos Valores</b></h1>
@@ -46,10 +47,27 @@
                 <p><b class ="negrito">Comunidade:</b> Promoção do respeito, diversidade e colaboração.</p>
             </div>
         </div>
+
+        <!-- Easter Egg -->
+        <div id="modalWebson" class="modalfotValor">
+            <div class="clseboxmodalfotValor">
+                <button onclick="fotfechaModal('modalWebson')"><i class="bi bi-x-lg"></i></button>
+            </div>
+            <div id="websonDiv">
+                <p id="webson"><b class ="negrito">Webson Codinson's Home S2</b></p>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3HvgaZeBWbr7UjFeicPFRI?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1Ozhs9MxkAA9bEIpNiHglK?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/214Yh2tB6ygu4HBPmx1Sdn?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+
+
         <footer>
             <div class="footer-Container">
                 <div id="logoCodeFotBox">
-                    <img id="logoCodeFooter" src="/public/assets/code-logo.png">
+                    <form onclick="easterEgg('modalWebson')">
+                        <img id="logoCodeFooter" src="/public/assets/code-logo.png">
+                    </form>
                     <div id = "fotlogoIconBox">
                         <button class="footerSocialButtons"><i class="bi bi-whatsapp"></i></button>
                         <button class="footerSocialButtons"><i class="bi bi-instagram"></i></button>
@@ -68,17 +86,19 @@
                     </div>
                     <div class="fotContacts">
                         <p class="fotContactsText">Fale conosco:</p>
-                        <p class="fotContactsText"><b class = "negrito">e-mail:</b> torre.do.sabio@gmail.com</p>
+                        <form onclick="easterCounter()">
+                            <p class="fotContactsText"><b class = "negrito">e-mail:</b> torre.do.sabio@gmail.com</p>
+                        </form>
                         <p class="fotContactsText"><b class = "negrito">celular:</b> (32) 912345678</p>
                     </div>
                 </div>
                 <div id="fotSocials">
                     <p id ="fotSocialsTitle">Redes Sociais:</p>
                     <div id = "fotIconBox">
-                        <button class="footerSocialButtons"><i class="bi bi-whatsapp"></i></button>
-                        <button class="footerSocialButtons"><i class="bi bi-instagram"></i></button>
-                        <button class="footerSocialButtons"><i class="bi bi-facebook"></i></button>
-                        <button class="footerSocialButtons"><i class="bi bi-twitter-x"></i></button>
+                        <a href="https://www.instagram.com/codejr/" class="footerSocialButtons"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/codejr/" class="footerSocialButtons"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.instagram.com/codejr/" class="footerSocialButtons"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/codejr/" class="footerSocialButtons"><i class="bi bi-twitter-x"></i></a>
                     </div>
                 </div>
                 </div>

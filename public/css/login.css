@@ -8,14 +8,41 @@ body {
     display: flex;
     align-items: center;
 }
-
 .teeste {
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: center;
 }
-
+#olhinho{
+    cursor: pointer;
+    padding-right: 5px;
+}
+.telaErro{
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    display:block;
+    z-index: 2;
+}
+.modalErro{
+    z-index: 5;
+    background-color: #412307;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 10%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 2% 3% 2% 3%;
+    box-shadow: black 10px 10px 50px 10px;
+}
 .Logo {
     width: 130px;
     height: 120px;
@@ -71,7 +98,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 2% 2%;
-    margin: 8% 34%;
+    margin: 5% 34%;
     background-color: rgba(0, 0, 0, 0.40);
     border-radius: 30px;
     gap: 25px;
@@ -172,6 +199,43 @@ body {
     border: 2.5px solid #429741;
 }
 
+.IndexButton{
+    display: flex;
+    align-self: center;
+    padding-top: 1%;
+    width: fit-content;
+    height: fit-content;
+}
+
+.IndexButton button a{
+    margin-top: 10%;
+    color: white;
+    font-family: "Jomhuria", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 56px;
+}
+
+.IndexButton button{
+    gap: 4%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    filter: drop-shadow(2px 2px 6px black);
+    font-size: 60px;
+    border: none;
+    background-color: transparent;
+}
+
+.IndexButton button:hover{
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 6px #E6A549);
+}
+
+.IndexButton form{
+    display: contents;
+}
+
 @media only screen and (max-width: 600px) {
     .Logo {
         width: 80px;
@@ -213,7 +277,7 @@ body {
     
     .AbaLogin {
         padding: 2% 4%;
-        margin: 30% 20%;
+        margin: 16% 20%;
     
     }
 
@@ -262,10 +326,33 @@ body {
         height: 30px;
         padding-bottom: 0px;
     }
-            
+    
+    .IndexButton button a{
+        font-size: 44px;
+    }
+    
+    .IndexButton button{
+        gap: 4%;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        filter: drop-shadow(2px 2px 6px black);
+        font-size: 48px;
+        border: none;
+        background-color: transparent;
+    }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 980px) {
+    .IndexButton button a{
+        font-size: 48px;
+    }
+
+    .IndexButton button{
+        font-size: 52px;
+    }
+    
+
     .Logo {
         width: 90px;
         height: 100px;
@@ -306,7 +393,7 @@ body {
     
     .AbaLogin {
         padding: 2% 4%;
-        margin: 12% 28%;
+        margin: 10% 28%;
     
     }
     

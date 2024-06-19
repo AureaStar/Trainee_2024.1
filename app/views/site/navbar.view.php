@@ -12,19 +12,44 @@
     </head>
         <header>
             <nav class="navbar-Container">
-                <a  class="logoNavbar" rel="logo da Torre do Sábio" href="landing-page.html"><img id = "logonavbarimg" src="/public/assets/logo-linda-sem-linha.png"></a><!--falta href-->
+                <form method="get" action="/index">
+                    <button class="logoNavbar" rel="logo da Torre do Sábio"><img id = "logonavbarimg" src="/public/assets/logo-linda-sem-linha.png"></button>
+                </form>
                 <ul class = "nav-lnk-container">
-                    <li id="navInicio" class="navbarlist"><button id="navbinicio">Início</button></li><!--falta href-->
-                    <li id="navPubli" class="navbarlist"><button id="navbpubli">Publicações</button></li>
+                    <li id="navInicio" class="navbarlist">
+                        <form method="get" action="/index">
+                        <button id="navbinicio">Início</button>
+                        </form>
+                    </li>
+                    
+                    <li id="navPubli" class="navbarlist">
+                            <form method="get" action="/posts">
+                            <button id="navbpubli">Publicações</button>
+                            </form>
+                        </li>
+
                     <li class="navhamLi navhamLiClosed"><button onclick="navhamshow()" id="navclosedhhamButton" class="navhamButton"><i class="navlisticon bi bi-list"></i></button></li>
                     <li class="navhamLi navhamLiOpen hidden"><button onclick="navhamshow()" id="navopenhhamButton" class="navhamButton"><i class="navlisticon bi bi-caret-down-fill"></i></button></li>
                 </ul>
-                <button id="navLogText">Login</button>
+
+                <li id="navLogin" class="navbarlist">
+                    <form method="get" action="/login">
+                        <button id="navLogText">Login</button>
+                    </form>
+                </li>
             </nav>
             <div class="navhamMenu">
+            <form method="get" action="/index">      
                 <button id="navhaminicio">Início</button>
+            </form>
+
+            <form method="get" action="/posts">
                 <button  id="navhampubli">Publicações</button>
+            </form>
+
+            <form method="get" action="/login">
                 <button id="navhamlogbutton">Login</button>
+            </form>
             </div>
         </header>
     <script src="/public/js/navbar.js"></script>
