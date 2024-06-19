@@ -15,6 +15,11 @@
     justify-content: space-between;
 }
 
+#olhinho{
+    cursor: pointer;
+    padding-right: 5px;
+}
+
 .modalCriarUsuario {
     z-index: 5;
     position: absolute;
@@ -107,8 +112,9 @@
     height: 5vh;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .fundoFormularioUsuarioCriarUsuario:hover {
@@ -128,6 +134,7 @@
     outline: none;
     border-radius: 5px;
     padding-left: 2%;
+    width: 100%;
 }
 
 .fundoFormularioUsuarioCriarUsuario input:hover {

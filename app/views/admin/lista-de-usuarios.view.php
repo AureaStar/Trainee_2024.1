@@ -1,6 +1,8 @@
 <?php
     session_start();
-
+    if(!isset($_SESSION['id'])){
+        return redirect('login');
+    }
 ?>
 <!DOCTYPE html>
 <html lang="pt">

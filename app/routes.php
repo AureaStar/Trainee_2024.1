@@ -14,7 +14,7 @@ use App\Core\Router;
     $router->get('admin/posts','AdminController@tabela_posts');
     $router->get('login','SiteController@login'); 
     $router->post('logina','LoginController@login');
-    $router->get('logout','LoginController@logout');
+    $router->get('admin/logout','LoginController@logout');
     $router->get('admin/users','UserController@index');
     $router->post('usuarios/delete','UserController@delete');
     $router->post('usuarios/editar','UserController@editar');

@@ -49,6 +49,7 @@
             </div>
             <div id="required-#password" class="fundoFormularioUsuarioCriarUsuario required">
                 <input id="password" type="password" oninput="senhaValidate('#password')" class="boxCriarUsuario" placeholder="Insira sua senha" name="senha" required>
+                <span id="olhinho" class="material-icons icone" onclick="mudaolho('password', 'olhinho')">visibility</span>
             </div>
             
             <div class="algoque">
@@ -57,6 +58,7 @@
             </div>
             <div id="required-#passwordr" class="fundoFormularioUsuarioCriarUsuario required">
                 <input id="passwordr" type="password" oninput="senhaRepeatValidate('#password','#passwordr')" class="boxCriarUsuario" placeholder="Repita sua senha" name="senha-repeat" required>
+                <span id="olhinho" class="material-icons icone" onclick="mudaolho('passwordr', 'olhinho')">visibility</span>
             </div>
 
             <div class="modal-footerCriarUsuario">
@@ -67,5 +69,7 @@
     </div>
 </div>
     <script src="/public/js/validacao.js"></script>
+    <script src="/public/js/login.js"></script>
+
 
     
