@@ -10,52 +10,55 @@
 
 <!-- The Modal -->
 
-<div id="modalEditar" class="modalM">
+<div id="modalEditar<?=$post->id?>" class="modalM modall">
 
     <!-- Modal content -->
     <div class="thmodal-content">
         <div class="thmodal-header">
             <img class="imagemlogo" src="../../../public/assets/Logo.png" alt="">
-            <h2 class="titulo">Editar Post</h2>
+            <h2 class="thtitulo">Editar Post</h2>
             <img class="imagemlogo" src="../../../public/assets/Logo.png" alt="">
 
         </div>
-        <form class="thmodal-body">
+        <form class="thmodal-body" action= "/post/update"method="post" enctype="multipart/form-data">
 
-            <label for="title" class="namebox">Título:</label>
+            <label for="title" class="thnamebox">Título:</label>
             <div class="thfundoFormulario">
-                <input id="edit_modal_title" type="text" class="box" placeholder="Insira o título" name="title">
+                <input required value="<?=$post->title?>" id="edit_modal_title" type="text" class="box" placeholder="Insira o título" name="title">
+                
             </div>
 
-            <label for="text" class="namebox">Conteúdo:</label>
+            <label for="text" class="thnamebox">Conteúdo:</label>
             <div class="thfundoFormularioCont">
-                <textarea id="edit_modal_context" type="text" class="box" placeholder="Escreva o conteúdo" name="text"></textarea>
+                <textarea required id="edit_modal_context" type="text" class="box" placeholder="Escreva o conteúdo" name="content"><?=$post->content?></textarea>
             </div>
 
-            <label for="filter" class="namebox">Categoria:</label>
+            <label for="filter" class="thnamebox">Categoria:</label>
             <div class="thfundoFormulario">
-                <select name="categorias" class="box boxselect">                    
+                <select required name="category" class="box boxselect">                    
                     <option class="nsei" value="1">Categoria 1</option>                   
                     <option class="nsei" value="2">Categoria 2</option> 
                     <option class="nsei" value="3">Categoria 3</option>
                 </select>
             </div>
 
-            <label for="imagem" class="namebox">Imagem:</label>
+            <label for="image" class="thnamebox">Imagem:</label>
             <div class="thfundoFormulario">
-                <input type="file" class="box imagemInput" name="imagem">
+                <input type="file" class="box imagemInput" name="image">
             </div>
 
-            <label for="data" class="namebox">Data de edição do post:</label>
+            <label for="data" class="thnamebox">Data de edição do post:</label>
             <div class="thfundoFormulario">
-                <input id="edit_modal_creation_date" type="date" class="box" placeholder="XX/XX/XXXX" name="data">
+                <input required value="<?=$post->created_at?>" id="edit_modal_creation_date" type="date" class="box" placeholder="XX/XX/XXXX" name="created_at">
             </div>
 
             <div class="thmodal-footer">
-                <button type="submit" class="fechar" id="edit_submit_button">Editar</button>
-                <button class="cancelar">Cancelar</button>
+                <button type="submit" class="fechar">Editar</button>
+                <button type="button" class="cancelar"onclick="fechaModal()">Cancelar</button>
 
             </div>
+            <input hidden name="id" value="<?=$post->id?>">
+            
         </form>
     </div>
 

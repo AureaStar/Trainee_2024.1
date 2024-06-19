@@ -17,45 +17,31 @@ class AdminController
     }
     public function deleteById(){
         App::get('database')->deleteFromId("posts",$_POST["id"]);
-        header("Location: /posts"); 
+        return redirect ('posts'); 
     }
-    public function findOne(){
-        $posts = App::get('database')->findOne('posts', $_GET["id"]);
-
-        echo ''.json_encode($posts);
-    }
+    
     public function update(){
-        $title = "";
-        if(isset($_POST["title"])) { $title = $_POST["title"];}
-        $content = "";
-        if(isset($_POST["content"])) {$content = $_POST["content"];}
-        $category = "";
-        if(isset($_POST["category"])) {$category = $_POST["category"];}
-        $creation_date = "";
-        if(isset($_POST["creation_date"])) {$creation_date = $_POST["creation_date"];}
-        $image = "";
-        if(isset($_FILES['image'])) { $image = $_FILES['image'];}
-        $values = [
-            [
-              "name" => 'title',
-              "values" => $title
-            ],
-            [
-                "name" => 'content',
-                "values" => $content,
-            ],
-            [
-                "name" => 'category',
-                "values" => $category,
-            ],
-            [
-                "name" => 'creation_date',
-                "values" => $creation_date,
-            ]
+        $id = $_POST['id'];
+        $post = App::get('database')->selectOne('posts',$id);
+        if(isset($_FILES['imagem'])){
+            $temporario = $_FILES['imagem']['tmp_name'];
+            $nomeimagem = sha1(uniqid($_FILES['imagem']['name'], true)) . '.' . pathinfo($_FILES['imagem']['name'], PATHINFO_EXTENSION);
+            $destinoimagem = "../../htdocs/Trainee_2024.1/public/imagens/";
+            move_uploaded_file($temporario, $destinoimagem . $nomeimagem);
+            $caminhodaimagem = "../../public/imagens/" . $nomeimagem;
+        } else {
+            $caminhodaimagem = $post->image;
+        } 
+        $parametros = [
+            'title'=> $_POST['title'],
+            'content'=> $_POST['content'],
+            'image'=>$caminhodaimagem,
+            'created_at'=>$_POST['created_at'],
+            'author'=>1,
+            'category'=>$_POST['category'], 
         ];
-        $c = App::get('database')->update("posts",$_POST["id"],$values);
-        echo json_encode($c);
-        header("Location: /posts");
+        App::get('database')->update("posts",$_POST["id"],$parametros);
+        return redirect ('posts');
     }
 }
 

@@ -9,18 +9,19 @@
 <!-- Open The Modal -->
 
 <!-- The Modal -->
-<div id="modalExcluir" class="modalD">
+<div id="modalExcluir<?=$post->id?>" class="modalD modall">
 
     <!-- Modal content -->
-    <div class="modal-content">
-        <div class="modal-header">
-            <img class="imagemlogo" src="../../../public/assets/Logo.png" alt="">
-            <h2 class="titulo">Certeza que deseja excluir o seu post?</h2>
-            <img class="imagemlogo" src="../../../public/assets/Logo.png" alt="">
+    <form action="/post/delete" method="post"class="tamodal-content">
+        <div class="tamodal-header">
+            <img class="taimagemlogo" src="../../../public/assets/Logo.png" alt="">
+            <h2 class="tatitulo">Certeza que deseja excluir o seu post?</h2>
+            <img class="taimagemlogo" src="../../../public/assets/Logo.png" alt="">
         </div>
-        <div class="modal-body">
-            <button class="sim">Sim</button>
-            <button class="não">Não</button>
+        <div class="tamodal-body">
+            <button class="sim"type="submit">Sim</button>
+            <button class="não"type="button"onclick="fechaModal()" >Não</button> 
+            <input hidden name="id" value="<?=$post->id?>">
         </div>
-    </div>
+    </form>
 </div>
