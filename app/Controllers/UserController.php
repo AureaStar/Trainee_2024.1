@@ -42,6 +42,8 @@ class UserController
                 $destinoimagem = "../../htdocs/Trainee_2024.1/public/imagens/";
                 move_uploaded_file($temporario, $destinoimagem . $nomeimagem);
                 $caminhodaimagem = "../../public/imagens/" . $nomeimagem;
+                $imagem_rota = "../../htdocs/Trainee_2024.1/public/imagens/" . basename($user->image);
+                unlink($imagem_rota);
             } else {
                 $caminhodaimagem = $user->image;
             }
