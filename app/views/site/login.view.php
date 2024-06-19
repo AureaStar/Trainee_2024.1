@@ -66,4 +66,5 @@
         </form>
     </div>
 </body>
+<script src="/public/js/modal.js"></script>
 </html>
