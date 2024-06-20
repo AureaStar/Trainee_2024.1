@@ -37,11 +37,10 @@
                         </thead>
                         <tbody class="tbodyPostList">
                             <?php foreach($posts as $post): ?>
-                                <?php foreach($users as $user): ?>
                             <tr>
                                 <td class="tdPostList"><?= $post->id ?></td>
                                 <td class="tdPostList"><?= $post->title ?></td>
-                                <td class="tdPostList"><?= $post->author == $user->id ? $user->name : "" ?></td>
+                                <td class="tdPostList"><?php foreach($users as $user): ?><?= $post->author == $user->id ? $user->name : "" ?><?php endforeach ?></td>
                                 <td class="tdPostList"><?= $post->created_at ?></td>
                                 <td class="tdPostList">
                                     <div id="actionsBtsPostList">
@@ -51,7 +50,6 @@
                                     </div>
                                 </td>
                             </tr>
-                                <?php endforeach ?>
                             <?php endforeach ?>
                         </tbody>
                     </table>
