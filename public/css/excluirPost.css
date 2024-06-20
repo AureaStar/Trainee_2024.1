@@ -14,7 +14,7 @@
     border-radius: 20px;
     padding: 2%;
     box-shadow: black 10px 10px 50px 10px;
-    z-index: 2;
+    z-index: 15;
 }
 
 .tatitulo {

@@ -20,7 +20,7 @@
             <img class="imagemVClogo" src="../../../public/assets/Logo.png" alt="">
 
         </div>
-        <form class="modalVC-body" method="POST" action="/posts/create" enctype="multipart/form-data">
+        <form class="modalVC-body" method="POST" action="/admin/posts/create" enctype="multipart/form-data">
 
             <label for="imagem" class="nameVCbox">Imagem:</label>
             <div class="fundoVFormulario">

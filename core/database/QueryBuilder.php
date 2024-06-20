@@ -65,10 +65,10 @@ class QueryBuilder
 
             return $variavel['id'];
 
-         } catch (Exception $e) {
-             die ($e->getMessage());
-         }
-     }
+        } catch (Exception $e) {
+            die ($e->getMessage());
+        }
+    }
 
     protected $pdo;
 
@@ -92,20 +92,6 @@ class QueryBuilder
             die($e->getMessage());
         }
     }
-    public function selectOne($table, $id){
-        $sql = "select * from {$table} where id={$id}";
-    
-        try {
-            $stmt = $this->pdo->prepare($sql);
-            $stmt->execute();
-    
-            return $stmt->fetchAll(PDO::FETCH_CLASS);
-    
-        } catch (Exception $e) {
-            die($e->getMessage());
-        }
-    }
-
 
 //função de pegar o post único
 
@@ -201,7 +187,7 @@ public function searchPost($table,$search,$category){
             die($e->getMessage());
         }
     }
- 
+
     public function deleteFromId ($table,$id)
     {
         $sql = "DELETE FROM posts WHERE id=? ";
@@ -242,7 +228,7 @@ public function searchPost($table,$search,$category){
             $stmt = $this->pdo->prepare($sql);
             $stmt->execute($parameters);
         }catch (Exception $e) {
-         die($e->getMessage());
+            die($e->getMessage());
         
         }
 

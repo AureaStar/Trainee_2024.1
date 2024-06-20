@@ -44,12 +44,7 @@
 
             <label for="image" class="thnamebox">Imagem:</label>
             <div class="thfundoFormulario">
-                <input type="file" class="box imagemInput" name="image">
-            </div>
-
-            <label for="data" class="thnamebox">Data de edição do post:</label>
-            <div class="thfundoFormulario">
-                <input required value="<?=$post->created_at?>" id="edit_modal_creation_date" type="date" class="box" placeholder="XX/XX/XXXX" name="created_at">
+                <input type="file" class="box imagemInput" name="imagem">
             </div>
 
             <div class="thmodal-footer">
