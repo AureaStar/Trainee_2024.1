@@ -20,7 +20,7 @@
             <img class="imagemlogo" src="../../../public/assets/Logo.png" alt="">
 
         </div>
-        <form class="thmodal-body" action= "/post/update"method="post" enctype="multipart/form-data">
+        <form class="thmodal-body" action= "/admin/post/update"method="post" enctype="multipart/form-data">
 
             <label for="title" class="thnamebox">Título:</label>
             <div class="thfundoFormulario">

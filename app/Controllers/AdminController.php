@@ -18,10 +18,10 @@ class AdminController
     public function deleteById(){
         $id = $_POST['id'];
         $posts = App::get('database')->selectOne('posts', $id)[0];
-        $imagem_rota = "../../htdocs/Trainee_2024.1/public/imagens/" . basename($posts->image);
+        $imagem_rota = "public/imagens/" . basename($posts->image);
         unlink($imagem_rota);
         App::get('database')->deleteFromId('posts' ,$id);
-        return redirect('posts');
+        return redirect('admin/posts');
         
     }
     
@@ -31,9 +31,9 @@ class AdminController
         if(isset($_FILES['imagem'])){
             $temporario = $_FILES['imagem']['tmp_name'];
             $nomeimagem = sha1(uniqid($_FILES['imagem']['name'], true)) . '.' . pathinfo($_FILES['imagem']['name'], PATHINFO_EXTENSION);
-            $destinoimagem = "../../htdocs/Trainee_2024.1/public/imagens/";
+            $destinoimagem = "public/imagens/";
             move_uploaded_file($temporario, $destinoimagem . $nomeimagem);
-            $caminhodaimagem = "../../public/imagens/" . $nomeimagem;
+            $caminhodaimagem = "public/imagens/" . $nomeimagem;
         } else {
             $caminhodaimagem = $post->image;
         } 
@@ -41,12 +41,11 @@ class AdminController
             'title'=> $_POST['title'],
             'content'=> $_POST['content'],
             'image'=>$caminhodaimagem,
-            'created_at'=>$_POST['created_at'],
             'author'=>1,
             'category'=>$_POST['category'], 
         ];
         App::get('database')->update("posts",$_POST["id"],$parametros);
-        return redirect ('posts');
+        return redirect ('admin/posts');
     }
 }
 

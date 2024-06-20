@@ -12,7 +12,7 @@
 <div id="modalExcluir<?=$post->id?>" class="modalD modall">
 
     <!-- Modal content -->
-    <form action="/post/delete" method="post"class="tamodal-content">
+    <form action="/admin/post/delete" method="post"class="tamodal-content">
         <div class="tamodal-header">
             <img class="taimagemlogo" src="../../../public/assets/Logo.png" alt="">
             <h2 class="tatitulo">Certeza que deseja excluir o seu post?</h2>
