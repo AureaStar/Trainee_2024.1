@@ -59,8 +59,6 @@
         <?php foreach($posts as $post): ?>
             <?php foreach($users as $user): ?>
                 <?php 
-                    require 'editarPost.php';
-                    require 'excluirPost.php';
                     require 'visualizarPost.php';
                 ?>
             <?php endforeach ?>

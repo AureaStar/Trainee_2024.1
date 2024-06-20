@@ -46,11 +46,6 @@
                 </select>
             </div>
 
-            <label for="data" class="nameVCbox">Data de criação do post:</label>
-            <div class="fundoVCFormulario">
-                <input type="date" class="boxVC" placeholder="XX/XX/XXXX" name="data" required>
-            </div>
-
             <div class="modalVC-footer">
                 <button type="submit" class="fecharVC">Criar</button>
                 <button type="button" class="cancelarVC" onclick="fechaModal()">Cancelar</button>
