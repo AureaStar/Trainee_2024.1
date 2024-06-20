@@ -99,6 +99,7 @@
             </div>
         </main>
         <?php /*endforeach;*/ ?>
+        <div class = "posicionaPagtabelaPost"><?php require(__DIR__ . '/../components/paginacao.php') ?></div>
     </body>
     <script src="/public/js/modal.js"></script>
 </html>

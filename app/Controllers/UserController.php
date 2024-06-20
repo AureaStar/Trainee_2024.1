@@ -71,9 +71,29 @@ class UserController
     }
     public function index()
     {
-        //define users que é a tabela
-        $users = App::get('database')->selectAll('users');
-        return view('admin/lista-de-usuarios', compact('users'));
+        
+        $page = 1;
+        if(isset($_GET['pagina']) && !empty($_GET['pagina'])){
+            $page = intval($_GET['pagina']);
+
+            if($page <= 0){
+                return redirect('admin/users');
+            }
+        }
+
+        $itensPage = 5;
+        $inicio = $itensPage * $page - $itensPage;
+        $rows_count = App::get('database')->countAll('users');
+
+        if($inicio > $rows_count){
+            return redirect('admin/users');
+        }
+
+        $users = App::get('database')->selectAll('users', $inicio, $itensPage);
+
+        $total_pages = ceil($rows_count/$itensPage);
+
+        return view('admin/lista-de-usuarios', compact('users', 'page', 'total_pages'));
     }
 }
 

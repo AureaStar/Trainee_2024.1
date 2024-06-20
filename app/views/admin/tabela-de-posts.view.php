@@ -77,6 +77,7 @@
         <?php endforeach ?>
 
         <?php require 'criarPost.php'; ?>
+        <div class = "posicionaPagtabelaPost"><?php require(__DIR__ . '/../components/paginacao.php') ?></div>
     </body>
     <script src="/public/js/modal.js"></script>
 </html>

@@ -246,18 +246,7 @@ body{
     margin-top: 7.5rem;
     font-size: 1.5rem;
 }
-.pagination_row span {
-    margin-left: 1%;
-    color: white;
-    padding: 7px;
-    background-color: rgba(82, 51, 29, 0.8);
 
-}
-.pagination_row i {
-    margin-left: 1%;
-    padding: 7px;
-    background-color: rgba(82, 51, 29, 0.8);
-}
 @media only screen and (max-width: 1280px) {
     .card{
         width: 100%;
@@ -349,7 +338,7 @@ body{
         margin-top: 25%;
     }
     .pagination_row {
-        display: none;
+        margin-top: 3rem;
     }
     .funil{
         height: 100%;

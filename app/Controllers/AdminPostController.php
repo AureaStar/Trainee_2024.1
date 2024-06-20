@@ -5,15 +5,35 @@ namespace App\Controllers;
 use App\Core\App;
 use Exception;
 
-class AdminController
+class AdminPostController
 {
 
     public function index()
     {
-        $posts = App::get('database')->selectAll('posts');
-        $users = App::get('database')->selectAll('users');
+        
+        $page = 1;
+        if(isset($_GET['pagina']) && !empty($_GET['pagina'])){
+            $page = intval($_GET['pagina']);
 
-        return view('admin/tabela-de-posts', compact('posts', 'users'));
+            if($page <= 0){
+                return redirect('admin/posts');
+            }
+        }
+
+        $itensPage = 5;
+        $inicio = $itensPage * $page - $itensPage;
+        $rows_count = App::get('database')->countAll('posts');
+
+        if($inicio > $rows_count){
+            return redirect('admin/posts');
+        }
+
+        $users = App::get('database')->selectAll('users');
+        $posts = App::get('database')->selectAll('posts', $inicio, $itensPage);
+
+        $total_pages = ceil($rows_count/$itensPage);
+
+        return view('admin/tabela-de-posts', compact('posts', 'users', 'page', 'total_pages'));
     }
 
     public function dashboard()
