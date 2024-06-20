@@ -25,9 +25,9 @@ class AdminController
     {
         $temporario = $_FILES['imagem']['tmp_name'];
         $nomeimagem =  sha1(uniqid($_FILES['imagem']['name'], true)) . '.' . pathinfo($_FILES['imagem']['name'], PATHINFO_EXTENSION);
-        $destinoimagem = "/public/imagens/";
+        $destinoimagem = "public/imagens/";
         move_uploaded_file($temporario, $destinoimagem . $nomeimagem);
-        $caminhodaimagem = "/public/imagens/" . $nomeimagem;
+        $caminhodaimagem = "public/imagens/" . $nomeimagem;
 
         $parameters = [
             'title' => $_POST['title'],
@@ -57,9 +57,9 @@ class AdminController
         if(isset($_FILES['imagem'])){
             $temporario = $_FILES['imagem']['tmp_name'];
             $nomeimagem = sha1(uniqid($_FILES['imagem']['name'], true)) . '.' . pathinfo($_FILES['imagem']['name'], PATHINFO_EXTENSION);
-            $destinoimagem = "/public/imagens/";
+            $destinoimagem = "public/imagens/";
             move_uploaded_file($temporario, $destinoimagem . $nomeimagem);
-            $caminhodaimagem = "/public/imagens/" . $nomeimagem;
+            $caminhodaimagem = "public/imagens/" . $nomeimagem;
         } else {
             $caminhodaimagem = $post->image;
         }

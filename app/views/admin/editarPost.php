@@ -22,6 +22,11 @@
         </div>
         <form class="thmodal-body" action= "/admin/post/update"method="post" enctype="multipart/form-data">
 
+            <label for="image" class="thnamebox">Imagem:</label>
+            <div class="thfundoFormulario">
+                <input type="file" class="box imagemInput" name="imagem">
+            </div>
+
             <label for="title" class="thnamebox">Título:</label>
             <div class="thfundoFormulario">
                 <input required value="<?=$post->title?>" id="edit_modal_title" type="text" class="box" placeholder="Insira o título" name="title">
@@ -40,11 +45,6 @@
                     <option class="nsei" value="2">Categoria 2</option> 
                     <option class="nsei" value="3">Categoria 3</option>
                 </select>
-            </div>
-
-            <label for="image" class="thnamebox">Imagem:</label>
-            <div class="thfundoFormulario">
-                <input type="file" class="box imagemInput" name="imagem">
             </div>
 
             <div class="thmodal-footer">
