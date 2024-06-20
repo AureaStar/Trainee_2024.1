@@ -60,6 +60,8 @@ class AdminController
             $destinoimagem = "public/imagens/";
             move_uploaded_file($temporario, $destinoimagem . $nomeimagem);
             $caminhodaimagem = "public/imagens/" . $nomeimagem;
+            $imagem_rota = "public/imagens/" . basename($post[0]->image);
+            unlink($imagem_rota);
         } else {
             $caminhodaimagem = $post->image;
         }

@@ -39,7 +39,7 @@
             <div class="direitaVi">
                 <label for="name" class="nameboxVUser">Imagem de Usuário:</label>
                 <div class="imagemperfiluser">
-                    <img class="imagemUser" src="<?= $user->image ?>" alt="">
+                    <img class="imagemUser" src="<?= '../../' . $user->image ?>" alt="">
                 </div>
             </div>
         </form>
