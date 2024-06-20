@@ -16,6 +16,11 @@ class AdminController
         return view('admin/tabela-de-posts', compact('posts', 'users'));
     }
 
+    public function dashboard()
+    {
+        return view('admin/dashboard');
+    }
+
     public function create()
     {
         $temporario = $_FILES['imagem']['tmp_name'];
