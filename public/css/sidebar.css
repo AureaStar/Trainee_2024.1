@@ -27,7 +27,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 5;
+    z-index: 8;
 }
 .sidebar:hover{
     width: 20%;
@@ -75,6 +75,7 @@ ul .itens-menu button{
     margin-bottom: 8%;
     display: flex;
     padding: 15px 5%;
+    justify-content: start;
 }
 ul .itens-menu button .link-txt{
     display: flex;
@@ -103,6 +104,7 @@ ul .itens-menu-login button{
     margin-bottom: 8%;
     display: flex;
     padding: 15px 5%;
+    justify-content: start;
 }
 ul .itens-menu-login button .link-txt{
     display: flex;
@@ -176,11 +178,11 @@ ul .itens-menu-login button .icon{
 
     .sidebar{
         background-size: 1175px;
-        width: 8%;
+        width: 10%;
         padding: 195px 0 40px 1%;
     }
     .sidebar:hover{
-        width: 42%;
+        width: 50%;
     }
 
     /* Itens */

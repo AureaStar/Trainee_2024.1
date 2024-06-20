@@ -10,7 +10,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     display:none;
-    z-index: 2;
+    z-index: 12;
 }
 .telaErro{
     width:100%;
@@ -18,7 +18,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     display:block;
-    z-index: 2;
+    z-index: 12;
 }
 
 body{
@@ -30,7 +30,7 @@ body{
     margin-bottom: 16px;
 }
 .modalErro{
-    z-index: 5;
+    z-index: 15;
     background-color: #412307;
     position: absolute;
     top: 50%;
