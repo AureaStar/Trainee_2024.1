@@ -19,6 +19,9 @@
     </head>
     
     <body>
+
+        <?php require 'sidebar.view.php'?>
+
         <div class="overlay" id="tela" onclick="fechaModal()"></div>
         <main id="mainPostList">
             <div id="titlebackPostList">
@@ -73,7 +76,7 @@
             <?php endforeach ?>
         <?php endforeach ?>
 
-        <?php require 'criarPost.php'; ?> 
+        <?php require 'criarPost.php'; ?>
     </body>
     <script src="/public/js/modal.js"></script>
 </html>
