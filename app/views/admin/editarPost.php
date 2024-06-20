@@ -10,52 +10,50 @@
 
 <!-- The Modal -->
 
-<div id="modalEditar" class="modalM">
+<div id="modalEditar<?=$post->id?>" class="modalM modall">
 
     <!-- Modal content -->
-    <div class="modal-content">
-        <div class="modal-header">
+    <div class="thmodal-content">
+        <div class="thmodal-header">
             <img class="imagemlogo" src="../../../public/assets/Logo.png" alt="">
-            <h2 class="titulo">Editar Post</h2>
+            <h2 class="thtitulo">Editar Post</h2>
             <img class="imagemlogo" src="../../../public/assets/Logo.png" alt="">
 
         </div>
-        <form class="modal-body">
+        <form class="thmodal-body" action= "/admin/post/update"method="post" enctype="multipart/form-data">
 
-            <label for="title" class="namebox">Título:</label>
-            <div class="fundoFormulario">
-                <input type="text" class="box" placeholder="Insira o título" name="title">
+            <label for="image" class="thnamebox">Imagem:</label>
+            <div class="thfundoFormulario">
+                <input type="file" class="box imagemInput" name="imagem">
             </div>
 
-            <label for="text" class="namebox">Conteúdo:</label>
-            <div class="fundoFormularioCont">
-                <textarea type="text" class="box" placeholder="Escreva o conteúdo" name="text"></textarea>
+            <label for="title" class="thnamebox">Título:</label>
+            <div class="thfundoFormulario">
+                <input required value="<?=$post->title?>" id="edit_modal_title" type="text" class="box" placeholder="Insira o título" name="title">
+                
             </div>
 
-            <label for="filter" class="namebox">Categoria:</label>
-            <div class="fundoFormulario">
-                <select name="categorias" class="box boxselect">                    
+            <label for="text" class="thnamebox">Conteúdo:</label>
+            <div class="thfundoFormularioCont">
+                <textarea required id="edit_modal_context" type="text" class="box" placeholder="Escreva o conteúdo" name="content"><?=$post->content?></textarea>
+            </div>
+
+            <label for="filter" class="thnamebox">Categoria:</label>
+            <div class="thfundoFormulario">
+                <select required name="category" class="box boxselect">                    
                     <option class="nsei" value="1">Categoria 1</option>                   
                     <option class="nsei" value="2">Categoria 2</option> 
                     <option class="nsei" value="3">Categoria 3</option>
                 </select>
             </div>
 
-            <label for="imagem" class="namebox">Imagem:</label>
-            <div class="fundoFormulario">
-                <input type="file" class="box imagemInput" name="imagem">
-            </div>
-
-            <label for="data" class="namebox">Data de edição do post:</label>
-            <div class="fundoFormulario">
-                <input type="date" class="box" placeholder="XX/XX/XXXX" name="data">
-            </div>
-
-            <div class="modal-footer">
+            <div class="thmodal-footer">
                 <button type="submit" class="fechar">Editar</button>
-                <button class="cancelar">Cancelar</button>
+                <button type="button" class="cancelar"onclick="fechaModal()">Cancelar</button>
 
             </div>
+            <input hidden name="id" value="<?=$post->id?>">
+            
         </form>
     </div>
 

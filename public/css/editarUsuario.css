@@ -1,22 +1,22 @@
-
-.modalEditarUsuario {
+.modalEditarUser {
+    z-index: 15;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #412307;
-    height: 70%;
-    width: 65%;
-    display: flex;
+    height: 78%;
+    width: 70%;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
     padding: 2%;
-    box-shadow: 10px 10px 50px 10px;
+    box-shadow: black 10px 10px 50px 10px;
 }
 
-.modal-contentEditarUsuario {
+.modal-contentEditarUser {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,10 +26,10 @@
     gap: 20px;
 }
 
-.modal-headerEditarUsuario {
+.modal-headerEditarUser {
     background-color: #3c2007;
     width: 100%;
-    height: 10%;
+    height: 8%;
     padding: 1%;
     margin: 0px;
     border-radius: 5px;
@@ -40,27 +40,26 @@
     box-shadow: rgb(143, 86, 6) 0px 0px 80px 1px;
 }
 
-.modal-bodyEditarUsuario {
+.modal-bodyEditarUser {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
     width: 100%;
-    height: 100%;
     margin: 0%;
 }
 
-.modal-footerEditarUsuario {
+.modal-footerEditarUser {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 12%;
+    height: 10%;
     margin-top: 2%;
 }
 
-.imagemlogo {
+.imagemlogoEditarUser {
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -68,7 +67,7 @@
     margin: 0%;
 }
 
-.titulo {
+.tituloEditarUser {
     color: white;
     margin: 0;
     font-size: 38px;
@@ -76,69 +75,69 @@
     font-weight: 700;
 }
 
-.namebox {
+.nameboxEditarUser {
     color: white;
     font-size: 34px;
     font-family: Jomhuria;
 }
 
-.fundoFormularioUsuario {
+.fundoFormularioUsuarioEditarUser {
     background-color: #E6A549;
-    border: none;
+    border: #E6A549 solid 3px;
     outline: none;
     border-radius: 5px;
-    height: 14%;
+    height: 5vh;
     width: 100%;
 }
 
-.fundoFormularioUsuario:hover {
+.fundoFormularioUsuarioEditarUser:hover {
     background-color: hsla(35, 76%, 59%, 0.8);
+    border: #E6A549 solid 3px;
 }
 
-.fundoFormularioUsuario input::placeholder {
+.fundoFormularioUsuarioEditarUser input::placeholder {
     color: rgb(255, 255, 255);
     font-family: Jomhuria;
     font-size: 28px;
 }
 
-.fundoFormularioUsuario input {
-    background-color: #e29c3a;
-    border: 3px solid #e29c3a;
+.fundoFormularioUsuarioEditarUser input {
+    background-color: #e29c3a00;
+    border: none;
     outline: none;
-    width: 100%;
     border-radius: 5px;
-    height: 100%;
     padding-left: 2%;
+    padding-top: 4px;
 }
 
-.fundoFormularioUsuario input:hover {
+.fundoFormularioUsuarioEditarUser input:hover {
     background-color: rgba(180, 126, 17, 0);
-    border: 3px solid #e29c3a;
+    border: none;
 }
 
-.box {
+.boxEditarUser {
     color: rgb(255, 255, 255);
     font-size: 15px;
     font-family: Jomhuria;
     font-size: 28px;
 }
 
-.imagemPerfilInput::-webkit-file-upload-button {
+.imagemPerfilInputEditarUser::-webkit-file-upload-button {
     display: none;
 }
 
-.imagemPerfilInput::before {
+.imagemPerfilInputEditarUser::before {
     content: 'Edite a foto de perfil: ';
 }
 
-.imagemPerfilInput {
+.imagemPerfilInputEditarUser {
     align-content: center;
 }
 
-.fechar {
+.fecharEditarUser {
     background-color: #226c20;
     height: 100%;
-    width: 20%;
+    width: 15%;
     border-radius: 5px;
     padding-top: 3px;
     color: white;
@@ -149,15 +148,15 @@
     transition: background 0.2s;
 }
 
-.fechar:hover {
+.fecharEditarUser:hover {
     background-color: rgba(16, 123, 16, 0.51);
     border: 3px solid #226c20;
 }
 
-.cancelar {
+.cancelarEditarUser {
     background-color:red;
     height: 100%;
-    width: 20%;
+    width: 15%;
     border-radius: 5px;
     padding-top: 3px;
     color: white;
@@ -168,62 +167,61 @@
     transition: background 0.2s;
 }
 
-.cancelar:hover {
+.cancelarEditarUser:hover {
     background-color: rgba(255, 0, 0, 0.581);
     border: 3px solid red;
 }
 
 @media only screen and (max-width: 600px) {
-    .modalEditarUsuario {
-        height: 70%;
+    .modalEditarUser {
+        height: 65%;
         width: 70%;
         border-radius: 15px;
-        padding: 3%;
+        padding: 5%;
     }
     
-
-    .modal-contentEditarUsuario {
+    .modal-contentEditarUser {
         gap: 5px;
     }
 
-    .modal-bodyEditarUsuario {
+    .modal-bodyEditarUser {
         gap: 5px;
     }
 
-    .titulo {
+    .tituloEditarUser {
         font-size: 25px;
     }
 
-    .modal-footerEditarUsuario {
+    .modal-footerEditarUser {
         padding-top: 5%;
         height: 8%;
         margin-top: 1%;
     }
 
-    .fundoFormularioUsuario {
+    .fundoFormularioUsuarioEditarUser {
         height: 10%;
     }
 
-    .fundoFormularioUsuario input::placeholder {
+    .fundoFormularioUsuarioEditarUser input::placeholder {
         font-size: 22px;
     }
 
-    .box {
+    .boxEditarUser {
         font-size: 22px;
     }
 
-    .namebox {
+    .nameboxEditarUser {
         font-size: 30px;
     }
 
-    .fechar {
+    .fecharEditarUser {
         height: 100%;
         width: 32%;
         padding-top: 2px;
         font-size: 28px;
     }
 
-    .cancelar {
+    .cancelarEditarUser {
         height: 100%;
         width: 32%;
         padding-top: 2px;
@@ -232,55 +230,55 @@
 }
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
-    .modalEditarUsuario {
-        height: 72%;
+    .modalEditarUser {
+        height: 79%;
         width: 70%;
         border-radius: 15px;
         padding: 5%;
     }
 
-    .modal-contentEditarUsuario {
+    .modal-contentEditarUser {
         gap: 5px;
     }
 
-    .modal-bodyEditarUsuario {
+    .modal-bodyEditarUser {
         gap: 5px;
     }
 
-    .titulo {
+    .tituloEditarUser {
         font-size: 38px;
     }
 
-    .modal-footerEditarUsuario {
+    .modal-footerEditarUser {
         padding-top: 2%;
         height: 7%;
         margin-top: 1%;
     }
 
-    .fundoFormularioUsuario {
+    .fundoFormularioUsuarioEditarUser {
         height: 10%;
     }
 
-    .fundoFormularioUsuario input::placeholder {
+    .fundoFormularioUsuarioEditarUser input::placeholder {
         font-size: 30px;
     }
     
-    .box {
+    .boxEditarUser {
         font-size: 30px;
     }
 
-    .namebox {
+    .nameboxEditarUser {
         font-size: 34px;
     }
 
-    .fechar {
+    .fecharEditarUser {
         height: 100%;
         width: 30%;
         padding-top: 2px;
         font-size: 28px;
     }
 
-    .cancelar {
+    .cancelarEditarUser {
         height: 100%;
         width: 30%;
         padding-top: 2px;
@@ -288,19 +286,121 @@
     }
 }
 
+@media only screen and (max-height: 1369px) {
+    .modalEditarUser {
+        height: 37%;
+        width: 70%;
+        border-radius: 15px;
+        padding: 5%;
+    }
+
+    .fundoFormularioUsuarioEditarUser {
+        background-color: #E6A549;
+        border: #E6A549 solid 3px;
+        outline: none;
+        border-radius: 5px;
+        height: 3vh;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-height: 1200px) {
+    .modalEditarUser {
+        height: 46%;
+        width: 70%;
+        border-radius: 15px;
+        padding: 5%;
+    }
+
+    .fundoFormularioUsuarioEditarUser {
+        background-color: #E6A549;
+        border: #E6A549 solid 3px;
+        outline: none;
+        border-radius: 5px;
+        height: 3vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-height: 918px) {
+    .modalEditarUser {
+        height: 50%;
+        width: 70%;
+        border-radius: 15px;
+        padding: 5%;
+    }
+}
+
+@media only screen and (max-height: 845px) {
+    .modalEditarUser {
+        height: 60%;
+        width: 70%;
+        border-radius: 15px;
+        padding: 5%;
+    }
+}
+
+@media only screen and (min-width: 1023px) {
+    .modalEditarUser {
+        height: 60%;
+        width: 70%;
+        border-radius: 15px;
+        padding: 5% 3%;
+    }
+
+    .fundoFormularioUsuarioEditarUser {
+        background-color: #E6A549;
+        border: #E6A549 solid 3px;
+        outline: none;
+        border-radius: 5px;
+        height: 4.7vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-height: 601px) {
+    .modalEditarUser {
+        height: 60%;
+        width: 70%;
+        border-radius: 15px;
+        padding: 5%;
+    }
+
+    .fundoFormularioUsuarioEditarUser {
+        background-color: #E6A549;
+        border: #E6A549 solid 3px;
+        outline: none;
+        border-radius: 5px;
+        height: 4vh;
+        width: 100%;
+    }
+}
 @media only screen and (max-width: 350px) {
-    .titulo {
+    .imagemPerfilInputEditarUser::before {
+        content: '';
+    }
+    .modalEditarUser {
+        height: 65%;
+        width: 70%;
+        padding: 5%;
+    }
+    
+    .tituloEditarUser {
         font-size: 18px;
     }
 
-    .fechar {
+    .fecharEditarUser {
         height: 100%;
         width: 32%;
         padding-top: 0px;
         font-size: 22px;
     }
 
-    .cancelar {
+    .cancelarEditarUser {
         height: 100%;
         width: 32%;
         padding-top: 0px;

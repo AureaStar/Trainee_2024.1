@@ -44,7 +44,7 @@
             <div class="right">
                 <label for="imagem" class="nameVbox" id="imagem-bacana">Imagem:</label>
                     <div class="imagem-legal">
-                        <img class="imagem-post" src="<?= $post->image ?>" alt="">
+                        <img class="imagem-post" src="<?= '../../' . $post->image ?>" alt="">
                     </div>
             </div>
         </div>

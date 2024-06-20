@@ -1,10 +1,16 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['id'])){
+        return redirect('login');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt">
 <html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
-    
 		<link rel="stylesheet" href="/public/css/tabela-de-posts.css">
         <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jomhuria">
@@ -13,7 +19,10 @@
     </head>
     
     <body>
-        <div class="overlay" onclick="fechaModal()"></div>
+
+        <?php require 'sidebar.view.php'?>
+
+        <div class="overlay" id="tela" onclick="fechaModal()"></div>
         <main id="mainPostList">
             <div id="titlebackPostList">
                 <div class="titleboxPostList">
@@ -38,21 +47,19 @@
                         </thead>
                         <tbody class="tbodyPostList">
                             <?php foreach($posts as $post): ?>
-                                <?php foreach($users as $user): ?>
                             <tr>
                                 <td class="tdPostList"><?= $post->id ?></td>
                                 <td class="tdPostList"><?= $post->title ?></td>
-                                <td class="tdPostList"><?= $post->author == $user->id ? $user->name : "" ?></td>
+                                <td class="tdPostList"><?php foreach($users as $user): ?><?= $post->author == $user->id ? $user->name : "" ?><?php endforeach ?></td>
                                 <td class="tdPostList"><?= $post->created_at ?></td>
                                 <td class="tdPostList">
                                     <div id="actionsBtsPostList">
-                                        <button class="viewPostList"><i class="bi bi-eye" onclick="abreModal('modalVisualizar<?= $post->id ?>')"></i> <b class="buttextPostList" onclick="abreModal('modalVisualizar<?= $post->id ?>')">Ver</b></button>
-                                        <button class="editPostList"><i class="bi bi-pencil-square"></i> <b class="buttextPostList">Editar</b></button>
-                                        <button class="delPostList"><i class="bi bi-x-lg"></i> <b class="buttextPostList">Deletar</b></button>
+                                        <button onclick="abreModal('modalVisualizar<?= $post->id ?>')"class="viewPostList"><i class="bi bi-eye"></i> <b class="buttextPostList" onclick="abreModal('modalVisualizar<?= $post->id ?>')">Ver</b></button>
+                                        <button onclick= "abreModal('modalEditar<?=$post->id?>')" class="editPostList"><i  id="<?= 'editi_'.$post->id ?>"  class="bi bi-pencil-square"></i> <b class="buttextPostList">Editar</b></button>
+                                        <button onclick="abreModal ('modalExcluir<?=$post->id?>')" class="delPostList"type="submit"><i id="<?= 'deletei_'.$post->id ?>"  class="bi bi-x-lg"></i> <b class="buttextPostList">Deletar</b></button>
                                     </div>
                                 </td>
                             </tr>
-                                <?php endforeach ?>
                             <?php endforeach ?>
                         </tbody>
                     </table>
@@ -69,9 +76,7 @@
             <?php endforeach ?>
         <?php endforeach ?>
 
-        <?php require 'criarPost.php'; ?> 
-
-        <div class = "posicionaPagtabelaPost"><?php require(__DIR__ . '/../components/paginacao.php') ?></div>
+        <?php require 'criarPost.php'; ?>
     </body>
     <script src="/public/js/modal.js"></script>
 </html>

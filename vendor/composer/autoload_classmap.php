@@ -6,8 +6,15 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+<<<<<<< HEAD
     'App\\Controllers\\AdminPostController' => $baseDir . '/app/Controllers/AdminPostController.php',
     'App\\Controllers\\ExampleController' => $baseDir . '/app/Controllers/ExampleController.php',
+=======
+    'App\\Controllers\\AdminController' => $baseDir . '/app/Controllers/AdminController.php',
+    'App\\Controllers\\LoginController' => $baseDir . '/app/Controllers/LoginController.php',
+    'App\\Controllers\\SiteController' => $baseDir . '/app/Controllers/SiteController.php',
+    'App\\Controllers\\UserController' => $baseDir . '/app/Controllers/UserController.php',
+>>>>>>> main
     'App\\Core\\App' => $baseDir . '/core/App.php',
     'App\\Core\\Database\\Connection' => $baseDir . '/core/database/Connection.php',
     'App\\Core\\Database\\QueryBuilder' => $baseDir . '/core/database/QueryBuilder.php',

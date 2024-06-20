@@ -25,37 +25,50 @@
         </div>
         
         <ul>
+            <form method="get" action="/admin">
             <li class="itens-menu">
-                <a href="#">
+                <button>
                     <span class="icon"><i class="bi bi-card-text"></i></span>
-                    <span class="link-txt">Dashboard</span>
-                </a>
-            </li>
+                        <span class="link-txt">Dashboard</span>
+                </button>
+                </li>
+            </form>
+
             <li class="itens-menu">
-                <a href="#">
+            <form method="get" action="/admin/posts">
+                <button>
                     <span class="icon"><i class="bi bi-pencil-square"></i></span>
                     <span class="link-txt">Publicações</span>
-                </a>
+                </button>
             </li>
-            <li class="itens-menu">
-                <a href="#">
-                    <span class="icon"><i class="bi bi-people"></i></span>
-                    <span class="link-txt">Usuários</span>
-                </a>
-            </li>
+            </form>
+
+            <form method="get" action="/admin/users">
+                <li class="itens-menu">
+                    <button>
+                        <span class="icon"><i class="bi bi-people"></i></span>
+                        <span class="link-txt">Usuários</span>
+                    </button>
+                </li>
+            </form>
+
             <li class="itens-menu-login">
-                <a href="#" onclick="openModal('logout')">
+                <button onclick="openModal('logout')">
                     <span class="icon"><i class="bi bi-door-closed"></i></span>
                     <span class="link-txt">Logout</span>
-                </a>
+                </button>
             </li>
+            
         </ul>
     </nav>
     
     <div class="modal-logout" id="logout">
         <p>Deseja realmente sair?</p>
         <div>
-            <button type="button" class="btn-open">Confirmar</button>
+            <form method="get" action="/logout">
+                <button type="submit" class="btn-open">Confirmar</button>
+            </form>
+
             <button type="button" class="btn-close" onclick="closeModal('logout')">Cancelar</button>
         </div>
     </div>
