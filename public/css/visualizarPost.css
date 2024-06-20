@@ -26,6 +26,7 @@
 .container{
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 .left{
     width: 50%;
@@ -399,6 +400,7 @@
 
     .container{
         display: block;
+        width: 100%;
     }
 
     .left{
@@ -450,7 +452,7 @@
     } 
 }
 
-@media only screen and (min-height: 1000px) {
+@media only screen and (min-height: 850px) {
     .modalV {
         height: 70%;
     }
