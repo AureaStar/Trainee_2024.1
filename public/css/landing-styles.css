@@ -1,7 +1,6 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-size: 0px;
     box-sizing: border-box;
 }
 
@@ -20,6 +19,14 @@
     flex-direction: column;
 }
 
+form{
+    display: contents;
+}
+
+form:hover{
+    cursor: pointer;
+}
+
 .background-img{
     display:flex;
     align-items: center;
@@ -32,6 +39,7 @@
 }
 
 .img-torre{
+    margin-top: 10%;
     width: 800px;
     height: 192px;
     align-self: center;
@@ -161,7 +169,7 @@
 }
 
 .post-space h1{
-    padding-top: 2%;
+    padding-top: 5%;
     padding-bottom: 32px;
     font-family: "Almendra", serif;
     font-weight: 700;
@@ -287,7 +295,7 @@
 }
 
 .btn-post{
-    padding-top: 5%;
+    padding-top: 3%;
     width: 100%;
 }
 
@@ -441,7 +449,11 @@
     .transparent p{
         font-size: 32px;
     }
-    
+
+    .form_landing{
+        width: 100vw;
+    }
+
     .btn-hero{
         width: 45%;
     }

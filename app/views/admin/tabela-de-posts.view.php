@@ -1,4 +1,12 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['id'])){
+        return redirect('login');
+    }
+?>
+
 <!DOCTYPE html>
+<html lang="pt">
 <html>
     <head>
         <meta charset="utf-8">
@@ -11,59 +19,54 @@
     </head>
     
     <body>
-    <div class="tela" id="tela" onclick="fechaModal()"></div>
-    <main id="mainPostList">
-        <div id="titlebackPostList">
-            <div class="titleboxPostList">
-                <img class="torrezinhatabPostList" src="/public/assets/torrezinha.png">
-                <h1 class="titlePostList">Lista de Posts</h1>
-                <button class="criarPostList">Criar</button>
-                <img class="torrezinhatabPostList" src="/public/assets/torrezinha.png">
+        <div class="overlay" id="tela" onclick="fechaModal()"></div>
+        <main id="mainPostList">
+            <div id="titlebackPostList">
+                <div class="titleboxPostList">
+                    <img class="torrezinhatabPostList" src="/public/assets/torrezinha.png">
+                    <h1 class="titlePostList">Lista de Posts</h1>
+                    <button class="criarPostList" onclick="abreModal('modalVCriar')">Criar</button>
+                    <img class="torrezinhatabPostList" src="/public/assets/torrezinha.png">
+                </div>
             </div>
-        </div>
-        <div id="tabcontainerPostList">
-            <div class="tabscroll">
-                <table id="tablePostList">
-                    <thead class="theadPostList">
-                        <tr>
-                            <th class="thPostList">ID</th>
-                            <th class="thPostList">Título</th>
-                            <th class="thPostList">Autor</th>
-                            <th class="thPostList">Data de criação</th>
-                            <th class="thPostList">Ação</th>
+            <div id="tabcontainerPostList">
+                <div class="tabscroll">
+                    <table id="tablePostList">
+                        <thead class="theadPostList">
+                            <tr>
+                                <th class="thPostList">ID</th>
+                                <th class="thPostList">Título</th>
+                                <th class="thPostList">Autor</th>
+                                <th class="thPostList">Data de criação</th>
+                                <th class="thPostList">Ação</th>
 
-                        </tr>
-                    </thead>
-                    <tbody class="tbodyPostList">
-                        <?php foreach($posts as $post): ?>
-                            <?php foreach($users as $user): ?>
-                        <tr id="<?= 'parent_'.$post->id ?>">
-                            <td class="tdPostList"><?= $post->id ?></td>
-                            <td class="tdPostList"><?= $post->title ?></td>
-                            <td class="tdPostList"><?= $post->author == $user->id ? $user->name : "" ?></td>
-                            <td class="tdPostList"><?= $post->created_at ?></td>
-                            <td class="tdPostList">
-                                <div id="actionsBtsPostList">
-                                    <button class="viewPostList"><i class="bi bi-eye"></i> <b class="buttextPostList">Ver</b></button>
-                                    <button onclick= "abreModal('modalEditar<?=$post->id?>')" class="editPostList"><i  id="<?= 'editi_'.$post->id ?>"  class="bi bi-pencil-square"></i> <b class="buttextPostList">Editar</b></button>
-                                    <button onclick="abreModal ('modalExcluir<?=$post->id?>')" class="delPostList"type="submit"><i id="<?= 'deletei_'.$post->id ?>"  class="bi bi-x-lg"></i> <b class="buttextPostList">Deletar</b></button>
-                                </div>
-                            </td>
-                        </tr>
+                            </tr>
+                        </thead>
+                        <tbody class="tbodyPostList">
+                            <?php foreach($posts as $post): ?>
+                            <tr>
+                                <td class="tdPostList"><?= $post->id ?></td>
+                                <td class="tdPostList"><?= $post->title ?></td>
+                                <td class="tdPostList"><?php foreach($users as $user): ?><?= $post->author == $user->id ? $user->name : "" ?><?php endforeach ?></td>
+                                <td class="tdPostList"><?= $post->created_at ?></td>
+                                <td class="tdPostList">
+                                    <div id="actionsBtsPostList">
+                                        <button onclick="abreModal('modalVisualizar<?= $post->id ?>')"class="viewPostList"><i class="bi bi-eye"></i> <b class="buttextPostList" onclick="abreModal('modalVisualizar<?= $post->id ?>')">Ver</b></button>
+                                        <button onclick= "abreModal('modalEditar<?=$post->id?>')" class="editPostList"><i  id="<?= 'editi_'.$post->id ?>"  class="bi bi-pencil-square"></i> <b class="buttextPostList">Editar</b></button>
+                                        <button onclick="abreModal ('modalExcluir<?=$post->id?>')" class="delPostList"type="submit"><i id="<?= 'deletei_'.$post->id ?>"  class="bi bi-x-lg"></i> <b class="buttextPostList">Deletar</b></button>
+                                    </div>
+                                </td>
+                            </tr>
                             <?php endforeach ?>
-                        <?php endforeach ?>
-                    
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
-    </main>
+        </main>
         <?php foreach($posts as $post): ?>
             <?php foreach($users as $user): ?>
                 <?php 
-                    require 'editarPost.php';
-                    require 'excluirPost.php';
-                   /* require 'visualizarPost.php';*/
+                    require 'visualizarPost.php';
                 ?>
             <?php endforeach ?>
         <?php endforeach ?>
