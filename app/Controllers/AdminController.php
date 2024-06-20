@@ -39,7 +39,7 @@ class AdminController
 
         App::get('database')->insert('posts', $parameters);
 
-        header('Location: /posts');
+        header('Location: /admin/posts');
     }
 }
 

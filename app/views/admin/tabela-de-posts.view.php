@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['id'])){
+        return redirect('login');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt">
 <html>
@@ -12,7 +19,7 @@
     </head>
     
     <body>
-        <div id="overlay" onclick="fechaModal()"></div>
+        <div class="overlay" id="tela" onclick="fechaModal()"></div>
         <main id="mainPostList">
             <div id="titlebackPostList">
                 <div class="titleboxPostList">
@@ -44,7 +51,7 @@
                                 <td class="tdPostList"><?= $post->created_at ?></td>
                                 <td class="tdPostList">
                                     <div id="actionsBtsPostList">
-                                        <button class="viewPostList"><i class="bi bi-eye" onclick="abreModal('modalVisualizar<?= $post->id ?>')"></i> <b class="buttextPostList" onclick="abreModal('modalVisualizar<?= $post->id ?>')">Ver</b></button>
+                                        <button onclick="abreModal('modalVisualizar<?= $post->id ?>')"class="viewPostList"><i class="bi bi-eye"></i> <b class="buttextPostList" onclick="abreModal('modalVisualizar<?= $post->id ?>')">Ver</b></button>
                                         <button class="editPostList"><i class="bi bi-pencil-square"></i> <b class="buttextPostList">Editar</b></button>
                                         <button class="delPostList"><i class="bi bi-x-lg"></i> <b class="buttextPostList">Deletar</b></button>
                                     </div>
