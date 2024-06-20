@@ -49,10 +49,8 @@
         </div>
 
         <!-- Easter Egg -->
-        <div id="modalWebson" class="modalfotValor">
-            <div class="clseboxmodalfotValor">
+        <div id="modalWebson" class="modalWebson">
                 <button onclick="fotfechaModal('modalWebson')"><i class="bi bi-x-lg"></i></button>
-            </div>
             <div id="websonDiv">
                 <p id="webson"><b class ="negrito">Webson Codinson's Home S2</b></p>
                 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3HvgaZeBWbr7UjFeicPFRI?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>

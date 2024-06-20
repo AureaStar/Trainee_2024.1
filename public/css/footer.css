@@ -37,6 +37,78 @@ footer{
     padding-bottom: 2%;
     z-index: 99;
 }
+
+.modalWebson{
+    width:92%;
+    margin: inherit;
+    height: 85%;
+    position: fixed;
+    top: 52%;
+    left: 50%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    border-radius: 14px;
+    background: linear-gradient(180deg, #52331D 0%, #744321 100%);
+    filter: drop-shadow(rgba(0, 0, 0, 0.80) 10px 10px 8px);
+    gap:48px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    z-index: 99;
+}
+
+.modalWebson p{
+    justify-content: center;
+    text-align: center;
+    font-family:Almendra;
+    font-size:40px;
+    color:white;
+    width:70%;
+    padding-bottom: 4%;
+}
+
+.modalWebson button{
+    position: fixed;
+    top: 4%;
+    right: 4%;
+    text-decoration:none;
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    z-index: 100;
+}
+
+.modalWebson i{
+    font-size: 32px;
+    color: white;
+}
+
+iframe{
+    width: 98%;
+    height: 100%;
+}
+
+#websonDiv{
+    overflow-y: scroll;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#webson{
+    display: flex;
+    font-family:Almendra;
+    font-size:24px;
+}
+
 .tboxmodalfotValor{
     display:flex;
     justify-content: start;
@@ -125,21 +197,6 @@ footer{
     height: 41.733px;
 }
 
-iframe{
-    height: 200px;
-}
-
-#websonDiv{
-    display: flex;
-    flex-direction: column;
-
-}
-
-#webson{
-    display: flex;
-    font-family:Almendra;
-    font-size:24px;
-}
 
 .frames{
     display:grid;
