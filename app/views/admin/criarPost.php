@@ -22,6 +22,11 @@
         </div>
         <form class="modalVC-body" method="POST" action="/posts/create" enctype="multipart/form-data">
 
+            <label for="imagem" class="nameVCbox">Imagem:</label>
+            <div class="fundoVFormulario">
+                <input type="file" class="boxVC imagemVCInput" name="imagem" required>
+            </div>
+
             <label for="title" class="nameVCbox">Título:</label>
             <div class="fundoVCFormulario">
                 <input type="text" class="boxVC" placeholder="Insira o título" name="title" required>
@@ -39,11 +44,6 @@
                     <option class="nsei" value="2">Categoria 2</option> 
                     <option class="nsei" value="3">Categoria 3</option>
                 </select>
-            </div>
-
-            <label for="imagem" class="nameVCbox">Imagem:</label>
-            <div class="fundoVFormulario">
-                <input type="file" class="boxVC imagemVCInput" name="imagem" required>
             </div>
 
             <label for="data" class="nameVCbox">Data de criação do post:</label>
