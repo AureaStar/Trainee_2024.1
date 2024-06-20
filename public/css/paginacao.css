@@ -4,7 +4,13 @@
 .disabled i{
     color:rgb(156, 155, 155);
 }
-
+.posicionaPagtabelaPost{
+    position:fixed;
+    top: 90%;
+    left: 50%;
+    display:flex;
+    transform: translate(-50%, -50%); 
+} 
 .page-item a{
     width:100%;
     height:100%;

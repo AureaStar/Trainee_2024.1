@@ -74,16 +74,7 @@ function Filter(string $string){
         </div>
 
         <div class="pagination_row">
-            <span>
-                1
-            </span>
-            <span>
-                2
-            </span>
-            <span>
-                3
-            </span>
-            <i class="fa-solid fa-caret-right" style="color: #ffffff;"></i>
+            <?php require(__DIR__ . '/../components/paginacao.php') ?>
         </div>
     </main>
     <?php require_once "app/views/site/footer.view.php"?>
