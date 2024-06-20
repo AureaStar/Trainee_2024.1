@@ -20,16 +20,15 @@ class AdminController
     {
         $temporario = $_FILES['imagem']['tmp_name'];
         $nomeimagem =  sha1(uniqid($_FILES['imagem']['name'], true)) . '.' . pathinfo($_FILES['imagem']['name'], PATHINFO_EXTENSION);
-        $destinoimagem = "../../htdocs/Trainee_2024.1/public/imagens/";
+        $destinoimagem = "public/imagens/";
         move_uploaded_file($temporario, $destinoimagem . $nomeimagem);
-        $caminhodaimagem = "../../public/imagens/" . $nomeimagem;
+        $caminhodaimagem = "public/imagens/" . $nomeimagem;
 
         $parameters = [
             'title' => $_POST['title'],
             'content' => $_POST['text'],
             'author' => 1,
             'category' => $_POST['categorias'],
-            'created_at' => $_POST['data'],
             'image' => $caminhodaimagem
         ];
 

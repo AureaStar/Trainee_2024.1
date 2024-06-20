@@ -18,7 +18,7 @@
 }
 
 .imagem-post{
-    max-width: 1920px;
+    max-width: 600px;
     width: 100%;
     border-radius: 20px;
 }
@@ -28,10 +28,10 @@
     flex-direction: row;
 }
 .left{
-    width: 100%;
+    width: 50%;
 }
 .right{
-    width: 100%;
+    width: 50%;
     margin-left: 5%;
 }
 
@@ -339,8 +339,14 @@
         font-size: 28px;
     }
 
-    .imagem-post{
+    .imagem-post {
         width: 60%;
+    }
+    .left {
+        width: 100%;
+    }
+    .right {
+        width: 100%;
     }
 }
 
@@ -368,17 +374,24 @@
     .fecharViPost {
         width: 25%;
         font-size: 20px;
+        height: 47%;
     }
     .imagem-post{
         padding-top: 0.5%;
         width: 75%;
     }
+    .left {
+        width: 100%;
+    }
+    .right {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
     .modalV {
-        top: 55%;
-        height: 90%;
+        top: 50%;
+        height: 92%;
         width: 70%;
         border-radius: 15px;
         padding: 3%;
@@ -389,9 +402,11 @@
     }
 
     .left{
+        width: 100%;
         margin-bottom: 0;
     }
     .right{
+        width: 100%;
         margin-left: 0;
     }
     .modalV-content {
@@ -431,7 +446,13 @@
     }
 
     .imagem-post{
-        width: 50%;
+        width: 40%;
+    } 
+}
+
+@media only screen and (min-height: 1000px) {
+    .modalV {
+        height: 70%;
     }
 }
 
