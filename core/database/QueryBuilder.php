@@ -80,7 +80,12 @@ class QueryBuilder
 
     public function selectAll($table, $inicio = null, $rows_count = null)
     {
-        $sql = "select * from {$table}";
+        if ($table=='users'){
+            $sql = "select * from {$table}";
+        }
+        else{
+            $sql = "select * from {$table} order by created_at DESC";
+        }
 
         if($inicio >= 0 && $rows_count > 0){
             $sql .= " LIMIT {$inicio}, {$rows_count}";

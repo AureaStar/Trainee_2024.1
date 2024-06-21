@@ -43,9 +43,6 @@ function Filter(string $string){
                         <option <?= Filter("História de Jogos")?> 
                             value="História de Jogos">História de Jogos
                         </option>
-                        <option <?= Filter("Antigo")?> 
-                            value="Antigo">Antigo
-                        </option>
                     </select>
                     <div class="funil"> 
                         <i onclick="submitform('formReset')" class="fa-solid fa-refresh" style="color: #ffffff;"></i>

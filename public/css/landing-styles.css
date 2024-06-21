@@ -78,7 +78,7 @@ form:hover{
     padding-right: 20px;
     color: #E6A549;
     text-align: center;
-    font-size: 44px;
+    font-size: 40px;
     font-weight: 800;
 }
 
@@ -86,7 +86,7 @@ form:hover{
     padding: 8px 32px 80px 32px;
     color: white;
     text-align: justify;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 700;
 }
 
@@ -96,7 +96,7 @@ form:hover{
     flex-direction: row;
     justify-content:center;
     gap: 4%;
-    padding-top: 48px;
+    padding-top: 28px;
 }
 
 .btn-hero{
@@ -105,8 +105,8 @@ form:hover{
     text-align: center;
     border-radius: 28px;
     padding-top: 0.8%;
-    width: 252px;
-    height: 72px;
+    width: 240px;
+    height: 68px;
     font-family: "Jomhuria", serif;
     font-weight: 400;
     font-style: normal;
@@ -118,7 +118,7 @@ form:hover{
     outline: inherit;
     filter:drop-shadow(black 4px 4px 4px);
     background-color: #439741;
-    font-size: 64px;
+    font-size: 60px;
     border-width: 1px;
 }
 
@@ -134,7 +134,7 @@ form:hover{
     filter:drop-shadow(black 4px 4px 4px);
     background-color: rgb(116, 116, 116);
     border-color: white;
-    font-size: 64px;
+    font-size: 60px;
     border-width: 2px;
 }
 
@@ -169,8 +169,8 @@ form:hover{
 }
 
 .post-space h1{
-    padding-top: 5%;
-    padding-bottom: 32px;
+    padding-top: 2%;
+    padding-bottom: 24px;
     font-family: "Almendra", serif;
     font-weight: 700;
     font-style: normal;
@@ -308,7 +308,7 @@ form:hover{
     background-color: #439741;
     color: white;
     border-radius: 28px;
-    width: 32%;
+    width: 30%;
     font-family: "Jomhuria", serif;
     font-weight: 400;
     font-style: normal;

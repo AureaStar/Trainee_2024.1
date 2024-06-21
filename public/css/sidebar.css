@@ -138,6 +138,21 @@ ul .itens-menu-login button .icon{
     box-shadow: rgb(0, 0, 0) 2px 2px 4px 4px;
     z-index: 11;
 }
+
+.footerfiltro{
+    width:100%;
+    height: 100%;
+    top: 0%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    display:none;
+    z-index: 10;
+}
+
+.verModal{
+    display:flex;
+}
+
 .modal-logout p{
     margin-top: 20%;
     margin-bottom: 20%;

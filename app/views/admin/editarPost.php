@@ -41,9 +41,9 @@
             <label for="filter" class="thnamebox">Categoria:</label>
             <div class="thfundoFormulario">
                 <select required name="category" class="box boxselect">                    
-                    <option class="nsei" value="1">Categoria 1</option>                   
-                    <option class="nsei" value="2">Categoria 2</option> 
-                    <option class="nsei" value="3">Categoria 3</option>
+                    <option class="nsei" value="Novidades e Lançamentos">Novidades e Lançamentos</option>                   
+                    <option class="nsei" value="Reviews">Reviews</option> 
+                    <option class="nsei" value="História de Jogos">História de Jogos</option>
                 </select>
             </div>
 

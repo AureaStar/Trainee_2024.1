@@ -49,10 +49,11 @@ class AdminPostController
         move_uploaded_file($temporario, $destinoimagem . $nomeimagem);
         $caminhodaimagem = "public/imagens/" . $nomeimagem;
 
+        session_start();
         $parameters = [
             'title' => $_POST['title'],
             'content' => $_POST['text'],
-            'author' => 1,
+            'author'=>$_SESSION['id'],
             'category' => $_POST['categorias'],
             'image' => $caminhodaimagem
         ];
@@ -85,11 +86,12 @@ class AdminPostController
         } else {
             $caminhodaimagem = $post->image;
         }
+        session_start();
         $parametros = [
             'title'=> $_POST['title'],
             'content'=> $_POST['content'],
             'image'=>$caminhodaimagem,
-            'author'=>1,
+            'author'=>$_SESSION['id'],
             'category'=>$_POST['category'], 
         ];
         App::get('database')->update("posts",$_POST["id"],$parametros);
@@ -97,4 +99,4 @@ class AdminPostController
     }
 }
 
-?>
+

@@ -96,5 +96,3 @@ class UserController
         return view('admin/lista-de-usuarios', compact('users', 'page', 'total_pages'));
     }
 }
-
-?>

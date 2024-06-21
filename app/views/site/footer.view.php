@@ -56,6 +56,7 @@
                 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3HvgaZeBWbr7UjFeicPFRI?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1Ozhs9MxkAA9bEIpNiHglK?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/214Yh2tB6ygu4HBPmx1Sdn?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <p>"Curta a vibe dessa playlist e faz o V para celebrar cada batida!"</p>
             </div>
         </div>
 

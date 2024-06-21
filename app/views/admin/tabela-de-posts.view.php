@@ -51,7 +51,10 @@
                                 <td class="tdPostList"><?= $post->id ?></td>
                                 <td class="tdPostList"><?= $post->title ?></td>
                                 <td class="tdPostList"><?php foreach($users as $user): ?><?= $post->author == $user->id ? $user->name : "" ?><?php endforeach ?></td>
-                                <td class="tdPostList"><?= $post->created_at ?></td>
+                                <td class="tdPostList">
+                                <?php $data=strtotime($post->created_at);
+                                echo date('d/m/Y',$data) ?>
+                                </td>
                                 <td class="tdPostList">
                                     <div id="actionsBtsPostList">
                                         <button onclick="abreModal('modalVisualizar<?= $post->id ?>')"class="viewPostList"><i class="bi bi-eye"></i> <b class="buttextPostList" onclick="abreModal('modalVisualizar<?= $post->id ?>')">Ver</b></button>

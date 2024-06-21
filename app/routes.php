@@ -23,4 +23,4 @@ use App\Core\Router;
     $router->post("admin/post/delete","AdminPostController@deleteById");
     $router->get('admin/posts/findOne','AdminPostController@findOne');
     $router->post("admin/post/update","AdminPostController@update");
-?>
+
