@@ -30,12 +30,14 @@
         <div class="box">
             <div class="autoria"> 
                 <img class="autoria-perfil" src="<?=$user[0]->image?>" alt="Foto de perfil">
-                <p>Escrito por <?= $user[0]->name?> em <?= $post[0]->created_at ?></p>
+                <p>Escrito por <?= $user[0]->name?> em <?php $data=strtotime($post[0]->created_at);
+                echo date('d/m/Y',$data) ?></p>
             </div>
             <div class="box-text">
-                <?php $paragraph = explode("\n", $post[0]->content);
+                <?php 
+                $paragraph = explode("\n", $post[0]->content);
                  foreach ($paragraph as $paragrafo){
-                    echo '<p class="p">' . htmlspecialchars($paragrafo) . '</p>'; 
+                    echo '<p class="p">' . nl2br(htmlspecialchars($paragrafo)) . '</p>'; 
                  }
                  ?> 
             </div>

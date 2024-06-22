@@ -73,4 +73,6 @@
         </div>
     </div>
 
+    <div class="footerfiltro" onclick="closeModal('logout')"></div>
+
     <script src="/public/js/sidebar.js"></script>

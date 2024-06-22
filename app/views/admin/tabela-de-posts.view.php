@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['id'])){
+        return redirect('login');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt">
 <html>
@@ -12,14 +19,16 @@
     </head>
     
     <body>
-        <?php require_once "app/views/admin/sidebar.view.php"?>
-        
+
+        <?php require 'sidebar.view.php'?>
+
+        <div class="overlay" id="tela" onclick="fechaModal()"></div>
         <main id="mainPostList">
             <div id="titlebackPostList">
                 <div class="titleboxPostList">
                     <img class="torrezinhatabPostList" src="/public/assets/torrezinha.png">
                     <h1 class="titlePostList">Lista de Posts</h1>
-                    <button class="criarPostList">Criar</button>
+                    <button class="criarPostList" onclick="abreModal('modalVCriar')">Criar</button>
                     <img class="torrezinhatabPostList" src="/public/assets/torrezinha.png">
                 </div>
             </div>
@@ -37,73 +46,41 @@
                             </tr>
                         </thead>
                         <tbody class="tbodyPostList">
+                            <?php foreach($posts as $post): ?>
                             <tr>
-                                <td class="tdPostList">1</td>
-                                <td class="tdPostList">postagem</td>
-                                <td class="tdPostList">Autor</td>
-                                <td class="tdPostList">2024-05-13</td>
+                                <td class="tdPostList"><?= $post->id ?></td>
+                                <td class="tdPostList"><?= $post->title ?></td>
+                                <td class="tdPostList"><?php foreach($users as $user): ?><?= $post->author == $user->id ? $user->name : "" ?><?php endforeach ?></td>
+                                <td class="tdPostList">
+                                <?php $data=strtotime($post->created_at);
+                                echo date('d/m/Y',$data) ?>
+                                </td>
                                 <td class="tdPostList">
                                     <div id="actionsBtsPostList">
-                                        <button class="viewPostList"><i class="bi bi-eye"></i> <b class="buttextPostList">Ver</b></button>
-                                        <button class="editPostList"><i class="bi bi-pencil-square"></i> <b class="buttextPostList">Editar</b></button>
-                                        <button class="delPostList"><i class="bi bi-x-lg"></i> <b class="buttextPostList">Deletar</b></button>
+                                        <button onclick="abreModal('modalVisualizar<?= $post->id ?>')"class="viewPostList"><i class="bi bi-eye"></i> <b class="buttextPostList" onclick="abreModal('modalVisualizar<?= $post->id ?>')">Ver</b></button>
+                                        <button onclick= "abreModal('modalEditar<?=$post->id?>')" class="editPostList"><i  id="<?= 'editi_'.$post->id ?>"  class="bi bi-pencil-square"></i> <b class="buttextPostList">Editar</b></button>
+                                        <button onclick="abreModal ('modalExcluir<?=$post->id?>')" class="delPostList"type="submit"><i id="<?= 'deletei_'.$post->id ?>"  class="bi bi-x-lg"></i> <b class="buttextPostList">Deletar</b></button>
                                     </div>
                                 </td>
                             </tr>
-                            <tr>
-                                <td class="tdPostList">2</td>
-                                <td class="tdPostList">postagem</td>
-                                <td class="tdPostList">Autor</td>
-                                <td class="tdPostList">2024-05-13</td>
-                                <td class="tdPostList">
-                                    <div id="actionsBtsPostList">
-                                        <button class="viewPostList"><i class="bi bi-eye"></i> <b class="buttextPostList">Ver</b></button>
-                                        <button class="editPostList"><i class="bi bi-pencil-square"></i> <b class="buttextPostList">Editar</b></button>
-                                        <button class="delPostList"><i class="bi bi-x-lg"></i> <b class="buttextPostList">Deletar</b></button>
-                                    </div>
-                                </td>
-                                <tr>
-                                    <td class="tdPostList">3</td>
-                                    <td class="tdPostList">postagem</td>
-                                    <td class="tdPostList">Autor</td>
-                                    <td class="tdPostList">2024-05-13</td>
-                                    <td class="tdPostList">
-                                        <div id="actionsBtsPostList">
-                                            <button class="viewPostList"><i class="bi bi-eye"></i> <b class="buttextPostList">Ver</b></button>
-                                            <button class="editPostList"><i class="bi bi-pencil-square"></i> <b class="buttextPostList">Editar</b></button>
-                                            <button class="delPostList"><i class="bi bi-x-lg"></i> <b class="buttextPostList">Deletar</b></button>
-                                        </div>
-                                    </td>
-                            </tr>
-                            <tr>
-                                <td class="tdPostList">4</td>
-                                <td class="tdPostList">postagem</td>
-                                <td class="tdPostList">Autor</td>
-                                <td class="tdPostList">2024-05-13</td>
-                                <td class="tdPostList">
-                                    <div id="actionsBtsPostList">
-                                        <button class="viewPostList"><i class="bi bi-eye"></i> <b class="buttextPostList">Ver</b></button>
-                                        <button class="editPostList"><i class="bi bi-pencil-square"></i> <b class="buttextPostList">Editar</b></button>
-                                        <button class="delPostList"><i class="bi bi-x-lg"></i> <b class="buttextPostList">Deletar</b></button>
-                                    </div>
-                                </td>
-                                <tr>
-                                    <td class="tdPostList">5</td>
-                                    <td class="tdPostList">postagem</td>
-                                    <td class="tdPostList">Autor</td>
-                                    <td class="tdPostList">2024-05-13</td>
-                                    <td class="tdPostList">
-                                        <div id="actionsBtsPostList">
-                                            <button class="viewPostList"><i class="bi bi-eye"></i> <b class="buttextPostList">Ver</b></button>
-                                            <button class="editPostList"><i class="bi bi-pencil-square"></i> <b class="buttextPostList">Editar</b></button>
-                                            <button class="delPostList"><i class="bi bi-x-lg"></i> <b class="buttextPostList">Deletar</b></button>
-                                        </div>
-                                    </td>  
-                                </tr>               
+                            <?php endforeach ?>
                         </tbody>
                     </table>
                 </div>
             </div>
         </main>
+        <?php foreach($posts as $post): ?>
+            <?php foreach($users as $user): ?>
+                <?php 
+                    require 'editarPost.php';
+                    require 'excluirPost.php';
+                    require 'visualizarPost.php';
+                ?>
+            <?php endforeach ?>
+        <?php endforeach ?>
+
+        <?php require 'criarPost.php'; ?>
+        <div class = "posicionaPagtabelaPost"><?php require(__DIR__ . '/../components/paginacao.php') ?></div>
     </body>
+    <script src="/public/js/modal.js"></script>
 </html>

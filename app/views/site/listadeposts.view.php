@@ -43,9 +43,6 @@ function Filter(string $string){
                         <option <?= Filter("História de Jogos")?> 
                             value="História de Jogos">História de Jogos
                         </option>
-                        <option <?= Filter("Antigo")?> 
-                            value="Antigo">Antigo
-                        </option>
                     </select>
                     <div class="funil"> 
                         <i onclick="submitform('formReset')" class="fa-solid fa-refresh" style="color: #ffffff;"></i>
@@ -74,16 +71,7 @@ function Filter(string $string){
         </div>
 
         <div class="pagination_row">
-            <span>
-                1
-            </span>
-            <span>
-                2
-            </span>
-            <span>
-                3
-            </span>
-            <i class="fa-solid fa-caret-right" style="color: #ffffff;"></i>
+            <?php require(__DIR__ . '/../components/paginacao.php') ?>
         </div>
     </main>
     <?php require_once "app/views/site/footer.view.php"?>
