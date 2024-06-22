@@ -73,7 +73,7 @@
         <div class="modal-logout" id="modal">
             <p>Deseja realmente sair?</p>
             <div class="btn-modal">
-                <form method="get" action="logout">
+                <form method="get" action="/admin/logout">
                 <button type="submit" class="btn-open">Confirmar</button>
                 </form>
                 <button type="button" class="btn-close" onclick="closeModal('modal')">Cancelar</button>
