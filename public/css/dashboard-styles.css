@@ -72,15 +72,16 @@ form{
 }
 
 .material-symbols-outlined{
-    position: fixed;
-    bottom: 11%;
-    right: 36%;
+    position: relative;
+    left:0%;
+    bottom:5.5%;
     border-radius: 180px;
     background-color: transparent; /* não sei o que colocar ainda */
     border: none;
     color: white;
     filter: drop-shadow(3px 3px 6px black);
     font-size: 60px;
+    padding-bottom: 1%;
 }
 
 .material-symbols-outlined:hover{
@@ -224,6 +225,7 @@ h1 img{
 
 #btn-publi{
     background-color: #439741;
+    border: 2.5px solid transparent;
 }
 
 #btn-publi:hover{
@@ -473,7 +475,10 @@ h1 img{
         width: 96px;
         height: 80px;
     }
-
+    .material-symbols-outlined{
+        left:0%;
+        bottom:5%;
+    }
 }
 
 @media (max-width: 800px){
@@ -484,6 +489,10 @@ h1 img{
 
     .modal-logout button{
         font-size: 32px;
+    }
+    .material-symbols-outlined{
+        left:0%;
+        bottom:5%;
     }
 }
 
@@ -519,7 +528,10 @@ h1 img{
         width: 40px;
         height: 40px;
     }
-
+    .material-symbols-outlined{
+        left:0%;
+        bottom:5%;
+    }
 }
 
 @media (max-width: 620px){
@@ -567,6 +579,10 @@ h1 img{
         width: 80px;
         height: 68px;
     }
+    .material-symbols-outlined{
+        left:0%;
+        bottom:5%;
+    }
 }
 
 @media (max-width: 520px){
@@ -577,7 +593,10 @@ h1 img{
     .modal-logout p{
         font-size: 26px;
     }
-
+    .material-symbols-outlined{
+        left:0%;
+        bottom:5%;
+    }
     .d-title{
         height: 24%;
     }

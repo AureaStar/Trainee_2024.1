@@ -26,7 +26,7 @@
 
         <div class="footerfiltro" onclick="closeModal('modalHelp'); closeModal('modal')"></div>
 
-            <button onclick="openModal('modalHelp')" class="material-symbols-outlined">help</button>
+            
     
             <div class="d-title">
                 <h1><img src="../../../public/assets/Mini-logo.png">Dashboard<img src="../../../public/assets/Mini-logo.png"></h1>   
@@ -91,7 +91,7 @@
         
 
         </div>
-    
+        <button onclick="openModal('modalHelp')" class="material-symbols-outlined">help</button>
     </div>
     
 
