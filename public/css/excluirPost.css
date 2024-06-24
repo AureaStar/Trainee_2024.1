@@ -5,7 +5,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 10%;
+    /* height: 10%; */
+    height: fit-content;
     width: 65%;
     display: none;
     flex-direction: column;
@@ -54,10 +55,10 @@
     display: flex;
     flex-direction: row;
     height: 100%;
+    max-height: 50px ;
     padding: 0%;
     margin: 0%;
 }
-
 
 .tamodal-body {
     display: flex;
@@ -72,9 +73,8 @@
 .sim {
     background-color: #226c20;
     height: 100%;
-    width: 20%;
+    width: 15%;
     border-radius: 5px;
-    padding-bottom: 25px;
     color: white;
     font-family: Jomhuria;
     font-size: 32px;
@@ -91,9 +91,8 @@
 .não {
     background-color: red;
     height: 100%;
-    width: 20%;
+    width: 15%;
     border-radius: 5px;
-    padding-bottom: 25px;
     color: white;
     font-family: Jomhuria;
     font-size: 32px;
@@ -115,6 +114,15 @@
         padding: 3%;
     }
 
+    .taimagemlogo {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        max-height: 50px ;
+        padding: 0%;
+        margin: 0%;
+    }
+
     .tamodal-header {
         height: 40%;
     }
@@ -130,20 +138,18 @@
 
     .tamodal-body {
         width: 100%;
-        height: 18%;
+        height: 35%;
     }
     
     .sim {
         height: 100%;
         width: 20%;
-        padding-bottom: 20px;
         font-size: 24px;
     }
  
     .não {
         height: 100%;
         width: 20%;
-        padding-bottom: 20px;
         font-size: 24px;
     }
 }
@@ -151,6 +157,14 @@
 @media only screen and (max-width: 332px) {
     .tatitulo {
         font-size: 9px;
+    }
+
+    .sim{
+        font-size: 18px;
+    }
+
+    .não{
+        font-size: 18px;
     }
 }
 
@@ -174,20 +188,18 @@
 
     .tamodal-body {
         width: 100%;
-        height: 18%;
+        height: 30%;
     }
     
     .sim {
         height: 100%;
         width: 20%;
-        padding-bottom: 20px;
-        font-size: 24px;
+        font-size: 30px;
     }
  
     .não {
         height: 100%;
         width: 20%;
-        padding-bottom: 20px;
-        font-size: 24px;
+        font-size: 30px;
     }
 }

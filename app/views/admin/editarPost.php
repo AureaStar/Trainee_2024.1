@@ -48,8 +48,8 @@
             </div>
 
             <div class="thmodal-footer">
-                <button type="submit" class="fechar">Editar</button>
-                <button type="button" class="cancelar"onclick="fechaModal()">Cancelar</button>
+                <button type="submit" class="thfechar">Editar</button>
+                <button type="button" class="thcancelar"onclick="fechaModal()">Cancelar</button>
 
             </div>
             <input hidden name="id" value="<?=$post->id?>">
