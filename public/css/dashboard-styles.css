@@ -243,6 +243,7 @@ h1 img{
     background-color: rgb(116, 116, 116);
     border-color: white;
     border-width: 2px;
+    border: 2.5px solid transparent;
 }
 
 #btn-user img{
