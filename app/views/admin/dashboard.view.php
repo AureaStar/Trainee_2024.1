@@ -65,11 +65,12 @@
             Logout
         </div>
     </button>
+    <i onclick="openModal('modalHelp')" class="material-symbols-outlined mobileManual">help</i>
 </div>
 
     <div class="d-logout">
         <button id="btn-logout" onclick="openModal('modal')"><img src="../../../public/assets/logout-icon.png">Encerrar sessão</button>
-        </p>
+        <i onclick="openModal('modalHelp')" class="material-symbols-outlined">help</i>
 
 
         </div>
@@ -91,7 +92,6 @@
         
 
         </div>
-        <button onclick="openModal('modalHelp')" class="material-symbols-outlined">help</button>
     </div>
     
 
