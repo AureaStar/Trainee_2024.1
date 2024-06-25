@@ -1,5 +1,6 @@
 .disabled{
     background-color:#4d4d4d;
+    pointer-events: none;
 }
 .disabled i{
     color:rgb(156, 155, 155);
@@ -40,6 +41,7 @@
     color:rgb(156, 155, 155);
     text-decoration:none;
     font-weight:bold;
+    pointer-events: none;
 }
 
 .bi-caret-left-fill{
@@ -53,4 +55,5 @@
 
 .active{
     color:white;
+    pointer-events: all;
 }

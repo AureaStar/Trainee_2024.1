@@ -104,7 +104,7 @@ form:hover{
     justify-content: center;
     text-align: center;
     border-radius: 28px;
-    padding-top: 0.8%;
+    padding-top: 0.4%;
     width: 240px;
     height: 68px;
     font-family: "Jomhuria", serif;
@@ -120,6 +120,7 @@ form:hover{
     background-color: #439741;
     font-size: 60px;
     border-width: 1px;
+    border: 2.5px solid transparent;
 }
 
 #login:hover{
@@ -136,6 +137,7 @@ form:hover{
     border-color: white;
     font-size: 60px;
     border-width: 2px;
+    border: 2.5px solid transparent;
 }
 
 #publi:hover{
