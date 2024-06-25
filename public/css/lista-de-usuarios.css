@@ -113,7 +113,7 @@ div#tabcontainerUserList{
     background-color: rgba(66, 151, 65, 0.2);
 }
 .thUserList {
-    padding: 8px 6px;
+    padding: 8px 15px;
     color:#E6A549;
     font-family:Open Sans;
     font-size: 18px;
@@ -121,7 +121,7 @@ div#tabcontainerUserList{
 }
 
 .tdUserList {
-    padding: 8px 6px;
+    padding: 8px 15px;
     font-size: 16px;
     font-family:Open Sans;
     width:auto;
