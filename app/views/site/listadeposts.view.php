@@ -58,7 +58,7 @@ function Filter(string $string){
                 <?php foreach($posts as $post) :?>
                 <form onclick='Redirect(this)' method="get" action="/post_individual">
                 <input hidden name="id" value="<?= $post->id?>">
-                <div class="card" style="background-image: url(<?= $post->image ?>);">
+                <div class="card" style="background-image: url(../../<?= $post->image ?>);">
                     <h4>
                     <?=$post->category?> 
                     </h4>
