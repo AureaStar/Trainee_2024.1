@@ -36,7 +36,7 @@ class UserController
         $id = $_POST['id'];
         $user = App::get('database')->selectOne('users', $id)[0];
         if(App::get('database')->verificaEmail($_POST['email']) == false||$_POST['email']== $user->email){
-            if(isset($_FILES['imagem'])){
+            if(!empty($_FILES['imagem']['tmp_name'])){
                 $temporario = $_FILES['imagem']['tmp_name'];
                 $nomeimagem = sha1(uniqid($_FILES['imagem']['name'], true)) . '.' . pathinfo($_FILES['imagem']['name'], PATHINFO_EXTENSION);
                 $destinoimagem = "public/imagens/";

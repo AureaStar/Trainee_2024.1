@@ -75,7 +75,7 @@ class AdminPostController
     public function update(){
         $id = $_POST['id'];
         $post = App::get('database')->selectOne('posts',$id);
-        if(isset($_FILES['imagem'])){
+        if(!empty($_FILES['imagem']['tmp_name'])){
             $temporario = $_FILES['imagem']['tmp_name'];
             $nomeimagem = sha1(uniqid($_FILES['imagem']['name'], true)) . '.' . pathinfo($_FILES['imagem']['name'], PATHINFO_EXTENSION);
             $destinoimagem = "public/imagens/";
@@ -84,7 +84,7 @@ class AdminPostController
             $imagem_rota = "public/imagens/" . basename($post[0]->image);
             unlink($imagem_rota);
         } else {
-            $caminhodaimagem = $post->image;
+            $caminhodaimagem = $post[0]->image;
         }
         session_start();
         $parametros = [
