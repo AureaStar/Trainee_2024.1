@@ -1,11 +1,14 @@
-<link rel="stylesheet" href="../../../public/css/criarPost.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jomhuria">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sail">
-<link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700" rel="stylesheet"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
 
+    <link rel="stylesheet" href="../../../public/css/criarPost.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jomhuria">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sail">
+    <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700" rel="stylesheet"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
 <!-- Open The Modal -->
 
 <!-- The Modal -->
@@ -34,7 +37,7 @@
 
             <label for="text" class="nameVCbox">Conteúdo:</label>
             <div class="fundoVCFormularioCont">
-                <textarea type="text" class="boxVC" placeholder="Escreva o conteúdo" name="text" required></textarea>
+                <textarea type="text" class="boxVC" placeholder="Escreva o conteúdo" name="text"></textarea>
             </div>
 
             <label for="filter" class="nameVCbox">Categoria:</label>
@@ -53,5 +56,7 @@
             </div>
         </form>
     </div>
-    <script src="/public/js/modal.js"></script>
 </div>
+    
+    <script src="/public/js/modal.js"></script>
+    

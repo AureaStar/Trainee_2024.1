@@ -15,6 +15,8 @@ return array(
     'App\\Core\\Database\\QueryBuilder' => $baseDir . '/core/database/QueryBuilder.php',
     'App\\Core\\Request' => $baseDir . '/core/Request.php',
     'App\\Core\\Router' => $baseDir . '/core/Router.php',
+    'CommonMarkTestStrict' => $vendorDir . '/erusev/parsedown/test/CommonMarkTestStrict.php',
+    'CommonMarkTestWeak' => $vendorDir . '/erusev/parsedown/test/CommonMarkTestWeak.php',
     'ComposerAutoloaderInit90bbf95869b4e88bf0dc5022e708a458' => $vendorDir . '/composer/autoload_real.php',
     'Composer\\Autoload\\ClassLoader' => $vendorDir . '/composer/ClassLoader.php',
     'Composer\\Autoload\\ComposerStaticInit90bbf95869b4e88bf0dc5022e708a458' => $vendorDir . '/composer/autoload_static.php',
@@ -24,4 +26,9 @@ return array(
     'PHPMailer\\PHPMailer\\PHPMailer' => $vendorDir . '/phpmailer/phpmailer/src/PHPMailer.php',
     'PHPMailer\\PHPMailer\\POP3' => $vendorDir . '/phpmailer/phpmailer/src/POP3.php',
     'PHPMailer\\PHPMailer\\SMTP' => $vendorDir . '/phpmailer/phpmailer/src/SMTP.php',
+    'Parsedown' => $vendorDir . '/erusev/parsedown/Parsedown.php',
+    'ParsedownTest' => $vendorDir . '/erusev/parsedown/test/ParsedownTest.php',
+    'TestParsedown' => $vendorDir . '/erusev/parsedown/test/TestParsedown.php',
+    'TrustDelegatedExtension' => $vendorDir . '/erusev/parsedown/test/SampleExtensions.php',
+    'UnsafeExtension' => $vendorDir . '/erusev/parsedown/test/SampleExtensions.php',
 );

@@ -24,7 +24,7 @@
                     <button type="submit" class="material-icons icone">arrow_back</button>
                 </form>
             </div>
-            <h1><?= $post[0]->title ?></h1>
+            <h1 class="h1"><?= $post[0]->title ?></h1>
         
         <img class="imagem" src="<?= $post[0]->image ?>" alt="Imagem jogo de xadrez">
         <div class="box">
@@ -34,12 +34,7 @@
                 echo date('d/m/Y',$data) ?></p>
             </div>
             <div class="box-text">
-                <?php 
-                $paragraph = explode("\n", $post[0]->content);
-                 foreach ($paragraph as $paragrafo){
-                    echo '<p class="p">' . nl2br(htmlspecialchars($paragrafo)) . '</p>'; 
-                 }
-                 ?> 
+                <?= $post[0]->content ?> 
             </div>
         </div>
     </div>

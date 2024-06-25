@@ -24,6 +24,16 @@ class ComposerStaticInit90bbf95869b4e88bf0dc5022e708a458
         ),
     );
 
+    public static $prefixesPsr0 = array (
+        'P' => 
+        array (
+            'Parsedown' => 
+            array (
+                0 => __DIR__ . '/..' . '/erusev/parsedown',
+            ),
+        ),
+    );
+
     public static $classMap = array (
         'App\\Controllers\\AdminPostController' => __DIR__ . '/../..' . '/app/Controllers/AdminPostController.php',
         'App\\Controllers\\LoginController' => __DIR__ . '/../..' . '/app/Controllers/LoginController.php',
@@ -34,6 +44,8 @@ class ComposerStaticInit90bbf95869b4e88bf0dc5022e708a458
         'App\\Core\\Database\\QueryBuilder' => __DIR__ . '/../..' . '/core/database/QueryBuilder.php',
         'App\\Core\\Request' => __DIR__ . '/../..' . '/core/Request.php',
         'App\\Core\\Router' => __DIR__ . '/../..' . '/core/Router.php',
+        'CommonMarkTestStrict' => __DIR__ . '/..' . '/erusev/parsedown/test/CommonMarkTestStrict.php',
+        'CommonMarkTestWeak' => __DIR__ . '/..' . '/erusev/parsedown/test/CommonMarkTestWeak.php',
         'ComposerAutoloaderInit90bbf95869b4e88bf0dc5022e708a458' => __DIR__ . '/..' . '/composer/autoload_real.php',
         'Composer\\Autoload\\ClassLoader' => __DIR__ . '/..' . '/composer/ClassLoader.php',
         'Composer\\Autoload\\ComposerStaticInit90bbf95869b4e88bf0dc5022e708a458' => __DIR__ . '/..' . '/composer/autoload_static.php',
@@ -43,6 +55,11 @@ class ComposerStaticInit90bbf95869b4e88bf0dc5022e708a458
         'PHPMailer\\PHPMailer\\PHPMailer' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/PHPMailer.php',
         'PHPMailer\\PHPMailer\\POP3' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/POP3.php',
         'PHPMailer\\PHPMailer\\SMTP' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/SMTP.php',
+        'Parsedown' => __DIR__ . '/..' . '/erusev/parsedown/Parsedown.php',
+        'ParsedownTest' => __DIR__ . '/..' . '/erusev/parsedown/test/ParsedownTest.php',
+        'TestParsedown' => __DIR__ . '/..' . '/erusev/parsedown/test/TestParsedown.php',
+        'TrustDelegatedExtension' => __DIR__ . '/..' . '/erusev/parsedown/test/SampleExtensions.php',
+        'UnsafeExtension' => __DIR__ . '/..' . '/erusev/parsedown/test/SampleExtensions.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -50,6 +67,7 @@ class ComposerStaticInit90bbf95869b4e88bf0dc5022e708a458
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit90bbf95869b4e88bf0dc5022e708a458::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit90bbf95869b4e88bf0dc5022e708a458::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit90bbf95869b4e88bf0dc5022e708a458::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit90bbf95869b4e88bf0dc5022e708a458::$classMap;
 
         }, null, ClassLoader::class);

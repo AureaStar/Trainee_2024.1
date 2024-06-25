@@ -83,4 +83,26 @@
         <div class = "posicionaPagtabelaPost"><?php require(__DIR__ . '/../components/paginacao.php') ?></div>
     </body>
     <script src="/public/js/modal.js"></script>
+    <script src="https://cdn.tiny.cloud/1/dtbknbcck1f409z8i9gb92m2v2q7hkm5sc1yvcb7mxbvctv9/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
+            <script>
+                tinymce.init({
+                    selector: "textarea",
+                    menubar: false,
+                    statusbar: false,
+                    height: 360,
+                    resize: false,
+                    content_style: "body { background: #E6A549; color: white;}",
+                    plugins: 'codesample emoticons link lists tinymcespellchecker',
+                    toolbar: 'undo redo | | bold italic underline | link | | | align lineheight | numlist bullist indent outdent | emoticons | removeformat',
+                    spellchecker_language: 'pt',
+                    language: 'pt_BR',
+                    tinycomments_mode: 'embedded',
+                    tinycomments_author: 'Author name',
+                    mergetags_list: [
+                        { value: 'First.Name', title: 'First Name' },
+                        { value: 'Email', title: 'Email' },
+                    ],
+                });
+            </script>
 </html>
+

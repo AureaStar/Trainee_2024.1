@@ -20,7 +20,7 @@ body{
 }
 
 /* Título e imagem */
-body h1{
+body .h1{
     font-family: Almendra, serif;
     font-size: 44px;
     color: white;
@@ -118,7 +118,7 @@ form{
 /* Responsividade */
 @media (max-width: 480px) { /* Celular */
 
-    body h1{
+    body .h1{
         width: 75%;
         font-size: 24px;
         margin-bottom: 2%;
@@ -170,7 +170,7 @@ form{
         margin-bottom: 1%;
     }
 
-    body h1{
+    body .h1{
         font-size: 44px;
         margin-bottom: 2%;
     }
@@ -200,7 +200,7 @@ form{
 
 @media (min-width: 769px) { /* Telas pequenas e laptopos */
     
-    body h1{
+    body .h1{
         font-size: 44px;
         margin-bottom: 2%;
     }
@@ -236,7 +236,7 @@ form{
 
 @media (min-width: 1025px) { /* Desktop */
     
-    body h1{
+    body .autoria-perfil{
         font-size: 48px;
         margin-bottom: 2%;
     }
