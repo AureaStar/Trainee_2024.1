@@ -5,7 +5,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #412307;
-    height: 85%;
+    /* height: 85%; */
+    height: fit-content;
     width: 70%;
     display: none;
     flex-direction: column;
@@ -90,6 +91,7 @@
     display: flex;
     flex-direction: row;
     height: 100%;
+    max-height: 50px;
     padding: 0%;
     margin: 0%;
 }
@@ -125,23 +127,33 @@
 
 .fundoVFormulario {
     background-color: #E6A549;
-    border: none;
+    border: 2.5px solid #E6A549; 
     outline: none;
     border-radius: 5px;
     height: 12%;
     width: 100%;
+    display: flex;
+    align-items: center;
 }
 .fundoVFormularioCont {
     background-color: #E6A549;
-    border: none;
+    border: 2.5px solid #E6A549; 
     outline: none;
     border-radius: 5px;
     height: 24%;
     width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .fundoVFormulario:hover {
     background-color: hsla(35, 76%, 59%, 0.8);
+    border: 2.5px solid #E6A549; 
+}
+
+.fundoVFormularioCont:hover {
+    background-color: hsla(35, 76%, 59%, 0.8);
+    border: 2.5px solid #E6A549; 
 }
 
 .fundoVFormulario input::placeholder {
@@ -157,8 +169,8 @@
 }
 
 .fundoVFormulario input {
-    background-color: #e29c3a;
-    border: 3px solid #e29c3a;
+    background-color: #e29c3a00;
+    border: 3px solid #e29c3a00;
     outline: none;
     width: 97%;
     border-radius: 5px;
@@ -167,12 +179,12 @@
 
 .fundoVFormulario input:hover {
     background-color: rgba(180, 126, 17, 0);
-    border: 3px solid #e29c3a;
+    border: 3px solid #e29c3a00;
 }
 
 .fundoVFormularioCont textarea {
-    background-color: #e29c3a;
-    border: 3px solid #e29c3a;
+    background-color: #e29c3a00;
+    border: 3px solid #e29c3a00;
     outline: none;
     width: 100%;
     height: 85%;
@@ -183,7 +195,7 @@
 
 .fundoVFormularioCont textarea:hover {
     background-color: rgba(180, 126, 17, 0);
-    border: 3px solid #e29c3a;
+    border: 3px solid #e29c3a00;
 }
 
 .boxV {
@@ -271,7 +283,7 @@
 
 @media only screen and (max-width: 600px) {
     .modalV {
-        height: 85%;
+        /* height: 85%; */
         width: 70%;
         border-radius: 15px;
         padding: 3%;
@@ -393,7 +405,7 @@
 @media only screen and (min-width: 601px) and (max-width: 900px) {
     .modalV {
         top: 50%;
-        height: 92%;
+        /* height: 92%; */
         width: 70%;
         border-radius: 15px;
         padding: 3%;
@@ -455,7 +467,7 @@
 
 @media only screen and (min-height: 850px) {
     .modalV {
-        height: 70%;
+        /* height: 70%; */
     }
 }
 

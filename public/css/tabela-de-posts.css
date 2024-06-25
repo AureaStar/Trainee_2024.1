@@ -3,6 +3,15 @@
     padding: 0;
     list-style: none;
 }
+.bi-eye{
+    padding-bottom: 5%;
+}
+.bi-pencil-square{
+    padding-bottom: 5%;
+}
+.bi-x-lg{
+    padding-bottom: 5%;
+}
 .posicionaPagtabelaPost{
     position:fixed;
     top: 90%;
@@ -123,7 +132,11 @@ button{
     font-size:18px;
     width:130px;
     outline: none;
-    border-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
 }
 
 .criarPostList{
@@ -146,6 +159,7 @@ button{
 }
 .viewPostList{
     background:rgba(67, 151, 65, 0.65);
+    border: 2.5px solid rgba(66, 151, 65, 0);
     border-radius: 10px;
     transition: background 0.2s;
 }
@@ -156,6 +170,7 @@ button{
 }
 .editPostList{
     background:rgba(67, 151, 65, 0.65);
+    border: 2.5px solid rgba(66, 151, 65, 0);
     transition: background 0.2s;
 }
 
