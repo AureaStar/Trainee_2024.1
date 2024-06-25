@@ -32,6 +32,7 @@
 }
 .left{
     width: 50%;
+    height: 56vh;
 }
 .right{
     width: 50%;
@@ -143,7 +144,8 @@
     height: 24%;
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    overflow-y: scroll;
 }
 
 .fundoVFormulario:hover {
@@ -319,7 +321,7 @@
     }
 
     .fundoVFormularioCont {
-        height: 20%;
+        height: 36%;
     }
 
     .fundoVFormulario input::placeholder {
@@ -358,6 +360,7 @@
     }
     .left {
         width: 100%;
+        height: 40vh;
     }
     .right {
         width: 100%;
@@ -419,6 +422,7 @@
     .left{
         width: 100%;
         margin-bottom: 0;
+        height: 40vh;
     }
     .right{
         width: 100%;
@@ -441,7 +445,7 @@
     }
 
     .fundoVFormularioCont {
-        height: 22%;
+        height: 36%;
     }
 
     .fundoVFormulario input::placeholder {

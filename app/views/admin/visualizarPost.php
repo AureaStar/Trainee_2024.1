@@ -1,5 +1,3 @@
-<?php $parser = new Parsedown();?>
-
 <link rel="stylesheet" href="../../../public/css/visualizarPost.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jomhuria">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sail">
@@ -34,7 +32,7 @@
 
                 <label for="text" class="nameVbox">Conteúdo:</label>
                     <div class="fundoVFormularioCont">
-                        <div type="text" class="boxV" id="text" name="text" readonly><?= $parser->text($post->content) ?></div>
+                        <div type="text" class="boxV" id="text" name="text" readonly><?= $post->content ?></div>
                     </div>
 
                 <label for="filter" class="nameVbox">Categoria:</label>

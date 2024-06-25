@@ -126,6 +126,10 @@
     border-radius: 4px;
 } 
 
+.thfundoFormularioCont{
+    width: 100%;
+}
+
 .thfundoFormularioCont:hover {
     background-color: hsla(35, 76%, 59%, 0.8);
     border-radius: 4px;
