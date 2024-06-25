@@ -41,7 +41,6 @@
     color:rgb(156, 155, 155);
     text-decoration:none;
     font-weight:bold;
-    pointer-events: none;
 }
 
 .bi-caret-left-fill{
