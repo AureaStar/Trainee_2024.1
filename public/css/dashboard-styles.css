@@ -265,6 +265,7 @@ h1 img{
     height: 20%;
     justify-content: center;
     gap:2%;
+    align-items: center;
     }
 
 #btn-logout{
