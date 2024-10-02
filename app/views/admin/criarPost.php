@@ -25,7 +25,7 @@
         </div>
         <form class="modalVC-body" method="POST" action="/admin/posts/create" enctype="multipart/form-data">
 
-            <label for="imagem" class="nameVCbox">Imagem:</label>
+            <label for="imagem" class="nameVCbox"> Imagem:</label>
             <div class="fundoVFormulario">
                 <input type="file" class="boxVC imagemVCInput" name="imagem" required>
             </div>
